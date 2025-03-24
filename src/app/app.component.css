@@ -35,15 +35,16 @@ p {
 header {
   background-color: var(--header-background);
   color: white;
-  padding: 10px 0; /* Reduced vertical padding for header */
+  padding: 10px 20px;
   text-align: left;
   position: sticky;
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-height: auto; /* Remove fixed min-height, adjust dynamically */
+  min-height: auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 nav {
@@ -58,25 +59,26 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
+  align-items: center; /* Vertically align navigation items */
 }
 
 nav li {
-  margin-left: 15px; /* Reduced spacing between nav links */
+  margin-left: 25px; /* Increased spacing between nav links */
 }
 
 nav a {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: 1em; /* Slightly smaller nav links */
-  padding: 8px 12px; /* Reduced padding for nav links */
-  border-radius: 3px; /* Slightly less rounded corners */
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1em; /* Revert to slightly larger nav links */
+  padding: 10px 15px; /* Revert to slightly larger padding for nav links */
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smoother transition */
 }
 
 nav a:hover {
-  color: white; /* White text on hover */
-  background-color: var(--accent-blue); /* Accent blue background on hover */
+  color: var(--secondary-blue); /* Light blue text on hover */
+  background-color: var(--primary-blue); /* Primary blue background on hover */
 }
 
 .logo {
@@ -94,7 +96,7 @@ main {
 #hero {
   background-color: var(--section-background-light);
   color: var(--text-color-dark);
-  padding: 100px 20px;
+  padding: 120px 20px;
   text-align: center;
 }
 
@@ -102,70 +104,110 @@ main {
   color: var(--primary-blue);
   font-size: 2.5em;
   margin-bottom: 20px;
+  line-height: 1.2; /* Improved line height for hero heading */
+  letter-spacing: -0.05em; /* Slightly reduce letter spacing */
 }
 
 #hero p {
-  color: var(--text-color-light);
-  font-size: 1.1em; /* Slightly larger hero text */
-  max-width: 700px; /* Limit hero text width for readability */
-  margin: 0 auto; /* Center hero text */
+  color: var(--text-color-dark); /* Use dark text color for hero description */
+  font-size: 1.2em; /* Slightly larger hero text */
+  max-width: 800px; /* Slightly wider hero text container */
+  margin: 0 auto 30px; /* Add margin below hero text */
+  font-weight: 500; /* Make hero text slightly bolder */
 }
 
 .hero-visual {
-  height: auto;
-  width: 100%;
+  margin-top: 30px; /* Add spacing between text and image */
+  border-radius: 10px; /* Rounded corners for hero image */
+  overflow: hidden; /* Clip image corners for rounded effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Add more pronounced shadow to hero image */
 }
 
 .hero-visual img {
   max-width: 100%;
   height: auto;
-  display: block; /* Ensure image is a block element */
+  display: block;
+}
+
+#call-to-action {
+  /* Styles already defined */
+  background-color: var(--section-background-white); /* White background for CTA */
+  padding: 60px 20px; /* Larger padding for CTA */
+  text-align: center;
+  margin-top: 50px; /* Add more spacing before CTA section */
 }
 
 #build-deploy-secure-framework {
-  background-color: var(--section-background-white);
+  background-color: var(--gray-light); /* Light gray background for framework section */
   padding: 60px 20px;
-  margin-bottom: 30px;
+  margin-bottom: 40px; /* Increased margin below framework section */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Even more pronounced shadow */
 }
 
 .framework-phase {
   padding: 30px;
   border-left: 5px solid var(--accent-blue);
-  margin-bottom: 20px;
-  background-color: var(--section-background-light);
-  border-radius: 5px;
+  margin-bottom: 25px; /* Slightly reduced margin between phases */
+  background-color: var(--section-background-white); /* White background for phases */
+  border-radius: 7px; /* Slightly more rounded corners for phases */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08); /* Subtle shadow for phase panels */
 }
 
 .phase-heading {
-  font-size: 1.8em;
+  font-size: 2em; /* Slightly larger phase headings */
   color: var(--primary-blue);
   margin-bottom: 15px;
+  text-transform: uppercase; /* Uppercase phase headings for emphasis */
+  letter-spacing: 0.02em; /* Slight letter spacing for headings */
 }
 
 .phase-description {
   font-size: 1.1em;
-  color: var(--text-color-light);
+  color: var(--text-color-dark); /* Use dark text color for phase descriptions */
 }
 
 #solutions-snippets {
-  background-color: var(--section-background-light);
-  padding: 40px 20px;
-  margin-bottom: 20px;
+  background-color: var(--section-background-white); /* White background for solutions section */
+  padding: 60px 20px;
+  margin-bottom: 40px; /* Increased margin below solutions section */
 }
 
 .solution-snippet {
   margin-bottom: 30px;
-  padding: 20px;
-  background-color: var(--section-background-white);
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding: 25px; /* Increased padding for solution snippets */
+  background-color: var(--section-background-light); /* Light blue background for snippets */
+  border-radius: 7px; /* Rounded corners for snippets */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Slightly more pronounced shadow for snippets */
+  display: flex; /* Use flexbox for snippet content */
+  align-items: flex-start; /* Align icon and text at the top */
 }
 
 .solution-snippet h3 {
-  color: var(--accent-blue);
+  color: var(--primary-blue); /* Solution snippet heading in primary blue */
   margin-bottom: 10px;
+  font-size: 1.6em; /* Slightly larger solution snippet headings */
+}
+
+.solution-snippet p {
+  color: var(--text-color-dark); /* Use dark text color for snippet descriptions */
+  margin-bottom: 15px; /* Add spacing below snippet text */
+}
+
+.solution-snippet a {
+  display: inline-block;
+  padding: 8px 15px; /* Reduced padding for Learn More links */
+  background-color: var(--accent-blue); /* Accent blue background for links */
+  color: white; /* White text color for links */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 0.9em; /* Slightly smaller font size for Learn More links */
+  transition: background-color 0.3s ease; /* Hover transition for links */
+}
+
+.solution-snippet a:hover {
+  background-color: darken(var(--accent-blue), 10%); /* Darken background on hover */
 }
 
 .solution-snippet p {
@@ -204,34 +246,45 @@ main {
 }
 
 #case-studies {
-  padding: 40px 20px;
-  background-color: var(--section-background-white);
-  margin-bottom: 20px;
+  padding: 60px 20px; /* Increased padding for case studies section */
+  background-color: var(--section-background-light); /* Light blue background for case studies */
+  margin-bottom: 40px; /* Increased margin below case studies section */
 }
 
 .case-study-snippet {
   margin-bottom: 30px;
-  padding: 20px;
-  border: 1px solid var(--gray-light);
-  border-radius: 5px;
+  padding: 25px; /* Increased padding for case study snippets */
+  border: none; /* Removed border for case study snippets */
+  border-radius: 7px; /* Rounded corners for snippets */
+  background-color: var(--section-background-white); /* White background for snippets */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for case study cards */
 }
 
 .case-study-snippet h3 {
-  font-size: 1.5em;
+  font-size: 1.7em; /* Slightly larger case study snippet headings */
   color: var(--primary-blue);
   margin-bottom: 10px;
 }
 
 .case-study-snippet p {
   color: var(--text-color-light);
+  line-height: 1.5; /* Improved line height for case study text */
 }
 
 .case-study-snippet a {
   display: inline-block;
-  margin-top: 10px;
-  color: var(--accent-blue);
+  margin-top: 15px; /* Increased margin above Read More links */
+  padding: 10px 20px;
+  background-color: var(--primary-blue); /* Primary blue background for Read More links */
+  color: white; /* White text color for links */
   text-decoration: none;
   font-weight: 500;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Hover transition for links */
+}
+
+.case-study-snippet a:hover {
+  background-color: darken(var(--primary-blue), 10%); /* Darken background on hover */
 }
 
 #resources {
@@ -322,5 +375,26 @@ button:hover {
 
 .secondary-button:hover {
   background-color: color-mix(in srgb, var(--primary-blue) 10%, transparent);
-  color: white;
 }
+
+</final_file_content>
+
+Please note:
+1. You do not need to re-write the file with these changes, as they have already been applied.
+2. Proceed with the task using this updated file content as the new baseline.
+3. If the user's edits have addressed part of the task or changed the requirements, adjust your approach accordingly.4. IMPORTANT: For any future changes to this file, use the final_file_content shown above as your reference. This content reflects the current state of the file, including both user edits and any auto-formatting (e.g., if you used single quotes but the formatter converted them to double quotes). Always base your SEARCH/REPLACE operations on this final version to ensure accuracy.
+<environment_details>
+# VSCode Visible Files
+../source/Website/src/app/app.component.css
+
+# VSCode Open Tabs
+../source/Website/src/app/app.component.html
+../source/Website/src/app/app.component.css
+../source/Website/src/app/app.component.ts
+
+# Current Time
+3/25/2025, 12:17:15 AM (Europe/Paris, UTC+1:00)
+
+# Current Mode
+ACT MODE
+</environment_details>
