@@ -1,0 +1,326 @@
+/* Define color variables based on sequans.com inspired palette */
+:root {
+  --primary-blue: #003366; /* Deeper, sophisticated blue */
+  --secondary-blue: #f0f8ff; /* Very light blue for backgrounds */
+  --accent-blue: #4d79a6; /* Slightly lighter blue for accents/buttons */
+  --gray-light: #f2f2f2; /* Light gray for section backgrounds */
+  --gray-medium: #ccc; /* Medium gray for dividers/subtle accents */
+  --text-color-dark: #333;
+  --text-color-light: #777;
+  --header-background: var(--primary-blue);
+  --section-background-light: var(--secondary-blue);
+  --section-background-white: #fff;
+  --font-family-headings: Montserrat, sans-serif;
+  --font-family-body: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-family-body);
+  color: var(--text-color-dark);
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-headings);
+  color: var(--primary-blue); /* Headings in primary blue */
+  font-weight: 700; /* Make headings bold */
+  margin-bottom: 15px; /* Add spacing below headings */
+}
+
+p {
+  line-height: 1.6; /* Improve body text readability */
+  color: var(--text-color-light);
+}
+
+header {
+  background-color: var(--header-background);
+  color: white;
+  padding: 10px 0; /* Reduced vertical padding for header */
+  text-align: left;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: auto; /* Remove fixed min-height, adjust dynamically */
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 15px; /* Reduced spacing between nav links */
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1em; /* Slightly smaller nav links */
+  padding: 8px 12px; /* Reduced padding for nav links */
+  border-radius: 3px; /* Slightly less rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  color: white; /* White text on hover */
+  background-color: var(--accent-blue); /* Accent blue background on hover */
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+#hero {
+  background-color: var(--section-background-light);
+  color: var(--text-color-dark);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#hero h1 {
+  color: var(--primary-blue);
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  color: var(--text-color-light);
+  font-size: 1.1em; /* Slightly larger hero text */
+  max-width: 700px; /* Limit hero text width for readability */
+  margin: 0 auto; /* Center hero text */
+}
+
+.hero-visual {
+  height: auto;
+  width: 100%;
+}
+
+.hero-visual img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Ensure image is a block element */
+}
+
+#build-deploy-secure-framework {
+  background-color: var(--section-background-white);
+  padding: 60px 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.framework-phase {
+  padding: 30px;
+  border-left: 5px solid var(--accent-blue);
+  margin-bottom: 20px;
+  background-color: var(--section-background-light);
+  border-radius: 5px;
+}
+
+.phase-heading {
+  font-size: 1.8em;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+}
+
+.phase-description {
+  font-size: 1.1em;
+  color: var(--text-color-light);
+}
+
+#solutions-snippets {
+  background-color: var(--section-background-light);
+  padding: 40px 20px;
+  margin-bottom: 20px;
+}
+
+.solution-snippet {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--section-background-white);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.solution-snippet h3 {
+  color: var(--accent-blue);
+  margin-bottom: 10px;
+}
+
+.solution-snippet p {
+  color: var(--text-color-light);
+}
+
+.phase-icon,
+.solution-icon {
+  display: inline-block;
+  width: 24px; /* Example icon size */
+  height: 24px;
+  background-color: var(--accent-blue); /* Placeholder icon color */
+  border-radius: 50%; /* Make it circular */
+  margin-right: 10px; /* Spacing between icon and text */
+  vertical-align: middle; /* Align icon with text */
+  border: 2px solid var(--accent-blue); /* Add a border to the icons */
+  text-align: center;
+  line-height: 24px; /* Vertically center text within icon */
+  color: white; /* Icon text color */
+}
+
+.phase-icon.build-icon::before {
+  content: "🔨"; /* Hammer icon for BUILD */
+}
+
+.phase-icon.deploy-icon::before {
+  content: "🚀"; /* Rocket icon for DEPLOY */
+}
+
+.phase-icon.secure-icon::before {
+  content: "🔒"; /* Lock icon for SECURE */
+}
+
+.solution-snippet .solution-icon::before {
+  content: "💡"; /* Light bulb icon for solutions */
+}
+
+#case-studies {
+  padding: 40px 20px;
+  background-color: var(--section-background-white);
+  margin-bottom: 20px;
+}
+
+.case-study-snippet {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid var(--gray-light);
+  border-radius: 5px;
+}
+
+.case-study-snippet h3 {
+  font-size: 1.5em;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+.case-study-snippet p {
+  color: var(--text-color-light);
+}
+
+.case-study-snippet a {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--accent-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#resources {
+  padding: 40px 20px;
+  background-color: var(--section-background-light);
+  margin-bottom: 20px;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid for resources */
+  gap: 20px;
+}
+
+.resource-item {
+  padding: 20px;
+  background-color: var(--section-background-white);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.resource-item h3 {
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+.resource-item p {
+  color: var(--text-color-light);
+}
+
+.resource-item a {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--accent-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+#contact-us {
+  background-color: var(--section-background-white);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#contact-us h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+
+.cta-buttons button {
+  margin: 0 10px;
+}
+
+button {
+  background-color: var(--accent-blue);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darken(var(--accent-blue), 10%);
+}
+
+.primary-button {
+  background-color: var(--primary-blue);
+}
+
+.primary-button:hover {
+  background-color: darken(var(--primary-blue), 10%);
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+}
+
+.secondary-button:hover {
+  background-color: color-mix(in srgb, var(--primary-blue) 10%, transparent);
+  color: white;
+}
