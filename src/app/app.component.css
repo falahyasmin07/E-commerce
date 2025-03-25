@@ -1,14 +1,16 @@
-/* Define color variables based on sequans.com inspired palette */
+/* Define color variables for Edge Pulsar palette */
 :root {
   --primary-blue: #003366; /* Deeper, sophisticated blue */
   --secondary-blue: #f0f8ff; /* Very light blue for backgrounds */
+  --primary-green: #4da32f; /* Light beautiful green */
+  --secondary-green: #e9f6e9; /* Very light green for backgrounds */
   --accent-blue: #4d79a6; /* Slightly lighter blue for accents/buttons */
   --gray-light: #f2f2f2; /* Light gray for section backgrounds */
   --gray-medium: #ccc; /* Medium gray for dividers/subtle accents */
   --text-color-dark: #333;
   --text-color-light: #777;
-  --header-background: var(--primary-blue);
-  --section-background-light: var(--secondary-blue);
+  --header-background: var(--primary-green);
+  --section-background-light: var(--secondary-green);
   --section-background-white: #fff;
   --font-family-headings: Montserrat, sans-serif;
   --font-family-body: 'Open Sans', sans-serif;
@@ -36,7 +38,7 @@ p {
 header {
   background-color: var(--header-background);
   color: white;
-  padding: 10px 20px;
+  padding: 0px 20px;
   text-align: left;
   position: sticky;
   top: 0;
@@ -83,8 +85,8 @@ nav a:hover {
 }
 
 .logo {
-  font-size: 1.5em;
-  font-weight: bold;
+  max-height: 40px;
+  padding: 0;
 }
 
 main {
