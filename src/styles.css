@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+
+.offers-horizontal-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
+  padding: 20px;
+  align-items: stretch; /* Ensure boxes have equal height */
+}
+
+.offer-box {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color from parent */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 150px; /* Ensure a minimum height for all boxes */
+}
+
+.offers-horizontal-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
+  padding: 20px;
+  align-items: stretch; /* Make boxes stretch to equal height */
+}
+
+.offer-box:hover {
+  background-color: #e0e0e0;
+}
+
+.offer-box .phase-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+stat
+.offer-box .phase-heading {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.offer-box .phase-description {
+  color: #666;
+}
