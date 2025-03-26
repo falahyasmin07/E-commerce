@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
-  standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './hero.component.html',
-  
+  styleUrl: './hero.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class HeroComponent {
 
