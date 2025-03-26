@@ -92,3 +92,39 @@ h2 {
   padding: 20px;
   border-radius: 5px;
 }
+
+nav ul li {
+ position: relative;
+}
+
+nav ul li ul {
+  display: none !important; /* Hide submenu by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff; /* Set a white background color */
+  padding: 0;
+  border: 1px solid #ccc;
+  z-index: 1;
+  min-width: 150px; /* Ensure a minimum width for the submenu */
+}
+
+nav ul li ul li a {
+  padding: 10px;
+  display: block;
+  color: #333; /* Set a dark text color */
+}
+
+nav ul li:hover > ul {
+  display: block !important; /* Show submenu on hover */
+}
+
+nav ul li ul li {
+  display: block;
+  width: 150px;
+}
+
+nav ul li ul li a {
+  padding: 10px;
+  display: block;
+}
