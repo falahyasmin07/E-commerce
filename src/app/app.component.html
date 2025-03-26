@@ -3,8 +3,11 @@
     <img class="logo" src='EdgePulsarLogo.png'>
     <ul>
       <li><a href="#hero">Home</a></li>
-          <li><a href="#build-deploy-secure-framework">Offers</a></li>
-          <li><a href="#solutions-snippets">Services</a></li>
+      <li><a routerLink="/build">Build</a></li>
+      <li><a routerLink="/run">Run</a></li>
+      <li><a routerLink="/secure">Secure</a></li>
+      <li><a href="#build-deploy-secure-framework">Offers</a></li>
+      <li><a href="#solutions-snippets">Services</a></li>
       <li><a href="#case-studies">Case Studies</a></li>
       <li><a href="#about-us">About Us</a></li>
       <li><a href="#resources">Resources</a></li>
@@ -15,6 +18,7 @@
 </header>
 
 <main>
+  <router-outlet></router-outlet>
   <section id="hero">
     <h1>Intelligent Edge Solutions, From Concept to Cloud-Connected Creation</h1>
     <p>Empowering organizations to build intelligent, secure, and high-performance edge computing solutions with seamless cloud integration.</p>
@@ -27,7 +31,7 @@
     <h2>Our offers</h2>
     <div class="offers-horizontal-container">
 
-      <a href="#build-offer" class="offer-box">
+      <a routerLink="/build" class="offer-box">
         <section id="build-phase" class="framework-phase">
           <i class="phase-icon build-icon fas fa-hammer"></i>  <!-- BUILD Icon -->
           <h3 class="phase-heading">Build Intelligent Edge Solutions</h3>
@@ -36,7 +40,7 @@
         </section>
       </a>
 
-      <a href="#deploy-offer" class="offer-box">
+      <a routerLink="/run" class="offer-box">
         <section id="deploy-phase" class="framework-phase">
           <i class="phase-icon deploy-icon fas fa-rocket"></i> <!-- DEPLOY Icon -->
           <h3 class="phase-heading">Deploy Seamlessly to the Edge</h3>
@@ -45,7 +49,7 @@
         </section>
       </a>
 
-      <a href="#secure-offer" class="offer-box">
+      <a routerLink="/secure" class="offer-box">
         <section id="secure-phase" class="framework-phase">
           <i class="phase-icon secure-icon fas fa-lock"></i> <!-- SECURE Icon -->
           <h3 class="phase-heading">Secure Edge-to-Cloud Infrastructure</h3>

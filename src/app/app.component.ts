@@ -7,11 +7,12 @@ import { CaseStudiesComponent } from './components/case-studies/case-studies.com
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ResourcesComponent } from './components/resources/resources.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, HeroComponent, BuildDeploySecureComponent, SolutionsComponent, CaseStudiesComponent, AboutUsComponent, ResourcesComponent, ContactUsComponent, CommonModule],
+  imports: [CommonModule, HeroComponent, BuildDeploySecureComponent, SolutionsComponent, CaseStudiesComponent, AboutUsComponent, ResourcesComponent, ContactUsComponent, CommonModule, RouterLink, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   encapsulation: ViewEncapsulation.None
