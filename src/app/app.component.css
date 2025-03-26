@@ -9,7 +9,7 @@
   --gray-medium: #ccc; /* Medium gray for dividers/subtle accents */
   --text-color-dark: #333;
   --text-color-light: #777;
-  --header-background: var(--primary-green);
+  --header-background: var(--primary-blue);
   --section-background-light: var(--secondary-green);
   --section-background-white: #fff;
   --font-family-headings: Montserrat, sans-serif;
