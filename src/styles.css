@@ -1,8 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
 
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #0056b3;
+}
+
+/* Offers Section Styles */
 .offers-horizontal-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; /* Distribute boxes evenly */
   flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
   padding: 20px;
   align-items: stretch; /* Ensure boxes have equal height */
@@ -17,20 +29,13 @@
   text-align: center;
   background-color: #f9f9f9;
   transition: background-color 0.3s ease;
-  text-decoration: none; /* Remove underline from links */
-  color: inherit; /* Inherit text color from parent */
+  text-decoration: none;
+  color: inherit;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-height: 150px; /* Ensure a minimum height for all boxes */
-}
-
-.offers-horizontal-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
-  padding: 20px;
-  align-items: stretch; /* Make boxes stretch to equal height */
+  align-items: stretch; /* Stretch content vertically */
+  min-height: 200px; /* Ensure a minimum height for all boxes */
+  position: relative; /* For absolute positioning of Learn more link */
 }
 
 .offer-box:hover {
@@ -41,7 +46,7 @@
   font-size: 2em;
   margin-bottom: 10px;
 }
-stat
+
 .offer-box .phase-heading {
   margin-bottom: 10px;
   color: #333;
@@ -49,4 +54,41 @@ stat
 
 .offer-box .phase-description {
   color: #666;
+  margin-bottom: auto; /* Push description to the top */
+}
+
+.framework-phase {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between; /* Vertically distribute content */
+}
+
+.learn-more-link {
+  position: absolute; /* Position Learn more link at the bottom */
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+/* Technologies Section Styles */
+.technologies-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.technologies-network {
+  flex: 1;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.technologies-stack-flow {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
 }
