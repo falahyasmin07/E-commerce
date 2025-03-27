@@ -9,7 +9,9 @@
   --gray-medium: #ccc; /* Medium gray for dividers/subtle accents */
   --text-color-dark: #333;
   --text-color-light: #777;
-  --header-background: var(--primary-blue);
+  --header-font-color: #010a3e;
+  --header-font-selection-color: #162cb3;
+  --header-background: white;
   --section-background-light: var(--secondary-green);
   --section-background-white: #fff;
   --font-family-headings: Montserrat, sans-serif;
@@ -40,11 +42,11 @@ header {
   color: white;
   padding: 0px 20px;
   text-align: left;
-  /*position: sticky;*/
+  position: sticky;
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-height: auto;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,7 +73,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: var(--header-font-color);
   font-weight: 500;
   font-size: 1em; /* Revert to slightly larger nav links */
   padding: 10px 15px; /* Revert to slightly larger padding for nav links */
@@ -80,8 +82,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--secondary-blue); /* Light blue text on hover */
-  background-color: var(--primary-blue); /* Primary blue background on hover */
+  color: var(--header-font-selection-color); /* Light blue text on hover */
 }
 
 .logo {
