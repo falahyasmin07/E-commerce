@@ -95,23 +95,20 @@ nav a:hover {
 }
 
 main {
-  padding: 20px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+  gap: 10px;
+  padding: 10px 20px;
 }
 
 #hero {
-  background-color: var(--section-background-light);
   color: var(--text-color-dark);
-  padding: 120px 20px;
   text-align: center;
 }
 
 #hero h1 {
   color: var(--primary-blue);
   font-size: 2.5em;
-  margin-bottom: 20px;
   line-height: 1.2; /* Improved line height for hero heading */
   letter-spacing: -0.05em; /* Slightly reduce letter spacing */
 }
