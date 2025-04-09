@@ -1,0 +1,54 @@
+.card-frame {
+	background-color: var(--gray-light); /* Light gray background for framework section */
+	padding: 60px 20px;
+	margin-bottom: 40px; /* Increased margin below framework section */
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Even more pronounced shadow */
+}
+
+.card-box {
+	flex: 1;
+	margin: 10px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #f9f9f9;
+	transition: background-color 0.3s ease;
+	text-decoration: none;
+	color: inherit;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch; /* Stretch content vertically */
+	max-width: 700px;
+	min-height: 200px; /* Ensure a minimum height for all boxes */
+	position: relative; /* For absolute positioning of Learn more link */
+}
+
+.card-box:hover {
+	background-color: #e0e0e0;
+}
+
+.card-box .phase-icon {
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+
+.card-box .phase-heading {
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.card-box .phase-description {
+	color: #666;
+	margin-bottom: auto; /* Push description to the top */
+}
+
+.card-framework {
+	padding: 30px;
+	border-left: 5px solid var(--accent-blue);
+	margin-bottom: 25px; /* Slightly reduced margin between phases */
+	background-color: var(--section-background-white); /* White background for phases */
+	border-radius: 7px; /* Slightly more rounded corners for phases */
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08); /* Subtle shadow for phase panels */
+}
