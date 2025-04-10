@@ -1,5 +1,5 @@
 .card-frame {
-	background-color: var(--gray-light); /* Light gray background for framework section */
+	background-color: var(--card-frame-background);
 	padding: 60px 20px;
 	margin-bottom: 40px; /* Increased margin below framework section */
 	border-radius: 10px;

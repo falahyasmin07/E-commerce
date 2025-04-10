@@ -12,6 +12,7 @@
   --header-font-color: #010a3e;
   --header-font-selection-color: #162cb3;
   --header-background: white;
+	--card-frame-background: white;
   --section-background-light: var(--secondary-green);
   --section-background-white: #fff;
   --font-family-headings: Montserrat, sans-serif;
