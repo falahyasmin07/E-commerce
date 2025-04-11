@@ -1,0 +1,25 @@
+#about-us {
+	padding: 50px;
+}
+
+.team {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.team-member {
+	text-align: center;
+	margin: 20px;
+	max-width: 500px;
+}
+
+.team-member p {
+	text-align: justify;
+}
+
+.member-image {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
