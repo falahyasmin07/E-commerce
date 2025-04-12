@@ -1,0 +1,10 @@
+# Enable rewriting URLs
+RewriteEngine On
+# Forward HTTP requests to HTTPS with permanent move
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Forward www.sfaxware.com to sfaxware.com
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
+# Disable listing of directories
+Options -Indexes

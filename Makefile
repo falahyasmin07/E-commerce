@@ -9,7 +9,6 @@ run::${MODULE}_run
 
 ${MODULE}_PKG:=${DIR}/Dockerfile \
 	${DIR}/dist \
-	${DIR}/nsw-load-balancer.sh \
 
 ${MODULE}_all:${MODULE}_compile
 ${MODULE}_compile:${DIR}
@@ -22,9 +21,9 @@ ${MODULE}_run:
 	npm run start
 
 ${DIR}:${DIR}/dist
-${DIR}/dist:$(addprefix ${DIR}/dist/nestwave-cloud/,index.html .htaccess) ${DIR}/dist/etc
+${DIR}/dist:$(addprefix ${DIR}/dist/edge-pulsar-website/browser/,index.html .htaccess) ${DIR}/dist/etc
 
-${DIR}/dist/%/index.html:$(wildcard ${DIR}/*.json) $(shell find ${DIR}/src/ -type f -not -name '.*')
+${DIR}/dist/%/index.html:$(wildcard ${DIR}/*.json) $(shell find ${DIR}/src/ -type f -not -name '.*' | sed 's/ /\\ /g')
 	mkdir -p $(dir $(@D))
 	cd $(dir $(@D)) && npm ci && npm run build
 
