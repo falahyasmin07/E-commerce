@@ -1,0 +1,12 @@
+#contact-us {
+	text-align: left;
+}
+
+#contact-us td {
+	padding: 5px 20px;
+}
+
+#contact-us input {
+	width: 100%;
+	padding: 5px;
+}

@@ -1,1 +1,45 @@
-<p>contact-us works!</p>
+<section id="contact-us">
+	<h2>Contact Us</h2>
+	<p>We're here to help you navigate your edge computing journey. Reach out to us with any questions or inquiries.</p>
+	<div class="contact-form">
+		<p>Contact form will be added here in future updates.</p>
+	</div>
+
+	<div class="contact-details">
+		<p><a href='mailto:info@edgepulsar.com?subject=Contact%20Information%20Inquiry'>Email: info&#64;edgepulsar.com</a></p>
+		<p><a href='tel:+33.66.55.44.803'>Phone: +33.66.55.44.803</a></p>
+		<p>Address: 2 rue Jean Mermoz, 91080 Évry-Courcouronnes</p>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10549.06140555841!2d2.4034634!3d48.6239041!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5de72bcfac68d%3A0x8b2b65927d3ee18b!2s2%20Rue%20Jean%20Mermoz%2C%2091080%20%C3%89vry-Courcouronnes!5e0!3m2!1sfr!2sfr!4v1744446493117!5m2!1sfr!2sfr" width=680 height=440 loading=lazy></iframe>
+	</div>
+	<form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+		<table>
+			<tr>
+				<td>
+					<label for="firstName">First Name:</label>
+					<input type="text" id="firstName" name="firstName" ngModel required>
+				</td>
+				<td>
+					<label for="lastName">Last Name:</label>
+					<input type="text" id="lastName" name="lastName" ngModel required>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=2>
+					<label for="email">E-mail Address:</label>
+					<input type="email" id="email" name="email" ngModel required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="company">Company Name:</label>
+					<input type="text" id="company" name="company" ngModel required>
+				</td>
+				<td>
+					<label for="phone">Professional Phone Number:</label>
+					<input type="tel" id="phone" name="phone" ngModel required>
+				</td>
+			</tr>
+		</table>
+		<button type="submit" [disabled]="!contactForm.form.valid">Submit</button>
+	</form>
+</section>
