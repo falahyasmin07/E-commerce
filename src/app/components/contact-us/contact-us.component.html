@@ -11,16 +11,16 @@
 		<p>Address: 2 rue Jean Mermoz, 91080 Évry-Courcouronnes</p>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10549.06140555841!2d2.4034634!3d48.6239041!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5de72bcfac68d%3A0x8b2b65927d3ee18b!2s2%20Rue%20Jean%20Mermoz%2C%2091080%20%C3%89vry-Courcouronnes!5e0!3m2!1sfr!2sfr!4v1744446493117!5m2!1sfr!2sfr" width=680 height=440 loading=lazy></iframe>
 	</div>
-	<form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+	<form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 		<table>
 			<tr>
 				<td>
-					<label for="firstName">First Name:</label>
-					<input type="text" id="firstName" name="firstName" ngModel required>
+					<label for="first_name">First Name:</label>
+					<input type="text" id="first_name" name="first_name" ngModel required>
 				</td>
 				<td>
-					<label for="lastName">Last Name:</label>
-					<input type="text" id="lastName" name="lastName" ngModel required>
+					<label for="last_name">Last Name:</label>
+					<input type="text" id="last_name" name="last_name" ngModel required>
 				</td>
 			</tr>
 			<tr>
@@ -31,12 +31,12 @@
 			</tr>
 			<tr>
 				<td>
-					<label for="company">Company Name:</label>
-					<input type="text" id="company" name="company" ngModel required>
+					<label for="company_name">Company Name:</label>
+					<input type="text" id="company_name" name="company_name" ngModel required>
 				</td>
 				<td>
-					<label for="phone">Professional Phone Number:</label>
-					<input type="tel" id="phone" name="phone" ngModel required>
+					<label for="phone_number">Professional Phone Number:</label>
+					<input type="tel" id="phone_number" name="phone_number" ngModel required>
 				</td>
 			</tr>
 		</table>
