@@ -363,7 +363,7 @@ button {
 }
 
 button:hover {
-  background-color: darken(var(--accent-blue), 10%);
+  background-color: color-mix(in srgb, var(--primary-blue) 90%, transparent);
 }
 
 .primary-button {
