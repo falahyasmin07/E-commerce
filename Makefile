@@ -20,8 +20,10 @@ ${MODULE}_clean:
 ${MODULE}_run:
 	npm run start
 
+${MODULE}_OUTPUT=${DIR}/dist/edge-pulsar-website/browser
+
 ${DIR}:${DIR}/dist
-${DIR}/dist:$(addprefix ${DIR}/dist/edge-pulsar-website/browser/,index.html .htaccess) ${DIR}/dist/etc
+${DIR}/dist:$(addprefix ${${MODULE}_OUTPUT}/,index.html .htaccess actions)
 
 ${DIR}/dist/%/index.html:$(wildcard ${DIR}/*.json) $(shell find ${DIR}/src/ -type f -not -name '.*' | sed 's/ /\\ /g')
 	mkdir -p $(dir $(@D))
@@ -31,9 +33,17 @@ ${DIR}/dist/%/.htaccess: ${DIR}/src/.htaccess
 	mkdir -p $(dir $(@D))
 	cp $< $@
 
-%/dist/etc:%/etc
+${${MODULE}_OUTPUT}/%:${DIR}/%
 	${RM} -r $@
 	cp -r $< $(dir $@)
+
+${MODULE}_sync:${${MODULE}_OUTPUT}
+	echo 'cd /home/edgepub \
+	put -pR $< \
+	rename www www.old \
+	rename $(notdir $<) www \
+	ls \
+	' | sftp edgepub@ftp.cluster021.hosting.ovh.net
 
 .PHONY:${MODULE}_clean
 
