@@ -9,12 +9,12 @@ import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
 })
 export class HeroComponent {
 	sectors = [
-		'EdgePulsarBox-1.jpg',
-		'EdgePulsarBox-2.jpg',
-		'EdgePulsarBox-3.jpg',
-		'EdgePulsarBox-4.jpg',
-		'EdgePulsarBox-5.jpg',
-		'EdgePulsarBox-6.jpg',
+		'Hero_1.png',
+		'Hero_2.png',
+		'Hero_3.png',
+		'Hero_4.png',
+		'Hero_5.png',
+		'Hero_6.png',
 	];
 	interval: number = 5000;
 	public counter: number = 0;
