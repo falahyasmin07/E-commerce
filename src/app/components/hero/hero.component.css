@@ -13,8 +13,8 @@
 
 #hero p {
   font-size: 1.2em; /* Slightly larger hero text */
-  max-width: 800px; /* Slightly wider hero text container */
-  margin: 0 auto 10px; /* Add margin below hero text */
+  	max-width: 600px; /* Slightly wider hero text container */
+	margin: 20px auto; /* Add margin below hero text */
   font-weight: 500; /* Make hero text slightly bolder */
 }
 
