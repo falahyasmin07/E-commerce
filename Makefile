@@ -40,7 +40,7 @@ ${${MODULE}_OUTPUT}/%:${DIR}/%
 ${MODULE}_sync:${${MODULE}_OUTPUT}
 	echo 'cd /home/edgepub \
 	put -pR $< \
-	rename www www.old \
+	rename www www-$(shell date -Is).old \
 	rename $(notdir $<) www \
 	ls \
 	' | sftp edgepub@ftp.cluster021.hosting.ovh.net
