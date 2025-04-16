@@ -102,39 +102,6 @@ main {
   padding: 10px 20px;
 }
 
-#hero {
-  color: var(--text-color-dark);
-  text-align: center;
-}
-
-#hero h1 {
-  color: var(--primary-blue);
-  font-size: 2.5em;
-  line-height: 1.2; /* Improved line height for hero heading */
-  letter-spacing: -0.05em; /* Slightly reduce letter spacing */
-}
-
-#hero p {
-  color: var(--text-color-dark); /* Use dark text color for hero description */
-  font-size: 1.2em; /* Slightly larger hero text */
-  max-width: 800px; /* Slightly wider hero text container */
-  margin: 0 auto 30px; /* Add margin below hero text */
-  font-weight: 500; /* Make hero text slightly bolder */
-}
-
-.hero-visual {
-  margin-top: 30px; /* Add spacing between text and image */
-  border-radius: 10px; /* Rounded corners for hero image */
-  overflow: hidden; /* Clip image corners for rounded effect */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Add more pronounced shadow to hero image */
-}
-
-.hero-visual img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 #call-to-action {
   /* Styles already defined */
   background-color: var(--section-background-white); /* White background for CTA */

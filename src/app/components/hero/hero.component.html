@@ -1,7 +1,13 @@
-<div class="hero">
-    <div class="hero-content">
-        <h1>Power Your Intelligent Edge Solutions</h1>
-        <p class="subtitle">Unlock the full potential of your edge data with our tailored solutions.</p>
-        <p>From concept to deployment, we deliver high-performance, secure, and cloud-integrated edge solutions that drive your business forward.</p>
-    </div>
-</div>
+<section id="hero">
+	<h1>Your Partner for a Secure and Intelligent Edge</h1>
+	<p>Empowering organizations to build secure, intelligent and high-performance edge computing solutions with seamless cloud integration.</p>
+	<!--div class="slider" *ngFor="let sector of [energy, mobility]">
+		<img src="assets/images/EdgePulsarBox-in-{{ sector }}-sector.jpg" alt="Edge Computing Hero Image">
+	</div-->
+	<div class="slider">
+		<img [src]="imagePath(0)" alt="Edge Computing Hero Image">
+		<img [src]="imagePath(1)" alt="Edge Computing Hero Image">
+		<img [src]="imagePath(2)" alt="Edge Computing Hero Image">
+		<img [src]="imagePath(3)" alt="Edge Computing Hero Image">
+	</div>
+</section>
