@@ -8,18 +8,19 @@
   font-size: 2.5em;
   line-height: 1.2; /* Improved line height for hero heading */
   letter-spacing: -0.05em; /* Slightly reduce letter spacing */
+  margin: 0 auto 10px; /* Add margin below hero text */
 }
 
 #hero p {
   font-size: 1.2em; /* Slightly larger hero text */
   max-width: 800px; /* Slightly wider hero text container */
-  margin: 0 auto 30px; /* Add margin below hero text */
+  margin: 0 auto 10px; /* Add margin below hero text */
   font-weight: 500; /* Make hero text slightly bolder */
 }
 
 .slider {
 	position: relative;
-	margin-top: 30px; /* Add spacing between text and image */
+	margin-top: 10px; /* Add spacing between text and image */
 	border-radius: 10px; /* Rounded corners for hero image */
 	display: flex;
 	color: var(--text-color-dark); /* Use dark text color for hero description */
@@ -66,18 +67,15 @@
 .hero h1 {
     font-size: 3em;
     font-weight: bold;
-    margin-bottom: 20px;
 }
 
 .hero .subtitle {
     font-size: 1.5em;
-    margin-bottom: 30px;
     font-weight: 500;
 }
 
 .hero p {
     font-size: 1.2em;
-    margin-bottom: 40px;
 }
 
 .hero .cta-primary {
