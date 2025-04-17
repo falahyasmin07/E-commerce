@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
@@ -8,14 +8,9 @@ import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class HeroComponent {
-	sectors = [
-		'Hero_1.png',
-		'Hero_2.png',
-		'Hero_3.png',
-		'Hero_4.png',
-		'Hero_5.png',
-		'Hero_6.png',
-	];
+	@Input() images: string[] = [];
+	@Input() path: string = 'assets/images/{image}';
+	@Input() alt:string = '';
 	interval: number = 5000;
 	public counter: number = 0;
 	intervalId: any;
@@ -37,8 +32,7 @@ export class HeroComponent {
 	}
 
 	imagePath(index: number) {
-		index = (index + this.counter) % this.sectors.length
-		const sector = this.sectors[index];
-		return `assets/images/${sector}`;
+		index = (index + this.counter) % this.images.length
+		return this.path.replace('{image}', this.images[index]);
 	}
 }
