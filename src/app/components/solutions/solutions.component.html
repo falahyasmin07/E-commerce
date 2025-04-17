@@ -1,4 +1,4 @@
-<section class='card-frame'>
+<section id='solutions' class='card-frame'>
 	<h2>Solutions</h2>
 	<p>Explore how Edge Pulsar's solutions have helped businesses like yours achieve success.</p>
 
@@ -28,15 +28,16 @@
 		</a>
 
 		<a routerLink="/build" class="card-box">
-			<section class="card-content">
-				<i class="solution-icon truck"></i>
-				<h3 class="phase-heading">Logistics</h3>
+			<app-flip-card icon='solution-icon truck' title='Logistics' [interval]="3000" path='assets/images/solutionsForLogistics-{image}.jpg' [images]="['1', '2', '3']">
+				<h4>Optimize Supply Chains with AI-Powered Edge Operations</h4>
 				<ul>
-					<li>The Challenge: Optimizing supply chains, enhancing customer experiences, and leveraging intelligent automation</li>
-					<li>Our Edge Advantage: Expert development and deployment of computer vision at the edge for inventory management and customer analytics, intelligent IoT for supply chain optimization, and localized processing for real-time decision-making.</li>
+					<li><b>Goals:</b> Visibility boost and predictive intelligence across your supply chain — from edge to fleet.</li>
+					<li><b>Services:</b> Smart Tracking· AI Forecasting · Warehouse Automation · Fleet Intelligence</li>
+					<li><b>Challenges:</b> Optimizing supply chains, enhancing customer experiences, and leveraging intelligent automation</li>
+					<li><b>Advantages:</b> Expert development and deployment of computer vision at the edge for inventory management and customer analytics, intelligent IoT for supply chain optimization, and localized processing for real-time decision-making.</li>
 				</ul>
-				<a class="learn-more-link" href="#">Learn more</a>
-			</section>
+			</app-flip-card>
+			<a class="learn-more-link" href="#">Learn more</a>
 		</a>
 	</div>
 
