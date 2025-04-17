@@ -26,7 +26,7 @@ export class FlipCardComponent implements OnInit, OnDestroy {
 	@Input() icon: string = '';
 	@Input() title: string = '';
 	@Input() alt: string = '';
-	@Input() path: string = '';
+	@Input() path: string = 'assets/images/{image}';
 
 	currentImageIndex = 0;
 	flipState: 'front' | 'back' = 'front';
