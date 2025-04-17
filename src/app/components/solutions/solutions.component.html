@@ -54,15 +54,15 @@
 		</a>
 
 		<a routerLink="/build" class="card-box">
-			<section class="card-content">
-				<i class="solution-icon battery"></i>
-				<h3 class="phase-heading">Energy</h3>
+			<app-flip-card icon='solution-icon battery' title='Energy' [interval]="3000" path='assets/images/solutionsForEnergy-{image}.jpg' [images]="['1']">
+				<h4>You’re building smarter grids and systems.</h4>
 				<ul>
-					<li>he Challenge: Ensuring the resilience and security of vital infrastructure.</li>
-					<li>Our Edge Advantage: Expert implementation of highly resilient edge deployments for continuous monitoring, secure data acquisition, and localized control. We deliver intelligent infrastructure monitoring solutions that reduce energy consumption and maintenance costs.</li>
+					<li><b>We help you go further —</b> with optimizing <u>edge computing in the field</u>, enabling <u>real-time insights</u>, <u>remote diagnostics</u> and <u>autonomous control</u> in harsh environments.</li>
+					<li><b>From asset monitoring to predictive maintenance —</b> we help your <u>energy infrastructure</u> run <u>smarter</u>, <u>cleaner</u>, and <u>faster</u>.</li>
+					<li>🔍 <b>Use Cases —</b> Asset Monitoring, Predictive Maintenance, Energy Consumption Analytics, Autonomous Control</li>
 				</ul>
-				<a class="learn-more-link" href="#">Learn more</a>
-			</section>
+			</app-flip-card>
+			<a class="learn-more-link" href="#">Learn more</a>
 		</a>
 
 		<a routerLink="/build" class="card-box">
