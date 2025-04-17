@@ -1,0 +1,16 @@
+<div class="flip-container" (mouseenter)="onHover()" (mouseleave)="onLeave()">
+	<section class="card-content" [@cardFlip]="flipState">
+		<div class="front" *ngIf="(images.length > 0) && !isFlipped">
+			<h3 class="phase-heading" align=left><i class="{{ icon }}"></i>&nbsp;&nbsp;&nbsp;{{ title }}</h3>
+			<img [src]="imagePath(currentImageIndex)" alt="{{ alt }}">
+		</div>
+
+		<div class="back" *ngIf="isFlipped">
+			<h3 class="phase-heading" align=left><i class="{{ icon }}"></i>&nbsp;&nbsp;&nbsp;{{ title }}</h3>
+			<div class="default-content">
+				<ng-content></ng-content>
+			</div>
+		</div>
+	</section>
+</div>
+
