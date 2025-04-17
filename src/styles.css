@@ -143,6 +143,11 @@ nav ul li ul li a {
 	margin-left: 10px;
 }
 
+.solution-icon.car::before {
+	content: "🚗";
+	margin-left: 10px;
+}
+
 .solution-icon.circuit::before {
 	content: "";
 	display: inline-block;
