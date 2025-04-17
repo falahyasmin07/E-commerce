@@ -4,15 +4,15 @@
 
 	<div class="offers-horizontal-container">
 		<a routerLink="/build" class="card-box">
-			<section class="card-content">
-				<i class="solution-icon factory"></i>
-				<h3 class="phase-heading">Industry 4.0</h3>
+			<app-flip-card icon='solution-icon factory' title='Industry 4.0' [interval]="3000" path='assets/images/solutionsForIndustry-{image}.png' [images]="['1', '2']">
+				<h4>You’re powering next generation of industry.</h4>
 				<ul>
-					<li>The Challenge: Optimizing production efficiency and securing operational technology (OT).</li>
-					<li>Our Edge Advantage: Expert implementation of real-time industrial supervision, AI-powered predictive maintenance, and robust OT cybersecurity. We deliver solutions that achieve lights-out manufacturing with AI-powered quality control, reducing downtime and defects.</li>
+					<li><b>We help you accelerate innovation —</b> with <u>edge AI, real-time dataflows</u>, and <u>predictive intelligence</u>, tailored to integrate seamlessly with your <u>OT/IT stack</u>.</li>
+					<li><b>From machines to MES —</b> we bring <u>scalable edge</u> expertise that <u>enhances solutions</u> you provide to your customers.</li>
+					<li><b>🔍 Use Cases —</b> Factory Digitization, Predictive Maintenance, Real-Time Quality Control, Machine Learning at the Edge, OT/IT Integration.</li>
 				</ul>
-				<a class="learn-more-link" href="#">Learn more</a>
-			</section>
+			</app-flip-card>
+			<a class="learn-more-link" href="#">Build Smarter Factories solutions</a>
 		</a>
 
 		<a routerLink="/build" class="card-box">
