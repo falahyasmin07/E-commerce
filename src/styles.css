@@ -128,3 +128,43 @@ nav ul li ul li a {
   padding: 10px;
   display: block;
 }
+
+.solution-icon {
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+
+.solution-icon.battery::before {
+	content: "🔋";
+	margin-left: 5px;
+}
+
+.solution-icon.bus::before {
+	content: "🚌";
+	margin-left: 10px;
+}
+
+.solution-icon.circuit::before {
+	content: "";
+	display: inline-block;
+	width: 1.1em;
+	height: 1.1em;
+	background: url('public/circuit-icon.jpg') no-repeat center/contain;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.solution-icon.factory::before {
+	content: "🏭";
+	margin-left: 10px;
+}
+
+.solution-icon.nurse::before {
+	content: "👩‍⚕️";
+	margin-left: 10px;
+}
+
+.solution-icon.truck::before {
+	content: "🚚";
+	margin-left: 10px;
+}
