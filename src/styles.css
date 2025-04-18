@@ -65,10 +65,9 @@ h2 {
 }
 
 .learn-more-link {
-  position: absolute; /* Position Learn more link at the bottom */
+  position: relative; /* Position Learn more link at the bottom */
   bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
+  margin: auto;
 }
 
 /* Technologies Section Styles */
