@@ -20,25 +20,18 @@
 
 .slider {
 	position: relative;
-	border-radius: 10px; /* Rounded corners for hero image */
 	display: block;
 	overflow: hidden;
 	color: var(--text-color-dark); /* Use dark text color for hero description */
 	overflow: hidden; /* Clip image corners for rounded effect */
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Add more pronounced shadow to hero image */
 	max-height: 600px;
-	width: 100%;
-	height: 600px;
 }
 
 .slider img {
-	position: absolute;
-	left: calc(50% - 940px);
-	border-radius: 5px; /* Rounded corners for hero image */
 	opacity: 1;
 	transition: opacity 0.5s ease;
-	height: 600px;
-	width: 2048px;
+	height: auto;
+	width: 100%;
 }
 
 .hero {
