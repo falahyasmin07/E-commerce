@@ -128,27 +128,32 @@ nav ul li ul li a {
   display: block;
 }
 
-.solution-icon {
+.icon {
 	font-size: 1em;
 	margin-bottom: 10px;
 }
 
-.solution-icon.battery::before {
+.icon.battery::before {
 	content: "🔋";
 	margin-left: 5px;
 }
 
-.solution-icon.bus::before {
+.icon.brain::before {
+	content: "🧠";
+	margin-left: 10px;
+}
+
+.icon.bus::before {
 	content: "🚌";
 	margin-left: 10px;
 }
 
-.solution-icon.car::before {
+.icon.car::before {
 	content: "🚗";
 	margin-left: 10px;
 }
 
-.solution-icon.circuit::before {
+.icon.circuit::before {
 	content: "";
 	display: inline-block;
 	width: 1.1em;
@@ -158,17 +163,27 @@ nav ul li ul li a {
 	vertical-align: middle;
 }
 
-.solution-icon.factory::before {
+.icon.factory::before {
 	content: "🏭";
 	margin-left: 10px;
 }
 
-.solution-icon.nurse::before {
+.icon.globe-with-meridians::before {
+	content: "🌐";
+	margin-left: 10px;
+}
+
+.icon.lock::before {
+	content: "🔒";
+	margin-left: 10px;
+}
+
+.icon.nurse::before {
 	content: "👩‍⚕️";
 	margin-left: 10px;
 }
 
-.solution-icon.truck::before {
+.icon.truck::before {
 	content: "🚚";
 	margin-left: 10px;
 }

@@ -184,7 +184,7 @@ main {
 }
 
 .phase-icon,
-.solution-icon {
+.icon {
   display: inline-block;
   width: 24px; /* Example icon size */
   height: 24px;
