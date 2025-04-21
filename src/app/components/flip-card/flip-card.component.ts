@@ -34,15 +34,17 @@ export class FlipCardComponent implements OnInit, OnDestroy {
 	isFlipped: boolean = false;
 
 	ngOnInit() {
-		this.startCarousel();
+		if(this.images.length < 1){
+			this.onHover();
+		}else{
+			this.onLeave();
+		}
 	}
 
 	startCarousel() {
-		if (this.images.length > 1) {
-			this.intervalId = setInterval(() => {
-				this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
-			}, this.interval);
-		}
+		this.intervalId = setInterval(() => {
+			this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
+		}, this.interval);
 	}
 
 	onHover() {
@@ -52,6 +54,9 @@ export class FlipCardComponent implements OnInit, OnDestroy {
 	}
 
 	onLeave() {
+		if(this.images.length < 1){
+			return;
+		}
 		this.flipState = 'front';
 		setTimeout(() => { this.isFlipped = false }, 450);
 		this.startCarousel();
