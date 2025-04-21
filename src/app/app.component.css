@@ -91,10 +91,6 @@ nav a:hover {
   padding: 0;
 }
 
-.subMenu{
-	background: rgba(0, 0, 0, 5%);
-}
-
 main {
   display: grid;
   grid-template-columns: 1fr;
@@ -110,8 +106,7 @@ main {
   margin-top: 50px; /* Add more spacing before CTA section */
 }
 
-#build-deploy-secure-framework {
-  background-color: var(--gray-light); /* Light gray background for framework section */
+#offers {
   padding: 60px 20px;
   margin-bottom: 40px; /* Increased margin below framework section */
   border-radius: 10px;
