@@ -11,8 +11,8 @@ h2 {
   color: #0056b3;
 }
 
-/* Offers Section Styles */
-.offers-horizontal-container {
+/* Cards grid Section Styles */
+.cards-grid {
   display: flex;
   justify-content: space-around; /* Distribute boxes evenly */
   flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
@@ -20,10 +20,11 @@ h2 {
   align-items: stretch; /* Ensure boxes have equal height */
 }
 
-.offer-box {
-  flex: 1;
+.card-box {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	flex: fit-content;
   margin: 10px;
-  padding: 20px;
+	padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: center;
@@ -34,27 +35,36 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: stretch; /* Stretch content vertically */
-  min-height: 200px; /* Ensure a minimum height for all boxes */
+	max-width: 554px;
+	min-height: 300px; /* Ensure a minimum height for all boxes */
   position: relative; /* For absolute positioning of Learn more link */
 }
 
-.offer-box:hover {
+.card-box:hover {
   background-color: #e0e0e0;
 }
 
-.offer-box .phase-icon {
+.card-box .phase-icon {
   font-size: 2em;
   margin-bottom: 10px;
 }
 
-.offer-box .phase-heading {
+.card-box .phase-heading {
   margin-bottom: 10px;
   color: #333;
 }
 
-.offer-box .phase-description {
+.card-box .phase-description {
   color: #666;
   margin-bottom: auto; /* Push description to the top */
+}
+
+.card-frame {
+	background-color: var(--card-frame-background);
+	padding: 60px 20px;
+	margin-bottom: 40px; /* Increased margin below framework section */
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Even more pronounced shadow */
 }
 
 .framework-phase {
