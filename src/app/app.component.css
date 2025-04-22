@@ -127,7 +127,6 @@ main {
   color: var(--primary-blue);
   margin-bottom: 15px;
   text-transform: uppercase; /* Uppercase phase headings for emphasis */
-  letter-spacing: 0.02em; /* Slight letter spacing for headings */
 }
 
 .phase-description {
