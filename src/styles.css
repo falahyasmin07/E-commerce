@@ -16,7 +16,7 @@ h2 {
   display: flex;
   justify-content: space-around; /* Distribute boxes evenly */
   flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
-  padding: 20px;
+  padding: 20px 0px;
   align-items: stretch; /* Ensure boxes have equal height */
 }
 
@@ -42,11 +42,6 @@ h2 {
 
 .card-box:hover {
   background-color: #e0e0e0;
-}
-
-.card-box .phase-icon {
-  font-size: 2em;
-  margin-bottom: 10px;
 }
 
 .card-box .phase-heading {
@@ -139,13 +134,29 @@ nav ul li ul li a {
 }
 
 .icon {
+	background-color: var(--accent-blue);
+	border: 2px solid var(--accent-blue); /* Add a border to the icons */
+	border-radius: 50%; /* Make it circular */
+	display: inline-block;
 	font-size: 1em;
+	height: 1em;
+	left: 10px;
+	line-height: 24px; /* Vertically center text within icon */
 	margin-bottom: 10px;
+	position: absolute;
+	text-align: center;
+	top: 10px;
+	vertical-align: middle; /* Align icon with text */
+	width: 1em;
+}
+
+.icon::before {
+	display: inline-block;
 }
 
 .icon.battery::before {
 	content: "🔋";
-	margin-left: 5px;
+	margin-left: 1px;
 }
 
 .icon.brain::before {
@@ -160,12 +171,11 @@ nav ul li ul li a {
 
 .icon.car::before {
 	content: "🚗";
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
 .icon.circuit::before {
 	content: "";
-	display: inline-block;
 	width: 1.1em;
 	height: 1.1em;
 	background: url('public/circuit-icon.jpg') no-repeat center/contain;
@@ -175,7 +185,7 @@ nav ul li ul li a {
 
 .icon.factory::before {
 	content: "🏭";
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
 .icon.globe-with-meridians::before {
@@ -185,7 +195,7 @@ nav ul li ul li a {
 
 .icon.light-bulb::before {
 	content: "💡";
-	margin-left: 2px;
+	margin-left: 1px;
 }
 
 .icon.lock::before {
@@ -195,10 +205,10 @@ nav ul li ul li a {
 
 .icon.nurse::before {
 	content: "👩‍⚕️";
-	margin-left: 10px;
+	margin-left: 2px;
 }
 
 .icon.truck::before {
 	content: "🚚";
-	margin-left: 10px;
+	margin-left: 5px;
 }

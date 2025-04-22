@@ -183,37 +183,6 @@ main {
   color: var(--text-color-light);
 }
 
-.phase-icon,
-.icon {
-  display: inline-block;
-  width: 24px; /* Example icon size */
-  height: 24px;
-  background-color: var(--accent-blue); /* Placeholder icon color */
-  border-radius: 50%; /* Make it circular */
-  margin-right: 10px; /* Spacing between icon and text */
-  vertical-align: middle; /* Align icon with text */
-  border: 2px solid var(--accent-blue); /* Add a border to the icons */
-  text-align: center;
-  line-height: 24px; /* Vertically center text within icon */
-  color: white; /* Icon text color */
-}
-
-.phase-icon.build-icon::before {
-  content: "🔨"; /* Hammer icon for BUILD */
-}
-
-.phase-icon.deploy-icon::before {
-  content: "🚀"; /* Rocket icon for DEPLOY */
-}
-
-.phase-icon.secure-icon::before {
-  content: "🔒"; /* Lock icon for SECURE */
-}
-
-.solution-snippet .solution-icon::before {
-  content: "💡"; /* Light bulb icon for solutions */
-}
-
 #case-studies {
   padding: 60px 20px; /* Increased padding for case studies section */
   background-color: var(--section-background-light); /* Light blue background for case studies */
