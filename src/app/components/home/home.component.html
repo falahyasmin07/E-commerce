@@ -1,37 +1,6 @@
 	<app-hero [images]="['Hero_1.png', 'Hero_2.png','Hero_3.png', 'Hero_4.png', 'Hero_5.png', 'Hero_6.png']" alt="Edge Computing Hero Image"></app-hero>
-  <section id="offers">
-    <h2>Offers</h2>
-    <div class="offers-horizontal-container">
 
-      <a routerLink="/build" class="offer-box">
-        <section id="build-phase" class="framework-phase">
-          <i class="phase-icon build-icon fas fa-hammer"></i>  <!&ndash; BUILD Icon &ndash;>
-          <h3 class="phase-heading">Build Intelligent Edge Solutions</h3>
-          <p class="phase-description">Design custom edge solutions from concept to cloud integration, tailored to your unique needs.</p>
-          <a class="learn-more-link" href="#">Learn more</a>
-        </section>
-      </a>
-
-      <a routerLink="/run" class="offer-box">
-        <section id="deploy-phase" class="framework-phase">
-          <i class="phase-icon deploy-icon fas fa-rocket"></i> <!&ndash; DEPLOY Icon &ndash;>
-          <h3 class="phase-heading">Deploy Seamlessly to the Edge</h3>
-          <p class="phase-description">Rapidly deploy and scale edge solutions across diverse environments using our streamlined framework.</p>
-          <a class="learn-more-link" href="#">Learn more</a>
-        </section>
-      </a>
-
-      <a routerLink="/secure" class="offer-box">
-        <section id="secure-phase" class="framework-phase">
-          <i class="phase-icon secure-icon fas fa-lock"></i> <!&ndash; SECURE Icon &ndash;>
-          <h3 class="phase-heading">Secure Edge-to-Cloud Infrastructure</h3>
-          <p class="phase-description">Protect your edge-to-cloud ecosystem with our security framework, ensuring data integrity and system reliability.</p>
-          <a class="learn-more-link" href="#">Learn more</a>
-        </section>
-      </a>
-    </div>
-  </section>
-
+	<app-offers></app-offers>
 	<app-solutions></app-solutions>
 	<app-about-us></app-about-us>
 

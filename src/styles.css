@@ -140,7 +140,7 @@ nav ul li ul li a {
 
 .icon.brain::before {
 	content: "🧠";
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
 .icon.bus::before {
@@ -170,12 +170,17 @@ nav ul li ul li a {
 
 .icon.globe-with-meridians::before {
 	content: "🌐";
-	margin-left: 10px;
+	margin-left: 5px;
+}
+
+.icon.light-bulb::before {
+	content: "💡";
+	margin-left: 2px;
 }
 
 .icon.lock::before {
 	content: "🔒";
-	margin-left: 10px;
+	margin-left: 1px;
 }
 
 .icon.nurse::before {
