@@ -2,12 +2,18 @@
 	max-width: 422px;
 }
 
-.card-features {
+h4 {
+	margin: 20px 40px;
 	text-align: left;
-	padding: 10px 20px;
-	font-size: 0.85rem;
+	font-size: 1.2em;
 }
 
-.card-features li {
-	margin: 10px 20px;
+ul {
+	text-align: justify;
 }
+
+li {
+	margin: auto 30px auto 0px;
+	padding: 10px 2px;
+}
+
