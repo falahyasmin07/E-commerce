@@ -224,22 +224,6 @@ main {
   background-color: darken(var(--primary-blue), 10%); /* Darken background on hover */
 }
 
-#contact-us {
-  background-color: var(--section-background-white);
-  padding: 60px 20px;
-  text-align: center;
-}
-
-#contact-us h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.contact-details {
-  margin-top: 20px;
-}
-
-
 .cta-buttons button {
   margin: 0 10px;
 }
