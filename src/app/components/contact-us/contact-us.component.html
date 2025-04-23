@@ -1,18 +1,22 @@
-<section id="contact-us">
+<section id="contact-us" class=card-frame>
 	<h2>Contact Us</h2>
 	<p>
 		Ready to Transform Your Business with Intelligent Edge Solutions?
 		Take the first step towards innovation.
 	</p>
-	<div class="contact-form">
+	<div class="contact-container">
+	<div class="contact-info">
 
-		<h3>Start a conversation now!</h3>
+		<h3>Start a conversation now</h3>
 		<div class="contact-details">
 			<p><b>Email:</b> <a	href='mailto:info@edgepulsar.com?subject=Contact%20Information%20Inquiry'>info&#64;edgepulsar.com</a></p>
 			<p><b>Phone:</b> <a href='tel:+33.66.55.44.803'>+33 6 65 54 48 03</a></p>
-			<p><b>Address:</b> 2 rue Jean Mermoz, 91080 Évry-Courcouronnes <button class="map-button" (click)="openMap()">Show Map</button></p>
+			<p><b>Address:</b> 2 rue Jean Mermoz, 91080 Évry-Courcouronnes</p>
+			<button (click)="openMap()">Show Map</button>
 		</div>
-		<h3>Let us contact you back!</h3>
+	</div>
+	<div class="contact-form">
+		<h3>Let us contact you back</h3>
 	<form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 		<table>
 			<tr>
@@ -41,8 +45,13 @@
 					<input type="tel" id="phone_number" name="phone_number" ngModel required>
 				</td>
 			</tr>
+			<tr>
+				<td>
+					<button type="submit" [disabled]="!contactForm.form.valid">Submit</button>
+				</td>
+			</tr>
 		</table>
-		<button type="submit" [disabled]="!contactForm.form.valid">Submit</button>
 	</form>
+	</div>
 	</div>
 </section>

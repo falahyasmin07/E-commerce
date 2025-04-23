@@ -6,7 +6,8 @@
 
 #contact-us h2 {
   font-size: 2em;
-  margin-bottom: 20px;
+	margin: 20px auto;
+	align: center;
 }
 
 #contact-us {
@@ -19,8 +20,18 @@
 }
 
 #contact-us input {
+	border: 1px solid #ccc;
+	border-radius: 8px;
 	width: 100%;
-	padding: 5px;
+	padding: 10px;
+}
+
+.contact-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1400px;
+	margin:auto;
 }
 
 .contact-details {
@@ -29,12 +40,10 @@
 
 .contact-form {
 	display: grid;
-	justify-content: center;
+	max-width: 740px;
 }
 
-.map-button {
-	padding: 5px 8px;
-	margin-top: 1rem;
-	border-radius: 8px;
-	transition: background-color 0.3s;
+.contact-info {
+	flex: 1;
+	min-width: 300px;
 }
