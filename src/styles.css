@@ -54,6 +54,22 @@ h2 {
   margin-bottom: auto; /* Push description to the top */
 }
 
+.card-features h4 {
+	margin: 20px 40px;
+	text-align: left;
+	font-size: 1.2em;
+}
+
+.card-features ul {
+	list-style-type: none;
+	text-align: justify;
+}
+
+.card-features li {
+	margin: auto 30px auto 0px;
+	padding: 10px 2px;
+}
+
 .card-frame {
 	background-color: var(--card-frame-background);
 	padding: 60px 20px;
