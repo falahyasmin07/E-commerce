@@ -6,7 +6,7 @@ import { HeroComponent } from 'src/app/components/hero/hero.component';
 import { OffersComponent } from 'src/app/components/offers/offers.component';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-page-home',
 	imports: [
   		AboutUsComponent,
 		ContactUsComponent,
@@ -14,9 +14,9 @@ import { OffersComponent } from 'src/app/components/offers/offers.component';
 		OffersComponent,
 		SolutionsComponent,
 	],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  templateUrl: './home.page.html',
+  styleUrl: './home.page.css'
 })
-export class HomeComponent {
+export class HomePage {
 
 }
