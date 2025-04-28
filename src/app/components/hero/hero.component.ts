@@ -8,6 +8,7 @@ import { Component, Input, OnInit, OnDestroy, ViewEncapsulation } from '@angular
   encapsulation: ViewEncapsulation.None
 })
 export class HeroComponent {
+	@Input() title: string = '';
 	@Input() images: string[] = [];
 	@Input() path: string = 'assets/images/{image}';
 	@Input() alt:string = '';
