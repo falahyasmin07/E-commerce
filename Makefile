@@ -38,7 +38,10 @@ ${${MODULE}_OUTPUT}/%:${DIR}/%
 	cp -r $< $(dir $@)
 
 ${MODULE}_sync:${${MODULE}_OUTPUT}
-	echo 'cd /home/edgepub \
+ifneq (${TARGET},)
+	sed -e 's@<base href="/">@<base href="$(patsubst www/%,/%/www/,${TARGET})">@' -i $</index.html
+endif
+	echo 'cd /home/edgepub/${TARGET} \
 	put -pR $< \
 	rename www www-$(shell date -Is).old \
 	rename $(notdir $<) www \

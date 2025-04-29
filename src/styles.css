@@ -79,6 +79,52 @@ h2 {
 	box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Even more pronounced shadow */
 }
 
+.card-frame.simple {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-radius: 0px;
+	padding: 0px 0px 0px 20px;
+	margin: 40px 0px 0px 0px;
+}
+
+@media (max-width: 788px) {
+	.card-frame {
+		flex-direction: column;
+	}
+}
+
+.card-frame.simple div {
+	max-width: 45vw;
+	min-height: 216px;
+	min-width: 384px;
+}
+
+.card-frame.simple img {
+	width: 100%;
+}
+
+.card-frame.dark {
+	background: linear-gradient(#172331, #3b4e66);
+}
+
+.card-frame.dark, .card-frame.dark h2, .card-frame.dark p {
+	color: white; /* use light text color on dark background sections */
+}
+
+.card-frame.reverse {
+	/* Nothing to do on small screens */
+}
+
+@media (min-width: 789px) {
+	.card-frame.reverse {
+		flex-direction: row-reverse; /* Reverse elements order on big screens */
+		padding: 0px 20px 0px 0px; /* Reverse padding between left and right */
+	}
+}
+
 .framework-phase {
   display: flex;
   flex-direction: column;
