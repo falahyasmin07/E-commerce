@@ -37,6 +37,6 @@ export class ContactUsComponent implements OnInit {
 	}
 
 	openMap() {
-		window.open('https://www.google.com/maps/place/2+Rue+Jean+Mermoz,+91080+%C3%89vry-Courcouronnes', 'Edge Pulsar Headquarters');
+		window.open('https://www.google.com/maps/place/18+avenue+René+Descartes,+91080+Évry-Courcouronnes', 'Edge Pulsar Headquarters');
 	}
 }
