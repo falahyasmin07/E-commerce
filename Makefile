@@ -20,7 +20,7 @@ ${MODULE}_clean:
 ${MODULE}_run:
 	npm run start
 
-${MODULE}_OUTPUT=${DIR}/dist/edge-pulsar-website/browser
+${MODULE}_OUTPUT=${DIR}/dist/edge-pulsar-website
 
 ${DIR}:${DIR}/dist
 ${DIR}/dist:$(addprefix ${${MODULE}_OUTPUT}/,index.html .htaccess actions)
