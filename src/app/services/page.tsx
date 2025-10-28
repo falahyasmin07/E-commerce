@@ -41,25 +41,107 @@ import {
 } from "@/components/ui/tabs"
 
 
+
 export default function ServicesPage() {
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 via-background to-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <Badge variant="secondary">Our Services</Badge>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-balance">
-              Founder-Led Technology Advisory & Implementation
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
-              Edge Pulsar combines strategic technology advisory with hands-on implementation expertise—delivering
-              chip-to-cloud solutions through a structured consulting methodology. Every engagement is founder-led,
-              ensuring senior expertise guides both strategic decisions and technical execution.
-            </p>
+      
+      {/* Enhanced Hero Section - Visual Below Text */}
+      <section className="relative py-20 md:py-32 overflow-hidden">
+        {/* Background gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700" />
+        
+        {/* Decorative blur elements - subtler */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-64 h-64 bg-cyan-400 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-300 rounded-full blur-3xl"></div>
+        </div>
+
+        {/* Grid pattern */}
+        <div className="absolute inset-0 opacity-5 bg-[linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+
+        {/* Content Container */}
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto space-y-12">
+            
+            {/* Text Content - TOP */}
+            <div className="text-center space-y-6">
+              <Badge className="bg-white/20 text-white border-white/30 hover:bg-white/30">
+                Our Services
+              </Badge>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white drop-shadow-lg">
+                Founder-Led Technology Advisory & Implementation
+              </h1>
+              <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto">
+                Edge Pulsar combines strategic technology advisory with hands-on implementation expertise—delivering
+                chip-to-cloud solutions through a structured consulting methodology.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                <Button size="lg" asChild className="bg-white text-blue-600 hover:bg-gray-100 shadow-xl">
+                  <Link href="/contact">
+                    Schedule Consultation
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Visual Flow - BELOW TEXT - Now Clearly Visible */}
+            <div className="relative">
+              {/* White background card for contrast */}
+              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
+                  
+                  {/* Chip */}
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/30">
+                      <Cpu className="w-12 h-12 text-white drop-shadow-lg" />
+                    </div>
+                    <span className="text-sm font-semibold text-white drop-shadow">Silicon</span>
+                  </div>
+
+                  {/* Arrow */}
+                  <ArrowRight className="w-10 h-10 text-white/80 rotate-90 md:rotate-0" />
+
+                  {/* Edge */}
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="w-20 h-20 bg-purple-400/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-purple-300/30">
+                      <Settings className="w-12 h-12 text-purple-100 drop-shadow-lg" />
+                    </div>
+                    <span className="text-sm font-semibold text-white drop-shadow">Edge</span>
+                  </div>
+
+                  {/* Arrow */}
+                  <ArrowRight className="w-10 h-10 text-white/80 rotate-90 md:rotate-0" />
+
+                  {/* Connectivity */}
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="w-20 h-20 bg-cyan-400/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-cyan-300/30">
+                      <Wifi className="w-12 h-12 text-cyan-100 drop-shadow-lg" />
+                    </div>
+                    <span className="text-sm font-semibold text-white drop-shadow">Connectivity</span>
+                  </div>
+
+
+                  {/* Arrow */}
+                  <ArrowRight className="w-10 h-10 text-white/80 rotate-90 md:rotate-0" />
+
+                  {/* Cloud */}
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/30">
+                      <Cloud className="w-12 h-12 text-white drop-shadow-lg" />
+                    </div>
+                    <span className="text-sm font-semibold text-white drop-shadow">Cloud</span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
+
 
       {/* Quick Navigation Bar */}
       <section className="sticky top-0 z-40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
