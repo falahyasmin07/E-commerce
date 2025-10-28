@@ -156,34 +156,60 @@ export default function HomePage() {
 </section>
 
 
-      {/* Two Core Consulting Offers with Visual Placeholders */}
-      <section className="py-16 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Two Core Consulting Offers
-            </h2>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              Specialized chip-to-cloud consulting tailored to your market segment
-            </p>
-          </div>
+     {/* Two Core Consulting Offers - Improved */}
+    <section className="py-16 px-6 bg-gray-50">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Two Core Consulting Offers
+          </h2>
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+            Specialized chip-to-cloud consulting tailored to your market segment
+          </p>
+        </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+          
+          {/* Offer 1: Silicon-to-Cloud Acceleration - WITH ILLUSTRATION BACKGROUND */}
+          <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
             
-            {/* Offer 1: Silicon-to-Cloud Acceleration */}
-            <div className="bg-white p-8 rounded-xl shadow-sm border-l-4 border-cyan-500 hover:shadow-lg transition-shadow duration-250 flex flex-col">
+            {/* Background Illustration Section */}
+            <div className="relative h-48 overflow-hidden">
+              {/* Background Image */}
+              <Image
+                src="silicon-to-cloud.png"  // Your generated illustration
+                alt="Silicon to Cloud Illustration"
+                fill
+                className="object-cover"
+                priority
+              />
               
-              {/* Visual Placeholder for Offer 1 */}
-              <div className="mb-6 bg-gradient-to-br from-cyan-50 to-blue-50 rounded-lg p-6 flex items-center justify-center h-32 border border-cyan-100">
-                <div className="flex items-center gap-3">
-                  <Cpu className="w-12 h-12 text-cyan-600 animate-pulse" />
-                  <ArrowRight className="w-8 h-8 text-gray-400" />
-                  <Network className="w-10 h-10 text-blue-500" />
-                  <ArrowRight className="w-8 h-8 text-gray-400" />
-                  <Cloud className="w-12 h-12 text-blue-600 animate-pulse" />
+              {/* Gradient Overlay - lighter for illustrations */}
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/80 via-blue-500/75 to-blue-600/80" />
+              
+              {/* Icon Flow Overlay */}
+              <div className="relative h-full flex items-center justify-center z-10">
+                <div className="flex items-center gap-4">
+                  <div className="flex flex-col items-center">
+                    <Cpu className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Chip</span>
+                  </div>
+                  <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
+                  <div className="flex flex-col items-center">
+                    <Network className="w-14 h-14 text-cyan-50 drop-shadow-lg" />
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Connect</span>
+                  </div>
+                  <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
+                  <div className="flex flex-col items-center">
+                    <Cloud className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Cloud</span>
+                  </div>
                 </div>
               </div>
+            </div>
 
+            {/* Content */}
+            <div className="p-8 flex flex-col flex-grow">
               <div className="mb-4">
                 <span className="inline-block bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-sm font-semibold">
                   For Device & Chip Makers
@@ -195,48 +221,72 @@ export default function HomePage() {
               </h3>
 
               <p className="text-gray-700 mb-6 flex-grow">
-                Strategic technology consulting combined with hands-on delivery specifically designed for hardware startups and innovators—accelerate your journey from concept to production with founder-led reference design development, security-first embedded solutions, multi-protocol connectivity integration, chipset optimization, and production-ready architecture blueprints. Compress your time-to-market while avoiding costly redesigns and technical debt.
+                Accelerate your journey from concept to production with founder-led reference design development, 
+                security-first embedded solutions, and production-ready architecture blueprints.
               </p>
 
               <div className="mb-6 text-gray-700 space-y-2">
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>Compress development cycles from concept to production</span>
+                  <span>First-time-right architecture</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>First-time-right implementations reducing costly redesigns</span>
+                  <span>Compress development cycles</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>Accelerate certification (FCC, CE, CRA)</span>
-                </div>
-                <div className="flex items-start">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>Production-ready reference designs</span>
+                  <span>Compliance built in — CRA, FCC, CE certifications Accelerated</span>
                 </div>
               </div>
 
-              <Link href="/services#silicon-to-scale" className="inline-flex items-center text-cyan-600 font-semibold hover:text-cyan-700 mt-auto">
+              <Link href="/services#silicon-to-scale" className="inline-flex items-center text-cyan-600 font-semibold hover:text-cyan-700 mt-auto group">
                 Explore Silicon-to-Cloud Services
-                <ArrowRight className="w-5 h-5 ml-2" />
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
+          </div>
 
-            {/* Offer 2: Edge Infrastructure Integration */}
-            <div className="bg-white p-8 rounded-xl shadow-sm border-l-4 border-purple-500 hover:shadow-lg transition-shadow duration-250 flex flex-col">
+          {/* Offer 2: Edge Infrastructure Integration - WITH ILLUSTRATION BACKGROUND */}
+          <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
+            
+            {/* Background Illustration Section */}
+            <div className="relative h-48 overflow-hidden">
+              {/* Background Image */}
+              <Image
+                src="edge-infrastructure.png"  // Your generated illustration
+                alt="Edge Infrastructure Illustration"
+                fill
+                className="object-cover"
+                priority
+              />
               
-              {/* Visual Placeholder for Offer 2 */}
-              <div className="mb-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-6 flex items-center justify-center h-32 border border-purple-100">
-                <div className="flex items-center gap-3">
-                  <Factory className="w-12 h-12 text-purple-600 animate-pulse" />
-                  <ArrowRight className="w-8 h-8 text-gray-400" />
-                  <Network className="w-10 h-10 text-purple-500" />
-                  <ArrowRight className="w-8 h-8 text-gray-400" />
-                  <Cloud className="w-12 h-12 text-indigo-600 animate-pulse" />
+              {/* Gradient Overlay - lighter for illustrations */}
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/80 via-indigo-500/75 to-purple-600/80" />
+              
+              {/* Icon Flow Overlay */}
+              <div className="relative h-full flex items-center justify-center z-10">
+                <div className="flex items-center gap-4">
+                  <div className="flex flex-col items-center">
+                    <Factory className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Edge</span>
+                  </div>
+                  <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
+                  <div className="flex flex-col items-center">
+                    <Network className="w-14 h-14 text-purple-50 drop-shadow-lg" />
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Integrate</span>
+                  </div>
+                  <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
+                  <div className="flex flex-col items-center">
+                    <Cloud className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Cloud</span>
+                  </div>
                 </div>
               </div>
+            </div>
 
+            {/* Content */}
+            <div className="p-8 flex flex-col flex-grow">
               <div className="mb-4">
                 <span className="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">
                   For Industrial Operators
@@ -248,36 +298,35 @@ export default function HomePage() {
               </h3>
 
               <p className="text-gray-700 mb-6 flex-grow">
-                Bridging operational technology (OT) and information technology (IT) through secure, scalable integration across manufacturing plants, energy systems, and critical infrastructure. Enable real-time data flow from factory floor equipment, energy management systems, and building automation to cloud platforms for advanced analytics, predictive maintenance, and intelligent automation—optimizing both production efficiency and energy consumption.
+                Bridge OT and IT through secure, scalable integration across manufacturing, energy systems, 
+                and critical infrastructure—enabling real-time data flow and intelligent automation.
               </p>
 
               <div className="mb-6 text-gray-700 space-y-2">
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>Enhanced operational efficiency and reduced downtime</span>
+                  <span>Reduce downtime and boost efficiency</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>Improved data visibility and actionable insights</span>
+                  <span>Real-time visibility and insights</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>Secure and compliant OT/IT infrastructure</span>
-                </div>
-                <div className="flex items-start">
-                  <CheckCircle2 className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>Foundation for industrial automation and Edge AI</span>
+                  <span>Secure, compliant OT/IT convergence</span>
                 </div>
               </div>
 
-              <Link href="/services#ot-to-cloud" className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 mt-auto">
+              <Link href="/services#ot-to-cloud" className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 mt-auto group">
                 Explore Edge Infrastructure Services
-                <ArrowRight className="w-5 h-5 ml-2" />
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
 
       {/* Four Pillars Preview */}
       <section className="py-8 bg-muted/50">
