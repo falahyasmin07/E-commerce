@@ -80,7 +80,7 @@ export default function HomePage() {
                   size="lg"
                   className="text-base px-8 py-6 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 text-white hover:from-blue-600 hover:to-cyan-700 shadow-xl shadow-blue-500/20 animate-pulse"
                 >
-                  <Link href="/contact">
+                  <Link href="#mission">
                     Start Discovery
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
@@ -104,7 +104,7 @@ export default function HomePage() {
       </section>
 
       {/* Edge Pulsar Mission Section - Lighter Gray Theme */}
-<section className="py-16 px-6 bg-gradient-to-br from-gray-100 via-slate-50 to-blue-50 relative overflow-hidden border-y border-gray-200">
+<section id="mission" className="py-16 px-6 bg-gradient-to-br from-gray-100 via-slate-50 to-blue-50 relative overflow-hidden border-y border-gray-200">
   {/* Decorative background elements - lighter */}
   <div className="absolute inset-0 opacity-30">
     <div className="absolute top-10 left-10 w-64 h-64 bg-blue-200 rounded-full blur-3xl"></div>

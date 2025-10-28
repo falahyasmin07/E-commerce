@@ -75,7 +75,7 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-4">
           <Button asChild className="hidden md:inline-flex">
-            <Link href="/contact">Start Discovery</Link>
+            <Link href="/#mission">Start Discovery</Link>
           </Button>
 
           <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -140,7 +140,7 @@ export function SiteHeader() {
               Contact
             </Link>
             <Button asChild className="w-full">
-              <Link href="/contact">Start Discovery</Link>
+              <Link href="/#mission">Start Discovery</Link>
             </Button>
           </nav>
         </div>
