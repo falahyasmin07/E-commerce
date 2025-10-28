@@ -70,7 +70,7 @@ export default function HomePage() {
               <div className="space-y-4">
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight text-white">
                   Accelerate Chip-to-Cloud:{" "}
-                  <span className="block">Innovation to Operations with Founder-Led Expertise</span>
+                  <span className="block">Technology Advisory with Founder-Led Expertise</span>
                 </h1>
               </div>
 
