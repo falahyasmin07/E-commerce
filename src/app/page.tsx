@@ -40,11 +40,12 @@ export default function HomePage() {
         </Link>
       </div>
 
-      {/* Hero Section - DARK BLUE (Matching microchip-closeup.jpg) */}
+      {/* HERO SECTION - Enhanced Visuals */}
       <section className="relative overflow-hidden py-20 md:py-32">
         {/* Dark blue base background */}
         <div className="absolute inset-0 bg-[#0a1628]" />
-        
+
+
         {/* Chip image as background layer */}
         <div className="absolute inset-0 opacity-30">
           <Image
@@ -55,36 +56,29 @@ export default function HomePage() {
             priority
           />
         </div>
-        
-        {/* Dark blue gradient overlay for depth */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0a1628]/90 via-[#1a2744]/70 to-[#0a1628]/90" />
-        
-        {/* Subtle grid pattern */}
+
+        {/* Gradient overlay for depth */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0a1628]/90 via-[#1a2744]/70 to-[#0a1628]/90 animate-gradient-x" />
+
+        {/* Grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#4a6ea808_1px,transparent_1px),linear-gradient(to_bottom,#4a6ea808_1px,transparent_1px)] bg-[size:4rem_4rem]" />
 
-        {/* CHANGED: Added mx-auto to center container */}
+        {/* Main Content */}
         <div className="container mx-auto relative z-10">
-          <div className="max-w-4xl mx-auto">
-            {/* CHANGED: Removed lg:text-left, made everything centered */}
-            <div className="space-y-6 text-center animate-fade-in-up">
+          <div className="max-w-4xl mx-auto animate-fade-in-up">
+            <div className="space-y-6 text-center">
               <div className="space-y-4">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight text-white">
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight text-white drop-shadow-lg">
                   Accelerate Chip-to-Cloud:{" "}
                   <span className="block">Technology Advisory with Founder-Led Expertise</span>
                 </h1>
               </div>
-
-              <p className="text-xl md:text-2xl text-blue-100/90 leading-relaxed text-pretty">
-                Strategic advisory for device makers and industrial enterprises, transforming embedded systems into
-                secure, scalable cloud architectures, compliance-ready.
-              </p>
-
-              {/* CHANGED: Removed lg:justify-start, centered button */}
+              {/* Animated Pulse CTA */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <Button
                   asChild
                   size="lg"
-                  className="text-base px-8 py-6 bg-blue-500 text-white hover:bg-blue-600 shadow-xl shadow-blue-500/20"
+                  className="text-base px-8 py-6 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 text-white hover:from-blue-600 hover:to-cyan-700 shadow-xl shadow-blue-500/20 animate-pulse"
                 >
                   <Link href="/contact">
                     Start Discovery
@@ -92,26 +86,77 @@ export default function HomePage() {
                   </Link>
                 </Button>
               </div>
-              
-              {/* CHANGED: Removed lg:text-left */}
               <p className="text-sm text-blue-200/70 mt-2 text-center">
                 Get your strategic assessment and architecture roadmap
               </p>
-              
-              {/* CHANGED: Removed lg:justify-start */}
               <div className="flex justify-center pt-2">
                 <Link href="/services" className="text-blue-100/80 hover:text-white hover:underline text-base">
                   Explore Four-Pillar Methodology
                 </Link>
               </div>
             </div>
+            {/* Animated scroll-down indicator */}
+            <div className="flex justify-center mt-12">
+              <ArrowRight className="animate-bounce h-8 w-8 text-blue-400 rotate-90" />
+            </div>
           </div>
         </div>
       </section>
 
+      {/* Edge Pulsar Mission Section - Lighter Gray Theme */}
+<section className="py-16 px-6 bg-gradient-to-br from-gray-100 via-slate-50 to-blue-50 relative overflow-hidden border-y border-gray-200">
+  {/* Decorative background elements - lighter */}
+  <div className="absolute inset-0 opacity-30">
+    <div className="absolute top-10 left-10 w-64 h-64 bg-blue-200 rounded-full blur-3xl"></div>
+    <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-200 rounded-full blur-3xl"></div>
+  </div>
+
+  {/* Subtle dot pattern */}
+  <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_1px_1px,rgb(148_163_184_/_0.15)_1px,transparent_0)] bg-[size:24px_24px]" />
+
+  <div className="max-w-5xl mx-auto relative z-10">
+    <div className="text-center mb-8">
+      {/* Icon row */}
+      <div className="flex justify-center items-center gap-4 mb-6">
+        <Cpu className="w-10 h-10 text-blue-600 animate-pulse" />
+        <ArrowRight className="w-8 h-8 text-gray-400" />
+        <Shield className="w-10 h-10 text-cyan-600" />
+        <ArrowRight className="w-8 h-8 text-gray-400" />
+        <Cloud className="w-10 h-10 text-blue-600 animate-pulse" />
+      </div>
+
+    {/* Mission headline */}
+    <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-gray-900">
+      Our Mission
+    </h2>
+
+    {/* Mission statement - covers both offers */}
+    <p className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto font-medium mb-6 text-gray-800">
+      Empower <span className="font-semibold text-gray-900">device makers</span> and 
+      <span className="font-semibold text-gray-900"> industrial enterprises</span> to accelerate their chip-to-cloud journey—from 
+      silicon development to edge infrastructure integration—with 
+      <span className="font-bold text-blue-600"> secure, production-ready cloud architectures</span>.
+    </p>
+
+    {/* Supporting text */}
+    <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+      Most consultancies master either hardware or cloud—not both. We bridge that critical gap with 
+      founder-led expertise across embedded systems, industrial IoT, security frameworks, and cloud platforms.
+    </p>
+    </div>
+
+    {/* Visual divider with founder credential badge */}
+    <div className="flex justify-center mt-10">
+      <div className="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full border-2 border-blue-200 shadow-md hover:shadow-lg hover:border-blue-300 transition-all">
+        <Lightbulb className="w-5 h-5 text-blue-600" />
+        <span className="text-sm font-semibold text-gray-900">40+ Years Combined Founder Expertise</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-      {/* Two Core Consulting Offers */}
+      {/* Two Core Consulting Offers with Visual Placeholders */}
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -123,13 +168,19 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* FIXED: Added items-stretch to ensure equal heights */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
-            {/* Offer 1: Silicon-to-Scale Acceleration */}
+            
+            {/* Offer 1: Silicon-to-Cloud Acceleration */}
             <div className="bg-white p-8 rounded-xl shadow-sm border-l-4 border-cyan-500 hover:shadow-lg transition-shadow duration-250 flex flex-col">
-              <div className="mb-6">
-                <div className="w-14 h-14 flex items-center justify-center bg-cyan-50 rounded-lg">
-                  <Cpu className="w-8 h-8 text-cyan-600" />
+              
+              {/* Visual Placeholder for Offer 1 */}
+              <div className="mb-6 bg-gradient-to-br from-cyan-50 to-blue-50 rounded-lg p-6 flex items-center justify-center h-32 border border-cyan-100">
+                <div className="flex items-center gap-3">
+                  <Cpu className="w-12 h-12 text-cyan-600 animate-pulse" />
+                  <ArrowRight className="w-8 h-8 text-gray-400" />
+                  <Network className="w-10 h-10 text-blue-500" />
+                  <ArrowRight className="w-8 h-8 text-gray-400" />
+                  <Cloud className="w-12 h-12 text-blue-600 animate-pulse" />
                 </div>
               </div>
 
@@ -172,11 +223,17 @@ export default function HomePage() {
               </Link>
             </div>
 
-            {/* Offer 2: OT-to-Cloud Integration */}
+            {/* Offer 2: Edge Infrastructure Integration */}
             <div className="bg-white p-8 rounded-xl shadow-sm border-l-4 border-purple-500 hover:shadow-lg transition-shadow duration-250 flex flex-col">
-              <div className="mb-6">
-                <div className="w-14 h-14 flex items-center justify-center bg-purple-50 rounded-lg">
-                  <Factory className="w-8 h-8 text-purple-600" />
+              
+              {/* Visual Placeholder for Offer 2 */}
+              <div className="mb-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-6 flex items-center justify-center h-32 border border-purple-100">
+                <div className="flex items-center gap-3">
+                  <Factory className="w-12 h-12 text-purple-600 animate-pulse" />
+                  <ArrowRight className="w-8 h-8 text-gray-400" />
+                  <Network className="w-10 h-10 text-purple-500" />
+                  <ArrowRight className="w-8 h-8 text-gray-400" />
+                  <Cloud className="w-12 h-12 text-indigo-600 animate-pulse" />
                 </div>
               </div>
 
