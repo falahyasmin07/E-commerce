@@ -37,6 +37,9 @@ ${${MODULE}_OUTPUT}/%:${DIR}/%
 	${RM} -r $@
 	cp -r $< $(dir $@)
 
+serve:${DIR}
+	cd $< && npm run dev
+
 ${MODULE}_sync:${${MODULE}_OUTPUT}
 ifneq (${TARGET},)
 	sed -e 's@<base href="/">@<base href="$(patsubst www/%,/%/www/,${TARGET})">@' -i $</index.html

@@ -253,15 +253,9 @@ export default function AboutPage() {
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button variant="outline" size="sm" asChild className="w-full">
-                      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                      <a href="https://linkedin.com/in/riadh-berhouma-b9b4b01" target="_blank" rel="noopener noreferrer">
                         <Linkedin className="h-4 w-4 mr-2" />
                         LinkedIn
-                      </a>
-                    </Button>
-                    <Button variant="outline" size="sm" asChild className="w-full">
-                      <a href="mailto:riadh@edgepulsar.com">
-                        <Mail className="h-4 w-4 mr-2" />
-                        Email
                       </a>
                     </Button>
                   </div>
@@ -335,15 +329,9 @@ export default function AboutPage() {
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button variant="outline" size="sm" asChild className="w-full">
-                      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                      <a href="https://linkedin.com/in/mazen-neifer" target="_blank" rel="noopener noreferrer">
                         <Linkedin className="h-4 w-4 mr-2" />
                         LinkedIn
-                      </a>
-                    </Button>
-                    <Button variant="outline" size="sm" asChild className="w-full">
-                      <a href="mailto:mazen@edgepulsar.com">
-                        <Mail className="h-4 w-4 mr-2" />
-                        Email
                       </a>
                     </Button>
                   </div>
