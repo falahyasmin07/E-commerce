@@ -36,7 +36,7 @@ export default function HomePage() {
       <div className="bg-yellow-500/10 border-b border-yellow-500/20 text-yellow-700 dark:text-yellow-300 py-2 px-4 text-center text-sm font-medium">
         <Link href="/contact" className="hover:underline">
           <Info className="inline h-4 w-4 mr-2" />
-          ⚠️ EU Compliance Deadlines: CRA Dec 2027 | NIS2 Enforced Oct 2024 → Assess Readiness
+          ⚠️ EU Compliance Deadlines: CRA Dec 2027 | NIS2 in force → Assess Readiness Now
         </Link>
       </div>
 
@@ -69,8 +69,8 @@ export default function HomePage() {
             <div className="space-y-6 text-center">
               <div className="space-y-4">
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight text-white drop-shadow-lg">
-                  Accelerate Chip-to-Cloud:{" "}
-                  <span className="block">Technology Advisory with Founder-Led Expertise</span>
+                  Chip-to-Cloud Advisory{" "}
+                  <span className="block">Build Faster. Run Reliably. Comply Continuously.</span>
                 </h1>
               </div>
               {/* Animated Pulse CTA */}
@@ -87,11 +87,11 @@ export default function HomePage() {
                 </Button>
               </div>
               <p className="text-sm text-blue-200/70 mt-2 text-center">
-                Get your strategic assessment and architecture roadmap
+                Strategic assessment, validated architecture, and compliance roadmap
               </p>
               <div className="flex justify-center pt-2">
                 <Link href="/services" className="text-blue-100/80 hover:text-white hover:underline text-base">
-                  Explore Four-Pillar Methodology
+                  See our two core offers: Silicon-to-Cloud & Resilient Edge →
                 </Link>
               </div>
             </div>
@@ -134,7 +134,7 @@ export default function HomePage() {
           <p className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto font-medium mb-6 text-gray-800">
           Empower <span className="font-semibold text-gray-900">device makers</span> and 
           <span className="font-semibold text-gray-900"> industrial enterprises</span> to accelerate their chip-to-cloud journey—from 
-          silicon development to resilient edge operations—with 
+          silicon development to resilient edge deployment—with 
           <span className="font-bold text-blue-600"> secure, production-ready cloud architectures</span>.
         </p>
                   {/* Supporting text */}
@@ -173,7 +173,6 @@ export default function HomePage() {
             
             {/* Background Illustration Section */}
             <div className="relative h-48 overflow-hidden">
-              {/* Background Image */}
               <Image
                 src="silicon-to-cloud.png"
                 alt="Silicon to Cloud Illustration"
@@ -181,11 +180,7 @@ export default function HomePage() {
                 className="object-cover"
                 priority
               />
-              
-              {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/80 via-blue-500/75 to-blue-600/80" />
-              
-              {/* Icon Flow Overlay */}
               <div className="relative h-full flex items-center justify-center z-10">
                 <div className="flex items-center gap-4">
                   <div className="flex flex-col items-center">
@@ -226,15 +221,21 @@ export default function HomePage() {
               <div className="mb-6 text-gray-700 space-y-2">
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>First-time-right architecture</span>
+                  <span>
+                    <strong>Reference design acceleration:</strong> Validated architectures and PoC builds in weeks
+                  </span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>Compress development cycles</span>
+                  <span>
+                    <strong>Compliance built-in:</strong> CRA, FCC, CE pathways at design time, not later
+                  </span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>Compliance built in — CRA, FCC, CE certifications Accelerated</span>
+                  <span>
+                    <strong>Production-ready blueprints:</strong> Architecture records, security, and cloud integration
+                  </span>
                 </div>
               </div>
 
@@ -304,21 +305,15 @@ export default function HomePage() {
               <div className="mb-6 text-gray-700 space-y-2">
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>
-                    Prevent costly downtime
-                  </span>
+                  <span><strong>SLO & runbook enablement:</strong> Define uptime targets and autonomous response policies</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>
-                    Continuous compliance
-                  </span>
+                  <span><strong>Continuous compliance:</strong> IEC 62443, CRA, NIS2 evidence streamed from edge</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>
-                    Unified observability
-                  </span>
+                  <span><strong>SOC-ready observability:</strong> Unified operations, cybersecurity, and compliance dashboard</span>
                 </div>
               </div>
 
@@ -807,12 +802,11 @@ export default function HomePage() {
       <section className="py-16 px-6 bg-gray-50 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Ready to Accelerate Your Chip-to-Cloud Journey?
+            Ready to Build Faster and Operate More Reliably?
           </h2>
           <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
             Start with a comprehensive strategic assessment to validate your architecture, technology choices, and
-            roadmap—or explore our complete range of consulting services including pilot builds, Lab validation days,
-            and CRA compliance workshops.
+            roadmap—or explore our complete range of consulting.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
