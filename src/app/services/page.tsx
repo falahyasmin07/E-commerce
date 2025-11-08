@@ -25,6 +25,7 @@ import {
   Code,
   Activity,
   Lightbulb,
+  Zap,
   Search
 } from "lucide-react"
 import {
@@ -314,141 +315,138 @@ export default function ServicesPage() {
           </Card>
         </div>
 
-        {/* Offer 2: Edge Infrastructure Integration */}
-        <div id="ot-to-cloud" className="scroll-mt-20">
-          <Card className="border-2 border-purple-200 overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-            
-            {/* Background Image Section */}
-            <div className="relative h-48 overflow-hidden">
-              <Image
-                src="/edge-infrastructure.png"
-                alt="Edge Infrastructure Illustration"
-                fill
-                className="object-cover"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/80 via-indigo-500/75 to-purple-600/80" />
-              <div className="relative h-full flex items-center justify-center z-10">
-                <div className="flex items-center gap-4">
-                  <div className="flex flex-col items-center">
-                    <Factory className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Edge</span>
-                  </div>
-                  <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
-                  <div className="flex flex-col items-center">
-                    <Settings className="w-14 h-14 text-purple-50 drop-shadow-lg" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Integrate</span>
-                  </div>
-                  <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
-                  <div className="flex flex-col items-center">
-                    <Cloud className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Cloud</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Card Header */}
-            <CardHeader className="space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="h-12 w-12 rounded-lg bg-purple-100 flex items-center justify-center">
-                  <Factory className="h-6 w-6 text-purple-600" />
-                </div>
-                <Badge variant="secondary" className="bg-purple-100 text-purple-700">
-                  For Industrial Operators
-                </Badge>
-              </div>
-              
-              <CardTitle className="text-2xl md:text-3xl">Edge Infrastructure Integration</CardTitle>
-              
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="outline" className="bg-[#8B5CF6]/10 text-[#8B5CF6] border-[#8B5CF6]/30">
-                  <Settings className="w-3 h-3 mr-1" />
-                  Orchestrate
-                </Badge>
-                <Badge variant="outline" className="bg-[#10B981]/10 text-[#10B981] border-[#10B981]/30">
-                  <Activity className="w-3 h-3 mr-1" />
-                  Sense
-                </Badge>
-                <Badge variant="outline" className="bg-[#EF4444]/10 text-[#EF4444] border-[#EF4444]/30">
-                  <ShieldCheck className="w-3 h-3 mr-1" />
-                  Secure
-                </Badge>
-              </div>
-
-              <p className="text-muted-foreground">
-                <strong>Advisory & Implementation:</strong> Bridging OT and IT through secure, scalable integration 
-                solutions. Enable real-time data flow from factory equipment to cloud platforms for advanced 
-                analytics and intelligent automation.
-              </p>
-            </CardHeader>
-            
-            {/* Condensed Visible Content */}
-            <CardContent className="flex flex-col flex-1 space-y-6">
-              {/* What We Do */}
-              <div>
-                <h3 className="font-bold text-lg mb-3 flex items-center">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                  What We Do
-                </h3>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">OT infrastructure assessment & integration strategy</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Secure data pipelines (MQTT, OPC UA, Modbus) from edge to cloud</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Edge computing architectures for real-time processing</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Cloud platform integration & analytics deployment</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Industrial security frameworks (IEC 62443, NIS2) & monitoring</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Outcomes */}
-              <div>
-                <h3 className="font-bold text-lg mb-3 flex items-center">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                  Key Outcomes
-                </h3>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Enhanced operational efficiency and reduced downtime</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Real-time visibility into OT data for actionable insights</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Secure, compliant OT/IT convergence for Industry 4.0</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* CTA Button */}
-              <div className="mt-auto pt-4">
-                <Button asChild className="w-full bg-purple-600 hover:bg-purple-700">
-                  <Link href="/contact">
-                    Schedule Consultation
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+        {/* Offer 2: Resilient Edge */}
+<div id="resilient-edge" className="scroll-mt-20">
+  <Card className="border-2 border-purple-200 overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+    
+    {/* Background Image Section */}
+    <div className="relative h-48 overflow-hidden">
+      <Image
+        src="/edge-infrastructure.png"
+        alt="Resilient Edge Illustration"
+        fill
+        className="object-cover"
+        priority
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/80 via-indigo-500/75 to-purple-600/80" />
+      <div className="relative h-full flex items-center justify-center z-10">
+        <div className="flex items-center gap-4">
+          <div className="flex flex-col items-center">
+            <Radar className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
+            <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Detect</span>
+          </div>
+          <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
+          <div className="flex flex-col items-center">
+            <Zap className="w-14 h-14 text-purple-50 drop-shadow-lg" />
+            <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Act</span>
+          </div>
+          <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
+          <div className="flex flex-col items-center">
+            <ShieldCheck className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
+            <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Comply</span>
+          </div>
         </div>
+      </div>
+    </div>
+
+    {/* Card Header */}
+    <CardHeader className="space-y-4">
+      <div className="flex items-center gap-3">
+        <div className="h-12 w-12 rounded-lg bg-purple-100 flex items-center justify-center">
+          <ShieldCheck className="h-6 w-6 text-purple-600" />
+        </div>
+        <Badge variant="secondary" className="bg-purple-100 text-purple-700">
+          For Industrial Operators
+        </Badge>
+      </div>
+      
+      <CardTitle className="text-2xl md:text-3xl">Resilient Edge</CardTitle>
+      
+      <div className="flex flex-wrap gap-2">
+        <Badge variant="outline" className="bg-[#8B5CF6]/10 text-[#8B5CF6] border-[#8B5CF6]/30">
+          <Activity className="w-3 h-3 mr-1" />
+          Observe
+        </Badge>
+        <Badge variant="outline" className="bg-[#10B981]/10 text-[#10B981] border-[#10B981]/30">
+          <Zap className="w-3 h-3 mr-1" />
+          Respond
+        </Badge>
+        <Badge variant="outline" className="bg-[#EF4444]/10 text-[#EF4444] border-[#EF4444]/30">
+          <ShieldCheck className="w-3 h-3 mr-1" />
+          Comply
+        </Badge>
+      </div>
+
+      <p className="text-muted-foreground">
+        <strong>Edge Operations & Governance:</strong> Secure, reliable edge operations for critical industrial OT. 
+        Keep production running, maintain continuous CRA/NIS2 compliance, and integrate with enterprise SOC—
+        without rebuilds or complexity.
+      </p>
+    </CardHeader>
+    
+    {/* Condensed Visible Content */}
+    <CardContent className="flex flex-col flex-1 space-y-6">
+      {/* What We Do */}
+      <div>
+        <h3 className="font-bold text-lg mb-3 flex items-center">
+          <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+          What We Do
+        </h3>
+        <ul className="space-y-2">
+          <li className="flex items-start gap-2">
+            <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+            <span className="text-sm text-muted-foreground">SLO definition, autonomous runbooks, and safe release governance</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+            <span className="text-sm text-muted-foreground">Continuous IEC 62443, CRA, and NIS2 evidence streaming from edge</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+            <span className="text-sm text-muted-foreground">Unified observability linking operations, cybersecurity, and compliance</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+            <span className="text-sm text-muted-foreground">SOC-ready OT telemetry for enterprise or MSSP correlation</span>
+          </li>
+        </ul>
+      </div>
+
+      {/* Outcomes */}
+      <div>
+        <h3 className="font-bold text-lg mb-3 flex items-center">
+          <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+          Key Outcomes
+        </h3>
+        <ul className="space-y-2">
+          <li className="flex items-start gap-2">
+            <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+            <span className="text-sm text-muted-foreground">Prevent production failures before they cascade into costly downtime</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+            <span className="text-sm text-muted-foreground">Audit-ready compliance with continuous evidence validation</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+            <span className="text-sm text-muted-foreground">Zero-downtime releases with founder-approved promotion gates</span>
+          </li>
+        </ul>
+      </div>
+
+      {/* CTA Button */}
+      <div className="mt-auto pt-4">
+        <Button asChild className="w-full bg-purple-600 hover:bg-purple-700">
+          <Link href="/contact">
+            Schedule Consultation
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Link>
+        </Button>
+      </div>
+    </CardContent>
+  </Card>
+</div>
+
       </div>
 
       {/* Industry Applications Cross-Link */}
@@ -589,12 +587,12 @@ export default function ServicesPage() {
                         </div>
                         <div>
                           <p className="text-sm font-semibold text-purple-600 mb-2 flex items-center gap-2">
-                            <Factory className="w-4 h-4" />
-                            Edge Infrastructure Integration
+                            <ShieldCheck className="w-4 h-4" />
+                            Resilient Edge
                           </p>
                           <p className="text-sm text-gray-700">
-                            Lighter application—validating OT protocol integration 
-                            and data pipeline feasibility before full deployment.
+                            Lighter application: validating edge resilience patterns, SLO definitions, 
+                            and compliance evidence pipelines before fleet-wide deployment.
                           </p>
                         </div>
                       </div>
@@ -683,13 +681,12 @@ export default function ServicesPage() {
                         </div>
                         <div>
                           <p className="text-sm font-semibold text-purple-600 mb-2 flex items-center gap-2">
-                            <Factory className="w-4 h-4" />
-                            Edge Infrastructure Integration
+                            <ShieldCheck className="w-4 h-4" />
+                            Resilient Edge
                           </p>
                           <p className="text-sm text-gray-700">
-                            Primary pillar—bringing manufacturing floor data to the cloud, 
-                            automating device deployment across facilities, and coordinating 
-                            hardware/software vendors.
+                            Primary pillar—autonomous edge operations with SLO governance, 
+                            fleet-wide policy deployment, and SOC integration for industrial OT.
                           </p>
                         </div>
                       </div>
@@ -772,12 +769,12 @@ export default function ServicesPage() {
                         </div>
                         <div>
                           <p className="text-sm font-semibold text-purple-600 mb-2 flex items-center gap-2">
-                            <Factory className="w-4 h-4" />
-                            Edge Infrastructure Integration
+                            <ShieldCheck className="w-4 h-4" />
+                            Resilient Edge
                           </p>
                           <p className="text-sm text-gray-700">
-                            IEC 62443 industrial security, NIS2 compliance, and secure 
-                            OT/IT convergence for critical infrastructure.
+                            IEC 62443 and NIS2 compliance, continuous evidence streaming, 
+                            and SOC-ready telemetry for critical industrial OT.
                           </p>
                         </div>
                       </div>

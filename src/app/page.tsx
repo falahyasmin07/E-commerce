@@ -104,59 +104,57 @@ export default function HomePage() {
       </section>
 
       {/* Edge Pulsar Mission Section - Lighter Gray Theme */}
-<section id="mission" className="py-16 px-6 bg-gradient-to-br from-gray-100 via-slate-50 to-blue-50 relative overflow-hidden border-y border-gray-200">
-  {/* Decorative background elements - lighter */}
-  <div className="absolute inset-0 opacity-30">
-    <div className="absolute top-10 left-10 w-64 h-64 bg-blue-200 rounded-full blur-3xl"></div>
-    <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-200 rounded-full blur-3xl"></div>
-  </div>
+      <section id="mission" className="py-16 px-6 bg-gradient-to-br from-gray-100 via-slate-50 to-blue-50 relative overflow-hidden border-y border-gray-200">
+        {/* Decorative background elements - lighter */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-10 left-10 w-64 h-64 bg-blue-200 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-200 rounded-full blur-3xl"></div>
+        </div>
 
-  {/* Subtle dot pattern */}
-  <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_1px_1px,rgb(148_163_184_/_0.15)_1px,transparent_0)] bg-[size:24px_24px]" />
+        {/* Subtle dot pattern */}
+        <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_1px_1px,rgb(148_163_184_/_0.15)_1px,transparent_0)] bg-[size:24px_24px]" />
 
-  <div className="max-w-5xl mx-auto relative z-10">
-    <div className="text-center mb-8">
-      {/* Icon row */}
-      <div className="flex justify-center items-center gap-4 mb-6">
-        <Cpu className="w-10 h-10 text-blue-600 animate-pulse" />
-        <ArrowRight className="w-8 h-8 text-gray-400" />
-        <Shield className="w-10 h-10 text-cyan-600" />
-        <ArrowRight className="w-8 h-8 text-gray-400" />
-        <Cloud className="w-10 h-10 text-blue-600 animate-pulse" />
-      </div>
+        <div className="max-w-5xl mx-auto relative z-10">
+          <div className="text-center mb-8">
+            {/* Icon row */}
+            <div className="flex justify-center items-center gap-4 mb-6">
+              <Cpu className="w-10 h-10 text-blue-600 animate-pulse" />
+              <ArrowRight className="w-8 h-8 text-gray-400" />
+              <Shield className="w-10 h-10 text-cyan-600" />
+              <ArrowRight className="w-8 h-8 text-gray-400" />
+              <Cloud className="w-10 h-10 text-blue-600 animate-pulse" />
+            </div>
 
-    {/* Mission headline */}
-    <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-gray-900">
-      Our Mission
-    </h2>
+          {/* Mission headline */}
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-gray-900">
+            Our Mission
+          </h2>
 
-    {/* Mission statement - covers both offers */}
-    <p className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto font-medium mb-6 text-gray-800">
-      Empower <span className="font-semibold text-gray-900">device makers</span> and 
-      <span className="font-semibold text-gray-900"> industrial enterprises</span> to accelerate their chip-to-cloud journey—from 
-      silicon development to edge infrastructure integration—with 
-      <span className="font-bold text-blue-600"> secure, production-ready cloud architectures</span>.
-    </p>
+          {/* Mission statement - covers both offers */}
+          <p className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto font-medium mb-6 text-gray-800">
+          Empower <span className="font-semibold text-gray-900">device makers</span> and 
+          <span className="font-semibold text-gray-900"> industrial enterprises</span> to accelerate their chip-to-cloud journey—from 
+          silicon development to resilient edge operations—with 
+          <span className="font-bold text-blue-600"> secure, production-ready cloud architectures</span>.
+        </p>
+                  {/* Supporting text */}
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            Most consultancies master either hardware or cloud—not both. We bridge that critical gap with 
+            founder-led expertise across embedded systems, industrial IoT, security frameworks, and cloud platforms.
+          </p>
+          </div>
 
-    {/* Supporting text */}
-    <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-      Most consultancies master either hardware or cloud—not both. We bridge that critical gap with 
-      founder-led expertise across embedded systems, industrial IoT, security frameworks, and cloud platforms.
-    </p>
-    </div>
+          {/* Visual divider with founder credential badge */}
+          <div className="flex justify-center mt-10">
+            <div className="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full border-2 border-blue-200 shadow-md hover:shadow-lg hover:border-blue-300 transition-all">
+              <Lightbulb className="w-5 h-5 text-blue-600" />
+              <span className="text-sm font-semibold text-gray-900">40+ Years Combined Founder Expertise</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    {/* Visual divider with founder credential badge */}
-    <div className="flex justify-center mt-10">
-      <div className="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full border-2 border-blue-200 shadow-md hover:shadow-lg hover:border-blue-300 transition-all">
-        <Lightbulb className="w-5 h-5 text-blue-600" />
-        <span className="text-sm font-semibold text-gray-900">40+ Years Combined Founder Expertise</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-     {/* Two Core Consulting Offers - Improved */}
+    {/* Two Core Consulting Offers - Resilient Edge Edition */}
     <section className="py-16 px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
@@ -164,27 +162,27 @@ export default function HomePage() {
             Two Core Consulting Offers
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Specialized chip-to-cloud consulting tailored to your market segment
+            Build smarter edge solutions or operate them reliably at scale
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
           
-          {/* Offer 1: Silicon-to-Cloud Acceleration - WITH ILLUSTRATION BACKGROUND */}
+          {/* Offer 1: Silicon-to-Cloud Acceleration */}
           <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
             
             {/* Background Illustration Section */}
             <div className="relative h-48 overflow-hidden">
               {/* Background Image */}
               <Image
-                src="silicon-to-cloud.png"  // Your generated illustration
+                src="silicon-to-cloud.png"
                 alt="Silicon to Cloud Illustration"
                 fill
                 className="object-cover"
                 priority
               />
               
-              {/* Gradient Overlay - lighter for illustrations */}
+              {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/80 via-blue-500/75 to-blue-600/80" />
               
               {/* Icon Flow Overlay */}
@@ -240,46 +238,46 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <Link href="/services#silicon-to-scale" className="inline-flex items-center text-cyan-600 font-semibold hover:text-cyan-700 mt-auto group">
+              <Link href="/services#silicon-to-cloud" className="inline-flex items-center text-cyan-600 font-semibold hover:text-cyan-700 mt-auto group">
                 Explore Silicon-to-Cloud Services
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           </div>
 
-          {/* Offer 2: Edge Infrastructure Integration - WITH ILLUSTRATION BACKGROUND */}
+          {/* Offer 2: Resilient Edge */}
           <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
             
             {/* Background Illustration Section */}
             <div className="relative h-48 overflow-hidden">
               {/* Background Image */}
               <Image
-                src="edge-infrastructure.png"  // Your generated illustration
-                alt="Edge Infrastructure Illustration"
+                src="edge-infrastructure.png"
+                alt="Resilient Edge Illustration"
                 fill
                 className="object-cover"
                 priority
               />
               
-              {/* Gradient Overlay - lighter for illustrations */}
+              {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500/80 via-indigo-500/75 to-purple-600/80" />
               
-              {/* Icon Flow Overlay */}
+              {/* Icon Flow Overlay: Detect → Act → Comply */}
               <div className="relative h-full flex items-center justify-center z-10">
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3">
                   <div className="flex flex-col items-center">
-                    <Factory className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Edge</span>
+                    <Radar className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Detect</span>
                   </div>
-                  <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
+                  <ArrowRight className="w-9 h-9 text-white/80 drop-shadow-lg" />
                   <div className="flex flex-col items-center">
-                    <Network className="w-14 h-14 text-purple-50 drop-shadow-lg" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Integrate</span>
+                    <Zap className="w-14 h-14 text-cyan-50 drop-shadow-lg" />
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Act</span>
                   </div>
-                  <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
+                  <ArrowRight className="w-9 h-9 text-white/80 drop-shadow-lg" />
                   <div className="flex flex-col items-center">
-                    <Cloud className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Cloud</span>
+                    <ShieldCheck className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Comply</span>
                   </div>
                 </div>
               </div>
@@ -294,36 +292,44 @@ export default function HomePage() {
               </div>
 
               <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                Edge Infrastructure Integration
+                Resilient Edge
               </h3>
 
               <p className="text-gray-700 mb-6 flex-grow">
-                Bridge OT and IT through secure, scalable integration across manufacturing, energy systems, 
-                and critical infrastructure—enabling real-time data flow and intelligent automation.
+                Secure and reliable edge operations for industrial environments. 
+                Keep your operations running, prove CRA/NIS2 compliance continuously, and integrate 
+                with SOC.
               </p>
 
               <div className="mb-6 text-gray-700 space-y-2">
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>Reduce downtime and boost efficiency</span>
+                  <span>
+                    Prevent costly downtime
+                  </span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>Real-time visibility and insights</span>
+                  <span>
+                    Continuous compliance
+                  </span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>Secure, compliant OT/IT convergence</span>
+                  <span>
+                    Unified observability
+                  </span>
                 </div>
               </div>
 
-              <Link href="/services#ot-to-cloud" className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 mt-auto group">
-                Explore Edge Infrastructure Services
+              <Link href="/services#resilient-edge" className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 mt-auto group">
+                Explore Resilient Edge Services
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -451,7 +457,7 @@ export default function HomePage() {
                   Industry 4.0
                 </p>
                 <p className="text-sm text-gray-600">
-                  OT-to-cloud integration
+                  Edge resilience & compliance
                 </p>
               </div>
             </Link>
@@ -565,7 +571,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#1F2937] mt-4">Sense / Respond</h3>
                 <p className="text-[#1F2937]/90 leading-relaxed">
-                  Close the loop from sensor data to automated decision with edge analytics, predictive ML, and sensor-to-decision automation.
+                  Real-time response from data to action—edge analytics for Silicon-to-Cloud, autonomous runbooks for Resilient Edge.
                 </p>
               </div>
               <Link href="#respond-detail" className="text-[#10B981] hover:underline flex items-center justify-center mt-4">
