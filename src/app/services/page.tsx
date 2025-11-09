@@ -1433,230 +1433,228 @@ export default function ServicesPage() {
       </section>
 
 
-      {/* Three-Phase Consulting Methodology - ENHANCED VISUAL VERSION */}
-      <section id="consulting-methodology" className="py-20 md:py-32 scroll-mt-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto space-y-16">
-            <div className="text-center space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold">Three-Phase Consulting Methodology</h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Structured engagement process from strategic assessment to production deployment
-              </p>
-            </div>
+      {/* Three-Phase Delivery Process - IMPROVED */}
+<section id="consulting-methodology" className="py-20 md:py-32 scroll-mt-20">
+  <div className="container mx-auto px-4">
+    <div className="max-w-7xl mx-auto space-y-16">
+      
+      {/* Header */}
+      <div className="text-center space-y-4">
+        <h2 className="text-3xl md:text-4xl font-bold">Three-Phase Delivery Process</h2>
+        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          Fixed-price engagement with clear deliverables and go/no-go gates at each phase
+        </p>
+      </div>
 
-            {/* Grid with Arrow Connectors */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 relative">
-              
-              {/* Arrow Connector 1→2 (Hidden on mobile) */}
-              <div className="hidden md:block absolute top-32 left-[33.33%] transform -translate-x-1/2 -translate-y-1/2 z-10">
-                <ArrowRight className="h-8 w-8 text-[#8B5CF6]/40" strokeWidth={2.5} />
-              </div>
-              
-              {/* Arrow Connector 2→3 (Hidden on mobile) */}
-              <div className="hidden md:block absolute top-32 left-[66.66%] transform -translate-x-1/2 -translate-y-1/2 z-10">
-                <ArrowRight className="h-8 w-8 text-[#10B981]/40" strokeWidth={2.5} />
-              </div>
-
-              {/* Phase 1: Discovery */}
-              <Card className="border-l-4 border-[#06B6D4] hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-4">
-                    {/* Enhanced Icon Badge with Ring */}
-                    <div className="w-14 h-14 rounded-full bg-[#06B6D4]/10 flex items-center justify-center ring-4 ring-[#06B6D4]/20">
-                      <Search className="h-7 w-7 text-[#06B6D4]" strokeWidth={2.5} />
-                    </div>
-                    <div>
-                      <CardTitle className="text-2xl">Discovery Phase</CardTitle>
-                      <p className="text-sm text-muted-foreground font-medium">4-6 weeks • Strategic validation</p>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div>
-                    <h4 className="font-semibold mb-3 text-base">What Happens:</h4>
-                    <p className="text-muted-foreground mb-4 text-sm">
-                      Comprehensive assessment of your current state, technical requirements, and compliance needs—
-                      answering the critical question: "Should we build this, and if yes, how?" This phase delivers
-                      the blueprint and business case needed to secure executive approval and budget.
-                    </p>
-                    {/* Enhanced List with Better Contrast */}
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
-                        <span className="font-medium">Chip-to-cloud readiness assessment evaluating current architecture gaps</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
-                        <span className="font-medium">CRA compliance gap analysis with 12-24 month remediation roadmap</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
-                        <span className="font-medium">Architecture blueprint with technology selection rationale</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
-                        <span className="font-medium">Business case with ROI projections, cost analysis, and risk assessment</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
-                        <span className="font-medium">Implementation roadmap with phase priorities and resource requirements</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-[#06B6D4]/5 p-4 rounded-lg border-l-4 border-[#06B6D4]">
-                    <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
-                      <ShieldCheck className="h-4 w-4 text-[#06B6D4]" />
-                      Quality Gate: Go/No-Go Decision
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
-                      Executive sign-off on architecture blueprint, CRA compliance roadmap, and business case—
-                      providing clear go/no-go decision point before committing to full implementation.
-                      Many clients stop here with validated blueprint for internal development.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Phase 2: Build */}
-              <Card className="border-l-4 border-[#8B5CF6] hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-4">
-                    {/* Enhanced Icon Badge with Ring */}
-                    <div className="w-14 h-14 rounded-full bg-[#8B5CF6]/10 flex items-center justify-center ring-4 ring-[#8B5CF6]/20">
-                      <Code className="h-7 w-7 text-[#8B5CF6]" strokeWidth={2.5} />
-                    </div>
-                    <div>
-                      <CardTitle className="text-2xl">Build Phase</CardTitle>
-                      <p className="text-sm text-muted-foreground font-medium">12-20 weeks • Agile implementation</p>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div>
-                    <h4 className="font-semibold mb-3 text-base">What Happens:</h4>
-                    <p className="text-muted-foreground mb-4 text-sm">
-                      Hands-on development of critical system components your team can't build alone—reference
-                      firmware, cloud integrations, security implementations. Delivered in 2-week sprints with
-                      working demos ensuring alignment and reducing late-stage surprises.
-                    </p>
-                    {/* Enhanced List with Better Contrast */}
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                        <span className="font-medium">Bi-weekly sprint demos with working code, not PowerPoint slides</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                        <span className="font-medium">Critical module development (device firmware, connectivity, cloud integration)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                        <span className="font-medium">Continuous integration setup with automated testing and quality checks</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                        <span className="font-medium">Operations Playbooks documenting deployment and incident response procedures</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                        <span className="font-medium">Security Framework with compliance mapping and audit-ready documentation</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-[#8B5CF6]/5 p-4 rounded-lg border-l-4 border-[#8B5CF6]">
-                    <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
-                      <ShieldCheck className="h-4 w-4 text-[#8B5CF6]" />
-                      Quality Gate: Implementation Verification
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
-                      Functional demos validated against blueprint specifications, test coverage exceeding 80%,
-                      security verification completed, integration testing passed. Ensures what we built actually
-                      works before moving to production pilots—catching issues in controlled environment.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Phase 3: Pilot-to-Scale */}
-              <Card className="border-l-4 border-[#10B981] hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-4">
-                    {/* Enhanced Icon Badge with Ring */}
-                    <div className="w-14 h-14 rounded-full bg-[#10B981]/10 flex items-center justify-center ring-4 ring-[#10B981]/20">
-                      <Rocket className="h-7 w-7 text-[#10B981]" strokeWidth={2.5} />
-                    </div>
-                    <div>
-                      <CardTitle className="text-2xl">Pilot-to-Scale Phase</CardTitle>
-                      <p className="text-sm text-muted-foreground font-medium">8-12 weeks • Production validation</p>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div>
-                    <h4 className="font-semibold mb-3 text-base">What Happens:</h4>
-                    <p className="text-muted-foreground mb-4 text-sm">
-                      Real-world pilot deployment with actual devices, users, and operational conditions—
-                      validating the system performs as designed and your team can operate it independently.
-                      Ends with complete handoff enabling confident scaling to thousands of devices.
-                    </p>
-                    {/* Enhanced List with Better Contrast */}
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                        <span className="font-medium">Pilot deployment with 10-100 devices in real operational environment</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                        <span className="font-medium">Performance verification: latency, throughput, reliability metrics validated</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                        <span className="font-medium">Operational validation: Your team runs daily operations with our support</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                        <span className="font-medium">Complete documentation handoff: Architecture, Operations, Security frameworks</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                        <span className="font-medium">Team training on operations, troubleshooting, and incident response</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-[#10B981]/5 p-4 rounded-lg border-l-4 border-[#10B981]">
-                    <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
-                      <ShieldCheck className="h-4 w-4 text-[#10B981]" />
-                      Quality Gate: Production Readiness
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
-                      Pilot success metrics achieved (uptime >99%, performance within targets), operations runbooks
-                      validated through real incidents, acceptance criteria met, your team operating independently.
-                      Sign-off confirms you're ready to scale to full production without ongoing consultant dependency.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/*<div className="text-center">
-              <Button asChild variant="outline" size="lg">
-                <Link href="/resources">Download Process Overview PDF</Link>
-              </Button>
-            </div>*/}
-
-            {/* Back to Top */}
+      {/* Visual Timeline - NEW */}
+      <div className="flex items-center justify-center gap-4 py-8 max-w-4xl mx-auto">
+        <div className="flex-1 text-center">
+          <div className="w-24 h-24 rounded-full bg-gradient-to-br from-cyan-100 to-cyan-200 flex items-center justify-center mb-3 mx-auto ring-4 ring-cyan-200/50">
             <div className="text-center">
-              <Link href="#" className="inline-flex items-center text-sm text-muted-foreground hover:text-primary">
-                <ArrowUp className="h-4 w-4 mr-2" />
-                Back to Top
-              </Link>
+              <span className="block font-bold text-2xl text-cyan-600">1</span>
+              <span className="block text-xs text-cyan-700">Discovery</span>
             </div>
           </div>
+          <p className="text-sm font-semibold">4-6 weeks</p>
+          <p className="text-xs text-muted-foreground">Fixed price</p>
         </div>
-      </section>
+        <ArrowRight className="text-muted-foreground w-8 h-8 flex-shrink-0" />
+        <div className="flex-1 text-center">
+          <div className="w-24 h-24 rounded-full bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center mb-3 mx-auto ring-4 ring-purple-200/50">
+            <div className="text-center">
+              <span className="block font-bold text-2xl text-purple-600">2</span>
+              <span className="block text-xs text-purple-700">Build</span>
+            </div>
+          </div>
+          <p className="text-sm font-semibold">12-20 weeks</p>
+          <p className="text-xs text-muted-foreground">Fixed milestones</p>
+        </div>
+        <ArrowRight className="text-muted-foreground w-8 h-8 flex-shrink-0" />
+        <div className="flex-1 text-center">
+          <div className="w-24 h-24 rounded-full bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center mb-3 mx-auto ring-4 ring-green-200/50">
+            <div className="text-center">
+              <span className="block font-bold text-2xl text-green-600">3</span>
+              <span className="block text-xs text-green-700">Deploy</span>
+            </div>
+          </div>
+          <p className="text-sm font-semibold">8-12 weeks</p>
+          <p className="text-xs text-muted-foreground">Fixed scope</p>
+        </div>
+      </div>
+
+      {/* Phase Cards Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        
+        {/* Arrow Connector 1→2 */}
+        <div className="hidden md:block absolute top-32 left-[33.33%] transform -translate-x-1/2 -translate-y-1/2 z-10">
+          <ArrowRight className="h-8 w-8 text-purple-400/40" strokeWidth={2.5} />
+        </div>
+        
+        {/* Arrow Connector 2→3 */}
+        <div className="hidden md:block absolute top-32 left-[66.66%] transform -translate-x-1/2 -translate-y-1/2 z-10">
+          <ArrowRight className="h-8 w-8 text-green-400/40" strokeWidth={2.5} />
+        </div>
+
+        {/* Phase 1: Discovery & Validation */}
+        <Card className="border-l-4 border-cyan-500 hover:shadow-lg transition-shadow">
+          <CardHeader>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-14 h-14 rounded-full bg-cyan-100 flex items-center justify-center ring-4 ring-cyan-200/50">
+                <Search className="h-7 w-7 text-cyan-600" strokeWidth={2.5} />
+              </div>
+              <div>
+                <CardTitle className="text-2xl">Discovery</CardTitle>
+                <p className="text-sm text-muted-foreground font-medium">4-6 weeks • Fixed price</p>
+              </div>
+            </div>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            {/* Removed "What Happens" paragraph - goes straight to deliverables */}
+            <h4 className="font-semibold text-base">Core Deliverables:</h4>
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Architecture decision records</strong> with tech stack rationale</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Compliance gap analysis</strong> (CRA/IEC 62443/NIS2)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Business case</strong> with ROI projections</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Implementation roadmap</strong> with phases & resources</span>
+              </li>
+            </ul>
+
+            <div className="bg-cyan-50 p-4 rounded-lg border-l-4 border-cyan-500 mt-4">
+              <p className="text-sm font-semibold mb-1 flex items-center gap-2">
+                <ShieldCheck className="h-4 w-4 text-cyan-600" />
+                Go/No-Go Gate
+              </p>
+              <p className="text-xs text-muted-foreground">
+                Executive sign-off on validated blueprint. Many clients stop here for internal dev.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Phase 2: Build & Validate */}
+        <Card className="border-l-4 border-purple-500 hover:shadow-lg transition-shadow">
+          <CardHeader>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center ring-4 ring-purple-200/50">
+                <Code className="h-7 w-7 text-purple-600" strokeWidth={2.5} />
+              </div>
+              <div>
+                <CardTitle className="text-2xl">Build</CardTitle>
+                <p className="text-sm text-muted-foreground font-medium">12-20 weeks • Fixed milestones</p>
+              </div>
+            </div>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <h4 className="font-semibold text-base">Core Deliverables:</h4>
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Bi-weekly demos</strong> with working code</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Reference implementations</strong> (firmware, policies, integrations)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                <span><strong>CI/CD pipelines</strong> with automated testing</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Operations runbooks</strong> for deployment & incidents</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Security frameworks</strong> with audit evidence</span>
+              </li>
+            </ul>
+
+            <div className="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500 mt-4">
+              <p className="text-sm font-semibold mb-1 flex items-center gap-2">
+                <ShieldCheck className="h-4 w-4 text-purple-600" />
+                Implementation Gate
+              </p>
+              <p className="text-xs text-muted-foreground">
+                Functional demos validated, >80% test coverage, security verified.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Phase 3: Deploy & Handoff */}
+        <Card className="border-l-4 border-green-500 hover:shadow-lg transition-shadow">
+          <CardHeader>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center ring-4 ring-green-200/50">
+                <Rocket className="h-7 w-7 text-green-600" strokeWidth={2.5} />
+              </div>
+              <div>
+                <CardTitle className="text-2xl">Deploy</CardTitle>
+                <p className="text-sm text-muted-foreground font-medium">8-12 weeks • Fixed scope</p>
+              </div>
+            </div>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <h4 className="font-semibold text-base">Core Deliverables:</h4>
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Pilot deployment</strong> (10-100 devices/nodes)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Performance validation</strong> against SLO targets</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Operational handoff</strong> with shadowing</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Documentation transfer</strong> (ADRs, runbooks, compliance)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Team training</strong> on operations & troubleshooting</span>
+              </li>
+            </ul>
+
+            <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500 mt-4">
+              <p className="text-sm font-semibold mb-1 flex items-center gap-2">
+                <ShieldCheck className="h-4 w-4 text-green-600" />
+                Production Gate
+              </p>
+              <p className="text-xs text-muted-foreground">
+                Pilot metrics achieved, your team operates independently—ready to scale.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* CTA */}
+      <div className="text-center pt-8">
+        <Button asChild size="lg">
+          <Link href="/contact">Schedule Discovery Phase →</Link>
+        </Button>
+        <p className="text-sm text-muted-foreground mt-3">
+          30-minute consultation with both founders • No commitment required
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Founder Accountability */}
       <section id="founder-accountability" className="py-20 md:py-32 bg-muted/30 scroll-mt-20">
