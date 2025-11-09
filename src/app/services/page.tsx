@@ -74,8 +74,7 @@ export default function ServicesPage() {
                 Founder-Led Technology Advisory & Implementation
               </h1>
               <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-                Edge Pulsar combines strategic technology advisory with hands-on implementation expertise—delivering
-                chip-to-cloud solutions through a structured consulting methodology.
+                Compress development cycles, build compliance in, and operate edge reliably.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <Button size="lg" asChild className="bg-white text-blue-600 hover:bg-gray-100 shadow-xl">
@@ -158,7 +157,7 @@ export default function ServicesPage() {
               Capabilities
             </Link>
             <Link href="#consulting-methodology" className="text-sm font-medium hover:text-primary whitespace-nowrap">
-              Framework
+              Methodology
             </Link>
             <Link href="#entry-offers" className="text-sm font-medium hover:text-primary whitespace-nowrap">
               Get Started
@@ -316,136 +315,136 @@ export default function ServicesPage() {
         </div>
 
         {/* Offer 2: Resilient Edge */}
-<div id="resilient-edge" className="scroll-mt-20">
-  <Card className="border-2 border-purple-200 overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-    
-    {/* Background Image Section */}
-    <div className="relative h-48 overflow-hidden">
-      <Image
-        src="/edge-infrastructure.png"
-        alt="Resilient Edge Illustration"
-        fill
-        className="object-cover"
-        priority
-      />
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/80 via-indigo-500/75 to-purple-600/80" />
-      <div className="relative h-full flex items-center justify-center z-10">
-        <div className="flex items-center gap-4">
-          <div className="flex flex-col items-center">
-            <Radar className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
-            <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Detect</span>
-          </div>
-          <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
-          <div className="flex flex-col items-center">
-            <Zap className="w-14 h-14 text-purple-50 drop-shadow-lg" />
-            <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Act</span>
-          </div>
-          <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
-          <div className="flex flex-col items-center">
-            <ShieldCheck className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
-            <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Comply</span>
-          </div>
+        <div id="resilient-edge" className="scroll-mt-20">
+          <Card className="border-2 border-purple-200 overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+            
+            {/* Background Image Section */}
+            <div className="relative h-48 overflow-hidden">
+              <Image
+                src="/edge-infrastructure.png"
+                alt="Resilient Edge Illustration"
+                fill
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/80 via-indigo-500/75 to-purple-600/80" />
+              <div className="relative h-full flex items-center justify-center z-10">
+                <div className="flex items-center gap-4">
+                  <div className="flex flex-col items-center">
+                    <Radar className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Detect</span>
+                  </div>
+                  <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
+                  <div className="flex flex-col items-center">
+                    <Zap className="w-14 h-14 text-purple-50 drop-shadow-lg" />
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Act</span>
+                  </div>
+                  <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
+                  <div className="flex flex-col items-center">
+                    <ShieldCheck className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Comply</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Card Header */}
+            <CardHeader className="space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="h-12 w-12 rounded-lg bg-purple-100 flex items-center justify-center">
+                  <ShieldCheck className="h-6 w-6 text-purple-600" />
+                </div>
+                <Badge variant="secondary" className="bg-purple-100 text-purple-700">
+                  For Industrial Operators
+                </Badge>
+              </div>
+              
+              <CardTitle className="text-2xl md:text-3xl">Resilient Edge</CardTitle>
+              
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="outline" className="bg-[#8B5CF6]/10 text-[#8B5CF6] border-[#8B5CF6]/30">
+                  <Activity className="w-3 h-3 mr-1" />
+                  Observe
+                </Badge>
+                <Badge variant="outline" className="bg-[#10B981]/10 text-[#10B981] border-[#10B981]/30">
+                  <Zap className="w-3 h-3 mr-1" />
+                  Respond
+                </Badge>
+                <Badge variant="outline" className="bg-[#EF4444]/10 text-[#EF4444] border-[#EF4444]/30">
+                  <ShieldCheck className="w-3 h-3 mr-1" />
+                  Comply
+                </Badge>
+              </div>
+
+              <p className="text-muted-foreground">
+                <strong>Edge Operations & Governance:</strong> Secure, reliable edge operations for critical industrial OT. 
+                Keep production running, maintain continuous CRA/NIS2 compliance, and integrate with enterprise SOC—
+                without rebuilds or complexity.
+              </p>
+            </CardHeader>
+            
+            {/* Condensed Visible Content */}
+            <CardContent className="flex flex-col flex-1 space-y-6">
+              {/* What We Do */}
+              <div>
+                <h3 className="font-bold text-lg mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                  What We Do
+                </h3>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+                    <span className="text-sm text-muted-foreground">SLO definition, autonomous runbooks, and safe release governance</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+                    <span className="text-sm text-muted-foreground">Continuous IEC 62443, CRA, and NIS2 evidence streaming from edge</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+                    <span className="text-sm text-muted-foreground">Unified observability linking operations, cybersecurity, and compliance</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+                    <span className="text-sm text-muted-foreground">SOC-ready OT telemetry for enterprise or MSSP correlation</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Outcomes */}
+              <div>
+                <h3 className="font-bold text-lg mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                  Key Outcomes
+                </h3>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+                    <span className="text-sm text-muted-foreground">Prevent production failures before they cascade into costly downtime</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+                    <span className="text-sm text-muted-foreground">Audit-ready compliance with continuous evidence validation</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+                    <span className="text-sm text-muted-foreground">Zero-downtime releases with founder-approved promotion gates</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* CTA Button */}
+              <div className="mt-auto pt-4">
+                <Button asChild className="w-full bg-purple-600 hover:bg-purple-700">
+                  <Link href="/contact">
+                    Schedule Consultation
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
         </div>
-      </div>
-    </div>
-
-    {/* Card Header */}
-    <CardHeader className="space-y-4">
-      <div className="flex items-center gap-3">
-        <div className="h-12 w-12 rounded-lg bg-purple-100 flex items-center justify-center">
-          <ShieldCheck className="h-6 w-6 text-purple-600" />
-        </div>
-        <Badge variant="secondary" className="bg-purple-100 text-purple-700">
-          For Industrial Operators
-        </Badge>
-      </div>
-      
-      <CardTitle className="text-2xl md:text-3xl">Resilient Edge</CardTitle>
-      
-      <div className="flex flex-wrap gap-2">
-        <Badge variant="outline" className="bg-[#8B5CF6]/10 text-[#8B5CF6] border-[#8B5CF6]/30">
-          <Activity className="w-3 h-3 mr-1" />
-          Observe
-        </Badge>
-        <Badge variant="outline" className="bg-[#10B981]/10 text-[#10B981] border-[#10B981]/30">
-          <Zap className="w-3 h-3 mr-1" />
-          Respond
-        </Badge>
-        <Badge variant="outline" className="bg-[#EF4444]/10 text-[#EF4444] border-[#EF4444]/30">
-          <ShieldCheck className="w-3 h-3 mr-1" />
-          Comply
-        </Badge>
-      </div>
-
-      <p className="text-muted-foreground">
-        <strong>Edge Operations & Governance:</strong> Secure, reliable edge operations for critical industrial OT. 
-        Keep production running, maintain continuous CRA/NIS2 compliance, and integrate with enterprise SOC—
-        without rebuilds or complexity.
-      </p>
-    </CardHeader>
-    
-    {/* Condensed Visible Content */}
-    <CardContent className="flex flex-col flex-1 space-y-6">
-      {/* What We Do */}
-      <div>
-        <h3 className="font-bold text-lg mb-3 flex items-center">
-          <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-          What We Do
-        </h3>
-        <ul className="space-y-2">
-          <li className="flex items-start gap-2">
-            <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-            <span className="text-sm text-muted-foreground">SLO definition, autonomous runbooks, and safe release governance</span>
-          </li>
-          <li className="flex items-start gap-2">
-            <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-            <span className="text-sm text-muted-foreground">Continuous IEC 62443, CRA, and NIS2 evidence streaming from edge</span>
-          </li>
-          <li className="flex items-start gap-2">
-            <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-            <span className="text-sm text-muted-foreground">Unified observability linking operations, cybersecurity, and compliance</span>
-          </li>
-          <li className="flex items-start gap-2">
-            <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-            <span className="text-sm text-muted-foreground">SOC-ready OT telemetry for enterprise or MSSP correlation</span>
-          </li>
-        </ul>
-      </div>
-
-      {/* Outcomes */}
-      <div>
-        <h3 className="font-bold text-lg mb-3 flex items-center">
-          <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-          Key Outcomes
-        </h3>
-        <ul className="space-y-2">
-          <li className="flex items-start gap-2">
-            <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-            <span className="text-sm text-muted-foreground">Prevent production failures before they cascade into costly downtime</span>
-          </li>
-          <li className="flex items-start gap-2">
-            <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-            <span className="text-sm text-muted-foreground">Audit-ready compliance with continuous evidence validation</span>
-          </li>
-          <li className="flex items-start gap-2">
-            <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-            <span className="text-sm text-muted-foreground">Zero-downtime releases with founder-approved promotion gates</span>
-          </li>
-        </ul>
-      </div>
-
-      {/* CTA Button */}
-      <div className="mt-auto pt-4">
-        <Button asChild className="w-full bg-purple-600 hover:bg-purple-700">
-          <Link href="/contact">
-            Schedule Consultation
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
-        </Button>
-      </div>
-    </CardContent>
-  </Card>
-</div>
 
       </div>
 
@@ -477,7 +476,7 @@ export default function ServicesPage() {
   </div>
 </section>
 
-     {/* Four Pillars Framework - UPDATED VERSION */}
+     {/* Four Pillars Framework - FINAL CORRECTED VERSION */}
       <section id="four-pillars-framework" className="py-20 md:py-32 bg-gray-50 scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto space-y-12">
@@ -486,14 +485,14 @@ export default function ServicesPage() {
             <div className="text-center space-y-4">
               <h2 className="text-4xl md:text-5xl font-bold">Four Pillars Framework</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Our technical delivery methodology applied across both consulting offers. 
-                All clients receive a pillar-based approach—emphasis varies by engagement type.
+                One delivery methodology applied to both offers—Silicon-to-Cloud (build) and Resilient Edge (run). 
+                All clients benefit from the four pillars; emphasis shifts by engagement.
               </p>
             </div>
 
             <Accordion type="single" collapsible className="w-full space-y-4">
               
-              {/* Pillar 1: Innovate / Accelerate - UPDATED */}
+              {/* Pillar 1: Innovate / Accelerate */}
               <AccordionItem value="innovate" className="border-2 border-[#0EA5E9]/20 rounded-lg overflow-hidden bg-white">
                 <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-[#0EA5E9]/5">
                   <div className="flex items-center gap-4 text-left w-full">
@@ -511,7 +510,6 @@ export default function ServicesPage() {
                 <AccordionContent className="px-6 md:px-8 pb-8">
                   <div className="space-y-6 pt-4">
                     
-                    {/* Updated "What It Means" */}
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-3 text-lg">What It Means:</h4>
                       <p className="text-gray-700 leading-relaxed">
@@ -522,7 +520,6 @@ export default function ServicesPage() {
                       </p>
                     </div>
                     
-                    {/* Updated "What We Do" */}
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-3 text-lg">What We Do:</h4>
                       <ul className="space-y-3">
@@ -557,7 +554,6 @@ export default function ServicesPage() {
                       </ul>
                     </div>
 
-                    {/* NEW: Right-Sized Engagement Callout */}
                     <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-[#0EA5E9] mt-6">
                       <h4 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                         <Lightbulb className="h-5 w-5 text-[#0EA5E9]" />
@@ -571,7 +567,6 @@ export default function ServicesPage() {
                       </p>
                     </div>
 
-                    {/* NEW: Offer-Specific Context */}
                     <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                       <h4 className="font-semibold text-gray-900 mb-3 text-base">How This Applies by Offer:</h4>
                       <div className="grid md:grid-cols-2 gap-4">
@@ -598,7 +593,6 @@ export default function ServicesPage() {
                       </div>
                     </div>
                     
-                    {/* Updated Example Outcomes */}
                     <div className="bg-[#0EA5E9]/5 p-6 rounded-lg border-l-4 border-[#0EA5E9]">
                       <p className="text-sm text-gray-700">
                         <strong className="text-gray-900">PoC Example:</strong> Automotive tier-1 validated 
@@ -616,8 +610,7 @@ export default function ServicesPage() {
                 </AccordionContent>
               </AccordionItem>
 
-
-              {/* Pillar 2: Orchestrate / Scale - UPDATED */}
+              {/* Pillar 2: Orchestrate / Scale */}
               <AccordionItem value="orchestrate" className="border-2 border-[#8B5CF6]/20 rounded-lg overflow-hidden bg-white">
                 <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-[#8B5CF6]/5">
                   <div className="flex items-center gap-4 text-left w-full">
@@ -665,7 +658,6 @@ export default function ServicesPage() {
                       </ul>
                     </div>
 
-                    {/* NEW: Offer-Specific Context */}
                     <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                       <h4 className="font-semibold text-gray-900 mb-3 text-base">How This Applies by Offer:</h4>
                       <div className="grid md:grid-cols-2 gap-4">
@@ -704,8 +696,7 @@ export default function ServicesPage() {
                 </AccordionContent>
               </AccordionItem>
 
-
-              {/* Pillar 3: Secure / Harden - UPDATED */}
+              {/* Pillar 3: Secure / Harden */}
               <AccordionItem value="secure" className="border-2 border-[#EF4444]/20 rounded-lg overflow-hidden bg-white">
                 <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-[#EF4444]/5">
                   <div className="flex items-center gap-4 text-left w-full">
@@ -753,7 +744,6 @@ export default function ServicesPage() {
                       </ul>
                     </div>
 
-                    {/* NEW: Offer-Specific Context */}
                     <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                       <h4 className="font-semibold text-gray-900 mb-3 text-base">How This Applies by Offer:</h4>
                       <div className="grid md:grid-cols-2 gap-4">
@@ -792,8 +782,7 @@ export default function ServicesPage() {
                 </AccordionContent>
               </AccordionItem>
 
-
-              {/* Pillar 4: Sense / Respond - UPDATED */}
+              {/* Pillar 4: Sense / Respond - CORRECTED */}
               <AccordionItem value="sense" className="border-2 border-[#10B981]/20 rounded-lg overflow-hidden bg-white">
                 <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-[#10B981]/5">
                   <div className="flex items-center gap-4 text-left w-full">
@@ -825,24 +814,24 @@ export default function ServicesPage() {
                       <ul className="space-y-3">
                         <li className="flex items-start gap-3">
                           <CheckCircle2 className="w-5 h-5 text-[#10B981] flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700">Edge analytics architectures processing sensor data locally for low-latency decisions</span>
+                          <span className="text-gray-700">Edge analytics patterns for low-latency decisions (signal processing, feature extraction, threshold rules)</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <CheckCircle2 className="w-5 h-5 text-[#10B981] flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700">Predictive ML pipelines for anomaly detection, failure prediction, and optimization</span>
+                          <span className="text-gray-700">Predictive ML pipelines with model selection, drift monitoring, and retraining workflows</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <CheckCircle2 className="w-5 h-5 text-[#10B981] flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700">Sensor-to-decision automation frameworks triggering actions based on real-time data</span>
+                          <span className="text-gray-700">Sensor-to-decision frameworks: trigger matrices, action policies, and rollback safeguards</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <CheckCircle2 className="w-5 h-5 text-[#10B981] flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700">Time-series data pipelines capturing, storing, and analyzing operational telemetry</span>
+                          <span className="text-gray-700">Time-series data pipelines for telemetry capture, retention strategy, and SOC correlation</span>
                         </li>
                       </ul>
                     </div>
 
-                    {/* NEW: Offer-Specific Context */}
+                    {/* CORRECTED: Changed "Edge Infrastructure Integration" to "Resilient Edge" and Factory icon to ShieldCheck */}
                     <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                       <h4 className="font-semibold text-gray-900 mb-3 text-base">How This Applies by Offer:</h4>
                       <div className="grid md:grid-cols-2 gap-4">
@@ -852,18 +841,18 @@ export default function ServicesPage() {
                             Silicon-to-Cloud Acceleration
                           </p>
                           <p className="text-sm text-gray-700">
-                            Optional—edge analytics and ML integration when devices require 
-                            intelligent local decision-making capabilities.
+                            Optional—edge analytics and ML when devices need intelligent local decisions 
+                            (predictive maintenance, anomaly detection, energy optimization).
                           </p>
                         </div>
                         <div>
                           <p className="text-sm font-semibold text-purple-600 mb-2 flex items-center gap-2">
-                            <Factory className="w-4 h-4" />
-                            Edge Infrastructure Integration
+                            <ShieldCheck className="w-4 h-4" />
+                            Resilient Edge
                           </p>
                           <p className="text-sm text-gray-700">
-                            Primary pillar—predictive maintenance, real-time analytics, 
-                            and sensor-to-decision automation for operational intelligence.
+                            Primary pillar—closed-loop operations with anomaly detection, policy-driven actions, 
+                            and failover without cloud dependency to keep production running.
                           </p>
                         </div>
                       </div>
@@ -1044,34 +1033,41 @@ export default function ServicesPage() {
                     </CardContent>
                   </Card>
 
-                  {/* OT-to-Cloud Integration */}
+                  {/* Resilient Edge Operations */}
                   <Card className="border-l-4 border-[#8B5CF6]">
                     <CardHeader>
                       <div className="w-12 h-12 flex items-center justify-center bg-[#8B5CF6]/10 rounded-lg mb-4">
-                        <Factory className="w-6 h-6 text-[#8B5CF6]" />
+                        <ShieldCheck className="w-6 h-6 text-[#8B5CF6]" />
                       </div>
-                      <CardTitle className="text-xl">OT-to-Cloud Integration</CardTitle>
+                      <CardTitle className="text-xl">Resilient Edge Operations</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <div>
-                        <h4 className="font-semibold text-sm mb-2">Industrial Data Pipelines</h4>
+                        <h4 className="font-semibold text-sm mb-2">SLO & Runbook Enablement</h4>
                         <p className="text-sm text-muted-foreground">
-                          Secure data flow from factory floor to cloud—MQTT, OPC UA protocol 
-                          integration with real-time data ingestion and transformation.
+                          Define uptime targets, MTTR commitments, and autonomous response policies—
+                          creating runbooks that trigger actions before failures cascade.
                         </p>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-sm mb-2">Edge Computing Architecture</h4>
+                        <h4 className="font-semibold text-sm mb-2">Continuous Compliance Evidence</h4>
                         <p className="text-sm text-muted-foreground">
-                          Local data processing and aggregation—reducing bandwidth, enabling 
-                          real-time decisions, and optimizing cloud costs.
+                          IEC 62443, CRA, and NIS2 validation streaming from edge nodes—firmware integrity, 
+                          SBOM tracking, and audit-ready reporting for regulatory deadlines.
                         </p>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-sm mb-2">Network Segmentation Consulting</h4>
+                        <h4 className="font-semibold text-sm mb-2">Fleet Policy Governance</h4>
                         <p className="text-sm text-muted-foreground">
-                          OT/IT network segregation strategies—firewall rules, DMZ design, and 
-                          secure gateway architecture for industrial connectivity.
+                          Canary rollouts, promotion gates, and automated rollback—enabling zero-downtime 
+                          releases with health checks and SLO-based approval workflows.
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-sm mb-2">SOC-Ready Observability</h4>
+                        <p className="text-sm text-muted-foreground">
+                          Unified dashboards linking operational health, cybersecurity posture, and compliance—
+                          standardized OT telemetry for enterprise or MSSP SOC integration.
                         </p>
                       </div>
                     </CardContent>
@@ -1160,250 +1156,262 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            {/* Accordion Deliverables */}
-            <Accordion type="single" collapsible className="w-full space-y-4">
-              
-              {/* 1. Architecture Blueprint */}
-              <AccordionItem value="blueprint" className="border-2 border-primary/20 rounded-lg overflow-hidden bg-white">
-                <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-primary/5">
-                  <div className="flex items-center gap-4 text-left w-full">
-                    <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-primary/10 rounded-lg flex-shrink-0">
-                      <Package className="w-6 h-6 md:w-7 md:h-7 text-primary" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl md:text-2xl font-bold">Architecture Blueprint</h3>
-                      <p className="text-sm text-muted-foreground">
-                        Comprehensive chip-to-cloud documentation
-                      </p>
-                    </div>
+           {/* Accordion Deliverables - IMPROVED */}
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            
+            {/* 1. Architecture Decision Records (ADRs) */}
+            <AccordionItem value="blueprint" className="border-2 border-primary/20 rounded-lg overflow-hidden bg-white">
+              <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-primary/5">
+                <div className="flex items-center gap-4 text-left w-full">
+                  <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-primary/10 rounded-lg flex-shrink-0">
+                    <Package className="w-6 h-6 md:w-7 md:h-7 text-primary" />
                   </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 md:px-8 pb-8">
-                  <div className="space-y-4 pt-4">
-                    <p className="text-muted-foreground">
-                      Comprehensive chip-to-cloud architecture documentation eliminating guesswork and integration 
-                      risks—answering the critical questions your engineering and business teams need to move forward 
-                      with confidence and secure budget approval.
+                  <div className="flex-1">
+                    <h3 className="text-xl md:text-2xl font-bold">Architecture Decision Records</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Documented rationale for every major technical choice
                     </p>
-                    <ul className="space-y-3">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">
-                          <strong className="text-foreground">Technology Selection Rationale:</strong> Which chipset, 
-                          connectivity option, and cloud platform to choose—with cost, performance, and scalability 
-                          tradeoffs clearly documented for decision-making
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">
-                          <strong className="text-foreground">Integration Specifications:</strong> Exact API contracts, 
-                          data formats, and interface definitions enabling multiple vendors to build compatible components 
-                          without constant coordination meetings
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">
-                          <strong className="text-foreground">Performance Requirements:</strong> Device-to-cloud data flow 
-                          diagrams with latency targets, bandwidth requirements, and throughput specifications ensuring 
-                          the system meets real-world operational needs
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">
-                          <strong className="text-foreground">Scaling Roadmap:</strong> Step-by-step evolution plan from 
-                          pilot (10s of devices) to initial production (100s) to full scale (1000s+) with trigger points 
-                          and infrastructure requirements at each stage
-                        </span>
-                      </li>
-                    </ul>
                   </div>
-                </AccordionContent>
-              </AccordionItem>
-
-              {/* 2. Security & Compliance Framework */}
-              <AccordionItem value="security" className="border-2 border-[#EF4444]/20 rounded-lg overflow-hidden bg-white">
-                <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-[#EF4444]/5">
-                  <div className="flex items-center gap-4 text-left w-full">
-                    <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-[#EF4444]/10 rounded-lg flex-shrink-0">
-                      <ShieldCheck className="w-6 h-6 md:w-7 md:h-7 text-[#EF4444]" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl md:text-2xl font-bold">Security & Compliance Framework</h3>
-                      <p className="text-sm text-muted-foreground">
-                        CRA, ISO 27001, GDPR compliance mapping
-                      </p>
-                    </div>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 md:px-8 pb-8">
-                  <div className="space-y-4 pt-4">
-                    <p className="text-muted-foreground">
-                      Comprehensive security architecture integrated with industry-leading security tools and partner 
-                      expertise—mapping your chip-to-cloud system to compliance standards (CRA, ISO 27001, GDPR) 
-                      with coordinated security validation and audit-ready documentation.
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 md:px-8 pb-8">
+                <div className="space-y-4 pt-4">
+                  <p className="text-muted-foreground">
+                    Comprehensive technical documentation answering "why we chose X over Y"—eliminating second-guessing, 
+                    enabling confident execution, and securing stakeholder buy-in with clear cost-benefit trade-offs.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">Technology selection rationale:</strong> Chipset, connectivity, 
+                        cloud platform choices with documented cost, performance, and vendor lock-in tradeoffs
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">Integration specifications:</strong> API contracts, data schemas, 
+                        and interface standards enabling parallel vendor work without constant coordination
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">Performance requirements:</strong> Latency targets, bandwidth budgets, 
+                        throughput specs with measurement criteria and acceptance thresholds
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">Scaling roadmap:</strong> Pilot → 100s → 1000s+ devices with 
+                        infrastructure triggers and cost projections at each stage
+                      </span>
+                    </li>
+                  </ul>
+                  
+                  {/* Offer Context */}
+                  <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-primary mt-4">
+                    <p className="text-xs text-gray-700">
+                      <strong>Primary deliverable for Silicon-to-Cloud:</strong> Enables device makers to move from concept 
+                      to production with validated architecture. Also used in Resilient Edge for documenting edge governance patterns.
                     </p>
-                    <ul className="space-y-3">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#EF4444] flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">
-                          <strong className="text-foreground">Layered Security Architecture:</strong> Defense-in-depth 
-                          design across device (secure boot, TPM), transport (TLS/mTLS), and cloud (IAM, encryption at rest)—
-                          integrating security controls at each layer
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#EF4444] flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">
-                          <strong className="text-foreground">Compliance Documentation:</strong> Security 
-                          control mapping to CRA essential requirements (EU market access), NIS2 security 
-                          measures (industrial operators), and GDPR (data privacy) with traceability matrices
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#EF4444] flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">
-                          <strong className="text-foreground">Security Tool Integration:</strong> Coordinated deployment 
-                          of partner security tools (penetration testing, vulnerability scanning, code analysis) with 
-                          consolidated reporting and remediation tracking
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#EF4444] flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">
-                          <strong className="text-foreground">Audit-Ready Evidence:</strong> Security documentation 
-                          package with test results, tool outputs, compliance matrices, and remediation records enabling 
-                          smooth certification audits
-                        </span>
-                      </li>
-                    </ul>
                   </div>
-                </AccordionContent>
-              </AccordionItem>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
 
-              {/* 3. Operations Playbook */}
-              <AccordionItem value="operations" className="border-2 border-[#8B5CF6]/20 rounded-lg overflow-hidden bg-white">
-                <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-[#8B5CF6]/5">
-                  <div className="flex items-center gap-4 text-left w-full">
-                    <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-[#8B5CF6]/10 rounded-lg flex-shrink-0">
-                      <Settings className="w-6 h-6 md:w-7 md:h-7 text-[#8B5CF6]" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl md:text-2xl font-bold">Operations Playbook</h3>
-                      <p className="text-sm text-muted-foreground">
-                        Deployment, updates, incident response procedures
-                      </p>
-                    </div>
+            {/* 2. Security & Compliance Framework */}
+            <AccordionItem value="security" className="border-2 border-[#EF4444]/20 rounded-lg overflow-hidden bg-white">
+              <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-[#EF4444]/5">
+                <div className="flex items-center gap-4 text-left w-full">
+                  <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-[#EF4444]/10 rounded-lg flex-shrink-0">
+                    <ShieldCheck className="w-6 h-6 md:w-7 md:h-7 text-[#EF4444]" />
                   </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 md:px-8 pb-8">
-                  <div className="space-y-4 pt-4">
-                    <p className="text-muted-foreground">
-                      Step-by-step operational procedures for the people who will run your system daily—
-                      covering deployment, updates, incident response, and recovery so your team operates 
-                      confidently without depending on expensive consultants for routine operations.
+                  <div className="flex-1">
+                    <h3 className="text-xl md:text-2xl font-bold">Security & Compliance Frameworks</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Audit-ready CRA, IEC 62443, and NIS2 evidence
                     </p>
-                    <ul className="space-y-3">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">
-                          <strong className="text-foreground">Pre-Deployment Checklists:</strong> Quality gates 
-                          before releasing to production—testing requirements, security scans, performance validation 
-                          preventing rushed deployments that cause outages
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">
-                          <strong className="text-foreground">Controlled Rollout Procedures:</strong> Phased deployment 
-                          strategies (start with 5%, expand to 25%, then 100%) with automated health monitoring catching 
-                          issues before they impact entire fleet
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">
-                          <strong className="text-foreground">Rollback Plans:</strong> When updates fail, automated 
-                          rollback procedures with clear error thresholds (e.g., rollback if >5% devices fail connection) 
-                          minimizing downtime
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">
-                          <strong className="text-foreground">Incident Response Templates:</strong> Post-mortem structure, 
-                          root cause analysis framework, and continuous improvement tracking converting incidents into 
-                          learning opportunities
-                        </span>
-                      </li>
-                    </ul>
                   </div>
-                </AccordionContent>
-              </AccordionItem>
-
-              {/* 4. Program Coordination */}
-              <AccordionItem value="program" className="border-2 border-[#10B981]/20 rounded-lg overflow-hidden bg-white">
-                <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-[#10B981]/5">
-                  <div className="flex items-center gap-4 text-left w-full">
-                    <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-[#10B981]/10 rounded-lg flex-shrink-0">
-                      <Users className="w-6 h-6 md:w-7 md:h-7 text-[#10B981]" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl md:text-2xl font-bold">Program Coordination Framework</h3>
-                      <p className="text-sm text-muted-foreground">
-                        Multi-vendor integration management
-                      </p>
-                    </div>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 md:px-8 pb-8">
-                  <div className="space-y-4 pt-4">
-                    <p className="text-muted-foreground">
-                      When multiple vendors contribute to your IoT system (chipmaker, connectivity provider, cloud platform), 
-                      clear coordination frameworks prevent integration chaos—defining ownership boundaries, interface 
-                      contracts, and change management ensuring everyone stays aligned.
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 md:px-8 pb-8">
+                <div className="space-y-4 pt-4">
+                  <p className="text-muted-foreground">
+                    Security architecture mapped to regulatory requirements with continuous evidence generation—
+                    preventing "compliance retrofit" failures and enabling smooth audits for EU market access.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-[#EF4444] flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">Defense-in-depth architecture:</strong> Security controls at 
+                        device (secure boot, TPM), transport (TLS/mTLS), and cloud (IAM, encryption) layers
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-[#EF4444] flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">Compliance mapping:</strong> CRA essential requirements, 
+                        IEC 62443 security levels, NIS2 measures with traceability matrices and evidence links
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-[#EF4444] flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">SBOM & vulnerability tracking:</strong> Software bill of materials 
+                        with automated CVE monitoring and patching workflows
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-[#EF4444] flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">Audit-ready evidence packets:</strong> Test results, scan outputs, 
+                        compliance matrices, and remediation records for certification bodies
+                      </span>
+                    </li>
+                  </ul>
+                  
+                  {/* Offer Context */}
+                  <div className="bg-red-50 p-4 rounded-lg border-l-4 border-[#EF4444] mt-4">
+                    <p className="text-xs text-gray-700">
+                      <strong>Both offers:</strong> Silicon-to-Cloud (CRA, CE marking) and Resilient Edge (IEC 62443, NIS2 for industrial OT). 
+                      Continuous evidence streaming is primary for Resilient Edge.
                     </p>
-                    <ul className="space-y-3">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">
-                          <strong className="text-foreground">Responsibility Matrix:</strong> RACI definitions answering 
-                          "who owns what"—eliminating finger-pointing when issues arise by clearly documenting which 
-                          vendor is responsible, accountable, consulted, or informed
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">
-                          <strong className="text-foreground">Interface Specifications:</strong> API contracts and data 
-                          format standards enabling vendors to build compatible components independently, reducing constant 
-                          coordination meetings and blocking dependencies
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">
-                          <strong className="text-foreground">Change Control Process:</strong> Formal procedures for 
-                          proposing, reviewing, and approving changes preventing "surprise" updates that break integrations 
-                          and derail timelines
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-muted-foreground">
-                          <strong className="text-foreground">Vendor Performance Tracking:</strong> Scorecard methodologies 
-                          measuring delivery timeliness, quality metrics, and responsiveness enabling data-driven vendor 
-                          management decisions
-                        </span>
-                      </li>
-                    </ul>
                   </div>
-                </AccordionContent>
-              </AccordionItem>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
 
-            </Accordion>
+            {/* 3. Operations Runbooks */}
+            <AccordionItem value="operations" className="border-2 border-[#8B5CF6]/20 rounded-lg overflow-hidden bg-white">
+              <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-[#8B5CF6]/5">
+                <div className="flex items-center gap-4 text-left w-full">
+                  <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-[#8B5CF6]/10 rounded-lg flex-shrink-0">
+                    <Settings className="w-6 h-6 md:w-7 md:h-7 text-[#8B5CF6]" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl md:text-2xl font-bold">Operations Runbooks & SLO Definitions</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Deployment, rollout, rollback, and incident response procedures
+                    </p>
+                  </div>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 md:px-8 pb-8">
+                <div className="space-y-4 pt-4">
+                  <p className="text-muted-foreground">
+                    Step-by-step operational procedures enabling autonomous execution without constant consultant dependency—
+                    covering deployment gates, canary rollouts, automated rollback, and incident response.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">SLO definitions:</strong> Uptime targets, MTTR commitments, 
+                        and error budgets with measurement criteria and escalation triggers
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">Canary deployment procedures:</strong> Phased rollout (5% → 25% → 100%) 
+                        with automated health checks and promotion gates
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">Automated rollback policies:</strong> Error thresholds (e.g., >5% failure rate) 
+                        triggering automatic reversion with notification workflows
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">Incident response templates:</strong> Post-mortem structure, 
+                        root cause analysis, and continuous improvement tracking
+                      </span>
+                    </li>
+                  </ul>
+                  
+                  {/* Offer Context */}
+                  <div className="bg-purple-50 p-4 rounded-lg border-l-4 border-[#8B5CF6] mt-4">
+                    <p className="text-xs text-gray-700">
+                      <strong>Primary deliverable for Resilient Edge:</strong> SLO governance and autonomous runbooks are core to 
+                      edge operations. Silicon-to-Cloud uses simplified deployment checklists for device rollouts.
+                    </p>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* 4. Multi-Vendor Coordination Framework */}
+            <AccordionItem value="program" className="border-2 border-[#10B981]/20 rounded-lg overflow-hidden bg-white">
+              <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-[#10B981]/5">
+                <div className="flex items-center gap-4 text-left w-full">
+                  <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-[#10B981]/10 rounded-lg flex-shrink-0">
+                    <Users className="w-6 h-6 md:w-7 md:h-7 text-[#10B981]" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl md:text-2xl font-bold">Multi-Vendor Coordination Framework</h3>
+                    <p className="text-sm text-muted-foreground">
+                      RACI matrices and interface contracts for distributed teams
+                    </p>
+                  </div>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 md:px-8 pb-8">
+                <div className="space-y-4 pt-4">
+                  <p className="text-muted-foreground">
+                    When multiple vendors contribute components (chipmaker, connectivity provider, cloud platform), 
+                    clear coordination frameworks prevent integration chaos—defining ownership and change control.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">RACI responsibility matrix:</strong> Who owns what—eliminating 
+                        finger-pointing with clear Responsible, Accountable, Consulted, Informed definitions
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">Interface contracts:</strong> API specifications and data standards 
+                        enabling parallel work without blocking dependencies
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">Change control process:</strong> Formal approval workflows preventing 
+                        "surprise" updates that break integrations
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">Vendor performance scorecards:</strong> Delivery timeliness, quality metrics, 
+                        and responsiveness tracking for data-driven vendor management
+                      </span>
+                    </li>
+                  </ul>
+                  
+                  {/* Offer Context */}
+                  <div className="bg-green-50 p-4 rounded-lg border-l-4 border-[#10B981] mt-4">
+                    <p className="text-xs text-gray-700">
+                      <strong>Both offers:</strong> Silicon-to-Cloud (coordinating chipmakers, connectivity providers, cloud platforms) and 
+                      Resilient Edge (coordinating OT vendors, edge hardware suppliers, SOC integration partners).
+                    </p>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+          </Accordion>
 
             {/* CTA */}
             {/*<div className="text-center">
@@ -1426,229 +1434,229 @@ export default function ServicesPage() {
 
 
       {/* Three-Phase Consulting Methodology - ENHANCED VISUAL VERSION */}
-<section id="consulting-methodology" className="py-20 md:py-32 scroll-mt-20">
-  <div className="container mx-auto px-4">
-    <div className="max-w-7xl mx-auto space-y-16">
-      <div className="text-center space-y-4">
-        <h2 className="text-3xl md:text-4xl font-bold">Three-Phase Consulting Methodology</h2>
-        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Structured engagement process from strategic assessment to production deployment
-        </p>
-      </div>
+      <section id="consulting-methodology" className="py-20 md:py-32 scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto space-y-16">
+            <div className="text-center space-y-4">
+              <h2 className="text-3xl md:text-4xl font-bold">Three-Phase Consulting Methodology</h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Structured engagement process from strategic assessment to production deployment
+              </p>
+            </div>
 
-      {/* Grid with Arrow Connectors */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 relative">
-        
-        {/* Arrow Connector 1→2 (Hidden on mobile) */}
-        <div className="hidden md:block absolute top-32 left-[33.33%] transform -translate-x-1/2 -translate-y-1/2 z-10">
-          <ArrowRight className="h-8 w-8 text-[#8B5CF6]/40" strokeWidth={2.5} />
+            {/* Grid with Arrow Connectors */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 relative">
+              
+              {/* Arrow Connector 1→2 (Hidden on mobile) */}
+              <div className="hidden md:block absolute top-32 left-[33.33%] transform -translate-x-1/2 -translate-y-1/2 z-10">
+                <ArrowRight className="h-8 w-8 text-[#8B5CF6]/40" strokeWidth={2.5} />
+              </div>
+              
+              {/* Arrow Connector 2→3 (Hidden on mobile) */}
+              <div className="hidden md:block absolute top-32 left-[66.66%] transform -translate-x-1/2 -translate-y-1/2 z-10">
+                <ArrowRight className="h-8 w-8 text-[#10B981]/40" strokeWidth={2.5} />
+              </div>
+
+              {/* Phase 1: Discovery */}
+              <Card className="border-l-4 border-[#06B6D4] hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="flex items-center gap-3 mb-4">
+                    {/* Enhanced Icon Badge with Ring */}
+                    <div className="w-14 h-14 rounded-full bg-[#06B6D4]/10 flex items-center justify-center ring-4 ring-[#06B6D4]/20">
+                      <Search className="h-7 w-7 text-[#06B6D4]" strokeWidth={2.5} />
+                    </div>
+                    <div>
+                      <CardTitle className="text-2xl">Discovery Phase</CardTitle>
+                      <p className="text-sm text-muted-foreground font-medium">4-6 weeks • Strategic validation</p>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-base">What Happens:</h4>
+                    <p className="text-muted-foreground mb-4 text-sm">
+                      Comprehensive assessment of your current state, technical requirements, and compliance needs—
+                      answering the critical question: "Should we build this, and if yes, how?" This phase delivers
+                      the blueprint and business case needed to secure executive approval and budget.
+                    </p>
+                    {/* Enhanced List with Better Contrast */}
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
+                        <span className="font-medium">Chip-to-cloud readiness assessment evaluating current architecture gaps</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
+                        <span className="font-medium">CRA compliance gap analysis with 12-24 month remediation roadmap</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
+                        <span className="font-medium">Architecture blueprint with technology selection rationale</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
+                        <span className="font-medium">Business case with ROI projections, cost analysis, and risk assessment</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
+                        <span className="font-medium">Implementation roadmap with phase priorities and resource requirements</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-[#06B6D4]/5 p-4 rounded-lg border-l-4 border-[#06B6D4]">
+                    <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
+                      <ShieldCheck className="h-4 w-4 text-[#06B6D4]" />
+                      Quality Gate: Go/No-Go Decision
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Executive sign-off on architecture blueprint, CRA compliance roadmap, and business case—
+                      providing clear go/no-go decision point before committing to full implementation.
+                      Many clients stop here with validated blueprint for internal development.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Phase 2: Build */}
+              <Card className="border-l-4 border-[#8B5CF6] hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="flex items-center gap-3 mb-4">
+                    {/* Enhanced Icon Badge with Ring */}
+                    <div className="w-14 h-14 rounded-full bg-[#8B5CF6]/10 flex items-center justify-center ring-4 ring-[#8B5CF6]/20">
+                      <Code className="h-7 w-7 text-[#8B5CF6]" strokeWidth={2.5} />
+                    </div>
+                    <div>
+                      <CardTitle className="text-2xl">Build Phase</CardTitle>
+                      <p className="text-sm text-muted-foreground font-medium">12-20 weeks • Agile implementation</p>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-base">What Happens:</h4>
+                    <p className="text-muted-foreground mb-4 text-sm">
+                      Hands-on development of critical system components your team can't build alone—reference
+                      firmware, cloud integrations, security implementations. Delivered in 2-week sprints with
+                      working demos ensuring alignment and reducing late-stage surprises.
+                    </p>
+                    {/* Enhanced List with Better Contrast */}
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
+                        <span className="font-medium">Bi-weekly sprint demos with working code, not PowerPoint slides</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
+                        <span className="font-medium">Critical module development (device firmware, connectivity, cloud integration)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
+                        <span className="font-medium">Continuous integration setup with automated testing and quality checks</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
+                        <span className="font-medium">Operations Playbooks documenting deployment and incident response procedures</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
+                        <span className="font-medium">Security Framework with compliance mapping and audit-ready documentation</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-[#8B5CF6]/5 p-4 rounded-lg border-l-4 border-[#8B5CF6]">
+                    <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
+                      <ShieldCheck className="h-4 w-4 text-[#8B5CF6]" />
+                      Quality Gate: Implementation Verification
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Functional demos validated against blueprint specifications, test coverage exceeding 80%,
+                      security verification completed, integration testing passed. Ensures what we built actually
+                      works before moving to production pilots—catching issues in controlled environment.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Phase 3: Pilot-to-Scale */}
+              <Card className="border-l-4 border-[#10B981] hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="flex items-center gap-3 mb-4">
+                    {/* Enhanced Icon Badge with Ring */}
+                    <div className="w-14 h-14 rounded-full bg-[#10B981]/10 flex items-center justify-center ring-4 ring-[#10B981]/20">
+                      <Rocket className="h-7 w-7 text-[#10B981]" strokeWidth={2.5} />
+                    </div>
+                    <div>
+                      <CardTitle className="text-2xl">Pilot-to-Scale Phase</CardTitle>
+                      <p className="text-sm text-muted-foreground font-medium">8-12 weeks • Production validation</p>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-base">What Happens:</h4>
+                    <p className="text-muted-foreground mb-4 text-sm">
+                      Real-world pilot deployment with actual devices, users, and operational conditions—
+                      validating the system performs as designed and your team can operate it independently.
+                      Ends with complete handoff enabling confident scaling to thousands of devices.
+                    </p>
+                    {/* Enhanced List with Better Contrast */}
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
+                        <span className="font-medium">Pilot deployment with 10-100 devices in real operational environment</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
+                        <span className="font-medium">Performance verification: latency, throughput, reliability metrics validated</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
+                        <span className="font-medium">Operational validation: Your team runs daily operations with our support</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
+                        <span className="font-medium">Complete documentation handoff: Architecture, Operations, Security frameworks</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
+                        <span className="font-medium">Team training on operations, troubleshooting, and incident response</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-[#10B981]/5 p-4 rounded-lg border-l-4 border-[#10B981]">
+                    <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
+                      <ShieldCheck className="h-4 w-4 text-[#10B981]" />
+                      Quality Gate: Production Readiness
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Pilot success metrics achieved (uptime >99%, performance within targets), operations runbooks
+                      validated through real incidents, acceptance criteria met, your team operating independently.
+                      Sign-off confirms you're ready to scale to full production without ongoing consultant dependency.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/*<div className="text-center">
+              <Button asChild variant="outline" size="lg">
+                <Link href="/resources">Download Process Overview PDF</Link>
+              </Button>
+            </div>*/}
+
+            {/* Back to Top */}
+            <div className="text-center">
+              <Link href="#" className="inline-flex items-center text-sm text-muted-foreground hover:text-primary">
+                <ArrowUp className="h-4 w-4 mr-2" />
+                Back to Top
+              </Link>
+            </div>
+          </div>
         </div>
-        
-        {/* Arrow Connector 2→3 (Hidden on mobile) */}
-        <div className="hidden md:block absolute top-32 left-[66.66%] transform -translate-x-1/2 -translate-y-1/2 z-10">
-          <ArrowRight className="h-8 w-8 text-[#10B981]/40" strokeWidth={2.5} />
-        </div>
-
-        {/* Phase 1: Discovery */}
-        <Card className="border-l-4 border-[#06B6D4] hover:shadow-lg transition-shadow">
-          <CardHeader>
-            <div className="flex items-center gap-3 mb-4">
-              {/* Enhanced Icon Badge with Ring */}
-              <div className="w-14 h-14 rounded-full bg-[#06B6D4]/10 flex items-center justify-center ring-4 ring-[#06B6D4]/20">
-                <Search className="h-7 w-7 text-[#06B6D4]" strokeWidth={2.5} />
-              </div>
-              <div>
-                <CardTitle className="text-2xl">Discovery Phase</CardTitle>
-                <p className="text-sm text-muted-foreground font-medium">4-6 weeks • Strategic validation</p>
-              </div>
-            </div>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div>
-              <h4 className="font-semibold mb-3 text-base">What Happens:</h4>
-              <p className="text-muted-foreground mb-4 text-sm">
-                Comprehensive assessment of your current state, technical requirements, and compliance needs—
-                answering the critical question: "Should we build this, and if yes, how?" This phase delivers
-                the blueprint and business case needed to secure executive approval and budget.
-              </p>
-              {/* Enhanced List with Better Contrast */}
-              <ul className="space-y-2 text-sm">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
-                  <span className="font-medium">Chip-to-cloud readiness assessment evaluating current architecture gaps</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
-                  <span className="font-medium">CRA compliance gap analysis with 12-24 month remediation roadmap</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
-                  <span className="font-medium">Architecture blueprint with technology selection rationale</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
-                  <span className="font-medium">Business case with ROI projections, cost analysis, and risk assessment</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
-                  <span className="font-medium">Implementation roadmap with phase priorities and resource requirements</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-[#06B6D4]/5 p-4 rounded-lg border-l-4 border-[#06B6D4]">
-              <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-[#06B6D4]" />
-                Quality Gate: Go/No-Go Decision
-              </h4>
-              <p className="text-sm text-muted-foreground">
-                Executive sign-off on architecture blueprint, CRA compliance roadmap, and business case—
-                providing clear go/no-go decision point before committing to full implementation.
-                Many clients stop here with validated blueprint for internal development.
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Phase 2: Build */}
-        <Card className="border-l-4 border-[#8B5CF6] hover:shadow-lg transition-shadow">
-          <CardHeader>
-            <div className="flex items-center gap-3 mb-4">
-              {/* Enhanced Icon Badge with Ring */}
-              <div className="w-14 h-14 rounded-full bg-[#8B5CF6]/10 flex items-center justify-center ring-4 ring-[#8B5CF6]/20">
-                <Code className="h-7 w-7 text-[#8B5CF6]" strokeWidth={2.5} />
-              </div>
-              <div>
-                <CardTitle className="text-2xl">Build Phase</CardTitle>
-                <p className="text-sm text-muted-foreground font-medium">12-20 weeks • Agile implementation</p>
-              </div>
-            </div>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div>
-              <h4 className="font-semibold mb-3 text-base">What Happens:</h4>
-              <p className="text-muted-foreground mb-4 text-sm">
-                Hands-on development of critical system components your team can't build alone—reference
-                firmware, cloud integrations, security implementations. Delivered in 2-week sprints with
-                working demos ensuring alignment and reducing late-stage surprises.
-              </p>
-              {/* Enhanced List with Better Contrast */}
-              <ul className="space-y-2 text-sm">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                  <span className="font-medium">Bi-weekly sprint demos with working code, not PowerPoint slides</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                  <span className="font-medium">Critical module development (device firmware, connectivity, cloud integration)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                  <span className="font-medium">Continuous integration setup with automated testing and quality checks</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                  <span className="font-medium">Operations Playbooks documenting deployment and incident response procedures</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                  <span className="font-medium">Security Framework with compliance mapping and audit-ready documentation</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-[#8B5CF6]/5 p-4 rounded-lg border-l-4 border-[#8B5CF6]">
-              <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-[#8B5CF6]" />
-                Quality Gate: Implementation Verification
-              </h4>
-              <p className="text-sm text-muted-foreground">
-                Functional demos validated against blueprint specifications, test coverage exceeding 80%,
-                security verification completed, integration testing passed. Ensures what we built actually
-                works before moving to production pilots—catching issues in controlled environment.
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Phase 3: Pilot-to-Scale */}
-        <Card className="border-l-4 border-[#10B981] hover:shadow-lg transition-shadow">
-          <CardHeader>
-            <div className="flex items-center gap-3 mb-4">
-              {/* Enhanced Icon Badge with Ring */}
-              <div className="w-14 h-14 rounded-full bg-[#10B981]/10 flex items-center justify-center ring-4 ring-[#10B981]/20">
-                <Rocket className="h-7 w-7 text-[#10B981]" strokeWidth={2.5} />
-              </div>
-              <div>
-                <CardTitle className="text-2xl">Pilot-to-Scale Phase</CardTitle>
-                <p className="text-sm text-muted-foreground font-medium">8-12 weeks • Production validation</p>
-              </div>
-            </div>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div>
-              <h4 className="font-semibold mb-3 text-base">What Happens:</h4>
-              <p className="text-muted-foreground mb-4 text-sm">
-                Real-world pilot deployment with actual devices, users, and operational conditions—
-                validating the system performs as designed and your team can operate it independently.
-                Ends with complete handoff enabling confident scaling to thousands of devices.
-              </p>
-              {/* Enhanced List with Better Contrast */}
-              <ul className="space-y-2 text-sm">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                  <span className="font-medium">Pilot deployment with 10-100 devices in real operational environment</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                  <span className="font-medium">Performance verification: latency, throughput, reliability metrics validated</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                  <span className="font-medium">Operational validation: Your team runs daily operations with our support</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                  <span className="font-medium">Complete documentation handoff: Architecture, Operations, Security frameworks</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                  <span className="font-medium">Team training on operations, troubleshooting, and incident response</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-[#10B981]/5 p-4 rounded-lg border-l-4 border-[#10B981]">
-              <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-[#10B981]" />
-                Quality Gate: Production Readiness
-              </h4>
-              <p className="text-sm text-muted-foreground">
-                Pilot success metrics achieved (uptime >99%, performance within targets), operations runbooks
-                validated through real incidents, acceptance criteria met, your team operating independently.
-                Sign-off confirms you're ready to scale to full production without ongoing consultant dependency.
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-
-      {/*<div className="text-center">
-        <Button asChild variant="outline" size="lg">
-          <Link href="/resources">Download Process Overview PDF</Link>
-        </Button>
-      </div>*/}
-
-      {/* Back to Top */}
-      <div className="text-center">
-        <Link href="#" className="inline-flex items-center text-sm text-muted-foreground hover:text-primary">
-          <ArrowUp className="h-4 w-4 mr-2" />
-          Back to Top
-        </Link>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Founder Accountability */}
       <section id="founder-accountability" className="py-20 md:py-32 bg-muted/30 scroll-mt-20">
