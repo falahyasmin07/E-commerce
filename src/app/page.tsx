@@ -33,12 +33,12 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Compliance Alert */}
-      <div className="bg-yellow-500/10 border-b border-yellow-500/20 text-yellow-700 dark:text-yellow-300 py-2 px-4 text-center text-sm font-medium">
+      {/*<div className="bg-yellow-500/10 border-b border-yellow-500/20 text-yellow-700 dark:text-yellow-300 py-2 px-4 text-center text-sm font-medium">
         <Link href="/contact" className="hover:underline">
           <Info className="inline h-4 w-4 mr-2" />
           ⚠️ EU Compliance Deadlines: CRA Dec 2027 | NIS2 in force → Assess Readiness Now
         </Link>
-      </div>
+      </div>*/}
 
       {/* HERO SECTION - Enhanced Visuals */}
       <section className="relative overflow-hidden py-20 md:py-32">

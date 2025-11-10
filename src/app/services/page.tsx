@@ -1535,7 +1535,7 @@ export default function ServicesPage() {
             </Card>
 
             {/* Optional: Small CRA urgency note */}
-            <div className="max-w-2xl mx-auto bg-secure/5 border border-secure/20 rounded-lg p-6">
+            {/*<div className="max-w-2xl mx-auto bg-secure/5 border border-secure/20 rounded-lg p-6">
               <div className="flex items-start gap-4">
                 <Shield className="w-6 h-6 text-secure flex-shrink-0 mt-1" />
                 <div>
@@ -1549,7 +1549,7 @@ export default function ServicesPage() {
                   </Button>
                 </div>
               </div>
-            </div>
+            </div>*/}
 
             {/* Back to Top */}
             <div className="text-center pt-8">
