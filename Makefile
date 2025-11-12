@@ -37,8 +37,9 @@ ${${MODULE}_OUTPUT}/%:${DIR}/%
 	${RM} -r $@
 	cp -r $< $(dir $@)
 
-serve:${DIR}
-	cd $< && npm run dev
+serve:DIR:=${DIR}
+serve:
+	cd ${DIR}/dist && npm run dev
 
 ${MODULE}_sync:${${MODULE}_OUTPUT}
 ifneq (${TARGET},)
