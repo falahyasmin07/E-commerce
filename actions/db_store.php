@@ -29,6 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $conn->real_escape_string($data['email']);
     $company_name = $conn->real_escape_string($data['company_name']);
     $phone_number = $conn->real_escape_string($data['phone_number']);
+    $message = $conn->real_escape_string($data['message']);
 
 	$response["data"] = [
 		"first_name" => $first_name,
@@ -36,9 +37,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		"email" => $email,
 		"company_name" => $company_name,
 		"phone_number" => $phone_number,
+		"message" => $message,
 	];
     // SQL query to insert data into the database
-    $sql = "INSERT INTO users (first_name, last_name, email, company_name, phone_number) VALUES ('$first_name', '$last_name', '$email', '$company_name', '$phone_number')";
+    $sql = "INSERT INTO users (first_name, last_name, email, company_name, phone_number, message) VALUES ('$first_name', '$last_name', '$email', '$company_name', '$phone_number', '$message')";
 
     // Execute the query and check for success
     if ($conn->query($sql) === TRUE) {

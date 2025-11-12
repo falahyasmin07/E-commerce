@@ -64,13 +64,47 @@ const entryPoints = [
 ]
 
 export default function ContactPage() {
-  const [submitted, setSubmitted] = useState(false)
+  const [submitted, setSubmitted] = useState(false);
+  const [formValues, setFormValues] = useState({});
+  const [text, setText] = useState('');
+  const max = 255;
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 5000)
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormValues((prev) => ({
+      ...prev,
+     [id]: value,
+    }))
   }
+
+  const handleTextAreaChange = (e) => {
+    setText(e.target.value);
+    handleChange(e);
+  }
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
+
+    const baseUrl = "https://edgepulsar.com";
+    const url = `${baseUrl}/actions/db_store.php`;
+
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formValues),
+      });
+
+      const result = await response.json();
+      console.log('Success!', result);
+    } catch (error) {
+      console.error('Error!', error);
+    }
+
+    setTimeout(() => setSubmitted(false), 50000);
+  };
 
   return (
     <div className="flex flex-col">
@@ -200,18 +234,32 @@ export default function ContactPage() {
                     <form onSubmit={handleSubmit} className="space-y-6">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
-                          <Label htmlFor="fullName">Full Name *</Label>
-                          <Input id="fullName" placeholder="John Doe" required />
+                          <Label htmlFor="first_name">First Name *</Label>
+                          <Input id="first_name" placeholder="John" required onChange={handleChange}/>
+                        </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="last_name">Last Name *</Label>
+                          <Input id="last_name" placeholder="Doe" required onChange={handleChange}/>
                         </div>
                         <div className="space-y-2">
                           <Label htmlFor="email">Work Email *</Label>
-                          <Input id="email" type="email" placeholder="john@company.com" required />
+                          <Input id="email" type="email" placeholder="john@company.com" required onChange={handleChange}/>
+                        </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="phone_number">Phone Number *</Label>
+                          <Input id="phone_number" placeholder="+331234567890" required onChange={handleChange}/>
                         </div>
                       </div>
 
-                      <div className="space-y-2">
-                        <Label htmlFor="company">Company Name *</Label>
-                        <Input id="company" placeholder="Your Company Name" required />
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <Label htmlFor="company_name">Company Name *</Label>
+                          <Input id="company_name" placeholder="Your Company Name" required onChange={handleChange}/>
+                        </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="title">Title *</Label>
+                          <Input id="title" placeholder="CEO/CTO/Director/Manager/..." required onChange={handleChange}/>
+                        </div>
                       </div>
 
                       <div className="space-y-2">
@@ -263,14 +311,17 @@ export default function ContactPage() {
                         </Select>
                       </div>
 
-                      <div className="space-y-2">
-                        <Label htmlFor="message">Tell us about your challenge *</Label>
-                        <Textarea
-                          id="message"
-                          placeholder="What specific technical challenge or compliance requirement brings you to Edge Pulsar?"
-                          rows={5}
-                          required
-                        />
+                      <div className="textarea-with-counter" style={{ display: 'flex', flexDirection: 'column' }}>
+                        <div className="space-y-2">
+                          <Label htmlFor="message">Tell us about your challenge *</Label>
+                          <Textarea value={text}
+                            id="message"
+                            placeholder="What specific technical challenge or compliance requirement brings you to Edge Pulsar?"
+                            rows={5} maxLength={max}
+                            required onChange={handleTextAreaChange}
+                          />
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: 'flex-end', fontSize: '12px', color: '#555' }}> {text.length} / {max} </div>
                       </div>
 
                       <p className="text-xs text-muted-foreground">
