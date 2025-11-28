@@ -69,8 +69,8 @@ export default function HomePage() {
             <div className="space-y-6 text-center">
               <div className="space-y-4">
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight text-white drop-shadow-lg">
-                  Chip-to-Cloud Advisory{" "}
-                  <span className="block">Build Faster. Run Reliably. Comply Continuously.</span>
+                  From Chip to Cloud.{" "}
+                  <span className="block">Faster. Smarter. Secure.</span>
                 </h1>
               </div>
               {/* Animated Pulse CTA */}
@@ -87,11 +87,11 @@ export default function HomePage() {
                 </Button>
               </div>
               <p className="text-sm text-blue-200/70 mt-2 text-center">
-                Strategic assessment, validated architecture, and compliance roadmap
+                Strategic assessment, validated architecture, and production-ready blueprints
               </p>
               <div className="flex justify-center pt-2">
                 <Link href="/services" className="text-blue-100/80 hover:text-white hover:underline text-base">
-                  See our two core offers: Silicon-to-Cloud & Resilient Edge →
+                  See our two core offers: Embedded Core & Industrial Edge →
                 </Link>
               </div>
             </div>
@@ -133,23 +133,14 @@ export default function HomePage() {
           {/* Mission statement - covers both offers */}
           <p className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto font-medium mb-6 text-gray-800">
           Empower <span className="font-semibold text-gray-900">device makers</span> and 
-          <span className="font-semibold text-gray-900"> industrial enterprises</span> to accelerate their chip-to-cloud journey—from 
-          silicon development to resilient edge deployment—with 
-          <span className="font-bold text-blue-600"> secure, production-ready cloud architectures</span>.
-        </p>
+          <span className="font-semibold text-gray-900"> industrial enterprises</span> to accelerate their chip-to-cloud journey with 
+          <span className="font-bold text-blue-600"> secure, production-ready architectures</span> spanning embedded systems, edge infrastructure and cloud integration.
+          </p>
                   {/* Supporting text */}
           <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
             Most consultancies master either hardware or cloud—not both. We bridge that critical gap with 
-            founder-led expertise across embedded systems, industrial IoT, security frameworks, and cloud platforms.
+            deep expertise across embedded systems, edge computing, security frameworks and cloud platforms.
           </p>
-          </div>
-
-          {/* Visual divider with founder credential badge */}
-          <div className="flex justify-center mt-10">
-            <div className="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full border-2 border-blue-200 shadow-md hover:shadow-lg hover:border-blue-300 transition-all">
-              <Lightbulb className="w-5 h-5 text-blue-600" />
-              <span className="text-sm font-semibold text-gray-900">40+ Years Combined Founder Expertise</span>
-            </div>
           </div>
         </div>
       </section>
@@ -162,13 +153,13 @@ export default function HomePage() {
             Two Core Consulting Offers
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Build smarter edge solutions or operate them reliably at scale
+            Hardware-segmented solutions for distinct edge categories
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
           
-          {/* Offer 1: Silicon-to-Cloud Acceleration */}
+          {/* Offer 1: Embedded Core */}
           <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
             
             {/* Background Illustration Section */}
@@ -205,16 +196,16 @@ export default function HomePage() {
             <div className="p-8 flex flex-col flex-grow">
               <div className="mb-4">
                 <span className="inline-block bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-sm font-semibold">
-                  For Device & Chip Makers
+                  For Device Makers
                 </span>
               </div>
 
               <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                Silicon-to-Cloud Acceleration
+                Embedded Core
               </h3>
 
               <p className="text-gray-700 mb-6 flex-grow">
-                Accelerate your journey from concept to production with founder-led reference design development, 
+                Accelerate your journey from concept to production with reference design development, 
                 security-first embedded solutions, and production-ready architecture blueprints.
               </p>
 
@@ -222,7 +213,7 @@ export default function HomePage() {
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
                   <span>
-                    <strong>Reference design acceleration:</strong> Validated architectures and PoC builds in weeks
+                    <strong>Reference design acceleration:</strong> Validated architectures and PoC development to accelerate your timeline
                   </span>
                 </div>
                 <div className="flex items-start">
@@ -239,14 +230,14 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <Link href="/services#silicon-to-cloud" className="inline-flex items-center text-cyan-600 font-semibold hover:text-cyan-700 mt-auto group">
-                Explore Silicon-to-Cloud Services
+              <Link href="/services#embedded-core" className="inline-flex items-center text-cyan-600 font-semibold hover:text-cyan-700 mt-auto group">
+                Explore Embedded Core Services
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           </div>
 
-          {/* Offer 2: Resilient Edge */}
+          {/* Offer 2: Industrial Edge */}
           <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
             
             {/* Background Illustration Section */}
@@ -254,7 +245,7 @@ export default function HomePage() {
               {/* Background Image */}
               <Image
                 src="edge-infrastructure.png"
-                alt="Resilient Edge Illustration"
+                alt="Industrial Edge Illustration"
                 fill
                 className="object-cover"
                 priority
@@ -263,22 +254,22 @@ export default function HomePage() {
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500/80 via-indigo-500/75 to-purple-600/80" />
               
-              {/* Icon Flow Overlay: Detect → Act → Comply */}
+              {/* Icon Flow Overlay: Chip → Compute → Secure */}
               <div className="relative h-full flex items-center justify-center z-10">
                 <div className="flex items-center gap-3">
                   <div className="flex flex-col items-center">
-                    <Radar className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Detect</span>
+                    <Cpu className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Chip</span>
                   </div>
                   <ArrowRight className="w-9 h-9 text-white/80 drop-shadow-lg" />
                   <div className="flex flex-col items-center">
                     <Zap className="w-14 h-14 text-cyan-50 drop-shadow-lg" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Act</span>
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Compute</span>
                   </div>
                   <ArrowRight className="w-9 h-9 text-white/80 drop-shadow-lg" />
                   <div className="flex flex-col items-center">
                     <ShieldCheck className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Comply</span>
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Secure</span>
                   </div>
                 </div>
               </div>
@@ -288,41 +279,41 @@ export default function HomePage() {
             <div className="p-8 flex flex-col flex-grow">
               <div className="mb-4">
                 <span className="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">
-                  For Industrial Operators
+                  For Industrial Enterprises
                 </span>
               </div>
 
               <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                Resilient Edge
+                Industrial Edge
               </h3>
 
               <p className="text-gray-700 mb-6 flex-grow">
-                Secure and reliable edge operations for industrial environments. 
-                Keep your operations running, prove CRA/NIS2 compliance continuously, and integrate 
-                with SOC.
+                Bring chip-level expertise to industrial edge computing—from AI accelerator selection 
+                to security-hardened platforms—with ruggedized architectures and secure chip-to-cloud integration.
               </p>
 
               <div className="mb-6 text-gray-700 space-y-2">
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span><strong>SLO & runbook enablement:</strong> Define uptime targets and autonomous response policies</span>
+                  <span><strong>Edge AI accelerator expertise:</strong> Platform selection and integration (AI inference chips, neural processing units)</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span><strong>Continuous compliance:</strong> IEC 62443, CRA, NIS2 evidence streamed from edge</span>
+                  <span><strong>Chip-level security:</strong> Hardware root of trust, secure boot, and cryptographic features for NIS2/IEC 62443 compliance</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span><strong>SOC-ready observability:</strong> Unified operations, cybersecurity, and compliance dashboard</span>
+                  <span><strong>Validated architectures:</strong> Production-ready blueprints for industrial edge platforms</span>
                 </div>
               </div>
 
-              <Link href="/services#resilient-edge" className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 mt-auto group">
-                Explore Resilient Edge Services
+              <Link href="/services#industrial-edge" className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 mt-auto group">
+                Explore Industrial Edge Services
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           </div>
+
         </div>
 
       </div>
@@ -370,8 +361,7 @@ export default function HomePage() {
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold">Accelerated Time-to-Market</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Compressed development cycles through validated architecture and systematic advisory approach—avoiding
-                  common pitfalls that extend typical projects to 18-24 months.
+                  Validated architectures and proven methodologies eliminate exploratory dead-ends—compressing the path from concept to production-ready design.
                 </p>
               </div>
             </div>
@@ -383,8 +373,7 @@ export default function HomePage() {
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold">De-Risked Integration</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Founder-led consulting with comprehensive blueprints preventing common integration failures and costly
-                  rework in multi-vendor chip-to-cloud projects.
+                  Deep expertise across chip, connectivity, and cloud eliminates costly integration failures in complex multi-vendor architectures.
                 </p>
               </div>
             </div>
@@ -396,8 +385,7 @@ export default function HomePage() {
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold">Security-by-Design</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  IEC 62443, GDPR, and EU Cyber Resilience Act (CRA) compliance through design-time controls and
-                  systematic security frameworks—accelerating certification processes.
+                  CRA and IEC 62443 compliance architected from the start—avoiding expensive late-stage security retrofits and certification delays.
                 </p>
               </div>
             </div>
@@ -421,7 +409,7 @@ export default function HomePage() {
           </h3>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
             Deep chip-to-cloud expertise focused on four technology-driven industries 
-            where our founders have proven track records
+            where we have proven track records
           </p>
 
           {/* 4-Column Grid */}
@@ -518,7 +506,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#1F2937] mt-4 whitespace-nowrap">Innovate / Accelerate</h3>
                 <p className="text-[#1F2937]/90 leading-relaxed">
-                  Validate technology choices through rapid PoCs, critical modules, and architecture blueprints (4-6 weeks).
+                  Validate technology choices through rapid PoCs, critical modules, and architecture blueprints.
                 </p>
               </div>
               <Link href="#innovate-detail" className="text-[#0EA5E9] hover:underline flex items-center justify-center mt-4">
@@ -550,7 +538,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#1F2937] mt-4">Secure / Harden</h3>
                 <p className="text-[#1F2937]/90 leading-relaxed">
-                  Security-by-design from device to cloud (GDPR, CRA/NIS2 compliance).
+                  Security-by-design from device to cloud (CRA/NIS2 compliance).
                 </p>
               </div>
               <Link href="#secure-detail" className="text-[#EF4444] hover:underline flex items-center justify-center mt-4">
@@ -566,7 +554,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#1F2937] mt-4">Sense / Respond</h3>
                 <p className="text-[#1F2937]/90 leading-relaxed">
-                  Real-time response from data to action—edge analytics for Silicon-to-Cloud, autonomous runbooks for Resilient Edge.
+                  Architect edge data processing workflows—sensor integration, local compute, and AI inference pipelines.
                 </p>
               </div>
               <Link href="#respond-detail" className="text-[#10B981] hover:underline flex items-center justify-center mt-4">
@@ -608,9 +596,9 @@ export default function HomePage() {
                 <h3 className="text-lg font-bold text-gray-900">Embedded Platforms</h3>
                 <div className="space-y-1 text-sm text-gray-600">
                   <p>ARM Cortex-M/A</p>
-                  <p>Qualcomm</p>
-                  <p>NXP • STMicro</p>
-                  <p>Sequans</p>
+                  <p>RISC-V</p>
+                  <p>Low-Power SoCs</p>
+                  <p>Edge AI Accelerators</p>
                 </div>
               </div>
 
@@ -637,7 +625,6 @@ export default function HomePage() {
                 <div className="space-y-1 text-sm text-gray-600">
                   <p>AWS IoT Core</p>
                   <p>OVH</p>
-                  <p>Edge Computing</p>
                 </div>
               </div>
 
@@ -659,7 +646,7 @@ export default function HomePage() {
             {/* Optional: Add experience note */}
             <div className="text-center pt-8">
               <p className="text-sm text-gray-500">
-                Technologies our founders have used to ship production systems
+                Technologies we have used to ship production systems
               </p>
             </div>
 
@@ -683,7 +670,7 @@ export default function HomePage() {
             <div className="text-center space-y-4">
               <h2 className="text-3xl md:text-4xl font-bold">How We Work</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Founder-led consulting from strategic assessment through implementation
+                Collaborative approach from strategic assessment through implementation
               </p>
             </div>
 
@@ -696,9 +683,8 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Strategic Advisory First</h3>
                 <p className="text-gray-700">
-                  Every engagement begins with founder-led strategic assessment—understanding your business
-                  objectives, technical constraints, regulatory requirements (including CRA compliance), and market
-                  requirements before defining architecture and implementation roadmap.
+                  We start by understanding your business objectives, technical constraints, and compliance 
+                  requirements before recommending an architecture approach.
                 </p>
               </div>
 
@@ -710,8 +696,8 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Expert Implementation</h3>
                 <p className="text-gray-700">
-                  Founder-supervised delivery teams execute the architecture with daily oversight—ensuring decisions
-                  made during advisory phase are implemented correctly with continuous technical validation.
+                  Our teams execute the agreed architecture with ongoing validation to ensure alignment 
+                  with the strategic plan and continuous technical verification.
                 </p>
               </div>
 
@@ -723,9 +709,8 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Continuous Guidance</h3>
                 <p className="text-gray-700">
-                  From initial assessment through pilot deployment, founders remain engaged—providing ongoing
-                  strategic guidance, architectural oversight, and technical escalation throughout your chip-to-cloud
-                  journey.
+                  We stay engaged throughout implementation, providing technical support and guidance 
+                  as your project evolves and challenges arise.
                 </p>
               </div>
             </div>
@@ -759,11 +744,10 @@ export default function HomePage() {
                     className="w-16 h-16 rounded-full border-4 border-white shadow-md"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">40 Years Combined Expertise</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Deep Technical Experience</h3>
                 <p className="text-gray-700 mb-4">
-                  Chip-to-cloud technology leadership across embedded systems, connectivity, cloud infrastructure,
-                  security, and Edge AI—delivering multi-continent consulting programs for tier-1 industrials,
-                  automotive, and logistics clients.
+                  Decades of combined experience across embedded systems, connectivity, cloud infrastructure, 
+                  security, and edge computing—working with industrial, automotive, and technology companies.
                 </p>
               </div>
 
@@ -775,22 +759,16 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Production-Ready Deliverables</h3>
                 <p className="text-gray-700 mb-4">
-                  Every consulting engagement delivers production-ready blueprints, validated methodologies, and
-                  Lab-tested implementations—eliminating ambiguity and providing board-ready documentation for confident
-                  decision-making.
+                  Our engagements deliver validated blueprints, security frameworks, and reference 
+                  implementations that support confident technical decisions.
                 </p>
-                <ul className="text-sm text-gray-600 space-y-1 text-left mx-auto max-w-xs">
-                  <li>✓ Architecture blueprints</li>
-                  <li>✓ Security frameworks</li>
-                  <li>✓ Reference implementations</li>
-                </ul>
               </div>
             </div>
 
             <div className="text-center space-y-6 pt-4">
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg">
-                  <Link href="/about">Meet the Founders</Link>
+                  <Link href="/about">Meet us</Link>
                 </Button>
               </div>
             </div>
@@ -802,7 +780,7 @@ export default function HomePage() {
       <section className="py-16 px-6 bg-gray-50 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Ready to Build Faster and Operate More Reliably?
+            Ready to Accelerate Your Chip-to-Cloud Journey?
           </h2>
           <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
             Start with a comprehensive strategic assessment to validate your architecture, technology choices, and
