@@ -80,11 +80,20 @@ export default function IndustriesPage() {
                   </ul>
                 </div>
 
-                <div className="pt-4 border-t mt-auto">
+                <div className="pt-4 border-t mt-auto space-y-4">
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary" className="text-xs">Reference Design</Badge>
                     <Badge variant="secondary" className="text-xs">CRA Compliance</Badge>
                     <Badge variant="secondary" className="text-xs">Ecosystem Development</Badge>
+                  </div>
+                  <div className="mt-4 p-3 bg-primary/5 rounded-lg border border-primary/10">
+                    <p className="text-sm">
+                      <strong>Recommended Offer:</strong>{' '}
+                      <Link href="/services#embedded-core" className="text-primary hover:underline">
+                        Embedded Core
+                      </Link>{' '}
+                      - For device makers and product development teams
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -138,11 +147,20 @@ export default function IndustriesPage() {
                   </ul>
                 </div>
 
-                <div className="pt-4 border-t mt-auto">
+                <div className="pt-4 border-t mt-auto space-y-4">
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary" className="text-xs">Connected Vehicles</Badge>
-                    <Badge variant="secondary" className="text-xs">Fractional CTO</Badge>
+                    <Badge variant="secondary" className="text-xs">Platform Architecture</Badge>
                     <Badge variant="secondary" className="text-xs">V2X Integration</Badge>
+                  </div>
+                   <div className="mt-4 p-3 bg-primary/5 rounded-lg border border-primary/10">
+                    <p className="text-sm">
+                      <strong>Recommended Offer:</strong>{' '}
+                      <Link href="/services#embedded-core" className="text-primary hover:underline">
+                        Embedded Core
+                      </Link>{' '}
+                      - For device makers and product development teams
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -183,7 +201,7 @@ export default function IndustriesPage() {
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2 text-sm">
                       <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">Secure sensor-to-cloud connectivity with embedded gateway design</span>
+                      <span className="text-muted-foreground">Secure sensor-to-cloud connectivity with edge platform architecture</span>
                     </li>
                     <li className="flex items-start gap-2 text-sm">
                       <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
@@ -196,11 +214,20 @@ export default function IndustriesPage() {
                   </ul>
                 </div>
 
-                <div className="pt-4 border-t mt-auto">
+                <div className="pt-4 border-t mt-auto space-y-4">
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary" className="text-xs">IoT Architecture</Badge>
                     <Badge variant="secondary" className="text-xs">Edge Computing</Badge>
                     <Badge variant="secondary" className="text-xs">Predictive Maintenance</Badge>
+                  </div>
+                   <div className="mt-4 p-3 bg-primary/5 rounded-lg border border-primary/10">
+                    <p className="text-sm">
+                      <strong>Recommended Offer:</strong>{' '}
+                      <Link href="/services#industrial-edge" className="text-primary hover:underline">
+                        Industrial Edge
+                      </Link>{' '}
+                      - For industrial enterprises and systems integrators
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -254,11 +281,20 @@ export default function IndustriesPage() {
                   </ul>
                 </div>
 
-                <div className="pt-4 border-t mt-auto">
+                <div className="pt-4 border-t mt-auto space-y-4">
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary" className="text-xs">Smart Grid</Badge>
                     <Badge variant="secondary" className="text-xs">Energy Management</Badge>
                     <Badge variant="secondary" className="text-xs">Building Automation</Badge>
+                  </div>
+                   <div className="mt-4 p-3 bg-primary/5 rounded-lg border border-primary/10">
+                    <p className="text-sm">
+                      <strong>Recommended Offer:</strong>{' '}
+                      <Link href="/services#industrial-edge" className="text-primary hover:underline">
+                        Industrial Edge
+                      </Link>{' '}
+                      - For industrial enterprises and systems integrators
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -280,7 +316,7 @@ export default function IndustriesPage() {
               Why These Four Industries?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Focused expertise where our founders&apos; 45+ years combined experience delivers{' '}
+              Focused expertise where we&apos; 45+ years combined experience delivers{' '}
               <span className="text-innovate font-semibold">proven results from day one</span>
             </p>
           </div>
@@ -297,13 +333,13 @@ export default function IndustriesPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">
-                      Proven Founder Experience
+                      Deep Industry Experience
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      <strong>Riadh&apos;s 20+ years</strong> in automotive IoT and embedded systems 
-                      (Valeo, Sequans) combined with <strong>Mazen&apos;s 25+ years</strong> in cloud 
-                      and telecom (NXP, Nestwave) directly map to these four industries—
-                      <span className="text-innovate font-medium">no learning curves, immediate impact</span>.
+                      Our team's combined <strong>45+ years in automotive IoT</strong> (Valeo, Sequans), 
+                      <strong>embedded systems, cloud architecture</strong> (NXP, Nestwave), and telecom 
+                      directly map to these four industries—
+                      <span className="text-innovate font-medium">enabling immediate impact without learning curves</span>.
                     </p>
                   </div>
                 </div>
@@ -389,8 +425,8 @@ export default function IndustriesPage() {
               Building Connected Systems in These Industries?
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              If you&apos;re working on Industrial IoT, energy infrastructure, connected vehicles, or chip-to-market projects—
-              let&apos;s discuss how our focused expertise can accelerate your chip-to-cloud journey.
+              If you're working on Industrial IoT, energy infrastructure, connected vehicles, or semiconductor ecosystem projects—
+              let's discuss how our focused expertise can accelerate your chip-to-cloud journey.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
@@ -410,7 +446,7 @@ export default function IndustriesPage() {
                 <p className="text-muted-foreground leading-relaxed">
                   <strong className="text-foreground">Note:</strong> While we&apos;ve delivered projects 
                   in logistics and consumer IoT, we focus our consulting on these four 
-                  core industries where our founders have the deepest direct experience—from Valeo&apos;s 
+                  core industries where we have the deepest direct experience—from Valeo&apos;s 
                   connected car platform to Sequans&apos; 5G chipsets to industrial edge solutions.{' '}
                   <Link href="/contact" className="text-innovate hover:underline font-medium">
                     Contact us
