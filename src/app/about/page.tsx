@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
-import { ArrowRight, Linkedin, Mail, MapPin, Users, Target, Sparkles, CheckCircle2, Cpu, Cloud, Wifi, Shield } from "lucide-react";
+import { ArrowRight, Linkedin, Mail, MapPin, Users, Target, Sparkles, CheckCircle2, Cpu, Cloud, Wifi, Shield, Layers } from "lucide-react";
+
 
 export default function AboutPage() {
   return (
@@ -16,16 +17,17 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <Badge variant="secondary" className="mb-4">About Edge Pulsar</Badge>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-              Founder-Led
-              <span className="block text-primary mt-2">Chip-to-Cloud Expertise</span>
+              Deep Chip-to-Cloud Expertise
+              <span className="block text-primary mt-2">From Experienced Engineers</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Two industry veterans bringing 40+ years combined experience directly to your chip-to-cloud challenges—
-              no junior consultants, no delegation, just proven expertise.
+              Two industry experts with 45+ years combined experience designing, building, and integrating 
+              complete chip-to-cloud systems—from embedded firmware to cloud deployment.
             </p>
           </div>
         </div>
       </section>
+
 
       {/* Our Story - NEW, UNIQUE CONTENT */}
       <section className="py-20 md:py-32">
@@ -34,19 +36,19 @@ export default function AboutPage() {
             <div className="text-center space-y-4">
               <h2 className="text-3xl md:text-4xl font-bold">Our Story</h2>
               <p className="text-lg text-muted-foreground">
-                Why two chip-to-cloud veterans decided to do consulting differently
+                Why two chip-to-cloud veterans decided to build solutions differently
               </p>
             </div>
 
+
             <div className="space-y-8 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Throughout our careers spanning semiconductors, automotive, and cloud infrastructure, we kept 
-                seeing the same expensive failures repeat: chip makers 
-                advertising "cloud-ready" silicon where firmware secure boot conflicts with cloud certificate 
-                provisioning—discovered only during pilot deployment, device makers realizing their 
-                power budget can't support both cellular connectivity and edge ML processing, and industrial 
-                companies stuck with fragmented vendor ecosystems where 
-                EU Cyber Resilience Act compliance becomes a last-minute €500K crisis.
+                Throughout our careers in semiconductors, automotive, and cloud infrastructure, we repeatedly 
+                encountered costly integration failures: "cloud-ready" silicon where secure boot conflicts 
+                with cloud certificate provisioning—discovered during pilot deployment. Device makers finding 
+                their power budget can't support cellular connectivity and edge ML processing. Industrial 
+                companies facing fragmented vendor ecosystems where EU Cyber Resilience Act compliance becomes 
+                a last-minute crisis.
               </p>
               
               <p>
@@ -56,17 +58,30 @@ export default function AboutPage() {
                 gap costs companies millions in delays, failed reference designs, and integration rework.
               </p>
 
+
               <p>
-                We founded Edge Pulsar to bridge this divide—bringing embedded systems, connectivity, and cloud 
-                expertise under one roof, delivered directly by founders who've shipped production systems from 
-                silicon evaluation kits to cloud-scale deployments. 
+                We founded Edge Pulsar as a chip-to-cloud solution provider and integrator—building complete 
+                systems that bridge silicon and cloud. We design reference implementations, integrate multi-vendor 
+                stacks, and deliver production-ready architectures based on 45+ years shipping real systems.
               </p>
             </div>
+
+
+            {/* Positioning Statement */}
+            <div className="mt-12 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">
+              <p className="text-lg font-semibold mb-2">Our Positioning</p>
+              <p className="text-muted-foreground leading-relaxed">
+                We're a <strong>chip-to-cloud solution provider and integrator</strong>. We design, build, and integrate complete systems with hands-on implementation, 
+                leveraging proven accelerators and strategic partnerships to deliver at scale while maintaining 
+                expert oversight throughout.
+              </p>
+            </div>
+
 
             {/* Stats Cards */}
             <div className="grid md:grid-cols-3 gap-6 pt-8">
               <Card className="text-center p-6">
-                <div className="text-4xl font-bold text-primary mb-2">40+</div>
+                <div className="text-4xl font-bold text-primary mb-2">45+</div>
                 <p className="text-muted-foreground">Years Combined Experience</p>
               </Card>
               <Card className="text-center p-6">
@@ -82,6 +97,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+
       {/* What Makes Us Different - UNIQUE POSITIONING */}
       <section className="py-20 md:py-32 bg-muted/30">
         <div className="container mx-auto">
@@ -89,32 +105,37 @@ export default function AboutPage() {
             <div className="text-center space-y-4">
               <h2 className="text-3xl md:text-4xl font-bold">What Makes Us Different</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                We chose a founder-led model that prioritizes depth over scale
+                We chose an expert-led model that prioritizes depth over scale
               </p>
             </div>
+
 
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-8 space-y-4 border-2 hover:border-primary/50 transition-colors">
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Users className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold">Founders Deliver, Not Delegate</h3>
+                <h3 className="text-xl font-bold">Expert-Led Throughout</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Both founders remain hands-on throughout every engagement. You're not passed to junior consultants 
-                  after the sales pitch—you get 40+ years of experience on every technical decision.
+                  Both founders remain hands-on throughout every engagement—leading architecture decisions, 
+                  technology selection, and technical oversight. When specialized capabilities are needed, 
+                  we leverage trusted partners while maintaining architecture authority.
                 </p>
               </Card>
+
 
               <Card className="p-8 space-y-4 border-2 hover:border-primary/50 transition-colors">
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Target className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold">Proven Production Experience</h3>
+                <h3 className="text-xl font-bold">Hands-On Implementation Experience</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  We've shipped systems at scale, not just written PowerPoint. Every architecture pattern we recommend 
-                  has been battle-tested in production deployments with real devices and real users.
+                  We build working systems, not just architecture documents. Every reference implementation, 
+                  PoC, and integration pattern we deliver has been validated in production with real hardware 
+                  and real deployments.
                 </p>
               </Card>
+
 
               <Card className="p-8 space-y-4 border-2 hover:border-primary/50 transition-colors">
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -126,6 +147,7 @@ export default function AboutPage() {
                   need specialized capabilities beyond our core, we bring in trusted partners rather than overpromising.
                 </p>
               </Card>
+
 
               <Card className="p-8 space-y-4 border-2 hover:border-primary/50 transition-colors">
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -142,94 +164,66 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Why Founders Stay Hands-On - REFRAMED FOR SCALABILITY */}
+
+      {/* What We Build & Integrate - NEW SECTION */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto space-y-12">
+          <div className="max-w-5xl mx-auto space-y-12">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold">Our Founder-Led Model</h2>
-              <p className="text-lg text-muted-foreground">
-                Strategic leverage through proven accelerators and selective partnerships
+              <h2 className="text-3xl md:text-4xl font-bold">What We Build & Integrate</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                As a solution provider, we deliver working systems—not just recommendations
               </p>
             </div>
 
-            <Card className="p-8 md:p-12 bg-gradient-to-br from-primary/5 to-transparent border-2">
-              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-                <p>
-                  As a founder-led consultancy, both founders remain directly involved in strategic architecture 
-                  decisions, technology selection, and critical implementation guidance throughout every engagement. 
-                  This ensures senior-level expertise drives outcomes—not just sales presentations.
-                </p>
-                
-                <p>
-                  To scale our impact while maintaining quality, we leverage <strong className="text-foreground">proven 
-                  accelerators</strong> (reference designs, validated architecture patterns, security frameworks) and 
-                  <strong className="text-foreground"> strategic partnerships</strong> with domain specialists for 
-                  specialized capabilities (regulatory certification, manufacturing operations, security audits) while 
-                  retaining architecture authority.
-                </p>
-
-                <div className="grid md:grid-cols-3 gap-6 py-6">
-                  <div className="space-y-2">
-                    <div className="text-3xl font-bold text-primary">100%</div>
-                    <p className="text-sm">Founder involvement in strategic planning and architecture decisions</p>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="text-3xl font-bold text-primary">Proven</div>
-                    <p className="text-sm">Reusable accelerators compress delivery timelines by 40-60%</p>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="text-3xl font-bold text-primary">Selective</div>
-                    <p className="text-sm">Vetted specialist network for capabilities beyond core expertise</p>
-                  </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="p-6 space-y-4 text-center">
+                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+                  <Cpu className="h-6 w-6 text-primary" />
                 </div>
-
-                <p>
-                  This model allows us to serve clients at scale through standardized methodologies and battle-tested 
-                  patterns, while founders provide strategic oversight and technical authority throughout—ensuring 
-                  45+ years of chip-to-cloud experience guides every critical decision.
-                </p>
-              </div>
-            </Card>
-
-            {/* How We Scale Quality - NEW */}
-            <div className="grid md:grid-cols-2 gap-6 mt-8">
-              <Card className="p-6 space-y-4">
-                <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <CheckCircle2 className="h-5 w-5 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold">Proven Accelerators</h3>
-                <p className="text-muted-foreground">
-                  Reusable reference implementations, validated architecture patterns, and security frameworks 
-                  developed from production deployments—reducing discovery and integration time by 40-60%.
+                <h3 className="text-lg font-bold">Reference Implementations</h3>
+                <p className="text-sm text-muted-foreground">
+                  Production-ready firmware, secure boot chains, and device-to-cloud connectivity 
+                  validated on development hardware
                 </p>
               </Card>
 
-              <Card className="p-6 space-y-4">
-                <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Users className="h-5 w-5 text-primary" />
+              <Card className="p-6 space-y-4 text-center">
+                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+                  <Layers className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold">Strategic Partnerships</h3>
-                <p className="text-muted-foreground">
-                  Vetted network of domain specialists (certification labs, security auditors, manufacturing experts) 
-                  extends our capabilities while founders maintain architecture authority and strategic oversight.
+                <h3 className="text-lg font-bold">Multi-Vendor Integration</h3>
+                <p className="text-sm text-muted-foreground">
+                  Complete chip-to-cloud stacks coordinating semiconductor vendors, connectivity 
+                  providers, and cloud platforms
+                </p>
+              </Card>
+
+              <Card className="p-6 space-y-4 text-center">
+                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+                  <Shield className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold">Security Frameworks</h3>
+                <p className="text-sm text-muted-foreground">
+                  CRA and NIS2 compliance architectures with hardware-backed security, 
+                  certificate management, and audit documentation
                 </p>
               </Card>
             </div>
           </div>
         </div>
-        
       </section>
 
       {/* Founders Section - REDESIGNED */}
-      <section id="founders" className="py-20 md:py-32 bg-muted/30">
+      <section id="founders" className="py-20 md:py-32">
         <div className="container mx-auto">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl md:text-4xl font-bold">Meet the Founders</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              40+ years combined experience in chip-to-cloud systems—from embedded firmware to cloud-scale deployment
+              45+ years combined experience in chip-to-cloud systems—from embedded firmware to cloud-scale deployment
             </p>
           </div>
+
 
           <div className="max-w-6xl mx-auto space-y-16">
             {/* Riadh Berhouma */}
@@ -261,6 +255,7 @@ export default function AboutPage() {
                   </div>
                 </div>
 
+
                 {/* Expertise Content */}
                 <div className="p-8 space-y-6">
                   <div>
@@ -271,6 +266,7 @@ export default function AboutPage() {
                       connectivity, and certification to mass production for tier-1 manufacturers.
                     </p>
                   </div>
+
 
                   <div className="space-y-3">
                     <h4 className="font-semibold text-lg flex items-center gap-2">
@@ -308,6 +304,7 @@ export default function AboutPage() {
               </div>
             </Card>
 
+
             {/* Mazen Neifer */}
             <Card className="overflow-hidden border-2">
               <div className="grid md:grid-cols-[300px_1fr] gap-8">
@@ -337,6 +334,7 @@ export default function AboutPage() {
                   </div>
                 </div>
 
+
                 {/* Expertise Content */}
                 <div className="p-8 space-y-6">
                   <div>
@@ -347,6 +345,7 @@ export default function AboutPage() {
                       AWS migrations, DSP/RTOS, and real-time edge systems.
                     </p>
                   </div>
+
 
                   <div className="space-y-3">
                     <h4 className="font-semibold text-lg flex items-center gap-2">
@@ -385,6 +384,7 @@ export default function AboutPage() {
             </Card>
           </div>
 
+
           {/* Combined Strength */}
           <div className="mt-16 max-w-4xl mx-auto">
             <Card className="p-8 text-center bg-gradient-to-br from-primary/5 to-transparent border-2">
@@ -406,8 +406,9 @@ export default function AboutPage() {
         </div>
       </section>
 
+
       {/* Core Technology Stack - SIMPLIFIED, ONLY PROVEN */}
-      <section id="tech-stack" className="py-20 md:py-32">
+      <section id="tech-stack" className="py-20 md:py-32 bg-muted/30">
         <div className="container mx-auto">
           <div className="max-w-5xl mx-auto space-y-12">
             <div className="text-center space-y-4">
@@ -416,6 +417,7 @@ export default function AboutPage() {
                 Technologies we've used in production—not aspirational lists
               </p>
             </div>
+
 
             <div className="grid md:grid-cols-2 gap-6">
               {/* Embedded Systems */}
@@ -442,6 +444,7 @@ export default function AboutPage() {
                 </ul>
               </Card>
 
+
               {/* Connectivity */}
               <Card className="p-6 space-y-4">
                 <div className="flex items-center gap-3">
@@ -466,6 +469,7 @@ export default function AboutPage() {
                 </ul>
               </Card>
 
+
               {/* Cloud & Data */}
               <Card className="p-6 space-y-4">
                 <div className="flex items-center gap-3">
@@ -489,6 +493,7 @@ export default function AboutPage() {
                   </li>
                 </ul>
               </Card>
+
 
               {/* Industrial Integration */}
               <Card className="p-6 space-y-4">
@@ -515,9 +520,11 @@ export default function AboutPage() {
               </Card>
             </div>
 
+
           </div>
         </div>
       </section>
+
 
       {/* Location & CTA */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 to-background relative overflow-hidden">
@@ -529,10 +536,10 @@ export default function AboutPage() {
               <Badge variant="secondary">Headquartered in France</Badge>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold">
-              Ready to Work with Founder-Led Expertise?
+              Ready to Work with Proven Chip-to-Cloud Expertise?
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Let's discuss your chip-to-cloud challenges and how our hands-on, founder-led approach 
+              Let's discuss your chip-to-cloud challenges and how our hands-on, expert-led approach 
               can accelerate your project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
