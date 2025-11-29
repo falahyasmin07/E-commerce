@@ -1,47 +1,47 @@
 'use client'
 
-import { Rocket, Settings, ShieldCheck, Activity } from "lucide-react"
+import { Rocket, Settings, ShieldCheck, Zap } from "lucide-react"
 import Image from "next/image"
 
 const pillars = [
   {
     id: "innovate",
-    title: "Innovate / Accelerate",
+    title: "Innovate",
     icon: <Rocket className="w-12 h-12" />,
-    summary: "PoC to production, reference-ready, fast.",
+    summary: "Rapid PoC validation and reference design acceleration",
     bullets: [
-      "Rapid PoC: 4-6 weeks feasibility",
-      "Reference design: Firmware + cloud",
-      "Blueprints: Integration and roadmaps",
-      "Key modules: Fastest working prototype",
+      "Rapid PoC builds with Lab validation",
+      "Reference design frameworks (firmware + cloud)",
+      "Technology stack validation and blueprints",
+      "Production-ready architecture documentation",
     ],
     offers: {
-      "Silicon-to-Cloud": "Full journey from PoC to launch-ready.",
-      "Resilient Edge": "SLOs and resilience patterns before scale."
+      "Embedded Core": "PoC to production-ready reference designs",
+      "Industrial Edge": "Platform validation and architecture blueprints"
     },
-    tagline: "Start small or scale—all engagements right-sized.",
+    tagline: "Validated architectures, not exploratory prototypes",
     gradient: "from-cyan-500/90 to-blue-500/90",
-    bgImage: "/images/innovate-bg.jpg", // Your image path
+    bgImage: "/images/innovate-bg.jpg",
     iconBg: "bg-white/90",
     iconColor: "text-cyan-600",
     textColor: "text-cyan-800"
   },
   {
     id: "orchestrate",
-    title: "Orchestrate / Scale",
+    title: "Orchestrate",
     icon: <Settings className="w-12 h-12" />,
-    summary: "Pilot to fleet, automated and coordinated.",
+    summary: "Multi-vendor coordination and deployment automation",
     bullets: [
-      "Zero-touch provisioning workflows",
-      "Multi-vendor governance frameworks",
-      "Automated ops playbooks",
-      "Fleet management at scale",
+      "Zero-touch device provisioning workflows",
+      "Multi-vendor integration frameworks",
+      "Deployment automation and rollout strategies",
+      "Fleet management architecture at scale",
     ],
     offers: {
-      "Silicon-to-Cloud": "Pilot to 10,000+ devices zero-touch.",
-      "Resilient Edge": "Automated edge operations & policies."
+      "Embedded Core": "Device provisioning and cloud connectivity automation",
+      "Industrial Edge": "Edge platform orchestration and policy governance"
     },
-    tagline: "Built-in scale from pilot to rollout.",
+    tagline: "Eliminate multi-vendor integration failures",
     gradient: "from-purple-500/90 to-indigo-500/90",
     bgImage: "/images/orchestrate-bg.jpg",
     iconBg: "bg-white/90",
@@ -50,20 +50,20 @@ const pillars = [
   },
   {
     id: "secure",
-    title: "Secure / Harden",
+    title: "Secure",
     icon: <ShieldCheck className="w-12 h-12" />,
-    summary: "Security by design, audit-ready from day one.",
+    summary: "Security-by-design with compliance built in",
     bullets: [
-      "Compliance frameworks (CRA, NIS2, IEC62443)",
-      "Secure boot, key & certificate management",
-      "Audit trails for every layer",
-      "Threat modeling integrated",
+      "CRA and NIS2/IEC 62443 compliance frameworks",
+      "Chip-level security (secure boot, crypto, root of trust)",
+      "Certificate lifecycle management",
+      "Security architecture documentation for auditors",
     ],
     offers: {
-      "Silicon-to-Cloud": "Compliance mapped chip to cloud.",
-      "Resilient Edge": "Continuous evidence and SOC telemetry."
+      "Embedded Core": "CRA compliance and secure boot implementation",
+      "Industrial Edge": "Hardware-backed security meeting NIS2/IEC 62443"
     },
-    tagline: "Audit-ready at every stage.",
+    tagline: "Compliance architected from the start, not retrofitted",
     gradient: "from-red-500/90 to-pink-500/90",
     bgImage: "/images/secure-bg.jpg",
     iconBg: "bg-white/90",
@@ -71,21 +71,21 @@ const pillars = [
     textColor: "text-red-800"
   },
   {
-    id: "sense",
-    title: "Sense / Respond",
-    icon: <Activity className="w-12 h-12" />,
-    summary: "From sensor to action, real-time automation.",
+    id: "respond",
+    title: "Respond",
+    icon: <Zap className="w-12 h-12" />,
+    summary: "Edge data processing and intelligent response workflows",
     bullets: [
-      "Edge analytics & feature extraction",
-      "Predictive ML pipelines",
-      "Trigger matrices & rollback policies",
-      "Time-series telemetry for SOC",
+      "Sensor integration and edge data pipelines",
+      "Local compute and AI inference architecture",
+      "Edge-to-cloud data synchronization",
+      "Real-time processing and analytics frameworks",
     ],
     offers: {
-      "Silicon-to-Cloud": "Smart endpoints with local intelligence.",
-      "Resilient Edge": "Closed-loop ops without cloud needed."
+      "Embedded Core": "Sensor-to-cloud data workflows with edge processing",
+      "Industrial Edge": "AI inference pipelines and edge analytics platforms"
     },
-    tagline: "Continuous automation with minimal human input.",
+    tagline: "Architect data-to-action workflows at the edge",
     gradient: "from-green-500/90 to-emerald-500/90",
     bgImage: "/images/sense-bg.jpg",
     iconBg: "bg-white/90",
@@ -100,7 +100,7 @@ export default function FourPillarsGrid() {
       <div className="container mx-auto px-4">
         <h2 className="text-center text-4xl md:text-5xl font-bold mb-8">Four Pillars Framework</h2>
         <p className="text-center text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
-          One delivery approach, two offers—Silicon-to-Cloud and Resilient Edge.
+          Comprehensive chip-to-cloud methodology spanning both Embedded Core and Industrial Edge
         </p>
 
         {/* Desktop Grid */}
@@ -150,10 +150,10 @@ export default function FourPillarsGrid() {
                 <div className="text-xs text-gray-600 mt-auto border-t pt-4">
                   <div className="space-y-2">
                     <p className="min-h-[32px]">
-                      <strong className={pillar.textColor}>Silicon-to-Cloud:</strong> {pillar.offers["Silicon-to-Cloud"]}
+                      <strong className={pillar.textColor}>Embedded Core:</strong> {pillar.offers["Embedded Core"]}
                     </p>
                     <p className="min-h-[32px]">
-                      <strong className={pillar.textColor}>Resilient Edge:</strong> {pillar.offers["Resilient Edge"]}
+                      <strong className={pillar.textColor}>Industrial Edge:</strong> {pillar.offers["Industrial Edge"]}
                     </p>
                   </div>
                   <p className="italic mt-3 text-gray-500">{pillar.tagline}</p>
@@ -194,8 +194,8 @@ export default function FourPillarsGrid() {
                 </ul>
                 <div className="text-xs text-gray-600 border-t pt-4">
                   <div className="space-y-2">
-                    <p><strong className={pillar.textColor}>Silicon-to-Cloud:</strong> {pillar.offers["Silicon-to-Cloud"]}</p>
-                    <p><strong className={pillar.textColor}>Resilient Edge:</strong> {pillar.offers["Resilient Edge"]}</p>
+                    <p><strong className={pillar.textColor}>Embedded Core:</strong> {pillar.offers["Embedded Core"]}</p>
+                    <p><strong className={pillar.textColor}>Industrial Edge:</strong> {pillar.offers["Industrial Edge"]}</p>
                   </div>
                   <p className="italic mt-3 text-gray-500">{pillar.tagline}</p>
                 </div>

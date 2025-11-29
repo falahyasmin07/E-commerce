@@ -67,18 +67,28 @@ export default function ServicesPage() {
           <div className="max-w-4xl mx-auto space-y-12">
             
             {/* Text Content - TOP */}
-            <div className="text-center space-y-6">
-              <Badge className="bg-white/20 text-white border-white/30 hover:bg-white/30">
+            <div className="text-center space-y-8">
+              <Badge className="bg-white/20 text-white border-white/30 hover:bg-white/30 text-sm px-4 py-1.5">
                 Our Services
               </Badge>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white drop-shadow-lg">
-                Founder-Led Technology Advisory & Implementation
-              </h1>
-              <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-                Compress development cycles, build compliance in, and operate edge reliably.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Button size="lg" asChild className="bg-white text-blue-600 hover:bg-gray-100 shadow-xl">
+              
+              <div className="space-y-6">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white drop-shadow-lg leading-tight">
+                  Chip-to-Cloud<br className="hidden md:block" /> Solution Provider & Integrator
+                </h1>
+                
+                <div className="space-y-4 max-w-3xl mx-auto">
+                  <p className="text-xl md:text-2xl text-white/95 leading-relaxed font-medium">
+                    Strategic advisory and hands-on implementation—from chip selection to cloud integration
+                  </p>
+                  <p className="text-base md:text-lg text-white/75 leading-relaxed">
+                    Accelerate development cycles, build security in, and deliver production-ready architectures.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
+                <Button size="lg" asChild className="bg-white text-blue-600 hover:bg-gray-100 shadow-xl hover:shadow-2xl transition-all">
                   <Link href="/contact">
                     Schedule Consultation
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -86,6 +96,7 @@ export default function ServicesPage() {
                 </Button>
               </div>
             </div>
+
 
             {/* Visual Flow - BELOW TEXT - Now Clearly Visible */}
             <div className="relative">
@@ -181,15 +192,15 @@ export default function ServicesPage() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
         
-        {/* Offer 1: Silicon-to-Cloud Acceleration */}
-        <div id="silicon-to-scale" className="scroll-mt-20">
+        {/* Offer 1: Embedded Core Acceleration */}
+        <div id="embedded-core" className="scroll-mt-20">
           <Card className="border-2 border-cyan-200 overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
             
             {/* Background Image Section */}
             <div className="relative h-48 overflow-hidden">
               <Image
                 src="/silicon-to-cloud.png"
-                alt="Silicon to Cloud Illustration"
+                alt="Embedded Core Illustration"
                 fill
                 className="object-cover"
                 priority
@@ -222,11 +233,11 @@ export default function ServicesPage() {
                   <Cpu className="h-6 w-6 text-cyan-600" />
                 </div>
                 <Badge variant="secondary" className="bg-cyan-100 text-cyan-700">
-                  For Device & Chip Makers
+                  For Device Makers
                 </Badge>
               </div>
               
-              <CardTitle className="text-2xl md:text-3xl">Silicon-to-Cloud Acceleration</CardTitle>
+              <CardTitle className="text-2xl md:text-3xl">Embedded Core</CardTitle>
               
               <div className="flex flex-wrap gap-2">
                 <Badge variant="outline" className="bg-[#0EA5E9]/10 text-[#0EA5E9] border-[#0EA5E9]/30">
@@ -271,7 +282,7 @@ export default function ServicesPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Multi-cloud connectivity (AWS, Azure, OVH)</span>
+                    <span className="text-sm text-muted-foreground">Multi-cloud connectivity (AWS, OVH)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-1" />
@@ -315,35 +326,35 @@ export default function ServicesPage() {
           </Card>
         </div>
 
-        {/* Offer 2: Resilient Edge */}
-        <div id="resilient-edge" className="scroll-mt-20">
+        {/* Offer 2: Industrial Edge */}
+        <div id="industrial-edge" className="scroll-mt-20">
           <Card className="border-2 border-purple-200 overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
             
             {/* Background Image Section */}
             <div className="relative h-48 overflow-hidden">
               <Image
                 src="/edge-infrastructure.png"
-                alt="Resilient Edge Illustration"
+                alt="Industrial Edge Illustration"
                 fill
                 className="object-cover"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500/80 via-indigo-500/75 to-purple-600/80" />
               <div className="relative h-full flex items-center justify-center z-10">
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3">
                   <div className="flex flex-col items-center">
-                    <Radar className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Detect</span>
+                    <Cpu className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Chip</span>
                   </div>
-                  <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
+                  <ArrowRight className="w-9 h-9 text-white/80 drop-shadow-lg" />
                   <div className="flex flex-col items-center">
-                    <Zap className="w-14 h-14 text-purple-50 drop-shadow-lg" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Act</span>
+                    <Zap className="w-14 h-14 text-cyan-50 drop-shadow-lg" />
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Compute</span>
                   </div>
-                  <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
+                  <ArrowRight className="w-9 h-9 text-white/80 drop-shadow-lg" />
                   <div className="flex flex-col items-center">
-                    <ShieldCheck className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Comply</span>
+                    <ShieldCheck className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
+                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Secure</span>
                   </div>
                 </div>
               </div>
@@ -356,16 +367,16 @@ export default function ServicesPage() {
                   <ShieldCheck className="h-6 w-6 text-purple-600" />
                 </div>
                 <Badge variant="secondary" className="bg-purple-100 text-purple-700">
-                  For Industrial Operators
+                  For Industrial Enterprises
                 </Badge>
               </div>
               
-              <CardTitle className="text-2xl md:text-3xl">Resilient Edge</CardTitle>
+              <CardTitle className="text-2xl md:text-3xl">Industrial Edge</CardTitle>
               
               <div className="flex flex-wrap gap-2">
                 <Badge variant="outline" className="bg-[#8B5CF6]/10 text-[#8B5CF6] border-[#8B5CF6]/30">
-                  <Activity className="w-3 h-3 mr-1" />
-                  Observe
+                  <Settings className="w-3 h-3 mr-1" />
+                  Orchestrate
                 </Badge>
                 <Badge variant="outline" className="bg-[#10B981]/10 text-[#10B981] border-[#10B981]/30">
                   <Zap className="w-3 h-3 mr-1" />
@@ -378,13 +389,14 @@ export default function ServicesPage() {
               </div>
 
               <p className="text-muted-foreground">
-                <strong>Edge Operations & Governance:</strong> Secure, reliable edge operations for critical industrial OT. 
-                Keep production running, maintain continuous CRA/NIS2 compliance, and integrate with enterprise SOC—
-                without rebuilds or complexity.
+                <strong>Chip-Level Expertise:</strong> We bring embedded systems 
+                expertise to industrial edge computing—selecting the right processors, architecting 
+                hardware-backed security, and validating complete edge-to-cloud architectures before 
+                production deployment.
               </p>
             </CardHeader>
             
-            {/* Condensed Visible Content */}
+            {/* Content */}
             <CardContent className="flex flex-col flex-1 space-y-6">
               {/* What We Do */}
               <div>
@@ -395,19 +407,19 @@ export default function ServicesPage() {
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">SLO definition, autonomous runbooks, and safe release governance</span>
+                    <span className="text-sm text-muted-foreground">Edge compute platform architecture (AI accelerators, industrial processors, ruggedized platforms)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Continuous IEC 62443, CRA, and NIS2 evidence streaming from edge</span>
+                    <span className="text-sm text-muted-foreground">Chip-level security architecture (secure boot, crypto engines, hardware root of trust)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Unified observability linking operations, cybersecurity, and compliance</span>
+                    <span className="text-sm text-muted-foreground">NIS2/IEC 62443 compliance frameworks with hardware-backed security</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">SOC-ready OT telemetry for enterprise or MSSP correlation</span>
+                    <span className="text-sm text-muted-foreground">Edge-to-cloud integration architecture with validated multi-vendor coordination</span>
                   </li>
                 </ul>
               </div>
@@ -421,15 +433,15 @@ export default function ServicesPage() {
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Prevent production failures before they cascade into costly downtime</span>
+                    <span className="text-sm text-muted-foreground">Right hardware selected first time—avoiding costly platform redesigns</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Audit-ready compliance with continuous evidence validation</span>
+                    <span className="text-sm text-muted-foreground">Hardware-secured compliance meeting NIS2/IEC 62443 requirements</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Zero-downtime releases with founder-approved promotion gates</span>
+                    <span className="text-sm text-muted-foreground">Validated edge-to-cloud architectures eliminating multi-vendor integration failures</span>
                   </li>
                 </ul>
               </div>
@@ -447,6 +459,7 @@ export default function ServicesPage() {
           </Card>
         </div>
 
+
       </div>
 
       {/* Industry Applications Cross-Link */}
@@ -455,7 +468,7 @@ export default function ServicesPage() {
           <h3 className="text-2xl font-bold text-gray-900">Industry-Specific Applications</h3>
           <p className="text-gray-700">
             See how these consulting services apply to your specific industry—from automotive to 
-            manufacturing, logistics to smart buildings.
+            manufacturing, energy to electronics.
           </p>
           <Button asChild variant="outline" size="lg">
             <Link href="/industries">
@@ -501,7 +514,7 @@ export default function ServicesPage() {
                 <TabsTrigger value="specialized" className="py-3">Specialized Services</TabsTrigger>
               </TabsList>
 
-              {/* Tab 1: Core Platform Stack (3 cards - what everyone needs) */}
+              {/* Tab 1: Core Platform Stack */}
               <TabsContent value="core-platform" className="mt-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   
@@ -558,7 +571,7 @@ export default function ServicesPage() {
                         <h4 className="font-semibold text-sm mb-2">BLE, Wi-Fi, LoRaWAN</h4>
                         <p className="text-sm text-muted-foreground">
                           Short-range and LPWAN connectivity architecture—protocol selection, 
-                          network topology design, and gateway integration.
+                          network topology design, and device-to-cloud integration patterns.
                         </p>
                       </div>
                     </CardContent>
@@ -600,7 +613,7 @@ export default function ServicesPage() {
                 </div>
               </TabsContent>
 
-              {/* Tab 2: Specialized Services (3 cards - advanced/specific needs) */}
+              {/* Tab 2: Specialized Services */}
               <TabsContent value="specialized" className="mt-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   
@@ -637,41 +650,41 @@ export default function ServicesPage() {
                     </CardContent>
                   </Card>
 
-                  {/* Resilient Edge Operations */}
+                  {/* Industrial Edge Platforms */}
                   <Card className="border-l-4 border-[#8B5CF6]">
                     <CardHeader>
                       <div className="w-12 h-12 flex items-center justify-center bg-[#8B5CF6]/10 rounded-lg mb-4">
                         <ShieldCheck className="w-6 h-6 text-[#8B5CF6]" />
                       </div>
-                      <CardTitle className="text-xl">Resilient Edge Operations</CardTitle>
+                      <CardTitle className="text-xl">Industrial Edge Platforms</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <div>
-                        <h4 className="font-semibold text-sm mb-2">SLO & Runbook Enablement</h4>
+                        <h4 className="font-semibold text-sm mb-2">Edge Platform Architecture</h4>
                         <p className="text-sm text-muted-foreground">
-                          Define uptime targets, MTTR commitments, and autonomous response policies—
-                          creating runbooks that trigger actions before failures cascade.
+                          Platform selection and architecture consulting for industrial edge deployments—
+                          AI accelerators, ruggedized compute, and chip-level security integration.
                         </p>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-sm mb-2">Continuous Compliance Evidence</h4>
+                        <h4 className="font-semibold text-sm mb-2">Hardware-Backed Compliance</h4>
                         <p className="text-sm text-muted-foreground">
-                          IEC 62443, CRA, and NIS2 validation streaming from edge nodes—firmware integrity, 
-                          SBOM tracking, and audit-ready reporting for regulatory deadlines.
+                          NIS2 and IEC 62443 compliance frameworks with chip-level security—firmware integrity, 
+                          SBOM tracking, and audit-ready documentation for regulatory requirements.
                         </p>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-sm mb-2">Fleet Policy Governance</h4>
+                        <h4 className="font-semibold text-sm mb-2">AI Inference Integration</h4>
                         <p className="text-sm text-muted-foreground">
-                          Canary rollouts, promotion gates, and automated rollback—enabling zero-downtime 
-                          releases with health checks and SLO-based approval workflows.
+                          AI accelerator selection and inference pipeline architecture—model optimization, 
+                          edge deployment strategies, and cloud integration for ML workflows.
                         </p>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-sm mb-2">SOC-Ready Observability</h4>
+                        <h4 className="font-semibold text-sm mb-2">Multi-Vendor Coordination</h4>
                         <p className="text-sm text-muted-foreground">
-                          Unified dashboards linking operational health, cybersecurity posture, and compliance—
-                          standardized OT telemetry for enterprise or MSSP SOC integration.
+                          Integration architecture across chip vendors, platform providers, and cloud services—
+                          eliminating coordination failures in complex edge-to-cloud stacks.
                         </p>
                       </div>
                     </CardContent>
@@ -701,10 +714,10 @@ export default function ServicesPage() {
                         </p>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-sm mb-2">Edge Analytics Consulting</h4>
+                        <h4 className="font-semibold text-sm mb-2">Edge Analytics Architecture</h4>
                         <p className="text-sm text-muted-foreground">
-                          Local decision-making for latency-sensitive use cases—predictive 
-                          analytics deployment requiring sub-second response times.
+                          Local processing architecture for latency-sensitive use cases—edge analytics 
+                          frameworks enabling real-time decision-making without cloud dependency.
                         </p>
                       </div>
                     </CardContent>
@@ -756,273 +769,266 @@ export default function ServicesPage() {
               <h2 className="text-3xl md:text-4xl font-bold">Production-Ready Deliverables</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 Every consulting engagement delivers production-ready documentation eliminating integration 
-                ambiguity—developed through founder-led strategic advisory process
+                ambiguity—developed through collaborative strategic advisory process
               </p>
             </div>
 
-           {/* Accordion Deliverables - IMPROVED */}
-          <Accordion type="single" collapsible className="w-full space-y-4">
-            
-            {/* 1. Architecture Decision Records (ADRs) */}
-            <AccordionItem value="blueprint" className="border-2 border-primary/20 rounded-lg overflow-hidden bg-white">
-              <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-primary/5">
-                <div className="flex items-center gap-4 text-left w-full">
-                  <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-primary/10 rounded-lg flex-shrink-0">
-                    <Package className="w-6 h-6 md:w-7 md:h-7 text-primary" />
+            {/* Accordion Deliverables */}
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              
+              {/* 1. Architecture Blueprint */}
+              <AccordionItem value="blueprint" className="border-2 border-primary/20 rounded-lg overflow-hidden bg-white">
+                <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-primary/5">
+                  <div className="flex items-center gap-4 text-left w-full">
+                    <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-primary/10 rounded-lg flex-shrink-0">
+                      <Package className="w-6 h-6 md:w-7 md:h-7 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl md:text-2xl font-bold">Architecture Blueprint</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Documented rationale for every major technical choice
+                      </p>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl md:text-2xl font-bold">Architecture Blueprint</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Documented rationale for every major technical choice
+                </AccordionTrigger>
+                <AccordionContent className="px-6 md:px-8 pb-8">
+                  <div className="space-y-4 pt-4">
+                    <p className="text-muted-foreground">
+                      Technical documentation explaining architecture decisions and technology choices—providing 
+                      rationale for key selections and enabling informed stakeholder decisions with documented trade-offs.
                     </p>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">Technology selection rationale:</strong> Chipset, connectivity, 
+                          cloud platform choices with documented cost, performance, and vendor lock-in tradeoffs
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">Integration specifications:</strong> API contracts, data schemas, 
+                          and interface standards enabling parallel vendor work without constant coordination
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">Performance requirements:</strong> Latency targets, bandwidth budgets, 
+                          throughput specs with measurement criteria and acceptance thresholds
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">Scaling roadmap:</strong> Pilot → 100s → 1000s+ devices with 
+                          infrastructure triggers and cost projections at each stage
+                        </span>
+                      </li>
+                    </ul>
+                    
+                    {/* Offer Context */}
+                    <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-primary mt-4">
+                      <p className="text-xs text-gray-700">
+                        <strong>Primary deliverable for Embedded Core:</strong> Enables device makers to move from concept 
+                        to production with validated architecture. Also used in Industrial Edge for documenting edge governance patterns.
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="px-6 md:px-8 pb-8">
-                <div className="space-y-4 pt-4">
-                  <p className="text-muted-foreground">
-                    Comprehensive technical documentation answering "why we chose X over Y"—eliminating second-guessing, 
-                    enabling confident execution, and securing stakeholder buy-in with clear cost-benefit trade-offs.
-                  </p>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">Technology selection rationale:</strong> Chipset, connectivity, 
-                        cloud platform choices with documented cost, performance, and vendor lock-in tradeoffs
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">Integration specifications:</strong> API contracts, data schemas, 
-                        and interface standards enabling parallel vendor work without constant coordination
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">Performance requirements:</strong> Latency targets, bandwidth budgets, 
-                        throughput specs with measurement criteria and acceptance thresholds
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">Scaling roadmap:</strong> Pilot → 100s → 1000s+ devices with 
-                        infrastructure triggers and cost projections at each stage
-                      </span>
-                    </li>
-                  </ul>
-                  
-                  {/* Offer Context */}
-                  <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-primary mt-4">
-                    <p className="text-xs text-gray-700">
-                      <strong>Primary deliverable for Silicon-to-Cloud:</strong> Enables device makers to move from concept 
-                      to production with validated architecture. Also used in Resilient Edge for documenting edge governance patterns.
-                    </p>
-                  </div>
-                </div>
-              </AccordionContent>
-            </AccordionItem>
+                </AccordionContent>
+              </AccordionItem>
 
-            {/* 2. Security & Compliance Framework */}
-            <AccordionItem value="security" className="border-2 border-[#EF4444]/20 rounded-lg overflow-hidden bg-white">
-              <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-[#EF4444]/5">
-                <div className="flex items-center gap-4 text-left w-full">
-                  <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-[#EF4444]/10 rounded-lg flex-shrink-0">
-                    <ShieldCheck className="w-6 h-6 md:w-7 md:h-7 text-[#EF4444]" />
+              {/* 2. Security & Compliance Framework */}
+              <AccordionItem value="security" className="border-2 border-[#EF4444]/20 rounded-lg overflow-hidden bg-white">
+                <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-[#EF4444]/5">
+                  <div className="flex items-center gap-4 text-left w-full">
+                    <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-[#EF4444]/10 rounded-lg flex-shrink-0">
+                      <ShieldCheck className="w-6 h-6 md:w-7 md:h-7 text-[#EF4444]" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl md:text-2xl font-bold">Security & Compliance Frameworks</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Audit-ready CRA, IEC 62443, and NIS2 evidence
+                      </p>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl md:text-2xl font-bold">Security & Compliance Frameworks</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Audit-ready CRA, IEC 62443, and NIS2 evidence
+                </AccordionTrigger>
+                <AccordionContent className="px-6 md:px-8 pb-8">
+                  <div className="space-y-4 pt-4">
+                    <p className="text-muted-foreground">
+                      Security architecture mapped to regulatory requirements with continuous evidence generation—
+                      preventing "compliance retrofit" failures and enabling smooth audits for EU market access.
                     </p>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#EF4444] flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">Defense-in-depth architecture:</strong> Security controls at 
+                          device (secure boot, TPM), transport (TLS/mTLS), and cloud (IAM, encryption) layers
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#EF4444] flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">Compliance mapping:</strong> CRA essential requirements, 
+                          IEC 62443 security levels, NIS2 measures with traceability matrices and evidence links
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#EF4444] flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">SBOM & vulnerability tracking:</strong> Software bill of materials 
+                          with automated CVE monitoring and patching workflows
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#EF4444] flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">Audit-ready evidence packets:</strong> Test results, scan outputs, 
+                          compliance matrices, and remediation records for certification bodies
+                        </span>
+                      </li>
+                    </ul>
+                    
+                    {/* Offer Context */}
+                    <div className="bg-red-50 p-4 rounded-lg border-l-4 border-[#EF4444] mt-4">
+                      <p className="text-xs text-gray-700">
+                        <strong>Both offers:</strong> Embedded Core (CRA, CE marking) and Industrial Edge (IEC 62443, NIS2 for industrial OT). 
+                        Continuous evidence streaming is primary for Industrial Edge.
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="px-6 md:px-8 pb-8">
-                <div className="space-y-4 pt-4">
-                  <p className="text-muted-foreground">
-                    Security architecture mapped to regulatory requirements with continuous evidence generation—
-                    preventing "compliance retrofit" failures and enabling smooth audits for EU market access.
-                  </p>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-[#EF4444] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">Defense-in-depth architecture:</strong> Security controls at 
-                        device (secure boot, TPM), transport (TLS/mTLS), and cloud (IAM, encryption) layers
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-[#EF4444] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">Compliance mapping:</strong> CRA essential requirements, 
-                        IEC 62443 security levels, NIS2 measures with traceability matrices and evidence links
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-[#EF4444] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">SBOM & vulnerability tracking:</strong> Software bill of materials 
-                        with automated CVE monitoring and patching workflows
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-[#EF4444] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">Audit-ready evidence packets:</strong> Test results, scan outputs, 
-                        compliance matrices, and remediation records for certification bodies
-                      </span>
-                    </li>
-                  </ul>
-                  
-                  {/* Offer Context */}
-                  <div className="bg-red-50 p-4 rounded-lg border-l-4 border-[#EF4444] mt-4">
-                    <p className="text-xs text-gray-700">
-                      <strong>Both offers:</strong> Silicon-to-Cloud (CRA, CE marking) and Resilient Edge (IEC 62443, NIS2 for industrial OT). 
-                      Continuous evidence streaming is primary for Resilient Edge.
-                    </p>
-                  </div>
-                </div>
-              </AccordionContent>
-            </AccordionItem>
+                </AccordionContent>
+              </AccordionItem>
 
-            {/* 3. Operations Runbooks */}
-            <AccordionItem value="operations" className="border-2 border-[#8B5CF6]/20 rounded-lg overflow-hidden bg-white">
-              <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-[#8B5CF6]/5">
-                <div className="flex items-center gap-4 text-left w-full">
-                  <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-[#8B5CF6]/10 rounded-lg flex-shrink-0">
-                    <Settings className="w-6 h-6 md:w-7 md:h-7 text-[#8B5CF6]" />
+              {/* 3. Deployment & Operations Frameworks */}
+              <AccordionItem value="operations" className="border-2 border-[#8B5CF6]/20 rounded-lg overflow-hidden bg-white">
+                <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-[#8B5CF6]/5">
+                  <div className="flex items-center gap-4 text-left w-full">
+                    <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-[#8B5CF6]/10 rounded-lg flex-shrink-0">
+                      <Settings className="w-6 h-6 md:w-7 md:h-7 text-[#8B5CF6]" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl md:text-2xl font-bold">Deployment & Operations Frameworks</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Rollout strategies, testing procedures, and operational guidelines
+                      </p>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl md:text-2xl font-bold">Operations Runbooks & SLO Definitions</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Deployment, rollout, rollback, and incident response procedures
+                </AccordionTrigger>
+                <AccordionContent className="px-6 md:px-8 pb-8">
+                  <div className="space-y-4 pt-4">
+                    <p className="text-muted-foreground">
+                      Documented deployment strategies and operational procedures enabling your teams to execute rollouts 
+                      independently—covering phased deployment, testing gates, and incident response frameworks.
                     </p>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">Deployment strategy frameworks:</strong> Phased rollout patterns 
+                          (pilot → staged → full production) with validation criteria at each gate
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">Testing and validation procedures:</strong> Pre-deployment 
+                          checklists, integration testing protocols, and acceptance criteria
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">Rollback decision frameworks:</strong> Error threshold definitions 
+                          and reversion procedures for failed deployments
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">Operational documentation:</strong> Monitoring requirements, 
+                          incident response templates, and post-deployment validation procedures
+                        </span>
+                      </li>
+                    </ul>
+                    
+                    {/* Offer Context */}
+                    <div className="bg-purple-50 p-4 rounded-lg border-l-4 border-[#8B5CF6] mt-4">
+                      <p className="text-xs text-gray-700">
+                        <strong>Primary deliverable for Industrial Edge:</strong> Deployment governance and operational 
+                        frameworks for edge platforms. Embedded Core receives simplified deployment checklists.
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="px-6 md:px-8 pb-8">
-                <div className="space-y-4 pt-4">
-                  <p className="text-muted-foreground">
-                    Step-by-step operational procedures enabling autonomous execution without constant consultant dependency—
-                    covering deployment gates, canary rollouts, automated rollback, and incident response.
-                  </p>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">SLO definitions:</strong> Uptime targets, MTTR commitments, 
-                        and error budgets with measurement criteria and escalation triggers
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">Canary deployment procedures:</strong> Phased rollout (5% → 25% → 100%) 
-                        with automated health checks and promotion gates
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">Automated rollback policies:</strong> Error thresholds (e.g., >5% failure rate) 
-                        triggering automatic reversion with notification workflows
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">Incident response templates:</strong> Post-mortem structure, 
-                        root cause analysis, and continuous improvement tracking
-                      </span>
-                    </li>
-                  </ul>
-                  
-                  {/* Offer Context */}
-                  <div className="bg-purple-50 p-4 rounded-lg border-l-4 border-[#8B5CF6] mt-4">
-                    <p className="text-xs text-gray-700">
-                      <strong>Primary deliverable for Resilient Edge:</strong> SLO governance and autonomous runbooks are core to 
-                      edge operations. Silicon-to-Cloud uses simplified deployment checklists for device rollouts.
-                    </p>
-                  </div>
-                </div>
-              </AccordionContent>
-            </AccordionItem>
+                </AccordionContent>
+              </AccordionItem>
 
-            {/* 4. Multi-Vendor Coordination Framework */}
-            <AccordionItem value="program" className="border-2 border-[#10B981]/20 rounded-lg overflow-hidden bg-white">
-              <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-[#10B981]/5">
-                <div className="flex items-center gap-4 text-left w-full">
-                  <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-[#10B981]/10 rounded-lg flex-shrink-0">
-                    <Users className="w-6 h-6 md:w-7 md:h-7 text-[#10B981]" />
+              {/* 4. Multi-Vendor Coordination Framework */}
+              <AccordionItem value="program" className="border-2 border-[#10B981]/20 rounded-lg overflow-hidden bg-white">
+                <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline hover:bg-[#10B981]/5">
+                  <div className="flex items-center gap-4 text-left w-full">
+                    <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-[#10B981]/10 rounded-lg flex-shrink-0">
+                      <Users className="w-6 h-6 md:w-7 md:h-7 text-[#10B981]" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl md:text-2xl font-bold">Multi-Vendor Coordination Framework</h3>
+                      <p className="text-sm text-muted-foreground">
+                        RACI matrices and interface contracts for distributed teams
+                      </p>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl md:text-2xl font-bold">Multi-Vendor Coordination Framework</h3>
-                    <p className="text-sm text-muted-foreground">
-                      RACI matrices and interface contracts for distributed teams
+                </AccordionTrigger>
+                <AccordionContent className="px-6 md:px-8 pb-8">
+                  <div className="space-y-4 pt-4">
+                    <p className="text-muted-foreground">
+                      When multiple vendors contribute components (chipmaker, connectivity provider, cloud platform), 
+                      clear coordination frameworks prevent integration chaos—defining ownership and change control.
                     </p>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">RACI responsibility matrix:</strong> Who owns what—eliminating 
+                          finger-pointing with clear Responsible, Accountable, Consulted, Informed definitions
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">Interface contracts:</strong> API specifications and data standards 
+                          enabling parallel work without blocking dependencies
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">Change control process:</strong> Formal approval workflows preventing 
+                          "surprise" updates that break integrations
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">Vendor performance scorecards:</strong> Delivery timeliness, quality metrics, 
+                          and responsiveness tracking for data-driven vendor management
+                        </span>
+                      </li>
+                    </ul>
+                    
+                    {/* Offer Context */}
+                    <div className="bg-green-50 p-4 rounded-lg border-l-4 border-[#10B981] mt-4">
+                      <p className="text-xs text-gray-700">
+                        <strong>Both offers:</strong> Embedded Core (coordinating chipmakers, connectivity providers, cloud platforms) and 
+                        Industrial Edge (coordinating OT vendors, edge hardware suppliers, SOC integration partners).
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="px-6 md:px-8 pb-8">
-                <div className="space-y-4 pt-4">
-                  <p className="text-muted-foreground">
-                    When multiple vendors contribute components (chipmaker, connectivity provider, cloud platform), 
-                    clear coordination frameworks prevent integration chaos—defining ownership and change control.
-                  </p>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">RACI responsibility matrix:</strong> Who owns what—eliminating 
-                        finger-pointing with clear Responsible, Accountable, Consulted, Informed definitions
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">Interface contracts:</strong> API specifications and data standards 
-                        enabling parallel work without blocking dependencies
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">Change control process:</strong> Formal approval workflows preventing 
-                        "surprise" updates that break integrations
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-[#10B981] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">Vendor performance scorecards:</strong> Delivery timeliness, quality metrics, 
-                        and responsiveness tracking for data-driven vendor management
-                      </span>
-                    </li>
-                  </ul>
-                  
-                  {/* Offer Context */}
-                  <div className="bg-green-50 p-4 rounded-lg border-l-4 border-[#10B981] mt-4">
-                    <p className="text-xs text-gray-700">
-                      <strong>Both offers:</strong> Silicon-to-Cloud (coordinating chipmakers, connectivity providers, cloud platforms) and 
-                      Resilient Edge (coordinating OT vendors, edge hardware suppliers, SOC integration partners).
-                    </p>
-                  </div>
-                </div>
-              </AccordionContent>
-            </AccordionItem>
+                </AccordionContent>
+              </AccordionItem>
 
-          </Accordion>
-
-            {/* CTA */}
-            {/*<div className="text-center">
-              <Button asChild size="lg" variant="outline">
-                <Link href="/resources">Request Sample Blueprint</Link>
-              </Button>
-            </div>*/}
+            </Accordion>
 
             {/* Back to Top */}
             <div className="text-center">
@@ -1038,436 +1044,229 @@ export default function ServicesPage() {
 
 
       {/* Three-Phase Delivery Process - IMPROVED */}
-<section id="consulting-methodology" className="py-20 md:py-32 scroll-mt-20">
-  <div className="container mx-auto px-4">
-    <div className="max-w-7xl mx-auto space-y-16">
-      
-      {/* Header */}
-      <div className="text-center space-y-4">
-        <h2 className="text-3xl md:text-4xl font-bold">Three-Phase Delivery Process</h2>
-        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Fixed-price engagement with clear deliverables and go/no-go gates at each phase
-        </p>
-      </div>
-
-      {/* Visual Timeline - NEW */}
-      <div className="flex items-center justify-center gap-4 py-8 max-w-4xl mx-auto">
-        <div className="flex-1 text-center">
-          <div className="w-24 h-24 rounded-full bg-gradient-to-br from-cyan-100 to-cyan-200 flex items-center justify-center mb-3 mx-auto ring-4 ring-cyan-200/50">
-            <div className="text-center">
-              <span className="block font-bold text-2xl text-cyan-600">1</span>
-              <span className="block text-xs text-cyan-700">Discovery</span>
-            </div>
-          </div>
-          <p className="text-sm font-semibold">4-6 weeks</p>
-          <p className="text-xs text-muted-foreground">Fixed price</p>
-        </div>
-        <ArrowRight className="text-muted-foreground w-8 h-8 flex-shrink-0" />
-        <div className="flex-1 text-center">
-          <div className="w-24 h-24 rounded-full bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center mb-3 mx-auto ring-4 ring-purple-200/50">
-            <div className="text-center">
-              <span className="block font-bold text-2xl text-purple-600">2</span>
-              <span className="block text-xs text-purple-700">Build</span>
-            </div>
-          </div>
-          <p className="text-sm font-semibold">12-20 weeks</p>
-          <p className="text-xs text-muted-foreground">Fixed milestones</p>
-        </div>
-        <ArrowRight className="text-muted-foreground w-8 h-8 flex-shrink-0" />
-        <div className="flex-1 text-center">
-          <div className="w-24 h-24 rounded-full bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center mb-3 mx-auto ring-4 ring-green-200/50">
-            <div className="text-center">
-              <span className="block font-bold text-2xl text-green-600">3</span>
-              <span className="block text-xs text-green-700">Deploy</span>
-            </div>
-          </div>
-          <p className="text-sm font-semibold">8-12 weeks</p>
-          <p className="text-xs text-muted-foreground">Fixed scope</p>
-        </div>
-      </div>
-
-      {/* Phase Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-        
-        {/* Arrow Connector 1→2 */}
-        <div className="hidden md:block absolute top-32 left-[33.33%] transform -translate-x-1/2 -translate-y-1/2 z-10">
-          <ArrowRight className="h-8 w-8 text-purple-400/40" strokeWidth={2.5} />
-        </div>
-        
-        {/* Arrow Connector 2→3 */}
-        <div className="hidden md:block absolute top-32 left-[66.66%] transform -translate-x-1/2 -translate-y-1/2 z-10">
-          <ArrowRight className="h-8 w-8 text-green-400/40" strokeWidth={2.5} />
-        </div>
-
-        {/* Phase 1: Discovery & Validation */}
-        <Card className="border-l-4 border-cyan-500 hover:shadow-lg transition-shadow">
-          <CardHeader>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-14 h-14 rounded-full bg-cyan-100 flex items-center justify-center ring-4 ring-cyan-200/50">
-                <Search className="h-7 w-7 text-cyan-600" strokeWidth={2.5} />
-              </div>
-              <div>
-                <CardTitle className="text-2xl">Discovery</CardTitle>
-                <p className="text-sm text-muted-foreground font-medium">4-6 weeks • Fixed price</p>
-              </div>
-            </div>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            {/* Removed "What Happens" paragraph - goes straight to deliverables */}
-            <h4 className="font-semibold text-base">Core Deliverables:</h4>
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Architecture decision records</strong> with tech stack rationale</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Compliance gap analysis</strong> (CRA/IEC 62443/NIS2)</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Business case</strong> with ROI projections</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Implementation roadmap</strong> with phases & resources</span>
-              </li>
-            </ul>
-
-            <div className="bg-cyan-50 p-4 rounded-lg border-l-4 border-cyan-500 mt-4">
-              <p className="text-sm font-semibold mb-1 flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-cyan-600" />
-                Go/No-Go Gate
-              </p>
-              <p className="text-xs text-muted-foreground">
-                Executive sign-off on validated blueprint with clear go/no-go decision before full implementation.
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Phase 2: Build & Validate */}
-        <Card className="border-l-4 border-purple-500 hover:shadow-lg transition-shadow">
-          <CardHeader>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center ring-4 ring-purple-200/50">
-                <Code className="h-7 w-7 text-purple-600" strokeWidth={2.5} />
-              </div>
-              <div>
-                <CardTitle className="text-2xl">Build</CardTitle>
-                <p className="text-sm text-muted-foreground font-medium">12-20 weeks • Fixed milestones</p>
-              </div>
-            </div>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <h4 className="font-semibold text-base">Core Deliverables:</h4>
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Bi-weekly demos</strong> with working code</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Reference implementations</strong> (firmware, policies, integrations)</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
-                <span><strong>CI/CD pipelines</strong> with automated testing</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Operations runbooks</strong> for deployment & incidents</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Security frameworks</strong> with audit evidence</span>
-              </li>
-            </ul>
-
-            <div className="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500 mt-4">
-              <p className="text-sm font-semibold mb-1 flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-purple-600" />
-                Implementation Gate
-              </p>
-              <p className="text-xs text-muted-foreground">
-                Functional demos validated, >80% test coverage, security verified.
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Phase 3: Deploy & Handoff */}
-        <Card className="border-l-4 border-green-500 hover:shadow-lg transition-shadow">
-          <CardHeader>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center ring-4 ring-green-200/50">
-                <Rocket className="h-7 w-7 text-green-600" strokeWidth={2.5} />
-              </div>
-              <div>
-                <CardTitle className="text-2xl">Deploy</CardTitle>
-                <p className="text-sm text-muted-foreground font-medium">8-12 weeks • Fixed scope</p>
-              </div>
-            </div>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <h4 className="font-semibold text-base">Core Deliverables:</h4>
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Pilot deployment</strong> (10-100 devices/nodes)</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Performance validation</strong> against SLO targets</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Operational handoff</strong> with shadowing</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Documentation transfer</strong> (ADRs, runbooks, compliance)</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Team training</strong> on operations & troubleshooting</span>
-              </li>
-            </ul>
-
-            <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500 mt-4">
-              <p className="text-sm font-semibold mb-1 flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-green-600" />
-                Production Gate
-              </p>
-              <p className="text-xs text-muted-foreground">
-                Pilot metrics achieved, your team operates independently—ready to scale.
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-
-      {/* CTA */}
-      <div className="text-center pt-8">
-        <Button asChild size="lg">
-          <Link href="/contact">Schedule Discovery Phase →</Link>
-        </Button>
-        <p className="text-sm text-muted-foreground mt-3">
-          30-minute consultation with both founders • No commitment required
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-      {/* Founder Accountability */}
-      <section id="founder-accountability" className="py-20 md:py-32 bg-muted/30 scroll-mt-20">
+      <section id="consulting-methodology" className="py-20 md:py-32 scroll-mt-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto space-y-12">
+          <div className="max-w-7xl mx-auto space-y-16">
             
-            {/* Section Header */}
+            {/* Header */}
             <div className="text-center space-y-4">
-              <h2 className="text-4xl md:text-5xl font-bold">Founder-Led Throughout</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">Three-Phase Delivery Process</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Unlike large consultancies where partners sell then disappear, both Edge Pulsar founders 
-                remain accountable from initial consultation through final handoff—no bait-and-switch with 
-                junior staff.
+                Fixed-price engagement with clear deliverables and go/no-go gates at each phase
               </p>
             </div>
 
-            {/* The Model Explanation */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Visual Timeline */}
+            <div className="flex items-center justify-center gap-4 py-8 max-w-4xl mx-auto">
+              <div className="flex-1 text-center">
+                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-cyan-100 to-cyan-200 flex items-center justify-center mb-3 mx-auto ring-4 ring-cyan-200/50">
+                  <div className="text-center">
+                    <span className="block font-bold text-2xl text-cyan-600">1</span>
+                    <span className="block text-xs text-cyan-700">Discovery</span>
+                  </div>
+                </div>
+                <p className="text-sm font-semibold">4-6 weeks</p>
+                <p className="text-xs text-muted-foreground">Fixed price</p>
+              </div>
+              <ArrowRight className="text-muted-foreground w-8 h-8 flex-shrink-0" />
+              <div className="flex-1 text-center">
+                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center mb-3 mx-auto ring-4 ring-purple-200/50">
+                  <div className="text-center">
+                    <span className="block font-bold text-2xl text-purple-600">2</span>
+                    <span className="block text-xs text-purple-700">Build</span>
+                  </div>
+                </div>
+                <p className="text-sm font-semibold">12-20 weeks</p>
+                <p className="text-xs text-muted-foreground">Fixed milestones</p>
+              </div>
+              <ArrowRight className="text-muted-foreground w-8 h-8 flex-shrink-0" />
+              <div className="flex-1 text-center">
+                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center mb-3 mx-auto ring-4 ring-green-200/50">
+                  <div className="text-center">
+                    <span className="block font-bold text-2xl text-green-600">3</span>
+                    <span className="block text-xs text-green-700">Deploy</span>
+                  </div>
+                </div>
+                <p className="text-sm font-semibold">8-12 weeks</p>
+                <p className="text-xs text-muted-foreground">Fixed scope</p>
+              </div>
+            </div>
+
+            {/* Timeline Disclaimer */}
+            <p className="text-sm text-muted-foreground text-center max-w-2xl mx-auto -mt-4 mb-8">
+              Timelines shown are typical ranges and may vary based on project scope, technical 
+              complexity, and client readiness. Exact duration agreed during Discovery phase.
+            </p>
+
+            {/* Phase Cards Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
               
-              {/* Left: How Most Consultancies Work */}
-              <Card className="border-2 border-destructive/20 bg-destructive/5">
+              {/* Arrow Connector 1→2 */}
+              <div className="hidden md:block absolute top-32 left-[33.33%] transform -translate-x-1/2 -translate-y-1/2 z-10">
+                <ArrowRight className="h-8 w-8 text-purple-400/40" strokeWidth={2.5} />
+              </div>
+              
+              {/* Arrow Connector 2→3 */}
+              <div className="hidden md:block absolute top-32 left-[66.66%] transform -translate-x-1/2 -translate-y-1/2 z-10">
+                <ArrowRight className="h-8 w-8 text-green-400/40" strokeWidth={2.5} />
+              </div>
+
+              {/* Phase 1: Discovery & Validation */}
+              <Card className="border-l-4 border-cyan-500 hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-xl flex items-center gap-2">
-                    <span className="text-2xl">❌</span>
-                    Traditional Consulting Model
-                  </CardTitle>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-14 h-14 rounded-full bg-cyan-100 flex items-center justify-center ring-4 ring-cyan-200/50">
+                      <Search className="h-7 w-7 text-cyan-600" strokeWidth={2.5} />
+                    </div>
+                    <div>
+                      <CardTitle className="text-2xl">Discovery</CardTitle>
+                      <p className="text-sm text-muted-foreground font-medium">4-6 weeks • Fixed price</p>
+                    </div>
+                  </div>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="space-y-3 text-sm text-muted-foreground">
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 rounded-full bg-destructive/10 flex items-center justify-center flex-shrink-0">
-                        <span className="text-xs font-bold">1</span>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-foreground">Sales Phase</p>
-                        <p>Senior partner presents, promises their involvement</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 rounded-full bg-destructive/10 flex items-center justify-center flex-shrink-0">
-                        <span className="text-xs font-bold">2</span>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-foreground">Delivery Phase</p>
-                        <p>Junior consultants (1-3 years exp) do actual work, partners vanish</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 rounded-full bg-destructive/10 flex items-center justify-center flex-shrink-0">
-                        <span className="text-xs font-bold">3</span>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-foreground">Issue Resolution</p>
-                        <p>Juniors escalate, slow response, learning on your project</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 rounded-full bg-destructive/10 flex items-center justify-center flex-shrink-0">
-                        <span className="text-xs font-bold">4</span>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-foreground">Result</p>
-                        <p>Paying partner rates for junior delivery, generic PowerPoint solutions</p>
-                      </div>
-                    </div>
+                  <h4 className="font-semibold text-base">Core Deliverables:</h4>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-0.5" />
+                      <span><strong>Architecture decision records</strong> with tech stack rationale</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-0.5" />
+                      <span><strong>Compliance gap analysis</strong> (CRA/IEC 62443/NIS2)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-0.5" />
+                      <span><strong>Business case</strong> with ROI projections</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-0.5" />
+                      <span><strong>Implementation roadmap</strong> with phases & resources</span>
+                    </li>
+                  </ul>
+
+                  <div className="bg-cyan-50 p-4 rounded-lg border-l-4 border-cyan-500 mt-4">
+                    <p className="text-sm font-semibold mb-1 flex items-center gap-2">
+                      <ShieldCheck className="h-4 w-4 text-cyan-600" />
+                      Go/No-Go Gate
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      Executive sign-off on validated blueprint with clear go/no-go decision before full implementation.
+                    </p>
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Right: Edge Pulsar Model */}
-              <Card className="border-2 border-primary/20 bg-primary/5">
+              {/* Phase 2: Build & Validate */}
+              <Card className="border-l-4 border-purple-500 hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-xl flex items-center gap-2">
-                    <span className="text-2xl">✅</span>
-                    Edge Pulsar Founder Model
-                  </CardTitle>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center ring-4 ring-purple-200/50">
+                      <Code className="h-7 w-7 text-purple-600" strokeWidth={2.5} />
+                    </div>
+                    <div>
+                      <CardTitle className="text-2xl">Build</CardTitle>
+                      <p className="text-sm text-muted-foreground font-medium">12-20 weeks • Fixed milestones</p>
+                    </div>
+                  </div>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="space-y-3 text-sm text-muted-foreground">
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <span className="text-xs font-bold text-primary">1</span>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-foreground">Initial Consultation</p>
-                        <p>Both founders on discovery call, technical assessment begins immediately</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <span className="text-xs font-bold text-primary">2</span>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-foreground">Delivery Phase</p>
-                        <p>Founders architect and lead; specialists code under daily founder oversight</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <span className="text-xs font-bold text-primary">3</span>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-foreground">Issue Resolution</p>
-                        <p>Direct founder access via Slack/email, same-day response on critical issues</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <span className="text-xs font-bold text-primary">4</span>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-foreground">Result</p>
-                        <p>25+ years expertise on every decision, working code with audit-ready docs</p>
-                      </div>
-                    </div>
+                  <h4 className="font-semibold text-base">Core Deliverables:</h4>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                      <span><strong>Bi-weekly demos</strong> with working code</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                      <span><strong>Reference implementations</strong> (firmware, policies, integrations)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                      <span><strong>CI/CD pipelines</strong> with automated testing</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                      <span><strong>Deployment frameworks</strong> and incident response procedures</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                      <span><strong>Security frameworks</strong> with audit evidence</span>
+                    </li>
+                  </ul>
+
+                  <div className="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500 mt-4">
+                    <p className="text-sm font-semibold mb-1 flex items-center gap-2">
+                      <ShieldCheck className="h-4 w-4 text-purple-600" />
+                      Implementation Gate
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      Functional demos validated, >80% test coverage, security verified.
+                    </p>
                   </div>
                 </CardContent>
               </Card>
 
-            </div>
-
-            {/* Accountability Guarantees */}
-            <div className="bg-gradient-to-br from-primary/5 to-background p-8 rounded-xl border-2 border-primary/20">
-              <h3 className="text-2xl font-bold mb-6 text-center">Founder Accountability Guarantees</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold mb-1">Same Founders, Start to Finish</p>
-                    <p className="text-sm text-muted-foreground">
-                      Both founders named in contract, attend all strategic meetings, maintain client relationship 
-                      throughout engagement—no staff rotation
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold mb-1">Direct Communication Channel</p>
-                    <p className="text-sm text-muted-foreground">
-                      Founders accessible via Slack/email for technical decisions—no filtering through account 
-                      managers or junior consultants
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold mb-1">Code Review by Founders</p>
-                    <p className="text-sm text-muted-foreground">
-                      When implementation specialists contribute, every critical module reviewed and approved 
-                      by founders—quality gated by 25+ year veterans
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold mb-1">Post-Engagement Advisory</p>
-                    <p className="text-sm text-muted-foreground">
-                      After handoff, founders remain available for architectural questions and escalations—
-                      no abrupt consultant departure
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Who You're Working With */}
-            <div className="text-center space-y-6">
-              <h3 className="text-2xl font-bold">Meet the Founders</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-                <Card>
-                  <CardContent className="p-6 space-y-3">
-                    <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                      <Users className="w-10 h-10 text-primary" />
+              {/* Phase 3: Deploy & Handoff */}
+              <Card className="border-l-4 border-green-500 hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center ring-4 ring-green-200/50">
+                      <Rocket className="h-7 w-7 text-green-600" strokeWidth={2.5} />
                     </div>
                     <div>
-                      <p className="font-bold text-lg">Riadh Berhouma</p>
-                      <p className="text-sm text-muted-foreground">CEO & Co-founder</p>
+                      <CardTitle className="text-2xl">Deploy</CardTitle>
+                      <p className="text-sm text-muted-foreground font-medium">8-12 weeks • Fixed scope</p>
                     </div>
-                    <p className="text-sm text-muted-foreground">
-                      20+ years embedded systems, automotive IoT, product leadership at global tech firms
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <h4 className="font-semibold text-base">Core Deliverables:</h4>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span><strong>Pilot deployment</strong> validation</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span><strong>Performance validation</strong> against defined acceptance criteria</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span><strong>Operational handoff</strong> with shadowing</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span><strong>Documentation transfer</strong> (ADRs, runbooks, compliance)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span><strong>Team training</strong> on operations & troubleshooting</span>
+                    </li>
+                  </ul>
+
+                  <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500 mt-4">
+                    <p className="text-sm font-semibold mb-1 flex items-center gap-2">
+                      <ShieldCheck className="h-4 w-4 text-green-600" />
+                      Production Gate
                     </p>
-                    <Button asChild variant="outline" size="sm" className="w-full">
-                      <Link href="/about#riadh">View Full Profile</Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardContent className="p-6 space-y-3">
-                    <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                      <Users className="w-10 h-10 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-bold text-lg">Mazen Neifer</p>
-                      <p className="text-sm text-muted-foreground">CTO & Co-founder</p>
-                    </div>
-                    <p className="text-sm text-muted-foreground">
-                      25+ years cloud, embedded systems, telecom architecture at enterprise scale
+                    <p className="text-xs text-muted-foreground">
+                      Pilot metrics achieved, your team operates independently—ready to scale.
                     </p>
-                    <Button asChild variant="outline" size="sm" className="w-full">
-                      <Link href="/about#mazen">View Full Profile</Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-              </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
 
+            {/* CTA */}
+            <div className="text-center pt-8">
+              <Button asChild size="lg">
+                <Link href="/contact">Schedule Discovery Phase →</Link>
+              </Button>
+              <p className="text-sm text-muted-foreground mt-3">
+                30-minute consultation • No commitment required
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -1481,8 +1280,8 @@ export default function ServicesPage() {
             <div className="text-center space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold">Let's Start the Conversation</h2>
               <p className="text-xl text-muted-foreground">
-                Schedule a consultation with our founders to discuss your chip-to-cloud objectives, 
-                technical challenges, and engagement approach. Every project is founder-led from day one.
+                Schedule a consultation with our experts to discuss your chip-to-cloud objectives, 
+                technical challenges, and engagement approach. Every project is expert-led from day one.
               </p>
             </div>
 
@@ -1494,21 +1293,21 @@ export default function ServicesPage() {
                     <Rocket className="w-8 h-8 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-2">Schedule Founder Consultation</h3>
-                    <p className="text-muted-foreground">30-minute initial discussion</p>
+                    <h3 className="text-2xl font-bold mb-2">Schedule Expert Consultation</h3>
+                    <p className="text-muted-foreground">30-minute technical discussion</p>
                   </div>
                 </div>
 
                 <div className="space-y-4">
                   <p className="text-muted-foreground">
-                    We'll assess your current state, understand your technical requirements, and recommend 
-                    the optimal engagement approach—from strategic validation to full implementation.
+                    We'll assess your requirements, understand your technical challenges, and recommend 
+                    the optimal engagement approach—from strategic validation to full solution implementation.
                   </p>
                   
                   <ul className="space-y-3 text-sm text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Direct access to both founders (no sales team)</span>
+                      <span>Direct access to senior experts (no sales filtering)</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -1516,11 +1315,11 @@ export default function ServicesPage() {
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Transparent fixed-price proposal</span>
+                      <span>Transparent pricing proposal tailored to your needs</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>All projects follow our proven three-phase methodology</span>
+                      <span>Proven three-phase methodology (Discovery → Build → Deploy)</span>
                     </li>
                   </ul>
                 </div>
