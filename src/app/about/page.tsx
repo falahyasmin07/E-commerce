@@ -3,8 +3,21 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
-import { ArrowRight, Linkedin, Mail, MapPin, Users, Target, Sparkles, CheckCircle2, Cpu, Cloud, Wifi, Shield, Layers } from "lucide-react";
-
+import {
+  ArrowRight,
+  Linkedin,
+  Mail,
+  MapPin,
+  Users,
+  Target,
+  Sparkles,
+  CheckCircle2,
+  Cpu,
+  Cloud,
+  Wifi,
+  Shield,
+  Layers,
+} from "lucide-react";
 
 export default function AboutPage() {
   return (
@@ -15,68 +28,69 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
         <div className="container mx-auto relative">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <Badge variant="secondary" className="mb-4">About Edge Pulsar</Badge>
+            <Badge variant="secondary" className="mb-4">
+              About Edge Pulsar
+            </Badge>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-              Deep Chip-to-Cloud Expertise
-              <span className="block text-primary mt-2">From Experienced Engineers</span>
+              Chip-to-Edge Technical Advisor
+              <span className="block text-primary mt-2">&amp; Solution Builder</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Two industry experts with 45+ years combined experience designing, building, and integrating 
-              complete chip-to-cloud systems—from embedded firmware to cloud deployment.
+              Two hands-on engineers with 45+ years combined experience designing, building, and
+              integrating complete chip-to-edge systems—from embedded firmware to edge deployment.
             </p>
           </div>
         </div>
       </section>
 
-
-      {/* Our Story - NEW, UNIQUE CONTENT */}
+      {/* Our Story */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto space-y-12">
             <div className="text-center space-y-4">
               <h2 className="text-3xl md:text-4xl font-bold">Our Story</h2>
               <p className="text-lg text-muted-foreground">
-                Why two chip-to-cloud veterans decided to build solutions differently
+                Why two chip-to-edge veterans decided to build solutions differently
               </p>
             </div>
-
 
             <div className="space-y-8 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Throughout our careers in semiconductors, automotive, and cloud infrastructure, we repeatedly 
-                encountered costly integration failures: "cloud-ready" silicon where secure boot conflicts 
-                with cloud certificate provisioning—discovered during pilot deployment. Device makers finding 
-                their power budget can't support cellular connectivity and edge ML processing. Industrial 
-                companies facing fragmented vendor ecosystems where EU Cyber Resilience Act compliance becomes 
-                a last-minute crisis.
-              </p>
-              
-              <p>
-                The problem wasn't lack of technology—it was the <strong className="text-foreground">knowledge gap 
-                between silicon and cloud</strong>. Semiconductor companies excel at chip design but lack cloud 
-                integration expertise. Cloud consultancies understand AWS but can't write embedded firmware. This 
-                gap costs companies millions in delays, failed reference designs, and integration rework.
+                Throughout our careers in semiconductors, automotive, and cloud infrastructure, we
+                repeatedly encountered costly integration failures: “cloud-ready” silicon where secure
+                boot conflicts with certificate provisioning—discovered during pilot deployment. Device
+                makers finding their power budget cannot support cellular connectivity and edge ML
+                processing. Industrial companies facing fragmented vendor ecosystems where EU Cyber
+                Resilience Act compliance becomes a last-minute crisis.
               </p>
 
+              <p>
+                The problem was not lack of technology—it was the{" "}
+                <strong className="text-foreground">knowledge gap between silicon and edge/cloud</strong>.
+                Semiconductor companies excel at chip design but often lack edge and cloud integration
+                expertise. Cloud-focused teams understand platforms but cannot write embedded firmware.
+                This gap costs companies millions in delays, failed reference designs, and integration
+                rework.
+              </p>
 
               <p>
-                We founded Edge Pulsar as a chip-to-cloud solution provider and integrator—building complete 
-                systems that bridge silicon and cloud. We design reference implementations, integrate multi-vendor 
-                stacks, and deliver production-ready architectures based on 45+ years shipping real systems.
+                We founded Edge Pulsar as a chip-to-edge technical advisor &amp; solution builder—creating
+                complete systems that bridge silicon, connectivity, and cloud. We design reference
+                implementations, integrate multi-vendor stacks, and deliver production-ready architectures
+                based on decades of shipping real systems.
               </p>
             </div>
-
 
             {/* Positioning Statement */}
             <div className="mt-12 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">
               <p className="text-lg font-semibold mb-2">Our Positioning</p>
               <p className="text-muted-foreground leading-relaxed">
-                We're a <strong>chip-to-cloud solution provider and integrator</strong>. We design, build, and integrate complete systems with hands-on implementation, 
-                leveraging proven accelerators and strategic partnerships to deliver at scale while maintaining 
-                expert oversight throughout.
+                We are a <strong>chip-to-edge technical advisor &amp; solution builder</strong>. We combine
+                strategic advisory with hands-on implementation—designing, building, and integrating
+                complete systems, while leveraging proven accelerators and trusted partners under our
+                technical oversight.
               </p>
             </div>
-
 
             {/* Stats Cards */}
             <div className="grid md:grid-cols-3 gap-6 pt-8">
@@ -97,18 +111,16 @@ export default function AboutPage() {
         </div>
       </section>
 
-
-      {/* What Makes Us Different - UNIQUE POSITIONING */}
+      {/* What Makes Us Different */}
       <section className="py-20 md:py-32 bg-muted/30">
         <div className="container mx-auto">
           <div className="max-w-5xl mx-auto space-y-12">
             <div className="text-center space-y-4">
               <h2 className="text-3xl md:text-4xl font-bold">What Makes Us Different</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                We chose an expert-led model that prioritizes depth over scale
+                An expert-led model that prioritizes depth over scale
               </p>
             </div>
-
 
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-8 space-y-4 border-2 hover:border-primary/50 transition-colors">
@@ -117,25 +129,23 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold">Expert-Led Throughout</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Both founders remain hands-on throughout every engagement—leading architecture decisions, 
-                  technology selection, and technical oversight. When specialized capabilities are needed, 
+                  Both founders remain hands-on throughout every engagement—leading architecture decisions,
+                  technology selection, and technical oversight. When specialized capabilities are needed,
                   we leverage trusted partners while maintaining architecture authority.
                 </p>
               </Card>
-
 
               <Card className="p-8 space-y-4 border-2 hover:border-primary/50 transition-colors">
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Target className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold">Hands-On Implementation Experience</h3>
+                <h3 className="text-xl font-bold">Hands-On Implementation</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  We build working systems, not just architecture documents. Every reference implementation, 
-                  PoC, and integration pattern we deliver has been validated in production with real hardware 
-                  and real deployments.
+                  We build working systems, not just architecture documents. Every reference implementation,
+                  PoC, and integration pattern we deliver is validated with real hardware and real
+                  deployments.
                 </p>
               </Card>
-
 
               <Card className="p-8 space-y-4 border-2 hover:border-primary/50 transition-colors">
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -143,11 +153,11 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold">Honest Technology Scoping</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  We focus on 4 core industries where our chip-to-cloud expertise delivers maximum impact. When projects 
-                  need specialized capabilities beyond our core, we bring in trusted partners rather than overpromising.
+                  We focus on four core industries where our chip-to-edge expertise delivers maximum impact.
+                  When projects need capabilities beyond our core, we bring in trusted partners rather than
+                  overpromising.
                 </p>
               </Card>
-
 
               <Card className="p-8 space-y-4 border-2 hover:border-primary/50 transition-colors">
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -155,7 +165,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold">European + Global Perspective</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Headquartered in France with experience across Europe and North America—we understand both EU 
+                  Headquartered in France with experience across Europe and North America—we understand EU
                   regulatory requirements (CRA, GDPR, NIS2) and global market dynamics.
                 </p>
               </Card>
@@ -164,15 +174,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-
-      {/* What We Build & Integrate - NEW SECTION */}
+      {/* What We Build & Integrate */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto">
           <div className="max-w-5xl mx-auto space-y-12">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold">What We Build & Integrate</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">What We Build &amp; Integrate</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                As a solution provider, we deliver working systems—not just recommendations
+                As a solution builder, we deliver working systems—not just recommendations
               </p>
             </div>
 
@@ -183,8 +192,8 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-lg font-bold">Reference Implementations</h3>
                 <p className="text-sm text-muted-foreground">
-                  Production-ready firmware, secure boot chains, and device-to-cloud connectivity 
-                  validated on development hardware
+                  Production-ready firmware, secure boot chains, and device-to-cloud connectivity validated
+                  on development hardware.
                 </p>
               </Card>
 
@@ -194,8 +203,8 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-lg font-bold">Multi-Vendor Integration</h3>
                 <p className="text-sm text-muted-foreground">
-                  Complete chip-to-cloud stacks coordinating semiconductor vendors, connectivity 
-                  providers, and cloud platforms
+                  Complete chip-to-edge stacks coordinating semiconductor vendors, connectivity providers,
+                  and cloud platforms.
                 </p>
               </Card>
 
@@ -205,8 +214,8 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-lg font-bold">Security Frameworks</h3>
                 <p className="text-sm text-muted-foreground">
-                  CRA and NIS2 compliance architectures with hardware-backed security, 
-                  certificate management, and audit documentation
+                  CRA and NIS2-aligned architectures with hardware-backed security, certificate management,
+                  and audit-ready documentation.
                 </p>
               </Card>
             </div>
@@ -220,7 +229,7 @@ export default function AboutPage() {
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl md:text-4xl font-bold">Meet the Founders</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              45+ years combined experience in chip-to-cloud systems—from embedded firmware to cloud-scale deployment
+              45+ years combined experience in chip-to-edge systems—from embedded firmware to edge deployment
             </p>
           </div>
 
@@ -390,7 +399,7 @@ export default function AboutPage() {
             <Card className="p-8 text-center bg-gradient-to-br from-primary/5 to-transparent border-2">
               <h3 className="text-2xl font-bold mb-4">The Complete Stack</h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Together, we cover the entire chip-to-cloud journey—from embedded firmware and 
+                Together, we cover the entire chip-to-edge journey—from embedded firmware and 
                 cellular connectivity through cloud architecture and data pipelines. This breadth eliminates 
                 the integration gaps that plague multi-vendor projects.
               </p>
@@ -536,10 +545,10 @@ export default function AboutPage() {
               <Badge variant="secondary">Headquartered in France</Badge>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold">
-              Ready to Work with Proven Chip-to-Cloud Expertise?
+              Ready to Work with Proven Chip-to-Edge Expertise?
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Let's discuss your chip-to-cloud challenges and how our hands-on, expert-led approach 
+              Let's discuss your chip-to-edge challenges and how our hands-on, expert-led approach 
               can accelerate your project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">

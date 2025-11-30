@@ -16,11 +16,11 @@ export default function IndustriesPage() {
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <Badge variant="secondary" className="mb-4">Industries We Serve</Badge>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-              Deep Chip-to-Cloud Expertise
+              Deep Chip-to-Edge Expertise
               <span className="block text-primary mt-2">Where It Matters Most</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Our founders' 45+ years combined experience in embedded systems, connectivity, and cloud architecture 
+              Our team's 45+ years combined experience in embedded systems, connectivity, and edge architecture 
               delivers proven results across four core industries.
             </p>
           </div>
@@ -316,7 +316,7 @@ export default function IndustriesPage() {
               Why These Four Industries?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Focused expertise where we&apos; 45+ years combined experience delivers{' '}
+              Focused expertise where our&apos; 45+ years combined experience delivers{' '}
               <span className="text-innovate font-semibold">proven results from day one</span>
             </p>
           </div>
@@ -426,7 +426,7 @@ export default function IndustriesPage() {
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
               If you're working on Industrial IoT, energy infrastructure, connected vehicles, or semiconductor ecosystem projects—
-              let's discuss how our focused expertise can accelerate your chip-to-cloud journey.
+              let's discuss how our focused expertise can accelerate your chip-to-edge journey.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
@@ -445,7 +445,7 @@ export default function IndustriesPage() {
               <div className="border-l-4 border-innovate/30 pl-6 py-4 text-left">
                 <p className="text-muted-foreground leading-relaxed">
                   <strong className="text-foreground">Note:</strong> While we&apos;ve delivered projects 
-                  in logistics and consumer IoT, we focus our consulting on these four 
+                  in logistics and consumer IoT, we focus our services on these four 
                   core industries where we have the deepest direct experience—from Valeo&apos;s 
                   connected car platform to Sequans&apos; 5G chipsets to industrial edge solutions.{' '}
                   <Link href="/contact" className="text-innovate hover:underline font-medium">

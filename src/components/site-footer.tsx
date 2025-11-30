@@ -13,7 +13,7 @@ export function SiteFooter() {
               <span className="text-lg font-bold">Edge Pulsar</span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Chip-to-Cloud Solution Provider & Integrator
+              Chip-to-Edge Technical Advisor & Solution Builder
             </p>
           </div>
 
@@ -83,7 +83,7 @@ export function SiteFooter() {
         {/* Copyright - Centered */}
         <div className="mt-12 pt-8 border-t border-border/40 text-center text-sm text-muted-foreground max-w-6xl mx-auto">
           <p>
-            &copy; {new Date().getFullYear()} Edge Pulsar. Chip-to-Cloud Solution Provider & Integrator. All rights reserved.
+            &copy; {new Date().getFullYear()} Edge Pulsar. Chip-to-Edge Technical Advisor & Solution Builder. All rights reserved.
           </p>
         </div>
       </div>

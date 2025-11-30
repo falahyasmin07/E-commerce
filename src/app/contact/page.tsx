@@ -29,7 +29,7 @@ const entryPoints = [
     icon: ShieldCheck,
     title: "Embedded Engineering Lead",
     duration: "3-12 months",
-    description: "Part-time, hands-on technical leadership to guide your team, establish architecture best practices, and accelerate your chip-to-cloud journey.",
+    description: "Part-time, hands-on technical leadership to guide your team, establish architecture best practices, and accelerate your chip-to-edge journey.",
     benefits: [
       "Senior technical leadership on demand",
       "Knowledge transfer to your team",
@@ -53,7 +53,7 @@ const entryPoints = [
     icon: Handshake,
     title: "Technical Workshops",
     duration: "1-3 days",
-    description: "Hands-on training sessions on EU Cyber Resilience Act, Security-by-Design, chip-to-cloud integration patterns, or custom technology topics tailored to your needs.",
+    description: "Hands-on training sessions on EU Cyber Resilience Act, Security-by-Design, chip-to-edge integration patterns, or custom technology topics tailored to your needs.",
     benefits: [
       "Customized to your industry and challenges",
       "Hands-on technical exercises",
@@ -116,7 +116,7 @@ export default function ContactPage() {
             <Badge variant="secondary">Contact Us</Badge>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
               Ready to Accelerate Your
-              <span className="block text-primary mt-2">Chip-to-Cloud Journey?</span>
+              <span className="block text-primary mt-2">Chip-to-Edge Journey?</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Schedule a free discovery call with our technical experts to discuss your technical challenges, 

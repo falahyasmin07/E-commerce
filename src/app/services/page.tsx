@@ -73,10 +73,9 @@ export default function ServicesPage() {
               </Badge>
               
               <div className="space-y-6">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white drop-shadow-lg leading-tight">
-                  Chip-to-Cloud<br className="hidden md:block" /> Solution Provider & Integrator
-                </h1>
-                
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white drop-shadow-lg leading-tight">
+                  Chip-to-Edge<br className="hidden md:block" /> Technical Advisor & Solution Builder
+                </h1>                
                 <div className="space-y-4 max-w-3xl mx-auto">
                   <p className="text-xl md:text-2xl text-white/95 leading-relaxed font-medium">
                     Strategic advisory and hands-on implementation—from chip selection to cloud integration
@@ -90,7 +89,7 @@ export default function ServicesPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
                 <Button size="lg" asChild className="bg-white text-blue-600 hover:bg-gray-100 shadow-xl hover:shadow-2xl transition-all">
                   <Link href="/contact">
-                    Schedule Consultation
+                    Schedule Discovery Call
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
@@ -186,7 +185,7 @@ export default function ServicesPage() {
       <div className="text-center space-y-4 max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold">Two Core Consulting Offers</h2>
         <p className="text-lg text-muted-foreground">
-          Specialized chip-to-cloud consulting tailored to your market segment
+          Specialized chip-to-edge consulting tailored to your market segment
         </p>
       </div>
 
@@ -1084,7 +1083,7 @@ export default function ServicesPage() {
                 <div className="w-24 h-24 rounded-full bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center mb-3 mx-auto ring-4 ring-green-200/50">
                   <div className="text-center">
                     <span className="block font-bold text-2xl text-green-600">3</span>
-                    <span className="block text-xs text-green-700">Deploy</span>
+                    <span className="block text-xs text-green-700">Scale</span>
                   </div>
                 </div>
                 <p className="text-sm font-semibold">8-12 weeks</p>
@@ -1215,7 +1214,7 @@ export default function ServicesPage() {
                       <Rocket className="h-7 w-7 text-green-600" strokeWidth={2.5} />
                     </div>
                     <div>
-                      <CardTitle className="text-2xl">Deploy</CardTitle>
+                      <CardTitle className="text-2xl">Scale</CardTitle>
                       <p className="text-sm text-muted-foreground font-medium">8-12 weeks • Fixed scope</p>
                     </div>
                   </div>
@@ -1280,7 +1279,7 @@ export default function ServicesPage() {
             <div className="text-center space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold">Let's Start the Conversation</h2>
               <p className="text-xl text-muted-foreground">
-                Schedule a consultation with our experts to discuss your chip-to-cloud objectives, 
+                Schedule a discovery call with our experts to discuss your 
                 technical challenges, and engagement approach. Every project is expert-led from day one.
               </p>
             </div>
@@ -1319,7 +1318,7 @@ export default function ServicesPage() {
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Proven three-phase methodology (Discovery → Build → Deploy)</span>
+                      <span>Proven three-phase methodology (Discovery → Build → Scale)</span>
                     </li>
                   </ul>
                 </div>

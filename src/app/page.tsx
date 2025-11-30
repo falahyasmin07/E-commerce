@@ -69,7 +69,7 @@ export default function HomePage() {
             <div className="space-y-6 text-center">
               <div className="space-y-4">
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight text-white drop-shadow-lg">
-                  From Chip to Cloud.{" "}
+                  From Chip to Edge.{" "}
                   <span className="block">Faster. Smarter. Secure.</span>
                 </h1>
               </div>
@@ -132,15 +132,17 @@ export default function HomePage() {
 
           {/* Mission statement - covers both offers */}
           <p className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto font-medium mb-6 text-gray-800">
-          Empower <span className="font-semibold text-gray-900">device makers</span> and 
-          <span className="font-semibold text-gray-900"> industrial enterprises</span> to accelerate their chip-to-cloud journey with 
-          <span className="font-bold text-blue-600"> secure, production-ready architectures</span> spanning embedded systems, edge infrastructure and cloud integration.
+            Empower <span className="font-semibold text-gray-900">device makers</span> and 
+            <span className="font-semibold text-gray-900"> industrial enterprises</span> to accelerate their chip-to-edge journey with 
+            <span className="font-bold text-blue-600"> reference implementations and production-ready edge solutions</span> spanning embedded systems, connectivity, and secure cloud integration.
           </p>
-                  {/* Supporting text */}
+
+          {/* Supporting text */}
           <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Most consultancies master either hardware or cloud—not both. We bridge that critical gap with 
-            deep expertise across embedded systems, edge computing, security frameworks and cloud platforms.
+            Most advisors master either hardware or cloud—not both. We bridge that critical gap with 
+            deep expertise across embedded systems, edge computing, security frameworks, and secure cloud connectivity.
           </p>
+
           </div>
         </div>
       </section>
@@ -408,7 +410,7 @@ export default function HomePage() {
             Industries We Serve
           </h3>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Deep chip-to-cloud expertise focused on four technology-driven industries 
+            Deep chip-to-edge expertise focused on four technology-driven industries 
             where we have proven track records
           </p>
 
@@ -493,7 +495,7 @@ export default function HomePage() {
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-balance">Four Pillars</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive chip-to-cloud methodology spanning innovation to operations
+              Comprehensive chip-to-edge methodology spanning innovation to operations
             </p>
           </div>
 
@@ -581,7 +583,7 @@ export default function HomePage() {
             <div className="text-center space-y-4">
               <h2 className="text-3xl md:text-4xl font-bold">Technology Stack & Expertise</h2>
               <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                Deep expertise across the full chip-to-cloud technology stack—built from real-world experience.
+                Deep expertise across the full chip-to-edge technology stack—built from real-world experience.
               </p>
             </div>
 
@@ -746,7 +748,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Deep Technical Experience</h3>
                 <p className="text-gray-700 mb-4">
-                  Decades of combined experience across embedded systems, connectivity, cloud infrastructure, 
+                  Decades of combined experience across embedded systems, connectivity, cloud integration, 
                   security, and edge computing—working with industrial, automotive, and technology companies.
                 </p>
               </div>
@@ -780,7 +782,7 @@ export default function HomePage() {
       <section className="py-16 px-6 bg-gray-50 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Ready to Accelerate Your Chip-to-Cloud Journey?
+            Ready to Accelerate Your Chip-to-Edge Journey?
           </h2>
           <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
             Start with a comprehensive strategic assessment to validate your architecture, technology choices, and
