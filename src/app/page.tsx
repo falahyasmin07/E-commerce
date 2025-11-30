@@ -323,26 +323,56 @@ export default function HomePage() {
 
 
       {/* Four Pillars Preview */}
-      <section className="py-8 bg-muted/50">
-        <div className="container mx-auto">
-          <div className="flex justify-center gap-8 flex-wrap text-center">
-            <Link href="#innovate" className="flex items-center space-x-2 text-lg font-medium text-gray-700 hover:text-[#7C3AED] dark:text-gray-300 dark:hover:text-[#7C3AED]">
-              <Zap className="h-6 w-6 text-[#7C3AED]" />
-              <span>Innovate</span>
+      <section className="py-20 md:py-32 bg-muted/50">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Four Pillars Framework</h2>
+          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Our comprehensive methodology, spanning innovation to operations.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto mb-12">
+            <Link href="/services#four-pillars-framework" className="flex flex-col items-center space-y-3 p-4 rounded-lg hover:bg-background transition-colors">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
+                <Zap className="h-8 w-8 text-[#0EA5E9]" />
+              </div>
+              <span className="text-lg font-semibold">Innovate</span>
+              <p className="text-sm text-muted-foreground mt-1">
+                Accelerate your development cycles with validated reference designs and focused PoCs so new products start from a solid, scalable foundation.
+              </p>
             </Link>
-            <Link href="#orchestrate" className="flex items-center space-x-2 text-lg font-medium text-gray-700 hover:text-[#7C3AED] dark:text-gray-300 dark:hover:text-[#7C3AED]">
-              <Network className="h-6 w-6 text-[#7C3AED]" />
-              <span>Orchestrate</span>
+            <Link href="/services#four-pillars-framework" className="flex flex-col items-center space-y-3 p-4 rounded-lg hover:bg-background transition-colors">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
+                <Network className="h-8 w-8 text-[#8B5CF6]" />
+              </div>
+              <span className="text-lg font-semibold">Orchestrate</span>
+              <p className="text-sm text-muted-foreground mt-1">
+                Coordinate chips, connectivity, and edge platforms into a coherent architecture, with automated deployment pipelines for reliable, repeatable rollouts.
+              </p>
             </Link>
-            <Link href="#secure" className="flex items-center space-x-2 text-lg font-medium text-gray-700 hover:text-[#7C3AED] dark:text-gray-300 dark:hover:text-[#7C3AED]">
-              <Shield className="h-6 w-6 text-[#7C3AED]" />
-              <span>Secure</span>
+            <Link href="/services#four-pillars-framework" className="flex flex-col items-center space-y-3 p-4 rounded-lg hover:bg-background transition-colors">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
+                <Shield className="h-8 w-8 text-[#EF4444]" />
+              </div>
+              <span className="text-lg font-semibold">Secure</span>
+              <p className="text-sm text-muted-foreground mt-1">
+                Embed security from day one with hardware roots of trust, secure boot, and architectures aligned with CRA and NIS2 requirements.
+              </p>
             </Link>
-            <Link href="#respond" className="flex items-center space-x-2 text-lg font-medium text-gray-700 hover:text-[#7C3AED] dark:text-gray-300 dark:hover:text-[#7C3AED]">
-              <Target className="h-6 w-6 text-[#7C3AED]" />
-              <span>Respond</span>
+            <Link href="/services#four-pillars-framework" className="flex flex-col items-center space-y-3 p-4 rounded-lg hover:bg-background transition-colors">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
+                <Radar className="h-8 w-8 text-[#10B981]" />
+              </div>
+              <span className="text-lg font-semibold">Respond</span>
+              <p className="text-sm text-muted-foreground mt-1">
+                Transform raw telemetry into action through edge data pipelines that support real-time processing, local decisions, and AI-driven insights.
+              </p>
             </Link>
           </div>
+          <Button asChild size="lg">
+            <Link href="/services#four-pillars-framework">
+              Learn More About Our Framework
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
         </div>
       </section>
 
@@ -489,91 +519,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Four Pillars */}
-      <section className="py-24 md:py-32">
-        <div className="container max-w-7xl mx-auto">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-balance">Four Pillars</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive chip-to-edge methodology spanning innovation to operations
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 lg:gap-6">
-            {/* Innovate / Accelerate Pillar */}
-            <div className="group relative bg-white p-8 rounded-xl shadow-sm hover:shadow-xl hover:scale-[1.03] transition-all duration-250 ease-in-out border-l-4 border-[#0EA5E9] bg-[#0EA5E9]/[0.08] min-h-[320px] flex flex-col justify-between">
-              <div className="flex flex-col items-center text-center">
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#0EA5E9]/[0.05] transition-transform duration-250 ease-in-out group-hover:rotate-6 mb-4">
-                  <Rocket className="h-8 w-8 text-[#0EA5E9] stroke-[2px]" />
-                </div>
-                <h3 className="text-2xl font-bold text-[#1F2937] mt-4 whitespace-nowrap">Innovate / Accelerate</h3>
-                <p className="text-[#1F2937]/90 leading-relaxed">
-                  Validate technology choices through rapid PoCs, critical modules, and architecture blueprints.
-                </p>
-              </div>
-              <Link href="#innovate-detail" className="text-[#0EA5E9] hover:underline flex items-center justify-center mt-4">
-                Learn More <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </div>
-
-            {/* Orchestrate / Scale Pillar */}
-            <div className="group relative bg-white p-8 rounded-xl shadow-sm hover:shadow-xl hover:scale-[1.03] transition-all duration-250 ease-in-out border-l-4 border-[#8B5CF6] bg-[#8B5CF6]/[0.08] min-h-[320px] flex flex-col justify-between">
-              <div className="flex flex-col items-center text-center">
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#8B5CF6]/[0.05] transition-transform duration-250 ease-in-out group-hover:rotate-6 mb-4">
-                  <Layers className="h-8 w-8 text-[#8B5CF6] stroke-[2px]" />
-                </div>
-                <h3 className="text-2xl font-bold text-[#1F2937] mt-4">Orchestrate / Scale</h3>
-                <p className="text-[#1F2937]/90 leading-relaxed">
-                  Scale from pilot to production with zero-touch provisioning, multi-vendor governance, and automated operations.
-                </p>
-              </div>
-              <Link href="#orchestrate-detail" className="text-[#8B5CF6] hover:underline flex items-center justify-center mt-4">
-                Learn More <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </div>
-
-            {/* Secure / Harden Pillar */}
-            <div className="group relative bg-white p-8 rounded-xl shadow-sm hover:shadow-xl hover:scale-[1.03] transition-all duration-250 ease-in-out border-l-4 border-[#EF4444] bg-[#EF4444]/[0.08] min-h-[320px] flex flex-col justify-between">
-              <div className="flex flex-col items-center text-center">
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#EF4444]/[0.05] transition-transform duration-250 ease-in-out group-hover:rotate-6 mb-4">
-                  <ShieldCheck className="h-8 w-8 text-[#EF4444] stroke-[2px]" />
-                </div>
-                <h3 className="text-2xl font-bold text-[#1F2937] mt-4">Secure / Harden</h3>
-                <p className="text-[#1F2937]/90 leading-relaxed">
-                  Security-by-design from device to cloud (CRA/NIS2 compliance).
-                </p>
-              </div>
-              <Link href="#secure-detail" className="text-[#EF4444] hover:underline flex items-center justify-center mt-4">
-                Learn More <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </div>
-
-            {/* Sense / Respond Pillar */}
-            <div className="group relative bg-white p-8 rounded-xl shadow-sm hover:shadow-xl hover:scale-[1.03] transition-all duration-250 ease-in-out border-l-4 border-[#10B981] bg-[#10B981]/[0.08] min-h-[320px] flex flex-col justify-between">
-              <div className="flex flex-col items-center text-center">
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#10B981]/[0.05] transition-transform duration-250 ease-in-out group-hover:rotate-6 mb-4">
-                  <Radar className="h-8 w-8 text-[#10B981] stroke-[2px]" />
-                </div>
-                <h3 className="text-2xl font-bold text-[#1F2937] mt-4">Sense / Respond</h3>
-                <p className="text-[#1F2937]/90 leading-relaxed">
-                  Architect edge data processing workflows—sensor integration, local compute, and AI inference pipelines.
-                </p>
-              </div>
-              <Link href="#respond-detail" className="text-[#10B981] hover:underline flex items-center justify-center mt-4">
-                Learn More <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </div>
-          </div>
-          <div className="text-center pt-16">
-            <Button asChild size="lg" className="text-base px-8">
-              <Link href="/services">
-                Explore Our Services
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Technology Stack & Expertise */}
       {/* Technology Stack & Expertise - SAFE VERSION */}

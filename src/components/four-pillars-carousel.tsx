@@ -100,7 +100,7 @@ export default function FourPillarsGrid() {
       <div className="container mx-auto px-4">
         <h2 className="text-center text-4xl md:text-5xl font-bold mb-8">Four Pillars Framework</h2>
         <p className="text-center text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
-          Comprehensive chip-to-cloud methodology spanning both Embedded Core and Industrial Edge
+          Comprehensive methodology spanning both Embedded Core and Industrial Edge
         </p>
 
         {/* Desktop Grid */}
