@@ -874,7 +874,7 @@ export default function HomePage() {
             <div className="text-center space-y-6 pt-4">
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg">
-                  <Link href="/about">Meet us</Link>
+                  <Link href="/contact">Meet us</Link>
                 </Button>
               </div>
             </div>

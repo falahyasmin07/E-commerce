@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -8,121 +9,71 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { CheckCircle2, ArrowRight, Rocket, ShieldCheck, Lightbulb, Handshake, Clock, Users } from "lucide-react"
-import { useState } from "react"
-// import { InlineWidget } from "react-calendly"
-
-const entryPoints = [
-  {
-    icon: Rocket,
-    title: "Project-Based Implementation",
-    duration: "4-20 weeks",
-    description: "Fixed-scope projects where we design, build, and integrate solutions for specific challenges—CRA compliance architectures, secure boot systems, or complete OT-to-cloud integrations.",
-    benefits: [
-      "Direct expert involvement throughout",
-      "Production-ready deliverables and working systems",
-      "Clear scope, timeline, and budget"
-    ],
-    cta: "Define a Project",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Embedded Engineering Lead",
-    duration: "3-12 months",
-    description: "Part-time, hands-on technical leadership to guide your team, establish architecture best practices, and accelerate your chip-to-edge journey.",
-    benefits: [
-      "Senior technical leadership on demand",
-      "Knowledge transfer to your team",
-      "Flexible engagement (8-20 hrs/week)"
-    ],
-    cta: "Embed an Expert",
-  },
-  {
-    icon: Lightbulb,
-    title: "Strategic Advisory Retainer",
-    duration: "Ongoing",
-    description: "Ongoing strategic guidance on technology roadmaps, architecture decisions, and navigating EU regulatory requirements (CRA, NIS2, IEC 62443).",
-    benefits: [
-      "Regular strategic check-ins",
-      "Architecture review on demand",
-      "Priority response times"
-    ],
-    cta: "Secure an Advisor",
-  },
-  {
-    icon: Handshake,
-    title: "Technical Workshops",
-    duration: "1-3 days",
-    description: "Hands-on training sessions on EU Cyber Resilience Act, Security-by-Design, chip-to-edge integration patterns, or custom technology topics tailored to your needs.",
-    benefits: [
-      "Customized to your industry and challenges",
-      "Hands-on technical exercises",
-      "Delivered by senior experts"
-    ],
-    cta: "Book a Workshop",
-  },
-]
+import { CheckCircle2, ArrowRight, Users } from "lucide-react"
 
 export default function ContactPage() {
-  const [submitted, setSubmitted] = useState(false);
-  const [formValues, setFormValues] = useState({});
-  const [text, setText] = useState('');
-  const max = 255;
+  const [submitted, setSubmitted] = useState(false)
+  const [formValues, setFormValues] = useState<Record<string, string>>({})
+  const [text, setText] = useState("")
+  const max = 255
 
-  const handleChange = (e) => {
-    const { id, value } = e.target;
-    setFormValues((prev) => ({
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target
+    setFormValues(prev => ({
       ...prev,
-     [id]: value,
+      [id]: value,
     }))
   }
 
-  const handleTextAreaChange = (e) => {
-    setText(e.target.value);
-    handleChange(e);
+  const handleTextAreaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setText(e.target.value)
+    handleChange(e)
+  }
+
+  const handleSelectChange = (id: string, value: string) => {
+    setFormValues(prev => ({
+      ...prev,
+      [id]: value,
+    }))
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
+    e.preventDefault()
+    setSubmitted(true)
 
-    const baseUrl = "https://edgepulsar.com";
-    const url = `${baseUrl}/actions/db_store.php`;
+    const baseUrl = "https://edgepulsar.com"
+    const url = `${baseUrl}/actions/db_store.php`
 
     try {
       const response = await fetch(url, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formValues),
-      });
-
-      const result = await response.json();
-      console.log('Success!', result);
+      })
+      await response.json()
     } catch (error) {
-      console.error('Error!', error);
+      console.error("Error!", error)
     }
 
-    setTimeout(() => setSubmitted(false), 50000);
-  };
+    setTimeout(() => setSubmitted(false), 50000)
+  }
 
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 via-background to-background">
+      <section className="py-14 md:py-18 bg-gradient-to-br from-primary/5 via-background to-background">
         <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto text-center space-y-6">
+          <div className="max-w-3xl mx-auto text-center space-y-5">
             <Badge variant="secondary">Contact Us</Badge>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
               Ready to Accelerate Your
               <span className="block text-primary mt-2">Chip-to-Edge Journey?</span>
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Schedule a free discovery call with our technical experts to discuss your technical challenges, 
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              Schedule a free discovery call with our technical experts to discuss your technical challenges,
               CRA compliance needs, or architecture questions.
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground pt-4">
+            <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground pt-3">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-primary" />
                 <span>We respond within 24 hours</span>
@@ -137,97 +88,35 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Four Ways to Engage */}
-      <section className="py-20 md:py-32 bg-muted/20">
-        <div className="container mx-auto">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center space-y-4 mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Four Ways to Engage</h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                We offer flexible engagement models to meet you where you are. Choose the path that 
-                best fits your immediate needs and long-term goals.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {entryPoints.map((point) => (
-                <Card key={point.title} className="border-2 flex flex-col hover:border-primary/50 transition-colors">
-                  <CardHeader className="flex-row items-start gap-4">
-                    <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <point.icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <div className="flex-1">
-                      <CardTitle className="mb-2">{point.title}</CardTitle>
-                      <Badge variant="secondary" className="text-xs">
-                        <Clock className="h-3 w-3 mr-1" />
-                        {point.duration}
-                      </Badge>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="flex-grow space-y-4">
-                    <p className="text-muted-foreground">{point.description}</p>
-                    <ul className="space-y-2">
-                      {point.benefits.map((benefit, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-sm">
-                          <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                          <span className="text-muted-foreground">{benefit}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                  <div className="p-6 pt-0">
-                    <Button variant="outline" className="w-full" asChild>
-                      <a href="#schedule">
-                        {point.cta}
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </a>
-                    </Button>
-                  </div>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Schedule Discovery Call */}
-      <section id="schedule" className="py-20 md:py-32 flex items-center justify-center">
+      <section id="schedule" className="pt-8 pb-16 md:pt-10 md:pb-20 flex items-center justify-center">
         <div className="container mx-auto">
-          <div className="text-center space-y-4 mb-12">
+          <div className="text-center space-y-3 mb-8">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Schedule a Free Discovery Call</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              30-minute technical discussion —no sales pitch, just honest 
+              30-minute technical discussion — no sales pitch, just honest
               conversation about your challenges and whether we can help.
             </p>
           </div>
-          <div className="flex justify-center max-w-6xl mx-auto">
-            {/* Calendly Embed - COMMENTED OUT */}
-            {/*<div className="rounded-lg border-2 overflow-hidden min-h-[700px]">
-              <InlineWidget 
-                url="https://calendly.com/edgepulsar/30min" 
-                styles={{ height: "100%", width: "100%" }} 
-              />
-            </div>*/}
 
+          <div className="flex justify-center max-w-5xl mx-auto">
             {/* Contact Form */}
-            <div>
+            <div className="w-full lg:w-[80%]">
               <Card className="border-2 mx-auto">
-                <CardHeader>
+                <CardHeader className="space-y-2 pb-4">
                   <CardTitle className="text-2xl">General Inquiry</CardTitle>
-                  <p className="text-muted-foreground">
-                    For questions not related to scheduling, use the form below. We respond within 24 hours.
-                  </p>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="pt-0">
                   {submitted ? (
-                    <div className="py-12 text-center space-y-4">
+                    <div className="py-10 text-center space-y-4">
                       <div className="flex justify-center">
                         <div className="h-16 w-16 rounded-full bg-green-500/10 flex items-center justify-center">
                           <CheckCircle2 className="h-8 w-8 text-green-500" />
                         </div>
                       </div>
                       <h3 className="text-xl font-bold">Thank You!</h3>
-                      <p className="text-muted-foreground">
-                        We've received your message. We will review it and respond within 24 hours.
+                      <p className="text-sm text-muted-foreground max-w-md mx-auto">
+                        We&apos;ve received your message. We will review it and respond within 24 hours.
                       </p>
                     </div>
                   ) : (
@@ -235,103 +124,119 @@ export default function ContactPage() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="first_name">First Name *</Label>
-                          <Input id="first_name" placeholder="John" required onChange={handleChange}/>
+                          <Input id="first_name" placeholder="John" required onChange={handleChange} />
                         </div>
                         <div className="space-y-2">
                           <Label htmlFor="last_name">Last Name *</Label>
-                          <Input id="last_name" placeholder="Doe" required onChange={handleChange}/>
+                          <Input id="last_name" placeholder="Doe" required onChange={handleChange} />
                         </div>
                         <div className="space-y-2">
                           <Label htmlFor="email">Work Email *</Label>
-                          <Input id="email" type="email" placeholder="john@company.com" required onChange={handleChange}/>
+                          <Input
+                            id="email"
+                            type="email"
+                            placeholder="john@company.com"
+                            required
+                            onChange={handleChange}
+                          />
                         </div>
                         <div className="space-y-2">
                           <Label htmlFor="phone_number">Phone Number (Optional)</Label>
-                          <Input id="phone_number" placeholder="+331234567890" onChange={handleChange}/>
+                          <Input
+                            id="phone_number"
+                            placeholder="+33 1 23 45 67 89"
+                            onChange={handleChange}
+                          />
                         </div>
                       </div>
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="company_name">Company Name *</Label>
-                          <Input id="company_name" placeholder="Your Company Name" required onChange={handleChange}/>
+                          <Input
+                            id="company_name"
+                            placeholder="Your Company Name"
+                            required
+                            onChange={handleChange}
+                          />
                         </div>
                         <div className="space-y-2">
                           <Label htmlFor="title">Title *</Label>
-                          <Input id="title" placeholder="CEO/CTO/Director/Manager/..." required onChange={handleChange}/>
+                          <Input
+                            id="title"
+                            placeholder="CEO / CTO / Director / Manager..."
+                            required
+                            onChange={handleChange}
+                          />
                         </div>
                       </div>
 
-                      <div className="space-y-2">
-                        <Label htmlFor="industry">Industry *</Label>
-                        <Select required onValueChange={(value) => handleChange({ target: { id: 'industry', value } })}>
-                          <SelectTrigger id="industry">
-                            <SelectValue placeholder="Select your industry" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="industrial">Industrial / Industry 4.0</SelectItem>
-                            <SelectItem value="automotive">Automotive & Mobility</SelectItem>
-                            <SelectItem value="semiconductor">Electronics / Semiconductor</SelectItem>
-                            <SelectItem value="consumer-iot">Consumer IoT & Smart Home</SelectItem>
-                            <SelectItem value="other">Other</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <Label htmlFor="industry">Industry *</Label>
+                          <Select
+                            required
+                            onValueChange={value => handleSelectChange("industry", value)}
+                          >
+                            <SelectTrigger id="industry">
+                              <SelectValue placeholder="Select your industry" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              <SelectItem value="industrial">Industrial / Industry 4.0</SelectItem>
+                              <SelectItem value="automotive">Automotive & Mobility</SelectItem>
+                              <SelectItem value="semiconductor">Electronics / Semiconductor</SelectItem>
+                              <SelectItem value="consumer-iot">Consumer IoT & Smart Home</SelectItem>
+                              <SelectItem value="other">Other</SelectItem>
+                            </SelectContent>
+                          </Select>
+                        </div>
 
-                      <div className="space-y-2">
-                        <Label htmlFor="inquiryType">What brings you here? *</Label>
-                        <Select required onValueChange={(value) => handleChange({ target: { id: 'inquiryType', value } })}>
-                          <SelectTrigger id="inquiryType">
-                            <SelectValue placeholder="Select primary interest" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="cra-compliance">CRA Compliance Support</SelectItem>
-                            <SelectItem value="silicon-to-scale">Silicon-to-Scale Acceleration</SelectItem>
-                            <SelectItem value="ot-to-cloud">OT-to-Cloud Integration</SelectItem>
-                            <SelectItem value="architecture">Architecture Review</SelectItem>
-                            <SelectItem value="workshop">Workshop / Training</SelectItem>
-                            <SelectItem value="partnership">Partnership Opportunity</SelectItem>
-                            <SelectItem value="general">General Inquiry</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-
-                      <div className="space-y-2">
+                        <div className="space-y-2">
                         <Label htmlFor="timeline">Project Timeline (Optional)</Label>
-                        <Select onValueChange={(value) => handleChange({ target: { id: 'timeline', value } })}>
+                        <Select
+                          onValueChange={value => handleSelectChange("timeline", value)}
+                        >
                           <SelectTrigger id="timeline">
                             <SelectValue placeholder="When do you need to start?" />
                           </SelectTrigger>
                           <SelectContent>
                             <SelectItem value="urgent">Urgent (within 2 weeks)</SelectItem>
-                            <SelectItem value="soon">Soon (1-2 months)</SelectItem>
-                            <SelectItem value="planning">Planning (3-6 months)</SelectItem>
+                            <SelectItem value="soon">Soon (1–2 months)</SelectItem>
+                            <SelectItem value="planning">Planning (3–6 months)</SelectItem>
                             <SelectItem value="exploring">Exploring options</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
+                      </div>
 
-                      <div className="textarea-with-counter" style={{ display: 'flex', flexDirection: 'column' }}>
+                      
+
+                      <div className="flex flex-col space-y-2">
                         <div className="space-y-2">
                           <Label htmlFor="message">Tell us about your challenge *</Label>
-                          <Textarea value={text}
+                          <Textarea
                             id="message"
+                            value={text}
+                            onChange={handleTextAreaChange}
                             placeholder="What specific technical challenge or compliance requirement brings you to Edge Pulsar?"
-                            rows={5} maxLength={max}
-                            required onChange={handleTextAreaChange}
+                            rows={5}
+                            maxLength={max}
+                            required
                           />
                         </div>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', color: '#555', marginTop: '4px' }}>
-                          <div className="flex items-center gap-1 text-muted-foreground">
+                        <div className="flex items-center justify-between text-[11px] text-muted-foreground mt-1">
+                          <div className="flex items-center gap-1">
                             <CheckCircle2 className="h-3 w-3 text-primary" />
                             <span>We typically respond within 24 hours</span>
                           </div>
-                          <div>{text.length} / {max}</div>
+                          <span>
+                            {text.length} / {max}
+                          </span>
                         </div>
                       </div>
 
-                      <p className="text-xs text-muted-foreground">
-                        By submitting this form, you agree to our privacy policy. We'll never share your 
+                      <p className="text-[11px] text-muted-foreground">
+                        By submitting this form, you agree to our privacy policy. We&apos;ll never share your
                         information and will only use it to respond to your inquiry.
                       </p>
 
@@ -349,63 +254,40 @@ export default function ContactPage() {
       </section>
 
       {/* What Happens Next */}
-      <section className="py-20 md:py-32 bg-muted/20">
+      <section className="py-16 md:py-24 bg-muted/20">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
-              <CardHeader>
+              <CardHeader className="pb-4">
                 <CardTitle className="text-3xl text-center">What Happens Next?</CardTitle>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-8">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg">
-                      1
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-lg mb-2">Initial Review (Within 24 hours)</h4>
-                      <p className="text-muted-foreground leading-relaxed">
-                        We review your inquiry to understand your technical challenge and 
-                        determine if we're a good fit for your needs.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg">
-                      2
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-lg mb-2">Discovery Call (30 minutes)</h4>
-                      <p className="text-muted-foreground leading-relaxed">
-                        We schedule a technical discussion—no sales pitch, just honest conversation about 
-                        your challenges and whether we have the specific expertise to solve your problem.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg">
-                      3
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-lg mb-2">Proposal & Scoping (If aligned)</h4>
-                      <p className="text-muted-foreground leading-relaxed">
-                        If we're a good match, we'll send a detailed proposal with scope, timeline, 
-                        deliverables, and pricing—typically within 3-5 business days of our discovery call.
-                      </p>
-                    </div>
-                  </div>
+              <CardContent className="pt-0">
+                <div className="space-y-6">
+                  <Step
+                    number={1}
+                    title="Initial Review (Within 24 hours)"
+                    text="We review your inquiry to understand your technical challenge and determine if we're a good fit for your needs."
+                  />
+                  <Step
+                    number={2}
+                    title="Discovery Call (30 minutes)"
+                    text="We schedule a technical discussion—no sales pitch, just honest conversation about your challenges and whether we have the specific expertise to solve your problem."
+                  />
+                  <Step
+                    number={3}
+                    title="Proposal & Scoping (If aligned)"
+                    text="If we're a good match, we'll send a detailed proposal with scope, timeline, deliverables, and pricing—typically within 3–5 business days of our discovery call."
+                  />
                 </div>
 
-                <div className="mt-10 pt-8 border-t text-center space-y-4">
+                <div className="mt-8 pt-6 border-t text-center space-y-3">
                   <div className="flex items-center justify-center gap-2 text-primary">
                     <Users className="h-5 w-5" />
                     <span className="font-semibold">Expert-Led From Day One</span>
                   </div>
-                  <p className="text-muted-foreground max-w-2xl mx-auto">
-                    Not sure if we're the right fit? No problem—we're happy to point you in the right 
-                    direction even if we're not the best match for your specific needs.
+                  <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
+                    Not sure if we&apos;re the right fit? No problem—we&apos;re happy to point you in the right
+                    direction even if we&apos;re not the best match for your specific needs.
                   </p>
                 </div>
               </CardContent>
@@ -415,12 +297,15 @@ export default function ContactPage() {
       </section>
 
       {/* Direct Contact Info */}
-      <section className="py-12 bg-muted/30">
+      <section className="py-8 bg-muted/30">
         <div className="container mx-auto">
-          <div className="text-center space-y-4">
-            <h3 className="text-xl font-semibold">Prefer to reach us directly?</h3>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-muted-foreground">
-              <a href="mailto:contact@edgepulsar.com" className="hover:text-primary transition-colors">
+          <div className="text-center space-y-3">
+            <h3 className="text-lg font-semibold">Prefer to reach us directly?</h3>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-muted-foreground">
+              <a
+                href="mailto:contact@edgepulsar.com"
+                className="hover:text-primary transition-colors"
+              >
                 contact@edgepulsar.com
               </a>
               <span className="hidden sm:inline">•</span>
@@ -429,6 +314,21 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+    </div>
+  )
+}
+
+function Step(props: { number: number; title: string; text: string }) {
+  const { number, title, text } = props
+  return (
+    <div className="flex items-start gap-4">
+      <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg">
+        {number}
+      </div>
+      <div className="flex-1">
+        <h4 className="font-semibold text-lg mb-1">{title}</h4>
+        <p className="text-sm text-muted-foreground leading-relaxed">{text}</p>
+      </div>
     </div>
   )
 }
