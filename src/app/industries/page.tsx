@@ -89,8 +89,8 @@ export default function IndustriesPage() {
                   <div className="mt-4 p-3 bg-primary/5 rounded-lg border border-primary/10">
                     <p className="text-sm">
                       <strong>Recommended Offer:</strong>{' '}
-                      <Link href="/services#embedded-core" className="text-primary hover:underline">
-                        Embedded Core
+                      <Link href="/services#iot-core" className="text-primary hover:underline">
+                        IoT Core
                       </Link>{' '}
                       - For device makers and product development teams
                     </p>
@@ -153,13 +153,13 @@ export default function IndustriesPage() {
                     <Badge variant="secondary" className="text-xs">Platform Architecture</Badge>
                     <Badge variant="secondary" className="text-xs">V2X Integration</Badge>
                   </div>
-                   <div className="mt-4 p-3 bg-primary/5 rounded-lg border border-primary/10">
+                  <div className="mt-4 p-3 bg-primary/5 rounded-lg border border-primary/10">
                     <p className="text-sm">
                       <strong>Recommended Offer:</strong>{' '}
-                      <Link href="/services#embedded-core" className="text-primary hover:underline">
-                        Embedded Core
+                      <Link href="/services#iot-core" className="text-primary hover:underline">
+                        IoT Core
                       </Link>{' '}
-                      - For device makers and product development teams
+                      - For connected vehicle and embedded product teams
                     </p>
                   </div>
                 </div>
@@ -220,11 +220,11 @@ export default function IndustriesPage() {
                     <Badge variant="secondary" className="text-xs">Edge Computing</Badge>
                     <Badge variant="secondary" className="text-xs">Predictive Maintenance</Badge>
                   </div>
-                   <div className="mt-4 p-3 bg-primary/5 rounded-lg border border-primary/10">
+                  <div className="mt-4 p-3 bg-primary/5 rounded-lg border border-primary/10">
                     <p className="text-sm">
                       <strong>Recommended Offer:</strong>{' '}
-                      <Link href="/services#industrial-edge" className="text-primary hover:underline">
-                        Industrial Edge
+                      <Link href="/services#near-edge" className="text-primary hover:underline">
+                        Near Edge
                       </Link>{' '}
                       - For industrial enterprises and systems integrators
                     </p>
@@ -287,20 +287,18 @@ export default function IndustriesPage() {
                     <Badge variant="secondary" className="text-xs">Energy Management</Badge>
                     <Badge variant="secondary" className="text-xs">Building Automation</Badge>
                   </div>
-                   <div className="mt-4 p-3 bg-primary/5 rounded-lg border border-primary/10">
+                  <div className="mt-4 p-3 bg-primary/5 rounded-lg border border-primary/10">
                     <p className="text-sm">
                       <strong>Recommended Offer:</strong>{' '}
-                      <Link href="/services#industrial-edge" className="text-primary hover:underline">
-                        Industrial Edge
+                      <Link href="/services#near-edge" className="text-primary hover:underline">
+                        Near Edge
                       </Link>{' '}
-                      - For industrial enterprises and systems integrators
+                      - For utilities, infrastructure operators, and systems integrators
                     </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
-
-            
 
           </div>
         </div>
@@ -412,7 +410,6 @@ export default function IndustriesPage() {
             </Card>
 
           </div>
-
         </div>
       </section>
 
@@ -447,7 +444,7 @@ export default function IndustriesPage() {
                   <strong className="text-foreground">Note:</strong> While we&apos;ve delivered projects 
                   in logistics and consumer IoT, we focus our services on these four 
                   core industries where we have the deepest direct experience—from Valeo&apos;s 
-                  connected car platform to Sequans&apos; 5G chipsets to industrial edge solutions.{' '}
+                  connected car platform to Sequans&apos; 5G chipsets to industrial edge solutions.{` `}
                   <Link href="/contact" className="text-innovate hover:underline font-medium">
                     Contact us
                   </Link>{' '}
@@ -459,7 +456,6 @@ export default function IndustriesPage() {
           </div>
         </div>
       </section>
-
     </div>
   )
 }

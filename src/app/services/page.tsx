@@ -26,6 +26,8 @@ import {
   Activity,
   Lightbulb,
   Zap,
+  Network,
+  Smartphone,
   Search
 } from "lucide-react"
 import {
@@ -177,317 +179,417 @@ export default function ServicesPage() {
         </div>
       </section>
 
-    {/* Two Core Consulting Offers - Enhanced with Visuals */}
-{/* Two Core Consulting Offers - Option 1: Condensed Visible Content */}
-<section id="two-core-offers" className="py-20 md:py-32 bg-gray-50 scroll-mt-20">
-  <div className="container mx-auto px-4">
-    <div className="space-y-16">
-      <div className="text-center space-y-4 max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold">Two Core Consulting Offers</h2>
-        <p className="text-lg text-muted-foreground">
-          Specialized chip-to-edge consulting tailored to your market segment
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
-        
-        {/* Offer 1: Embedded Core Acceleration */}
-        <div id="embedded-core" className="scroll-mt-20">
-          <Card className="border-2 border-cyan-200 overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+      {/* Three Core Consulting Offers - Edge Continuum */}
+      <section id="three-core-offers" className="py-20 md:py-32 bg-gray-50 scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="space-y-16">
             
-            {/* Background Image Section */}
-            <div className="relative h-48 overflow-hidden">
-              <Image
-                src="/silicon-to-cloud.png"
-                alt="Embedded Core Illustration"
-                fill
-                className="object-cover"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/80 via-blue-500/75 to-blue-600/80" />
-              <div className="relative h-full flex items-center justify-center z-10">
-                <div className="flex items-center gap-4">
-                  <div className="flex flex-col items-center">
-                    <Cpu className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Chip</span>
-                  </div>
-                  <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
-                  <div className="flex flex-col items-center">
-                    <Wifi className="w-14 h-14 text-cyan-50 drop-shadow-lg" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Connect</span>
-                  </div>
-                  <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
-                  <div className="flex flex-col items-center">
-                    <Cloud className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Cloud</span>
-                  </div>
-                </div>
-              </div>
+            {/* Section header */}
+            <div className="text-center space-y-4 max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold">Three Core Consulting Offers</h2>
+              <p className="text-lg text-muted-foreground">
+                Comprehensive solutions spanning the edge continuum: IoT Core, Near Edge, and Far Edge
+              </p>
             </div>
 
-            {/* Card Header */}
-            <CardHeader className="space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="h-12 w-12 rounded-lg bg-cyan-100 flex items-center justify-center">
-                  <Cpu className="h-6 w-6 text-cyan-600" />
-                </div>
-                <Badge variant="secondary" className="bg-cyan-100 text-cyan-700">
-                  For Device Makers
-                </Badge>
-              </div>
+            {/* Grid of three offers */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
               
-              <CardTitle className="text-2xl md:text-3xl">Embedded Core</CardTitle>
-              
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="outline" className="bg-[#0EA5E9]/10 text-[#0EA5E9] border-[#0EA5E9]/30">
-                  <Rocket className="w-3 h-3 mr-1" />
-                  Innovate
-                </Badge>
-                <Badge variant="outline" className="bg-[#8B5CF6]/10 text-[#8B5CF6] border-[#8B5CF6]/30">
-                  <Settings className="w-3 h-3 mr-1" />
-                  Orchestrate
-                </Badge>
-                <Badge variant="outline" className="bg-[#EF4444]/10 text-[#EF4444] border-[#EF4444]/30">
-                  <ShieldCheck className="w-3 h-3 mr-1" />
-                  Secure
-                </Badge>
+              {/* Offer 1: IoT Core (Device Edge) */}
+              <div id="iot-core" className="scroll-mt-20">
+                <Card className="border-2 border-cyan-200 overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                  
+                  {/* Background Image */}
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src="/silicon-to-cloud.png"
+                      alt="IoT Core Device Edge Illustration"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/80 via-blue-500/75 to-blue-600/80" />
+                    <div className="relative h-full flex items-center justify-center z-10">
+                      <div className="flex items-center gap-4">
+                        <div className="flex flex-col items-center">
+                          <Cpu className="w-16 h-16 text-white drop-shadow-lg animate-pulse" />
+                          <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Chip</span>
+                        </div>
+                        <ArrowRight className="w-10 h-10 text-white/80 drop-shadow-lg" />
+                        <div className="flex flex-col items-center">
+                          <Wifi className="w-14 h-14 text-cyan-50 drop-shadow-lg" />
+                          <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Device</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <CardHeader className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <div className="h-12 w-12 rounded-lg bg-cyan-100 flex items-center justify-center">
+                        <Cpu className="h-6 w-6 text-cyan-600" />
+                      </div>
+                      <Badge variant="secondary" className="bg-cyan-100 text-cyan-700">
+                        Device Edge / IoT Makers
+                      </Badge>
+                    </div>
+
+                    <CardTitle className="text-2xl md:text-3xl">IoT Core</CardTitle>
+
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="outline" className="bg-[#0EA5E9]/10 text-[#0EA5E9] border-[#0EA5E9]/30">
+                        <Rocket className="w-3 h-3 mr-1" />
+                        Innovate
+                      </Badge>
+                      <Badge variant="outline" className="bg-[#8B5CF6]/10 text-[#8B5CF6] border-[#8B5CF6]/30">
+                        <Settings className="w-3 h-3 mr-1" />
+                        Orchestrate
+                      </Badge>
+                      <Badge variant="outline" className="bg-[#EF4444]/10 text-[#EF4444] border-[#EF4444]/30">
+                        <ShieldCheck className="w-3 h-3 mr-1" />
+                        Secure
+                      </Badge>
+                    </div>
+
+                    <p className="text-muted-foreground">
+                      <strong>Silicon-to-device advisory:</strong> From MCU/SoC selection to secure connectivity, we help you design and launch ultra-efficient IoT devices at the extreme edge.
+                    </p>
+                  </CardHeader>
+
+                  <CardContent className="flex flex-col flex-1 space-y-6">
+                    <div>
+                      <h3 className="font-bold text-lg mb-3 flex items-center">
+                        <span className="w-2 h-2 bg-cyan-500 rounded-full mr-2" />
+                        What We Do
+                      </h3>
+                      <ul className="space-y-2">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">Architecture for low-power, real-time IoT devices and embedded systems</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">Rapid PoCs, lab testing, and technology validation to de‑risk platform and component choices</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">Secure boot, OTA update design, and connectivity frameworks</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">Cloud onboarding patterns and multi-cloud connectivity (AWS, OVH)</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="font-bold text-lg mb-3 flex items-center">
+                        <span className="w-2 h-2 bg-cyan-500 rounded-full mr-2" />
+                        Key Outcomes
+                      </h3>
+                      <ul className="space-y-2">
+                        <li className="flex items-start gap-2">
+                          <ArrowRight className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">Faster path from concept to certified device, with fewer redesigns and integration issues.</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <ArrowRight className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">Security and CRA/FCC/CE readiness from day one, reducing compliance risk and time‑to‑market</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="mt-auto pt-4">
+                      <Button asChild className="w-full bg-cyan-600 hover:bg-cyan-700">
+                        <Link href="/services#iot-core">
+                          Explore IoT Core
+                          <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
 
-              <p className="text-muted-foreground">
-                <strong>Advisory & Implementation:</strong> Strategic consulting with hands-on delivery—reference designs, secure embedded solutions, connectivity integration, and production-ready architectures.
-              </p>
-            </CardHeader>
-            
-            {/* Condensed Visible Content */}
-            <CardContent className="flex flex-col flex-1 space-y-6">
-              {/* What We Do */}
-              <div>
-                <h3 className="font-bold text-lg mb-3 flex items-center">
-                  <span className="w-2 h-2 bg-cyan-500 rounded-full mr-2"></span>
-                  What We Do
-                </h3>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Strategic assessment & chip-to-cloud architecture definition</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Rapid PoCs, Lab testing & technology validation</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Embedded modules, connectivity frameworks & secure boot/OTA</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Multi-cloud connectivity (AWS, OVH)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Certification acceleration (FCC, CE, CRA) & production-ready designs</span>
-                  </li>
-                </ul>
+              {/* Offer 2: Near Edge (Local Edge) */}
+              <div id="near-edge" className="scroll-mt-20">
+                <Card className="border-2 border-purple-200 overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                  
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src="/edge-infrastructure.png"
+                      alt="Near Edge Illustration"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-500/80 via-indigo-500/75 to-purple-600/80" />
+                    <div className="relative h-full flex items-center justify-center z-10">
+                      <div className="flex items-center gap-3">
+                        <div className="flex flex-col items-center">
+                          <Network className="w-14 h-14 text-white drop-shadow-lg" />
+                          <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Gateway</span>
+                        </div>
+                        <ArrowRight className="w-9 h-9 text-white/80 drop-shadow-lg" />
+                        <div className="flex flex-col items-center">
+                          <Zap className="w-14 h-14 text-cyan-50 drop-shadow-lg" />
+                          <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Compute</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <CardHeader className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <div className="h-12 w-12 rounded-lg bg-purple-100 flex items-center justify-center">
+                        <ShieldCheck className="h-6 w-6 text-purple-600" />
+                      </div>
+                      <Badge variant="secondary" className="bg-purple-100 text-purple-700">
+                        On-Premise / Local Edge
+                      </Badge>
+                    </div>
+
+                    <CardTitle className="text-2xl md:text-3xl">Near Edge</CardTitle>
+
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="outline" className="bg-[#8B5CF6]/10 text-[#8B5CF6] border-[#8B5CF6]/30">
+                        <Settings className="w-3 h-3 mr-1" />
+                        Orchestrate
+                      </Badge>
+                      <Badge variant="outline" className="bg-[#10B981]/10 text-[#10B981] border-[#10B981]/30">
+                        <Zap className="w-3 h-3 mr-1" />
+                        Respond
+                      </Badge>
+                      <Badge variant="outline" className="bg-[#EF4444]/10 text-[#EF4444] border-[#EF4444]/30">
+                        <ShieldCheck className="w-3 h-3 mr-1" />
+                        Comply
+                      </Badge>
+                    </div>
+
+                    <p className="text-muted-foreground">
+                      <strong>Local edge platforms:</strong> Architect and secure on-premise edge infrastructure for factories, facilities, and sites, with validated edge-to-cloud patterns.
+                    </p>
+                  </CardHeader>
+
+                  <CardContent className="flex flex-col flex-1 space-y-6">
+                    <div>
+                      <h3 className="font-bold text-lg mb-3 flex items-center">
+                        <span className="w-2 h-2 bg-purple-500 rounded-full mr-2" />
+                        What We Do
+                      </h3>
+                      <ul className="space-y-2">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">Edge compute platform design (gateways, industrial PCs, rugged servers)</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">AI inference at the edge, data filtering, and local analytics</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">Security architectures aligned with NIS2/IEC 62443</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">Integration with existing OT/IT systems and cloud platforms</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="font-bold text-lg mb-3 flex items-center">
+                        <span className="w-2 h-2 bg-purple-500 rounded-full mr-2" />
+                        Key Outcomes
+                      </h3>
+                      <ul className="space-y-2">
+                        <li className="flex items-start gap-2">
+                          <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">Right edge hardware and topology selected first time</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">Compliance-ready architectures reducing project risk</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="mt-auto pt-4">
+                      <Button asChild className="w-full bg-purple-600 hover:bg-purple-700">
+                        <Link href="/services#near-edge">
+                          Explore Near Edge
+                          <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
 
-              {/* Outcomes */}
-              <div>
-                <h3 className="font-bold text-lg mb-3 flex items-center">
-                  <span className="w-2 h-2 bg-cyan-500 rounded-full mr-2"></span>
-                  Key Outcomes
-                </h3>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Faster development cycles from concept to production</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">First-time-right implementations reducing costly redesigns</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-cyan-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Compliance-ready for CRA, FCC, CE certifications</span>
-                  </li>
-                </ul>
+              {/* Offer 3: Far Edge (Chip Vendor Ecosystem) */}
+              <div id="far-edge" className="scroll-mt-20">
+                <Card className="border-2 border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                  
+                  {/* Background Image Section */}
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src="/cloud-integration.png"
+                      alt="Far Edge Fleet Illustration"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-br from-slate-600/80 via-indigo-500/75 to-slate-700/80" />
+                    <div className="relative h-full flex items-center justify-center z-10">
+                      <div className="flex items-center gap-3">
+                        <div className="flex flex-col items-center">
+                          <Smartphone className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
+                          <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Devices</span>
+                        </div>
+                        <ArrowRight className="w-8 h-8 text-white/80 drop-shadow-lg" />
+                        <div className="flex flex-col items-center">
+                          <Cloud className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
+                          <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Cloud</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Card Header */}
+                  <CardHeader className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <div className="h-12 w-12 rounded-lg bg-slate-100 flex items-center justify-center">
+                        <Cloud className="h-6 w-6 text-slate-700" />
+                      </div>
+                      <Badge variant="secondary" className="bg-slate-100 text-slate-700">
+                        Chip & Device Ecosystem
+                      </Badge>
+                    </div>
+
+                    <CardTitle className="text-2xl md:text-3xl">Far Edge</CardTitle>
+
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="outline" className="bg-slate-100 text-slate-700 border-slate-300">
+                        <Rocket className="w-3 h-3 mr-1" />
+                        Enable
+                      </Badge>
+                      <Badge variant="outline" className="bg-slate-100 text-slate-700 border-slate-300">
+                        <Settings className="w-3 h-3 mr-1" />
+                        Scale
+                      </Badge>
+                      <Badge variant="outline" className="bg-slate-100 text-slate-700 border-slate-300">
+                        <ShieldCheck className="w-3 h-3 mr-1" />
+                        Secure
+                      </Badge>
+                    </div>
+
+                    <p className="text-muted-foreground">
+                      <strong>Fleet-scale enablement:</strong> Chip‑to‑cloud expertise for chip vendors and device makers, with reference architectures and fleet management for distributed IoT deployments.
+                    </p>
+                  </CardHeader>
+
+                  {/* Card Content */}
+                  <CardContent className="flex flex-col flex-1 space-y-6">
+                    {/* What We Do */}
+                    <div>
+                      <h3 className="font-bold text-lg mb-3 flex items-center">
+                        <span className="w-2 h-2 bg-slate-500 rounded-full mr-2" />
+                        What We Do
+                      </h3>
+                      <ul className="space-y-2">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-slate-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">
+                            Chip‑optimized platforms and reference designs validated from silicon to cloud
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-slate-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">
+                            Fleet deployment patterns for OTA updates, provisioning at scale, and lifecycle management
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-slate-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">
+                            Ecosystem enablement with validated cloud integrations (AWS, OVH) and go‑to‑market support
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-slate-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">
+                            Hardware‑based security using secure enclaves, TPM, and strong key management
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* Key Outcomes */}
+                    <div>
+                      <h3 className="font-bold text-lg mb-3 flex items-center">
+                        <span className="w-2 h-2 bg-slate-500 rounded-full mr-2" />
+                        Key Outcomes
+                      </h3>
+                      <ul className="space-y-2">
+                        <li className="flex items-start gap-2">
+                          <ArrowRight className="h-4 w-4 text-slate-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">
+                            Faster adoption across chip vendor and device maker ecosystems
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <ArrowRight className="h-4 w-4 text-slate-600 flex-shrink-0 mt-1" />
+                          <span className="text-sm text-muted-foreground">
+                            Repeatable fleet‑scale architectures for thousands of deployed devices
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* CTA */}
+                    <div className="mt-auto pt-4">
+                      <Button asChild className="w-full bg-slate-700 hover:bg-slate-800">
+                        <Link href="/services#far-edge">
+                          Explore Far Edge
+                          <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
 
-              {/* CTA Button */}
-              <div className="mt-auto pt-4">
-                <Button asChild className="w-full bg-cyan-600 hover:bg-cyan-700">
-                  <Link href="/contact">
-                    Schedule Consultation
+
+            </div>
+
+            {/* Industry Applications Cross-Link */}
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl border border-blue-200 max-w-5xl mx-auto">
+              <div className="text-center space-y-4">
+                <h3 className="text-2xl font-bold text-gray-900">Industry-Specific Applications</h3>
+                <p className="text-gray-700">
+                  See how these consulting services apply to your industry—from automotive and manufacturing to energy and electronics.
+                </p>
+                <Button asChild variant="outline" size="lg">
+                  <Link href="/industries">
+                    Explore Industry Solutions
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </div>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Offer 2: Industrial Edge */}
-        <div id="industrial-edge" className="scroll-mt-20">
-          <Card className="border-2 border-purple-200 overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-            
-            {/* Background Image Section */}
-            <div className="relative h-48 overflow-hidden">
-              <Image
-                src="/edge-infrastructure.png"
-                alt="Industrial Edge Illustration"
-                fill
-                className="object-cover"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/80 via-indigo-500/75 to-purple-600/80" />
-              <div className="relative h-full flex items-center justify-center z-10">
-                <div className="flex items-center gap-3">
-                  <div className="flex flex-col items-center">
-                    <Cpu className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Chip</span>
-                  </div>
-                  <ArrowRight className="w-9 h-9 text-white/80 drop-shadow-lg" />
-                  <div className="flex flex-col items-center">
-                    <Zap className="w-14 h-14 text-cyan-50 drop-shadow-lg" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Compute</span>
-                  </div>
-                  <ArrowRight className="w-9 h-9 text-white/80 drop-shadow-lg" />
-                  <div className="flex flex-col items-center">
-                    <ShieldCheck className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
-                    <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Secure</span>
-                  </div>
-                </div>
-              </div>
             </div>
 
-            {/* Card Header */}
-            <CardHeader className="space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="h-12 w-12 rounded-lg bg-purple-100 flex items-center justify-center">
-                  <ShieldCheck className="h-6 w-6 text-purple-600" />
-                </div>
-                <Badge variant="secondary" className="bg-purple-100 text-purple-700">
-                  For Industrial Enterprises
-                </Badge>
-              </div>
-              
-              <CardTitle className="text-2xl md:text-3xl">Industrial Edge</CardTitle>
-              
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="outline" className="bg-[#8B5CF6]/10 text-[#8B5CF6] border-[#8B5CF6]/30">
-                  <Settings className="w-3 h-3 mr-1" />
-                  Orchestrate
-                </Badge>
-                <Badge variant="outline" className="bg-[#10B981]/10 text-[#10B981] border-[#10B981]/30">
-                  <Zap className="w-3 h-3 mr-1" />
-                  Respond
-                </Badge>
-                <Badge variant="outline" className="bg-[#EF4444]/10 text-[#EF4444] border-[#EF4444]/30">
-                  <ShieldCheck className="w-3 h-3 mr-1" />
-                  Comply
-                </Badge>
-              </div>
+            {/* Back to Top */}
+            <div className="text-center">
+              <Link href="#" className="inline-flex items-center text-sm text-muted-foreground hover:text-primary">
+                <ArrowUp className="h-4 w-4 mr-2" />
+                Back to Top
+              </Link>
+            </div>
 
-              <p className="text-muted-foreground">
-                <strong>Chip-Level Expertise:</strong> We bring embedded systems 
-                expertise to industrial edge computing—selecting the right processors, architecting 
-                hardware-backed security, and validating complete edge-to-cloud architectures before 
-                production deployment.
-              </p>
-            </CardHeader>
-            
-            {/* Content */}
-            <CardContent className="flex flex-col flex-1 space-y-6">
-              {/* What We Do */}
-              <div>
-                <h3 className="font-bold text-lg mb-3 flex items-center">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                  What We Do
-                </h3>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Edge compute platform architecture (AI accelerators, industrial processors, ruggedized platforms)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Chip-level security architecture (secure boot, crypto engines, hardware root of trust)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">NIS2/IEC 62443 compliance frameworks with hardware-backed security</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Edge-to-cloud integration architecture with validated multi-vendor coordination</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Outcomes */}
-              <div>
-                <h3 className="font-bold text-lg mb-3 flex items-center">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                  Key Outcomes
-                </h3>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Right hardware selected first time—avoiding costly platform redesigns</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Hardware-secured compliance meeting NIS2/IEC 62443 requirements</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-sm text-muted-foreground">Validated edge-to-cloud architectures eliminating multi-vendor integration failures</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* CTA Button */}
-              <div className="mt-auto pt-4">
-                <Button asChild className="w-full bg-purple-600 hover:bg-purple-700">
-                  <Link href="/contact">
-                    Schedule Consultation
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+          </div>
         </div>
+      </section>
 
-
-      </div>
-
-      {/* Industry Applications Cross-Link */}
-      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl border border-blue-200 max-w-5xl mx-auto">
-        <div className="text-center space-y-4">
-          <h3 className="text-2xl font-bold text-gray-900">Industry-Specific Applications</h3>
-          <p className="text-gray-700">
-            See how these consulting services apply to your specific industry—from automotive to 
-            manufacturing, energy to electronics.
-          </p>
-          <Button asChild variant="outline" size="lg">
-            <Link href="/industries">
-              Explore Industry Solutions
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
-        </div>
-      </div>
-
-      {/* Back to Top */}
-      <div className="text-center">
-        <Link href="#" className="inline-flex items-center text-sm text-muted-foreground hover:text-primary">
-          <ArrowUp className="h-4 w-4 mr-2" />
-          Back to Top
-        </Link>
-      </div>
-    </div>
-  </div>
-</section>
 
       <FourPillarsCarousel />
 
