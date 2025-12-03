@@ -299,14 +299,14 @@ export default function ServicesPage() {
                       </ul>
                     </div>
 
-                    <div className="mt-auto pt-4">
+                  {/*  <div className="mt-auto pt-4">
                       <Button asChild className="w-full bg-cyan-600 hover:bg-cyan-700">
                         <Link href="/services#iot-core">
                           Explore IoT Core
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>
                       </Button>
-                    </div>
+                    </div>*/}
                   </CardContent>
                 </Card>
               </div>
@@ -414,14 +414,14 @@ export default function ServicesPage() {
                       </ul>
                     </div>
 
-                    <div className="mt-auto pt-4">
+                  {/*  <div className="mt-auto pt-4">
                       <Button asChild className="w-full bg-purple-600 hover:bg-purple-700">
                         <Link href="/services#near-edge">
                           Explore Near Edge
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>
                       </Button>
-                    </div>
+                    </div> */}
                   </CardContent>
                 </Card>
               </div>
@@ -547,14 +547,14 @@ export default function ServicesPage() {
                     </div>
 
                     {/* CTA */}
-                    <div className="mt-auto pt-4">
+                  {/*  <div className="mt-auto pt-4">
                       <Button asChild className="w-full bg-slate-700 hover:bg-slate-800">
                         <Link href="/services#far-edge">
                           Explore Far Edge
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>
                       </Button>
-                    </div>
+                    </div>*/}
                   </CardContent>
                 </Card>
               </div>
