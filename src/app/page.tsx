@@ -26,6 +26,8 @@ import {
   Wifi,
   Cloud,
   Smartphone,
+  MousePointer2,
+  ChevronDown,
 } from "lucide-react"
 import { CRACountdown } from "@/components/cra-countdown"
 import { TechnologyPartnersCarousel } from "@/components/TechnologyPartnersCarousel"
@@ -42,68 +44,95 @@ export default function HomePage() {
         </Link>
       </div>*/}
 
-      {/* HERO SECTION - Enhanced Visuals */}
-      <section className="relative overflow-hidden py-20 md:py-32">
-        {/* Dark blue base background */}
+      {/* --- HERO SECTION --- */}
+      <section className="relative overflow-hidden h-screen flex items-center">
+        
+        
+        {/* 1. Dark Blue Base */}
         <div className="absolute inset-0 bg-[#0a1628]" />
 
-
-        {/* Chip image as background layer */}
+        {/* 2. Chip Image Background Layer */}
         <div className="absolute inset-0 opacity-30">
           <Image
             src="/microchip-closeup.jpg"
-            alt="Modern microchip background"
+            alt="Silicon Architecture Background"
             fill
             className="object-cover mix-blend-screen"
             priority
           />
         </div>
 
-        {/* Gradient overlay for depth */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0a1628]/90 via-[#1a2744]/70 to-[#0a1628]/90 animate-gradient-x" />
+        {/* 3. Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0a1628]/95 via-[#1a2744]/80 to-[#0a1628]/95" />
 
-        {/* Grid pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#4a6ea808_1px,transparent_1px),linear-gradient(to_bottom,#4a6ea808_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+        {/* 4. Tech Grid Pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#4a6ea808_1px,transparent_1px),linear-gradient(to_bottom,#4a6ea808_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none" />
 
-        {/* Main Content */}
-        <div className="container mx-auto relative z-10">
-          <div className="max-w-4xl mx-auto animate-fade-in-up">
-            <div className="space-y-6 text-center">
-              <div className="space-y-4">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight text-white drop-shadow-lg">
-                  From Chip to Edge.{" "}
-                  <span className="block">Smarter - Faster - Safer</span>
-                </h1>
-              </div>
-              {/* Animated Pulse CTA */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Button
-                  asChild
-                  size="lg"
-                  className="text-base px-8 py-6 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 text-white hover:from-blue-600 hover:to-cyan-700 shadow-xl shadow-blue-500/20 animate-pulse"
-                >
-                  <Link href="#mission">
-                    Start Discovery
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-              </div>
-              <p className="text-sm text-blue-200/70 mt-2 text-center">
-                Strategic assessment, validated architecture, and production-ready blueprints
-              </p>
-              <div className="flex justify-center pt-2">
-                <Link href="/services" className="text-blue-100/80 hover:text-white hover:underline text-base">
-                  See our two core offers: Embedded Core & Industrial Edge →
+        {/* 5. Main Content */}
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-5xl mx-auto text-center">
+            
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 rounded-full border border-blue-400/20 bg-blue-500/10 px-4 py-1.5 text-sm font-medium text-blue-200 backdrop-blur-md mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+              </span>
+              Engineering the Intelligent Edge
+            </div>
+
+            {/* Headline */}
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.1] text-white drop-shadow-2xl mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000">
+              From Chip To Edge <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 whitespace-nowrap">
+                Smarter • Faster • Safer
+              </span>
+            </h1>
+
+            {/* Subheadline - Remove whitespace-nowrap from <p> tag */}
+            <p className="text-lg md:text-2xl text-blue-100/80 leading-relaxed max-w-3xl mx-auto mb-10 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-100">
+              Choose the right silicon. Build secure products. Scale to production. We architect every step so you ship faster, compliant, and de-risked.
+            </p>
+
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-5 justify-center animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-200">
+              <Button
+                asChild
+                size="lg"
+                className="text-lg h-14 px-8 bg-gradient-to-r from-blue-600 to-cyan-600 text-white hover:from-blue-500 hover:to-cyan-500 shadow-[0_0_30px_-5px_rgba(59,130,246,0.4)] border-0 rounded-full transition-all hover:scale-105"
+              >
+                <Link href="#mission">
+                  Start Discovery
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
-              </div>
+              </Button>
+              
+              <Button 
+                asChild 
+                size="lg" 
+                variant="outline" 
+                className="text-lg h-14 px-8 border-blue-200/20 bg-white/5 text-blue-100 hover:bg-white/10 hover:text-white rounded-full backdrop-blur-sm"
+              >
+                <Link href="/services">
+                  Explore Services
+                </Link>
+              </Button>
             </div>
-            {/* Animated scroll-down indicator */}
-            <div className="flex justify-center mt-12">
-              <ArrowRight className="animate-bounce h-8 w-8 text-blue-400 rotate-90" />
+
+            {/* Footer Link */}
+            <div className="mt-12 animate-in fade-in zoom-in duration-1000 delay-500">
+              <Link href="/services#embedded-core" className="inline-flex items-center text-sm text-blue-300/60 hover:text-white transition-colors">
+                <MousePointer2 className="w-4 h-4 mr-2" />
+                See our core offers: IoT Core, Near Edge & Far Edge
+              </Link>
             </div>
+
           </div>
         </div>
+
       </section>
+
 
       {/* Edge Pulsar Mission Section - Lighter Gray Theme */}
       <section id="mission" className="py-16 px-6 bg-gradient-to-br from-gray-100 via-slate-50 to-blue-50 relative overflow-hidden border-y border-gray-200">
