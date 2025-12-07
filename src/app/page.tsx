@@ -28,8 +28,9 @@ import {
   Smartphone,
   MousePointer2,
   ChevronDown,
+  Server,
 } from "lucide-react"
-import { CRACountdown } from "@/components/cra-countdown"
+
 import { TechnologyPartnersCarousel } from "@/components/TechnologyPartnersCarousel"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 
@@ -72,22 +73,24 @@ export default function HomePage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
             
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-blue-400/20 bg-blue-500/10 px-4 py-1.5 text-sm font-medium text-blue-200 backdrop-blur-md mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
-              </span>
-              Engineering the Intelligent Edge
-            </div>
+          {/* Badge - Much larger */}
+          <div className="inline-flex items-center gap-3 rounded-full border border-blue-400/20 bg-blue-500/10 px-8 py-3 text-xl font-medium text-blue-200 backdrop-blur-md mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <span className="relative flex h-3.5 w-3.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-cyan-500"></span>
+            </span>
+            Technical Advisor & Builder
+          </div>
+
 
             {/* Headline */}
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.1] text-white drop-shadow-2xl mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-tight text-white drop-shadow-2xl mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000">
               From Chip To Edge <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 whitespace-nowrap">
                 Smarter • Faster • Safer
               </span>
             </h1>
+
 
             {/* Subheadline - Remove whitespace-nowrap from <p> tag */}
             <p className="text-lg md:text-2xl text-blue-100/80 leading-relaxed max-w-3xl mx-auto mb-10 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-100">
@@ -120,13 +123,33 @@ export default function HomePage() {
               </Button>
             </div>
 
-            {/* Footer Link */}
-            <div className="mt-12 animate-in fade-in zoom-in duration-1000 delay-500">
-              <Link href="/services#embedded-core" className="inline-flex items-center text-sm text-blue-300/60 hover:text-white transition-colors">
-                <MousePointer2 className="w-4 h-4 mr-2" />
-                See our core offers: IoT Core, Near Edge & Far Edge
+            {/* Footer Links - Three Badge Style */}
+            <div className="mt-12 flex flex-wrap justify-center gap-4 animate-in fade-in zoom-in duration-1000 delay-500">
+              <Link 
+                href="/services#iot-core" 
+                className="inline-flex items-center gap-2 rounded-full border border-blue-400/20 bg-blue-500/10 px-5 py-2 text-sm font-medium text-blue-200 hover:bg-blue-500/20 hover:border-blue-400/40 backdrop-blur-sm transition-all"
+              >
+                <Cpu className="w-4 h-4" />
+                IoT Core
+              </Link>
+              
+              <Link 
+                href="/services#near-edge" 
+                className="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-500/10 px-5 py-2 text-sm font-medium text-cyan-200 hover:bg-cyan-500/20 hover:border-cyan-400/40 backdrop-blur-sm transition-all"
+              >
+                <Server className="w-4 h-4" />
+                Near Edge
+              </Link>
+              
+              <Link 
+                href="/services#far-edge" 
+                className="inline-flex items-center gap-2 rounded-full border border-teal-400/20 bg-teal-500/10 px-5 py-2 text-sm font-medium text-teal-200 hover:bg-teal-500/20 hover:border-teal-400/40 backdrop-blur-sm transition-all"
+              >
+                <Cloud className="w-4 h-4" />
+                Far Edge
               </Link>
             </div>
+
 
           </div>
         </div>
