@@ -32,8 +32,9 @@ export default function IndustriesPage() {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
 
-            {/* 3. Semiconductors & Electronics */}
-            <Card className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary/50 overflow-hidden flex flex-col">
+
+            {/* 1. Semiconductors & Electronics */}
+            <Card id="semiconductors" className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary/50 overflow-hidden flex flex-col">
               <div className="relative h-64 overflow-hidden">
                 <Image
                   src="/semiconductor-chip-wafer-manufacturing-close-up.png"
@@ -57,9 +58,9 @@ export default function IndustriesPage() {
               
               <CardContent className="p-6 flex flex-col flex-1">
                 <p className="text-muted-foreground leading-relaxed flex-grow">
-                  Accelerate time-to-market with production-ready reference designs, secure embedded solutions, 
-                  and cloud connectivity—helping chipmakers and device manufacturers scale from prototype to production 
-                  while meeting CRA compliance requirements.
+                  Accelerate time-to-market with production-ready reference designs, hardened embedded solutions, 
+                  and secure connectivity patterns—helping chipmakers and device manufacturers move from 
+                  prototype to production while staying ahead of CRA requirements.
                 </p>
                 
                 <div className="space-y-3 mt-6">
@@ -75,32 +76,24 @@ export default function IndustriesPage() {
                     </li>
                     <li className="flex items-start gap-2 text-sm">
                       <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">Certification readiness (FCC, CE, radio approvals)</span>
+                      <span className="text-muted-foreground">Accelerated time-to-market with proven chip-to-cloud patterns</span>
                     </li>
                   </ul>
                 </div>
 
-                <div className="pt-4 border-t mt-auto space-y-4">
+                <div className="pt-4 border-t mt-auto">
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary" className="text-xs">Reference Design</Badge>
                     <Badge variant="secondary" className="text-xs">CRA Compliance</Badge>
                     <Badge variant="secondary" className="text-xs">Ecosystem Development</Badge>
                   </div>
-                  <div className="mt-4 p-3 bg-primary/5 rounded-lg border border-primary/10">
-                    <p className="text-sm">
-                      <strong>Recommended Offer:</strong>{' '}
-                      <Link href="/services#iot-core" className="text-primary hover:underline">
-                        IoT Core
-                      </Link>{' '}
-                      - For device makers and product development teams
-                    </p>
-                  </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* 4. Automotive & Mobility */}
-            <Card className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary/50 overflow-hidden flex flex-col">
+
+            {/* 2. Automotive & Mobility */}
+            <Card id="automotive" className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary/50 overflow-hidden flex flex-col">
               <div className="relative h-64 overflow-hidden">
                 <Image
                   src="/connected-car-autonomous-vehicle-technology-dashbo.png"
@@ -124,9 +117,8 @@ export default function IndustriesPage() {
               
               <CardContent className="p-6 flex flex-col flex-1">
                 <p className="text-muted-foreground leading-relaxed flex-grow">
-                  Accelerate automotive connectivity projects from concept to deployment—20+ years shipping connected 
-                  vehicle platforms for tier-1 suppliers. Specializing in embedded architecture, cellular integration, 
-                  and cloud connectivity through strategic advisory and hands-on technical consulting.
+                  De-risk connected vehicle programs with proven embedded architecture, cellular integration, 
+                  and chip-to-cloud patterns—grounded in 20+ years shipping connectivity products.
                 </p>
 
                 <div className="space-y-3 mt-6">
@@ -142,32 +134,23 @@ export default function IndustriesPage() {
                     </li>
                     <li className="flex items-start gap-2 text-sm">
                       <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">Cloud platform architecture and device-to-cloud security</span>
+                      <span className="text-muted-foreground">De-risked integration with battle-tested patterns from production deployments</span>
                     </li>
                   </ul>
                 </div>
 
-                <div className="pt-4 border-t mt-auto space-y-4">
+                <div className="pt-4 border-t mt-auto">
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary" className="text-xs">Connected Vehicles</Badge>
                     <Badge variant="secondary" className="text-xs">Platform Architecture</Badge>
                     <Badge variant="secondary" className="text-xs">V2X Integration</Badge>
                   </div>
-                  <div className="mt-4 p-3 bg-primary/5 rounded-lg border border-primary/10">
-                    <p className="text-sm">
-                      <strong>Recommended Offer:</strong>{' '}
-                      <Link href="/services#iot-core" className="text-primary hover:underline">
-                        IoT Core
-                      </Link>{' '}
-                      - For connected vehicle and embedded product teams
-                    </p>
-                  </div>
                 </div>
               </CardContent>
             </Card>
             
-            {/* 1. Manufacturing & Industry 4.0 */}
-            <Card className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary/50 overflow-hidden flex flex-col">
+            {/* 3. Manufacturing & Industry 4.0 */}
+            <Card id="manufacturing" className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary/50 overflow-hidden flex flex-col">
               <div className="relative h-64 overflow-hidden">
                 <Image
                   src="/industrial-factory-automation-robots-manufacturing.png"
@@ -191,9 +174,9 @@ export default function IndustriesPage() {
               
               <CardContent className="p-6 flex flex-col flex-1">
                 <p className="text-muted-foreground leading-relaxed flex-grow">
-                  Converging OT and IT through secure, multi-layered architecture. Deploy edge-to-cloud integration 
-                  that captures real-time telemetry from production equipment and industrial controls—enabling predictive 
-                  maintenance, process optimization, and autonomous operations.
+                  Converge OT and IT with secure, multi-layer edge architectures. Deploy gateways that aggregate 
+                  industrial protocols and stream real-time telemetry to the cloud for predictive maintenance, 
+                  process optimization, and digital twins.
                 </p>
                 
                 <div className="space-y-3 mt-6">
@@ -209,32 +192,24 @@ export default function IndustriesPage() {
                     </li>
                     <li className="flex items-start gap-2 text-sm">
                       <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">Real-time analytics and digital twin capabilities</span>
+                      <span className="text-muted-foreground">Security-by-design with IEC 62443 compliance from architecture</span>
                     </li>
                   </ul>
                 </div>
 
-                <div className="pt-4 border-t mt-auto space-y-4">
+                <div className="pt-4 border-t mt-auto">
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary" className="text-xs">IoT Architecture</Badge>
                     <Badge variant="secondary" className="text-xs">Edge Computing</Badge>
-                    <Badge variant="secondary" className="text-xs">Predictive Maintenance</Badge>
-                  </div>
-                  <div className="mt-4 p-3 bg-primary/5 rounded-lg border border-primary/10">
-                    <p className="text-sm">
-                      <strong>Recommended Offer:</strong>{' '}
-                      <Link href="/services#near-edge" className="text-primary hover:underline">
-                        Near Edge
-                      </Link>{' '}
-                      - For industrial enterprises and systems integrators
-                    </p>
+                    <Badge variant="secondary" className="text-xs">IEC 62443</Badge>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* 2. Energy & Smart Infrastructure */}
-            <Card className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary/50 overflow-hidden flex flex-col">
+
+            {/* 4. Energy & Smart Infrastructure */}
+            <Card id="energy" className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary/50 overflow-hidden flex flex-col">
               <div className="relative h-64 overflow-hidden">
                 <Image
                   src="/energy-smart-grid-renewable-infrastructure.png"
@@ -258,9 +233,9 @@ export default function IndustriesPage() {
               
               <CardContent className="p-6 flex flex-col flex-1">
                 <p className="text-muted-foreground leading-relaxed flex-grow">
-                  Transform energy infrastructure through secure OT-IT integration. Enable real-time data flow from smart 
-                  meters, energy management systems, and building automation to cloud platforms for advanced analytics, 
-                  demand response, and sustainability optimization.
+                  Modernize energy and infrastructure with secure OT‑IT integration. Stream data from smart meters, 
+                  substations, and building automation systems into cloud platforms for real-time monitoring, 
+                  demand response, and sustainability analytics.
                 </p>
 
                 <div className="space-y-3 mt-6">
@@ -268,7 +243,7 @@ export default function IndustriesPage() {
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2 text-sm">
                       <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">Smart grid deployment with real-time monitoring</span>
+                      <span className="text-muted-foreground">Smart grid deployment with real-time monitoring and analytics</span>
                     </li>
                     <li className="flex items-start gap-2 text-sm">
                       <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
@@ -276,33 +251,26 @@ export default function IndustriesPage() {
                     </li>
                     <li className="flex items-start gap-2 text-sm">
                       <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">Energy consumption optimization and sustainability analytics</span>
+                      <span className="text-muted-foreground">Compliance-ready architectures with NIS2 and CRA requirements</span>
                     </li>
                   </ul>
                 </div>
 
-                <div className="pt-4 border-t mt-auto space-y-4">
+                <div className="pt-4 border-t mt-auto">
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary" className="text-xs">Smart Grid</Badge>
                     <Badge variant="secondary" className="text-xs">Energy Management</Badge>
-                    <Badge variant="secondary" className="text-xs">Building Automation</Badge>
-                  </div>
-                  <div className="mt-4 p-3 bg-primary/5 rounded-lg border border-primary/10">
-                    <p className="text-sm">
-                      <strong>Recommended Offer:</strong>{' '}
-                      <Link href="/services#near-edge" className="text-primary hover:underline">
-                        Near Edge
-                      </Link>{' '}
-                      - For utilities, infrastructure operators, and systems integrators
-                    </p>
+                    <Badge variant="secondary" className="text-xs">NIS2</Badge>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
+
           </div>
         </div>
       </section>
+
 
       {/* Why These Four Industries Section */}
       <section className="py-20 bg-gradient-to-br from-primary/5 to-background">
@@ -314,15 +282,16 @@ export default function IndustriesPage() {
               Why These Four Industries?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Focused expertise where our&apos; 45+ years combined experience delivers{' '}
+              Focused expertise where our 45+ years combined experience delivers{' '}
               <span className="text-innovate font-semibold">proven results from day one</span>
             </p>
           </div>
 
+
           {/* 4 Pillars Grid */}
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             
-            {/* 1. Proven Founder Experience */}
+            {/* 1. Deep Industry Experience */}
             <Card className="border-2 border-innovate/20 hover:border-innovate/50 transition-colors duration-200">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
@@ -335,7 +304,7 @@ export default function IndustriesPage() {
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
                       Our team's combined <strong>45+ years in automotive IoT</strong> (Valeo, Sequans), 
-                      <strong>embedded systems, cloud architecture</strong> (NXP, Nestwave), and telecom 
+                      <strong> embedded systems, cloud architecture</strong> (NXP, Nestwave), and telecom 
                       directly map to these four industries—
                       <span className="text-innovate font-medium">enabling immediate impact without learning curves</span>.
                     </p>
@@ -343,6 +312,7 @@ export default function IndustriesPage() {
                 </div>
               </CardContent>
             </Card>
+
 
             {/* 2. Common Technical Foundation */}
             <Card className="border-2 border-innovate/20 hover:border-innovate/50 transition-colors duration-200">
@@ -366,6 +336,7 @@ export default function IndustriesPage() {
               </CardContent>
             </Card>
 
+
             {/* 3. Reusable Accelerators */}
             <Card className="border-2 border-innovate/20 hover:border-innovate/50 transition-colors duration-200">
               <CardContent className="p-6">
@@ -386,6 +357,7 @@ export default function IndustriesPage() {
                 </div>
               </CardContent>
             </Card>
+
 
             {/* 4. Regulatory Alignment */}
             <Card className="border-2 border-innovate/20 hover:border-innovate/50 transition-colors duration-200">
@@ -409,9 +381,11 @@ export default function IndustriesPage() {
               </CardContent>
             </Card>
 
+
           </div>
         </div>
       </section>
+
 
       {/* CTA Section */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 to-background relative overflow-hidden">
@@ -436,23 +410,6 @@ export default function IndustriesPage() {
                 <Link href="/services">Explore Our Services</Link>
               </Button>
             </div>
-
-            {/* Subtle note with left border */}
-            <div className="mt-12 max-w-4xl mx-auto">
-              <div className="border-l-4 border-innovate/30 pl-6 py-4 text-left">
-                <p className="text-muted-foreground leading-relaxed">
-                  <strong className="text-foreground">Note:</strong> While we&apos;ve delivered projects 
-                  in logistics and consumer IoT, we focus our services on these four 
-                  core industries where we have the deepest direct experience—from Valeo&apos;s 
-                  connected car platform to Sequans&apos; 5G chipsets to industrial edge solutions.{` `}
-                  <Link href="/contact" className="text-innovate hover:underline font-medium">
-                    Contact us
-                  </Link>{' '}
-                  if your project spans related sectors.
-                </p>
-              </div>
-            </div>
-
           </div>
         </div>
       </section>
