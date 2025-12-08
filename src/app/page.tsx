@@ -201,250 +201,254 @@ export default function HomePage() {
         </div>
       </section>
 
-{/* Three Core Consulting Offers - Complete Edge Continuum */}
-<section className="py-16 px-6 bg-gray-50">
-  <div className="max-w-7xl mx-auto">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-        Three Core Consulting Offers
-      </h2>
-      <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-        Comprehensive offers spanning the complete edge continuum
-      </p>
-    </div>
-
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-      
-      {/* Offer 1: IoT Core (Device Edge / Extreme Edge) - CORRECTED LABEL */}
-      <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
-        
-        <div className="relative h-40 overflow-hidden">
-          <Image
-            src="/silicon-to-cloud.png"
-            alt="IoT Core Device Edge Illustration"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/80 via-blue-500/75 to-blue-600/80" />
-          <div className="relative h-full flex items-center justify-center z-10">
-            <div className="flex items-center gap-3">
-              <div className="flex flex-col items-center">
-                <Cpu className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
-                <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Chip</span>
-              </div>
-              <ArrowRight className="w-8 h-8 text-white/80 drop-shadow-lg" />
-              <div className="flex flex-col items-center">
-                <Wifi className="w-12 h-12 text-cyan-50 drop-shadow-lg" />
-                <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Device</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="p-6 flex flex-col flex-grow">
-          <div className="mb-3">
-            <span className="inline-block bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-sm font-semibold">
-              Device Edge / IoT Makers
-            </span>
+      {/* Three Core Consulting Offers - Complete Edge Continuum */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Three Core Consulting Offers
+            </h2>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              Comprehensive offers spanning the complete edge continuum
+            </p>
           </div>
 
-          <h3 className="text-xl font-bold text-gray-900 mb-2">
-            IoT Core
-          </h3>
-
-          <p className="text-gray-700 text-sm mb-4 flex-grow">
-            Silicon-to-sensor expertise for ultra-low latency IoT devices and embedded systems at the extreme edge. Perfect for smart sensors, wearables, and autonomous controllers.
-          </p>
-
-          <div className="mb-4 text-gray-700 text-sm space-y-2">
-            <div className="flex items-start">
-              <CheckCircle2 className="w-4 h-4 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
-              <span>
-                <strong>Microcontroller & SoC design:</strong> ARM Cortex-M, RISC-V, ultra-low-power platforms
-              </span>
-            </div>
-            <div className="flex items-start">
-              <CheckCircle2 className="w-4 h-4 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
-              <span>
-                <strong>Real-time edge processing:</strong> On-device ML inference, sensor fusion
-              </span>
-            </div>
-            <div className="flex items-start">
-              <CheckCircle2 className="w-4 h-4 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
-              <span>
-                <strong>Secure boot & connectivity:</strong> LoRa, BLE, Zigbee, cellular IoT (NB-IoT, LTE-M)
-              </span>
-            </div>
-            <div className="flex items-start">
-              <CheckCircle2 className="w-4 h-4 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
-              <span>
-                <strong>CRA compliance:</strong> Security by design for IoT devices
-              </span>
-            </div>
-          </div>
-
-          <Link href="/services#iot-core" className="inline-flex items-center text-cyan-600 text-sm font-semibold hover:text-cyan-700 mt-auto group">
-            Explore IoT Core Services
-            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </div>
-      </div>
-
-      {/* Offer 2: Near Edge - NO CHANGES */}
-      <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden border-2 border-indigo-500">
-        
-        <div className="relative h-40 overflow-hidden">
-          <Image
-            src="/edge-infrastructure.png"
-            alt="Near Edge Gateway Illustration"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/80 via-purple-500/75 to-indigo-600/80" />
-          <div className="relative h-full flex items-center justify-center z-10">
-            <div className="flex items-center gap-3">
-              <div className="flex flex-col items-center">
-                <Network className="w-12 h-12 text-white drop-shadow-lg" />
-                <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Gateway</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+            
+            {/* Offer 1: IoT Core (Device Edge / Extreme Edge) - CORRECTED LABEL */}
+            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
+              
+              <div className="relative h-40 overflow-hidden">
+                <Image
+                  src="/silicon-to-cloud.png"
+                  alt="IoT Core Device Edge Illustration"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/80 via-blue-500/75 to-blue-600/80" />
+                <div className="relative h-full flex items-center justify-center z-10">
+                  <div className="flex items-center gap-3">
+                    <div className="flex flex-col items-center">
+                      <Cpu className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
+                      <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Chip</span>
+                    </div>
+                    <ArrowRight className="w-8 h-8 text-white/80 drop-shadow-lg" />
+                    <div className="flex flex-col items-center">
+                      <Wifi className="w-12 h-12 text-cyan-50 drop-shadow-lg" />
+                      <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Device</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <ArrowRight className="w-8 h-8 text-white/80 drop-shadow-lg" />
-              <div className="flex flex-col items-center">
-                <Zap className="w-14 h-14 text-indigo-50 drop-shadow-lg animate-pulse" />
-                <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Compute</span>
+
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="mb-3">
+                  <span className="inline-block bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-sm font-semibold">
+                    Device Edge / IoT Makers
+                  </span>
+                </div>
+
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  IoT Core
+                </h3>
+
+                <p className="text-gray-700 text-sm mb-4 flex-grow">
+                  Accelerate device launches with validated chip-to-edge patterns. Pre-qualified silicon choices, production-ready BSP kits, and secure boot frameworks—eliminate trial-and-error and ship faster.
+                </p>
+
+                <div className="mb-4 text-gray-700 text-sm space-y-2">
+                  <div className="flex items-start">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <strong>Microcontroller & SoC design:</strong> ARM Cortex-M, RISC-V, ultra-low-power platforms
+                    </span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <strong>Real-time edge processing:</strong> On-device ML inference, sensor fusion
+                    </span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <strong>Secure boot & connectivity:</strong> LoRa, BLE, Zigbee, cellular IoT (NB-IoT, LTE-M)
+                    </span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <strong>CRA compliance:</strong> Security by design for IoT devices
+                    </span>
+                  </div>
+                </div>
+
+                <Link href="/services#iot-core" className="inline-flex items-center text-cyan-600 text-sm font-semibold hover:text-cyan-700 mt-auto group">
+                  Explore IoT Core Services
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div className="p-6 flex flex-col flex-grow">
-          <div className="mb-3">
-            <span className="inline-block bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-semibold">
-              On-Premise / Local Edge
-            </span>
-          </div>
-
-          <h3 className="text-xl font-bold text-gray-900 mb-2">
-            Near Edge
-          </h3>
-
-          <p className="text-gray-700 text-sm mb-4 flex-grow">
-            Local compute infrastructure for aggregation, advanced analytics, and edge AI at facility level. Ideal for factories, retail stores, hospitals, and local data centers.
-          </p>
-
-          <div className="mb-4 text-gray-700 text-sm space-y-2">
-            <div className="flex items-start">
-              <CheckCircle2 className="w-4 h-4 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
-              <span>
-                <strong>Edge gateway architecture:</strong> Multi-protocol aggregation (MQTT, OPC-UA, Modbus)
-              </span>
-            </div>
-            <div className="flex items-start">
-              <CheckCircle2 className="w-4 h-4 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
-              <span>
-                <strong>Local AI inference:</strong> GPU/NPU selection, model optimization, edge ML pipelines
-              </span>
-            </div>
-            <div className="flex items-start">
-              <CheckCircle2 className="w-4 h-4 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
-              <span>
-                <strong>Ruggedized platforms:</strong> Industrial-grade edge servers, fanless systems
-              </span>
-            </div>
-            <div className="flex items-start">
-              <CheckCircle2 className="w-4 h-4 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
-              <span>
-                <strong>IEC 62443 & NIS2:</strong> Chip-level security hardening, secure enclaves
-              </span>
-            </div>
-          </div>
-
-          <Link href="/services#near-edge" className="inline-flex items-center text-indigo-600 text-sm font-semibold hover:text-indigo-700 mt-auto group">
-            Explore Near Edge Services
-            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </div>
-      </div>
-
-     {/* Offer 3: Far Edge (Chip Vendor Ecosystem) - DEVICE ICON */}
-      <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
-        
-        <div className="relative h-40 overflow-hidden">
-          <Image
-            src="/cloud-integration.png"
-            alt="Chip Vendor Ecosystem Illustration"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-500/80 via-pink-500/75 to-purple-600/80" />
-          <div className="relative h-full flex items-center justify-center z-10">
-            <div className="flex items-center gap-3">
-              <div className="flex flex-col items-center">
-                <Smartphone className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
-                <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Device</span>
+            {/* Offer 2: Near Edge - NO CHANGES */}
+            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden border-2 border-indigo-500">
+              
+              <div className="relative h-40 overflow-hidden">
+                <Image
+                  src="/edge-infrastructure.png"
+                  alt="Near Edge Gateway Illustration"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/80 via-purple-500/75 to-indigo-600/80" />
+                <div className="relative h-full flex items-center justify-center z-10">
+                  <div className="flex items-center gap-3">
+                    <div className="flex flex-col items-center">
+                      <Network className="w-12 h-12 text-white drop-shadow-lg" />
+                      <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Gateway</span>
+                    </div>
+                    <ArrowRight className="w-8 h-8 text-white/80 drop-shadow-lg" />
+                    <div className="flex flex-col items-center">
+                      <Zap className="w-14 h-14 text-indigo-50 drop-shadow-lg animate-pulse" />
+                      <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Compute</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <ArrowRight className="w-8 h-8 text-white/80 drop-shadow-lg" />
-              <div className="flex flex-col items-center">
-                <Cloud className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
-                <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Cloud</span>
+
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="mb-3">
+                  <span className="inline-block bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-semibold">
+                    On-Premise / Local Edge
+                  </span>
+                </div>
+
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Near Edge
+                </h3>
+
+                <p className="text-gray-700 text-sm mb-4 flex-grow">
+                  Local compute infrastructure for aggregation, advanced analytics, and edge AI at facility level. Ideal for factories, retail stores, hospitals, and local data centers.
+                </p>
+
+                <div className="mb-4 text-gray-700 text-sm space-y-2">
+                  <div className="flex items-start">
+                    <CheckCircle2 className="w-4 h-4 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <strong>Edge gateway architecture:</strong> Multi-protocol aggregation (MQTT, OPC-UA, Modbus)
+                    </span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle2 className="w-4 h-4 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <strong>Local AI inference:</strong> GPU/NPU selection, model optimization, edge ML pipelines
+                    </span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle2 className="w-4 h-4 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <strong>Ruggedized platforms:</strong> Industrial-grade edge servers, fanless systems
+                    </span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle2 className="w-4 h-4 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <strong>IEC 62443 & NIS2:</strong> Chip-level security hardening, secure enclaves
+                    </span>
+                  </div>
+                </div>
+
+                <Link href="/services#near-edge" className="inline-flex items-center text-indigo-600 text-sm font-semibold hover:text-indigo-700 mt-auto group">
+                  Explore Near Edge Services
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </div>
             </div>
+
+          {/* Offer 3: Far Edge - Chip-to-Cloud Integration */}
+            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
+              
+              <div className="relative h-40 overflow-hidden">
+                <Image
+                  src="/cloud-integration.png"
+                  alt="Far Edge Chip to Cloud"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/80 via-pink-500/75 to-purple-600/80" />
+                <div className="relative h-full flex items-center justify-center z-10">
+                  <div className="flex items-center gap-3">
+                    <div className="flex flex-col items-center">
+                      <Cpu className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
+                      <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Chip</span>
+                    </div>
+                    <ArrowRight className="w-8 h-8 text-white/80 drop-shadow-lg" />
+                    <div className="flex flex-col items-center">
+                      <Cloud className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
+                      <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Cloud</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="mb-3">
+                  <span className="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">
+                    Chip-to-Cloud Integration
+                  </span>
+                </div>
+
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Far Edge
+                </h3>
+
+                {/* Solution */}
+                <p className="text-gray-700 text-sm mb-4 flex-grow">
+                  Connect silicon to cloud with pre-validated reference architectures. AWS IoT Core and OVHcloud integrations ready to deploy—no custom middleware.
+                </p>
+
+                <div className="mb-4 text-gray-700 text-sm space-y-2">
+                  <div className="flex items-start">
+                    <CheckCircle2 className="w-4 h-4 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <strong>Reference architectures:</strong> Chip-optimized patterns validated from silicon to cloud
+                    </span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle2 className="w-4 h-4 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <strong>Pre-integrated cloud connectors:</strong> AWS IoT Core, OVHcloud—ready to deploy
+                    </span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle2 className="w-4 h-4 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <strong>Secure device onboarding:</strong> Zero-trust patterns with TPM, secure enclaves
+                    </span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle2 className="w-4 h-4 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <strong>OTA foundations:</strong> Firmware update frameworks built in, not bolted on
+                    </span>
+                  </div>
+                </div>
+
+                <Link href="/services#far-edge" className="inline-flex items-center text-purple-600 text-sm font-semibold hover:text-purple-700 mt-auto group">
+                  Explore Far Edge Services
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            </div>
+
+
           </div>
+
         </div>
-
-        <div className="p-6 flex flex-col flex-grow">
-          <div className="mb-3">
-            <span className="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">
-              Chip Vendor Ecosystem
-            </span>
-          </div>
-          <h3 className="text-xl font-bold text-gray-900 mb-2">
-            Far Edge
-          </h3>
-          <p className="text-gray-700 text-sm mb-4 flex-grow">
-            Chip-to-cloud expertise for chip vendors and device maker ecosystems. Reference architectures and fleet management for distributed IoT deployments at scale.
-          </p>
-          <div className="mb-4 text-gray-700 text-sm space-y-2">
-            <div className="flex items-start">
-              <CheckCircle2 className="w-4 h-4 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-              <span>
-                <strong>Chip-optimized platforms:</strong> Reference designs validated from silicon to cloud
-              </span>
-            </div>
-            <div className="flex items-start">
-              <CheckCircle2 className="w-4 h-4 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-              <span>
-                <strong>Fleet deployment:</strong> OTA updates, provisioning at scale, lifecycle management
-              </span>
-            </div>
-            <div className="flex items-start">
-              <CheckCircle2 className="w-4 h-4 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-              <span>
-                <strong>Ecosystem enablement:</strong> Go-to-market support with validated cloud integrations (AWS, OVH)
-              </span>
-            </div>
-            <div className="flex items-start">
-              <CheckCircle2 className="w-4 h-4 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
-              <span>
-                <strong>Hardware-based security:</strong> Zero-trust with secure enclaves, TPM, and key management
-              </span>
-            </div>
-          </div>
-
-          <Link href="/services#far-edge" className="inline-flex items-center text-purple-600 text-sm font-semibold hover:text-purple-700 mt-auto group">
-            Explore Far Edge Services
-            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </div>
-      </div>
-
-
-    </div>
-
-  </div>
-</section>
+      </section>
 
 
 
