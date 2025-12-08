@@ -212,26 +212,32 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* STICKY NAV */}
-      <div className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+      {/* STICKY NAV - FIXED */}
+      <div className="sticky top-20 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div className="container mx-auto px-4 flex justify-center items-center gap-8 py-4 overflow-x-auto no-scrollbar">
-            {[
-              { label: "IoT Core", href: "#iot-core" },
-              { label: "Near Edge", href: "#near-edge" },
-              { label: "Far Edge", href: "#far-edge" },
-              { label: "Tech Stack", href: "#technical-capabilities" },
-            ].map((link) => (
-              <Link 
-                key={link.href} 
-                href={link.href}
-                onClick={(e) => handleScrollTo(e, link.href)}
-                className={cn("text-sm font-medium whitespace-nowrap transition-colors px-3 py-1 rounded-full", activeSection === link.href.replace("#", "") ? "bg-slate-900 text-white shadow-sm" : "text-slate-500 hover:text-slate-900")}
-              >
-                {link.label}
-              </Link>
-            ))}
+          {[
+            { label: "IoT Core", href: "#iot-core" },
+            { label: "Near Edge", href: "#near-edge" },
+            { label: "Far Edge", href: "#far-edge" },
+            { label: "Tech Stack", href: "#technical-capabilities" },
+          ].map((link) => (
+            <Link 
+              key={link.href} 
+              href={link.href}
+              onClick={(e) => handleScrollTo(e, link.href)}
+              className={cn(
+                "text-sm font-medium whitespace-nowrap transition-colors px-3 py-1 rounded-full",
+                activeSection === link.href.replace("#", "")
+                  ? "bg-slate-900 text-white shadow-sm"
+                  : "text-slate-500 hover:text-slate-900"
+              )}
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
       </div>
+
 
       {/* THREE CORE OFFERS - Z-PATTERN WITH ALIGNED CONTENT */}
       <div className="flex flex-col">
