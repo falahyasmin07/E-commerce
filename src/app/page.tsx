@@ -215,7 +215,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
             
-            {/* Offer 1: IoT Core (Device Edge / Extreme Edge) - CORRECTED LABEL */}
+            {/* Offer 1: IoT Core (Device Edge / Extreme Edge) */}
             <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
               
               <div className="relative h-40 overflow-hidden">
@@ -291,8 +291,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Offer 2: Near Edge - NO CHANGES */}
-            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden border-2 border-indigo-500">
+
+            {/* Offer 2: Near Edge */}
+            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
               
               <div className="relative h-40 overflow-hidden">
                 <Image
@@ -405,7 +406,7 @@ export default function HomePage() {
                   Far Edge
                 </h3>
 
-                {/* Solution */}
+
                 <p className="text-gray-700 text-sm mb-4 flex-grow">
                   Connect silicon to cloud with pre-validated reference architectures. AWS IoT Core and OVHcloud integrations ready to deploy—no custom middleware.
                 </p>
@@ -444,67 +445,26 @@ export default function HomePage() {
               </div>
             </div>
 
+          </div>
 
+          {/* NEW CTA - Explore All Services */}
+          <div className="text-center mt-12">
+            <Button
+              asChild
+              size="lg"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 h-12 rounded-full shadow-lg hover:shadow-xl transition-all duration-200"
+            >
+              <Link href="/services">
+                Explore All Services
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
           </div>
 
         </div>
       </section>
 
 
-
-      {/* Four Pillars Preview */}
-      <section className="py-20 md:py-32 bg-muted/50">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Four Pillars Framework</h2>
-          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Our comprehensive methodology, spanning innovation to operations.
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto mb-12">
-            <Link href="/services#four-pillars-framework" className="flex flex-col items-center space-y-3 p-4 rounded-lg hover:bg-background transition-colors">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
-                <Zap className="h-8 w-8 text-[#0EA5E9]" />
-              </div>
-              <span className="text-lg font-semibold">Innovate</span>
-              <p className="text-sm text-muted-foreground mt-1">
-                Accelerate your development cycles with validated reference designs and focused PoCs so new products start from a solid, scalable foundation.
-              </p>
-            </Link>
-            <Link href="/services#four-pillars-framework" className="flex flex-col items-center space-y-3 p-4 rounded-lg hover:bg-background transition-colors">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
-                <Network className="h-8 w-8 text-[#8B5CF6]" />
-              </div>
-              <span className="text-lg font-semibold">Orchestrate</span>
-              <p className="text-sm text-muted-foreground mt-1">
-                Coordinate chips, connectivity, and edge platforms into a coherent architecture, with automated deployment pipelines for reliable, repeatable rollouts.
-              </p>
-            </Link>
-            <Link href="/services#four-pillars-framework" className="flex flex-col items-center space-y-3 p-4 rounded-lg hover:bg-background transition-colors">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
-                <Shield className="h-8 w-8 text-[#EF4444]" />
-              </div>
-              <span className="text-lg font-semibold">Secure</span>
-              <p className="text-sm text-muted-foreground mt-1">
-                Embed security from day one with hardware roots of trust, secure boot, and architectures aligned with CRA and NIS2 requirements.
-              </p>
-            </Link>
-            <Link href="/services#four-pillars-framework" className="flex flex-col items-center space-y-3 p-4 rounded-lg hover:bg-background transition-colors">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
-                <Radar className="h-8 w-8 text-[#10B981]" />
-              </div>
-              <span className="text-lg font-semibold">Respond</span>
-              <p className="text-sm text-muted-foreground mt-1">
-                Transform raw telemetry into action through edge data pipelines that support real-time processing, local decisions, and AI-driven insights.
-              </p>
-            </Link>
-          </div>
-          <Button asChild size="lg">
-            <Link href="/services#four-pillars-framework">
-              Learn More About Our Framework
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
-        </div>
-      </section>
 
       {/* Three Core Outcomes */}
       <section className="py-24 md:py-32 bg-muted/30">
@@ -553,9 +513,9 @@ export default function HomePage() {
             </div>
           </div>
           <div className="text-center pt-16">
-            <Button asChild size="lg" className="text-base px-8">
-              <Link href="/services">
-                Explore Our Approach
+            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 h-12 rounded-full shadow-lg hover:shadow-xl transition-all duration-200">
+              <Link href="/methodology">
+                Explore Our Methodology
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -607,7 +567,8 @@ export default function HomePage() {
               </div>
             </Link>
 
-            {/* 3. Energy / Smart Infrastructure - NEW */}
+
+            {/* 3. Energy / Smart Infrastructure */}
             <Link href="/industries#energy" className="flex flex-col items-center space-y-4 group cursor-pointer p-6 rounded-2xl hover:bg-gray-50 transition-all duration-300">
               <div className="w-20 h-20 flex items-center justify-center bg-blue-50 rounded-2xl group-hover:bg-blue-100 group-hover:scale-110 transition-all duration-300">
                 <Lightbulb className="w-10 h-10 text-blue-600 group-hover:text-blue-700" />
@@ -645,96 +606,6 @@ export default function HomePage() {
               Learn Why These Four Industries
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>
-          </div>
-        </div>
-      </section>
-
-      
-      {/* Technology Stack & Expertise */}
-      {/* Technology Stack & Expertise - SAFE VERSION */}
-      <section className="py-20 md:py-32 bg-muted/30">
-        <div className="container mx-auto">
-          <div className="max-w-6xl mx-auto space-y-12">
-            <div className="text-center space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold">Technology Stack & Expertise</h2>
-              <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                Deep expertise across the full chip-to-edge technology stack—built from real-world experience.
-              </p>
-            </div>
-
-            {/* Technology Categories Grid - SAFE */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
-              
-              {/* Embedded Platforms */}
-              <div className="text-center space-y-4">
-                <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-100">
-                  <Cpu className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900">Embedded Platforms</h3>
-                <div className="space-y-1 text-sm text-gray-600">
-                  <p>ARM Cortex-M/A</p>
-                  <p>RISC-V</p>
-                  <p>Low-Power SoCs</p>
-                  <p>Edge AI Accelerators</p>
-                </div>
-              </div>
-
-              {/* Connectivity */}
-              <div className="text-center space-y-4">
-                <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-purple-100">
-                  <Network className="h-8 w-8 text-purple-600" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900">Connectivity</h3>
-                <div className="space-y-1 text-sm text-gray-600">
-                  <p>Wi-Fi • BLE</p>
-                  <p>UWB</p>
-                  <p>Cellular (LTE-M/NB-IoT)</p>
-                  <p>LoRaWAN</p>
-                </div>
-              </div>
-
-              {/* Cloud Infrastructure */}
-              <div className="text-center space-y-4">
-                <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-green-100">
-                  <Cloud className="h-8 w-8 text-green-600" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900">Cloud Platforms</h3>
-                <div className="space-y-1 text-sm text-gray-600">
-                  <p>AWS IoT Core</p>
-                  <p>OVH</p>
-                </div>
-              </div>
-
-              {/* Security & Compliance */}
-              <div className="text-center space-y-4">
-                <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-red-100">
-                  <ShieldCheck className="h-8 w-8 text-red-600" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900">Security</h3>
-                <div className="space-y-1 text-sm text-gray-600">
-                  <p>CRA Compliance</p>
-                  <p>NIS2 Framework</p>
-                  <p>Secure Boot • TLS</p>
-                </div>
-              </div>
-
-            </div>
-
-            {/* Optional: Add experience note */}
-            <div className="text-center pt-8">
-              <p className="text-sm text-gray-500">
-                Technologies we have used to ship production systems
-              </p>
-            </div>
-
-            {/* CTA */}
-            <div className="text-center pt-4">
-              <Button asChild variant="outline" size="lg">
-                <Link href="/about#tech-stack">
-                  View Full Technology Capabilities
-                </Link>
-              </Button>
-            </div>
           </div>
         </div>
       </section>
@@ -791,6 +662,17 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
+
+            {/* CTA to Methodology */}
+            <div className="text-center pt-8">
+              <Link 
+                href="/methodology" 
+                className="inline-flex items-center text-[#7C3AED] font-semibold hover:text-[#6D28D9] transition-colors group"
+              >
+                Learn About Our Four Pillars Methodology
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -844,8 +726,8 @@ export default function HomePage() {
 
             <div className="text-center space-y-6 pt-4">
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg">
-                  <Link href="/contact">Meet us</Link>
+                <Button asChild size="lg" variant="outline" className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-8 h-12 rounded-full transition-all duration-200">
+                  <Link href="/about">Learn More About Us</Link>
                 </Button>
               </div>
             </div>
@@ -866,7 +748,8 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               asChild
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-200"
+              size="lg"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 h-12 rounded-full shadow-lg hover:shadow-xl transition-all duration-200"
             >
               <Link href="/contact">
                 Request Strategic Assessment
@@ -875,8 +758,9 @@ export default function HomePage() {
             </Button>
             <Button
               asChild
+              size="lg"
               variant="outline"
-              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-8 py-4 rounded-lg transition-all duration-200"
+              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-8 h-12 rounded-full transition-all duration-200"
             >
               <Link href="/services">Explore All Services</Link>
             </Button>
