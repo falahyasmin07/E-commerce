@@ -17,13 +17,15 @@ import {
   Wifi,
   Shield,
   Layers,
+  Zap,
+  AlertCircle
 } from "lucide-react";
 
 export default function AboutPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 overflow-hidden">
+      <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-background" />
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
         <div className="container mx-auto relative">
@@ -32,79 +34,55 @@ export default function AboutPage() {
               About Edge Pulsar
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-              Chip-to-Edge Technical Advisor
-              <span className="block text-primary mt-2">&amp; Solution Builder</span>
+              Chip-to-Edge Expertise
+              <span className="block text-primary mt-2">Technical Advisory & Implementation</span>
             </h1>
+
             <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Two hands-on engineers with 45+ years combined experience designing, building, and
-              integrating complete chip-to-edge systems—from embedded firmware to edge deployment.
+              Two hands-on engineering leaders with 45+ years of combined hands‑on experience designing, 
+              building, and integrating chip‑to‑edge systems.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Our Story */}
-      <section className="py-20 md:py-32">
+      {/* Positioning Statement - MOVED UP */}
+      <section className="py-16 md:py-24">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto space-y-12">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold">Our Story</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">Our Positioning</h2>
               <p className="text-lg text-muted-foreground">
-                Why two chip-to-edge veterans decided to build solutions differently
+                Bridging silicon, edge, and cloud domains
               </p>
             </div>
 
-            <div className="space-y-8 text-lg text-muted-foreground leading-relaxed">
-              <p>
-                Throughout our careers in semiconductors, automotive, and cloud infrastructure, we
-                repeatedly encountered costly integration failures: “cloud-ready” silicon where secure
-                boot conflicts with certificate provisioning—discovered during pilot deployment. Device
-                makers finding their power budget cannot support cellular connectivity and edge ML
-                processing. Industrial companies facing fragmented vendor ecosystems where EU Cyber
-                Resilience Act compliance becomes a last-minute crisis.
-              </p>
-
-              <p>
-                The problem was not lack of technology—it was the{" "}
-                <strong className="text-foreground">knowledge gap between silicon and edge/cloud</strong>.
-                Semiconductor companies excel at chip design but often lack edge and cloud integration
-                expertise. Cloud-focused teams understand platforms but cannot write embedded firmware.
-                This gap costs companies millions in delays, failed reference designs, and integration
-                rework.
-              </p>
-
-              <p>
-                We founded Edge Pulsar as a chip-to-edge technical advisor &amp; solution builder—creating
-                complete systems that bridge silicon, connectivity, and cloud. We design reference
-                implementations, integrate multi-vendor stacks, and deliver production-ready architectures
-                based on decades of shipping real systems.
-              </p>
-            </div>
-
-            {/* Positioning Statement */}
-            <div className="mt-12 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">
-              <p className="text-lg font-semibold mb-2">Our Positioning</p>
-              <p className="text-muted-foreground leading-relaxed">
-                We are a <strong>chip-to-edge technical advisor &amp; solution builder</strong>. We combine
-                strategic advisory with hands-on implementation—designing, building, and integrating
-                complete systems, while leveraging proven accelerators and trusted partners under our
-                technical oversight.
+            <div className="p-8 bg-primary/5 rounded-lg border-l-4 border-primary">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                We are a <strong className="text-foreground">chip‑to‑edge technical advisor and builder</strong>. 
+                We combine architecture guidance with hands‑on implementation—aligning silicon choices, embedded software, 
+                connectivity, security, and cloud integration into coherent, production‑oriented systems that reduce 
+                integration risk and accelerate delivery.
               </p>
             </div>
 
             {/* Stats Cards */}
-            <div className="grid md:grid-cols-3 gap-6 pt-8">
+            <div className="grid md:grid-cols-4 gap-6 pt-8">
               <Card className="text-center p-6">
-                <div className="text-4xl font-bold text-primary mb-2">45+</div>
-                <p className="text-muted-foreground">Years Combined Experience</p>
+                <div className="text-4xl font-bold text-primary mb-2">2</div>
+                <p className="text-muted-foreground">Hands-On Founders</p>
+              </Card>
+              <Card className="text-center p-6">
+                <div className="text-4xl font-bold text-primary mb-2">3</div>
+                <p className="text-muted-foreground">Edge Layers Covered</p>
               </Card>
               <Card className="text-center p-6">
                 <div className="text-4xl font-bold text-primary mb-2">4</div>
                 <p className="text-muted-foreground">Core Industries Served</p>
               </Card>
               <Card className="text-center p-6">
-                <div className="text-4xl font-bold text-primary mb-2">2</div>
-                <p className="text-muted-foreground">Hands-On Founders</p>
+                <div className="text-4xl font-bold text-primary mb-2">5</div>
+                <p className="text-muted-foreground">Decades Combined Experience</p>
               </Card>
             </div>
           </div>
@@ -137,13 +115,13 @@ export default function AboutPage() {
 
               <Card className="p-8 space-y-4 border-2 hover:border-primary/50 transition-colors">
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Target className="h-6 w-6 text-primary" />
+                  <Zap className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold">Hands-On Implementation</h3>
+                <h3 className="text-xl font-bold">Architecture + Implementation</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  We build working systems, not just architecture documents. Every reference implementation,
-                  PoC, and integration pattern we deliver is validated with real hardware and real
-                  deployments.
+                  We combine strategic advisory with hands‑on delivery—providing architecture guidance backed 
+                  by working implementations, validated patterns, and production‑oriented reference designs 
+                  that accelerate your path to deployment.
                 </p>
               </Card>
 
@@ -151,11 +129,11 @@ export default function AboutPage() {
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
                   <CheckCircle2 className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold">Honest Technology Scoping</h3>
+                <h3 className="text-xl font-bold">Focused Engagement Scope</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  We focus on four core industries where our chip-to-edge expertise delivers maximum impact.
-                  When projects need capabilities beyond our core, we bring in trusted partners rather than
-                  overpromising.
+                  We focus on four core industries where our chip-to-cloud expertise delivers maximum impact.
+                  When projects require capabilities beyond our core, we engage trusted partners rather than
+                  diluting our focus.
                 </p>
               </Card>
 
@@ -174,71 +152,20 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* What We Build & Integrate */}
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto">
-          <div className="max-w-5xl mx-auto space-y-12">
-            <div className="text-center space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold">What We Build &amp; Integrate</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                As a solution builder, we deliver working systems—not just recommendations
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card className="p-6 space-y-4 text-center">
-                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
-                  <Cpu className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-bold">Reference Implementations</h3>
-                <p className="text-sm text-muted-foreground">
-                  Production-ready firmware, secure boot chains, and device-to-cloud connectivity validated
-                  on development hardware.
-                </p>
-              </Card>
-
-              <Card className="p-6 space-y-4 text-center">
-                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
-                  <Layers className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-bold">Multi-Vendor Integration</h3>
-                <p className="text-sm text-muted-foreground">
-                  Complete chip-to-edge stacks coordinating semiconductor vendors, connectivity providers,
-                  and cloud platforms.
-                </p>
-              </Card>
-
-              <Card className="p-6 space-y-4 text-center">
-                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
-                  <Shield className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-bold">Security Frameworks</h3>
-                <p className="text-sm text-muted-foreground">
-                  CRA and NIS2-aligned architectures with hardware-backed security, certificate management,
-                  and audit-ready documentation.
-                </p>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Founders Section - REDESIGNED */}
+      {/* Founders Section */}
       <section id="founders" className="py-20 md:py-32">
         <div className="container mx-auto">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold">Meet the Founders</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Leadership</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              45+ years combined experience in chip-to-edge systems—from embedded firmware to edge deployment
+              45+ years combined experience in chip-to-cloud systems—from embedded firmware to edge deployment
             </p>
           </div>
-
 
           <div className="max-w-6xl mx-auto space-y-16">
             {/* Riadh Berhouma */}
             <Card className="overflow-hidden border-2">
               <div className="grid md:grid-cols-[300px_1fr] gap-8">
-                {/* Profile Image & Contact */}
                 <div className="bg-gradient-to-br from-primary/5 to-transparent p-8 space-y-6">
                   <div className="w-48 h-48 mx-auto rounded-2xl overflow-hidden border-4 border-white shadow-xl">
                     <Image
@@ -252,7 +179,7 @@ export default function AboutPage() {
                   <div className="text-center space-y-2">
                     <h3 className="text-2xl font-bold">Riadh Berhouma</h3>
                     <p className="text-primary font-semibold">CEO & Co-Founder</p>
-                    <p className="text-sm text-muted-foreground">Embedded Systems Expert</p>
+                    <p className="text-sm text-muted-foreground">Embedded Systems Architect</p>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button variant="outline" size="sm" asChild className="w-full">
@@ -264,18 +191,15 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-
-                {/* Expertise Content */}
                 <div className="p-8 space-y-6">
                   <div>
                     <Badge variant="secondary" className="mb-4">20+ Years Experience</Badge>
                     <p className="text-muted-foreground leading-relaxed">
                       Two decades across semiconductors and automotive—specializing in connected devices, embedded 
-                      platforms, and IoT at scale. Product Owner with proven expertise in UWB localization, LTE/5G 
+                      platforms, and IoT at scale. Technical leader with proven expertise in UWB localization, LTE/5G 
                       connectivity, and certification to mass production for tier-1 manufacturers.
                     </p>
                   </div>
-
 
                   <div className="space-y-3">
                     <h4 className="font-semibold text-lg flex items-center gap-2">
@@ -313,11 +237,9 @@ export default function AboutPage() {
               </div>
             </Card>
 
-
             {/* Mazen Neifer */}
             <Card className="overflow-hidden border-2">
               <div className="grid md:grid-cols-[300px_1fr] gap-8">
-                {/* Profile Image & Contact */}
                 <div className="bg-gradient-to-br from-primary/5 to-transparent p-8 space-y-6">
                   <div className="w-48 h-48 mx-auto rounded-2xl overflow-hidden border-4 border-white shadow-xl">
                     <Image
@@ -331,7 +253,7 @@ export default function AboutPage() {
                   <div className="text-center space-y-2">
                     <h3 className="text-2xl font-bold">Mazen Neifer</h3>
                     <p className="text-primary font-semibold">CTO & Co-Founder</p>
-                    <p className="text-sm text-muted-foreground">Cloud Architecture Expert</p>
+                    <p className="text-sm text-muted-foreground">Cloud & Embedded Systems Architect</p>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button variant="outline" size="sm" asChild className="w-full">
@@ -343,18 +265,15 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-
-                {/* Expertise Content */}
                 <div className="p-8 space-y-6">
                   <div>
                     <Badge variant="secondary" className="mb-4">25+ Years Experience</Badge>
                     <p className="text-muted-foreground leading-relaxed">
-                      Quarter-century across cloud, real-time embedded, and telecom systems—specializing in resilient 
-                      IoT and edge platforms at scale. Technical Leader with expertise in microservices/Kubernetes, 
+                      Twenty-five years across cloud, real-time embedded, and telecom systems—specializing in resilient 
+                      IoT and edge platforms at scale. Technical leader with expertise in microservices/Kubernetes, 
                       AWS migrations, DSP/RTOS, and real-time edge systems.
                     </p>
                   </div>
-
 
                   <div className="space-y-3">
                     <h4 className="font-semibold text-lg flex items-center gap-2">
@@ -393,173 +312,118 @@ export default function AboutPage() {
             </Card>
           </div>
 
-
           {/* Combined Strength */}
           <div className="mt-16 max-w-4xl mx-auto">
             <Card className="p-8 text-center bg-gradient-to-br from-primary/5 to-transparent border-2">
-              <h3 className="text-2xl font-bold mb-4">The Complete Stack</h3>
+              <h3 className="text-2xl font-bold mb-4">Complementary Technical Expertise</h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Together, we cover the entire chip-to-edge journey—from embedded firmware and 
-                cellular connectivity through cloud architecture and data pipelines. This breadth eliminates 
-                the integration gaps that plague multi-vendor projects.
+                Our combined expertise spans the complete chip-to-cloud technology stack—from embedded firmware and 
+                cellular connectivity protocols through cloud-native architectures and distributed data pipelines. 
+                This integrated capability eliminates the architectural discontinuities that typically emerge in 
+                multi-vendor integration efforts.
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
                 <Badge variant="secondary" className="text-sm">Embedded Systems</Badge>
                 <Badge variant="secondary" className="text-sm">Cellular IoT</Badge>
                 <Badge variant="secondary" className="text-sm">Cloud Architecture</Badge>
-                <Badge variant="secondary" className="text-sm">Security</Badge>
-                <Badge variant="secondary" className="text-sm">CRA Compliance</Badge>
+                <Badge variant="secondary" className="text-sm">Security Frameworks</Badge>
+                <Badge variant="secondary" className="text-sm">Regulatory Compliance</Badge>
               </div>
             </Card>
           </div>
         </div>
       </section>
 
-
-      {/* Core Technology Stack - SIMPLIFIED, ONLY PROVEN */}
-      <section id="tech-stack" className="py-20 md:py-32 bg-muted/30">
+      {/* Our Story - MOVED DOWN */}
+      <section className="py-20 md:py-32 bg-muted/30">
         <div className="container mx-auto">
-          <div className="max-w-5xl mx-auto space-y-12">
+          <div className="max-w-4xl mx-auto space-y-12">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold">Core Technology Stack</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Technologies we've used in production—not aspirational lists
+              <h2 className="text-3xl md:text-4xl font-bold">Our Story</h2>
+              <p className="text-lg text-muted-foreground">
+                Why we founded Edge Pulsar
               </p>
             </div>
 
+            <div className="space-y-8 text-lg text-muted-foreground leading-relaxed">
+              <p>
+                Across semiconductors, automotive, and cloud infrastructure, we repeatedly saw the same pattern: 
+                individually robust components failing when integrated. Solutions presented as "cloud-ready" 
+                often required substantial rework once real security, connectivity, and operational constraints 
+                were taken into account.
+              </p>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* Embedded Systems */}
-              <Card className="p-6 space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Cpu className="h-5 w-5 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold">Embedded Systems</h3>
-                </div>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+              <p>
+                The core problem was not technology, but an{" "}
+                <strong className="text-foreground">expertise gap between silicon, edge, and cloud domains</strong>.
+                Chip vendors focus on silicon and low-level software; cloud teams focus on platforms and data. 
+                Very few teams can credibly own the full stack end to end. That gap leads directly to cost overruns, 
+                repeated architecture revisions, and elevated integration risk.
+              </p>
+
+              {/* Problem Cost Callout */}
+              <div className="bg-rose-50 border-l-4 border-l-rose-500 p-6 rounded-lg">
+                <h4 className="font-bold text-lg mb-3 flex items-center gap-2 text-foreground">
+                  <AlertCircle className="h-5 w-5" />
+                  Typical Cost Drivers We Eliminate
+                </h4>
+                <ul className="space-y-3 text-base">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                    <span>NXP i.MX RT series (secure boot, hardware root-of-trust)</span>
+                    <CheckCircle2 className="h-5 w-5 text-rose-500 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <span className="font-semibold text-foreground">Extended evaluation cycles</span> on MCU and 
+                      silicon selection, instead of starting from pre-validated architectures.
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                    <span>ARM Cortex-M/A architectures</span>
+                    <CheckCircle2 className="h-5 w-5 text-rose-500 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <span className="font-semibold text-foreground">Underused hardware acceleration</span> where 
+                      generic gateway designs fail to leverage available NPU/GPU capabilities.
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                    <span>RTOS (FreeRTOS, Zephyr)</span>
+                    <CheckCircle2 className="h-5 w-5 text-rose-500 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <span className="font-semibold text-foreground">Custom one-off integrations</span> that extend 
+                      timelines, instead of reusing proven chip-to-cloud patterns.
+                    </span>
                   </li>
                 </ul>
-              </Card>
+              </div>
 
-
-              {/* Connectivity */}
-              <Card className="p-6 space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Wifi className="h-5 w-5 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold">Connectivity</h3>
-                </div>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Cellular IoT (LTE-M, NB-IoT, 4G/5G)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                    <span>UWB positioning systems</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                    <span>BLE, Wi-Fi, LoRaWAN</span>
-                  </li>
-                </ul>
-              </Card>
-
-
-              {/* Cloud & Data */}
-              <Card className="p-6 space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Cloud className="h-5 w-5 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold">Cloud & Data</h3>
-                </div>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                    <span>AWS IoT Core, Kinesis, Lambda</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                    <span>OVHcloud (EU data residency)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Time-series databases for telemetry</span>
-                  </li>
-                </ul>
-              </Card>
-
-
-              {/* Industrial Integration */}
-              <Card className="p-6 space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Shield className="h-5 w-5 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold">Industrial Integration</h3>
-                </div>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                    <span>OT-to-cloud data pipelines</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                    <span>MQTT, COAP</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Real-time data ingestion</span>
-                  </li>
-                </ul>
-              </Card>
+              <p>
+                We founded Edge Pulsar as a technical advisory and solution delivery firm focused on closing this 
+                end‑to‑end gap. We help device makers and industrial enterprises accelerate their chip‑to‑edge 
+                initiatives by aligning silicon choices, embedded software, connectivity, security, and cloud 
+                integration into coherent, production‑oriented architectures.
+              </p>
             </div>
-
-
           </div>
         </div>
       </section>
 
-
-      {/* Location & CTA */}
+      {/* CTA */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 to-background relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
         <div className="container mx-auto relative">
           <div className="max-w-3xl mx-auto text-center space-y-8">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <MapPin className="h-6 w-6 text-primary" />
-              <Badge variant="secondary">Headquartered in France</Badge>
-            </div>
             <h2 className="text-3xl md:text-4xl font-bold">
-              Ready to Work with Proven Chip-to-Edge Expertise?
+              Accelerate Delivery with Pre‑Validated Architectures
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Let's discuss your chip-to-edge challenges and how our hands-on, expert-led approach 
-              can accelerate your project.
+              Reduce integration timelines and risk by deploying chip‑to‑cloud systems based on production‑oriented 
+              architectures validated on real hardware.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button asChild size="lg" className="text-lg px-8">
                 <Link href="/contact">
-                  Schedule Discovery Call
+                  Schedule Technical Discussion
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8">
-                <Link href="/services">Explore Our Services</Link>
+                <Link href="/services">Explore Technical Services</Link>
               </Button>
             </div>
           </div>

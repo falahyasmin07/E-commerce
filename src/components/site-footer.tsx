@@ -57,8 +57,8 @@ export function SiteFooter() {
               <li><Link href="/terms" className="hover:text-teal-600 transition-colors">Terms of Service</Link></li>
             </ul>
             
-            <div className="flex gap-4 mt-6">
-              <a href="https://www.linkedin.com/company/edge-pulsar" className="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center hover:bg-teal-500 hover:text-white transition-all">
+            <div className="flex gap-4 mt-2">
+              <a href="https://www.linkedin.com/company/edge-pulsar" className="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all">
                 <Linkedin className="w-4 h-4" />
               </a>
               {/*<a href="#" className="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center hover:bg-teal-500 hover:text-white transition-all">
