@@ -37,8 +37,8 @@ export default function MethodologyPage() {
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <Badge variant="outline" className="mb-6 border-slate-300 text-slate-600 bg-slate-50 px-4 py-1 text-sm uppercase tracking-widest">Our Process</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-8">
-            Engineering Certainty <br/>
-            <span className="text-slate-500">in an Uncertain World</span>
+            Engineering That Ships <br/>
+            <span className="text-slate-500">Built on Proven Patterns</span>
           </h1>
           <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-12">
              Edge projects often fail due to integration complexity. We bridge the gap between prototype and production with a rigorous, governance-first framework.
