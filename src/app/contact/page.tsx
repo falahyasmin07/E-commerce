@@ -4,7 +4,7 @@ import type React from "react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Badge, HeroBadge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
@@ -64,7 +64,9 @@ export default function ContactPage() {
       <section className="py-14 md:py-18 bg-gradient-to-br from-primary/5 via-background to-background">
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center space-y-5">
-            <Badge variant="secondary">Contact Us</Badge>
+						<HeroBadge variant="secondary">
+							Contact Us
+						</HeroBadge>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
               Ready to Accelerate Your
               <span className="block text-primary mt-2">Chip-to-Edge Journey?</span>

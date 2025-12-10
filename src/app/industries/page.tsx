@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
+import { Badge, HeroBadge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 import { ArrowRight, Cpu, Factory, Car, CheckCircle2, Users, Layers, Zap, Shield, Lightbulb } from "lucide-react"
@@ -14,7 +14,9 @@ export default function IndustriesPage() {
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
         <div className="container mx-auto relative">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <Badge variant="secondary" className="mb-4">Industries We Serve</Badge>
+						<HeroBadge>
+							Industries We Serve
+						</HeroBadge>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               Deep Chip-to-Edge Expertise
               <span className="block text-primary mt-2">Where It Matters Most</span>

@@ -39,7 +39,7 @@ ${${MODULE}_OUTPUT}/%:${DIR}/%
 
 serve:DIR:=${DIR}
 serve:
-	cd ${DIR}/dist && npm run dev
+	cd ${DIR} && npm run dev
 
 ${MODULE}_sync:${${MODULE}_OUTPUT}
 ifneq (${TARGET},)

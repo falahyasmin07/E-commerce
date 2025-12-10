@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
+import { Badge, HeroBadge } from "@/components/ui/badge"
 import { ArrowRight, FileText, BookOpen, Video, Download, ExternalLink, Calendar, ShieldCheck, GitBranch, BarChart3 } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
@@ -31,7 +31,9 @@ export default function ResourcesPage() {
             <div className="relative p-8 md:p-12">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
-                  <Badge className="bg-cra-accent/10 text-cra-accent border-cra-accent/20">Featured Guide</Badge>
+									<HeroBadge className="bg-cra-accent/10 text-cra-accent border-cra-accent/20">
+										Featured Guide
+									</HeroBadge>
                   <h2 className="text-3xl md:text-4xl font-bold text-balance">
                     The Complete Guide to EU Cyber Resilience Act Compliance
                   </h2>

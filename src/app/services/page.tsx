@@ -30,7 +30,7 @@ import {
   Lightbulb
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Badge, HeroBadge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import FourPillarsCarousel from "@/components/four-pillars-carousel";
@@ -198,7 +198,9 @@ export default function ServicesPage() {
       {/* HERO */}
       <section className="relative pt-24 pb-20 lg:pt-32 lg:pb-24 overflow-hidden border-b border-slate-200 bg-white">
         <div className="container relative z-10 mx-auto px-4 text-center max-w-4xl">
-          <Badge variant="outline" className="mb-6 border-slate-300 text-slate-600 bg-slate-50 px-4 py-1 text-sm shadow-sm">Services & Capabilities</Badge>
+					<HeroBadge>
+						Services & Capabilities
+					</HeroBadge>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6">
             Chip-to-Edge <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-sky-600 to-indigo-600">Technical Advisor & Builder</span>

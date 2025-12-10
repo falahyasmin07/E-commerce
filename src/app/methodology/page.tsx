@@ -20,7 +20,7 @@ import {
   Cloud
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Badge, HeroBadge } from "@/components/ui/badge";
 import {
   Accordion,
   AccordionContent,
@@ -35,7 +35,9 @@ export default function MethodologyPage() {
       {/* HERO */}
       <section className="relative pt-32 pb-24 bg-white border-b border-slate-200">
         <div className="container mx-auto px-4 text-center max-w-4xl">
-          <Badge variant="outline" className="mb-6 border-slate-300 text-slate-600 bg-slate-50 px-4 py-1 text-sm uppercase tracking-widest">Our Process</Badge>
+					<HeroBadge>
+						Our Process
+					</HeroBadge>
           <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-8">
             Engineering That Ships <br/>
             <span className="text-slate-500">Built on Proven Patterns</span>

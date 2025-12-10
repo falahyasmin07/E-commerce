@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
+import { Badge, HeroBadge } from "@/components/ui/badge";
 import Image from "next/image"
 import {
   ArrowRight,
@@ -72,15 +72,9 @@ export default function HomePage() {
         {/* 5. Main Content */}
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
-            
-          {/* Badge - Much larger */}
-          <div className="inline-flex items-center gap-3 rounded-full border border-blue-400/20 bg-blue-500/10 px-8 py-3 text-xl font-medium text-blue-200 backdrop-blur-md mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <span className="relative flex h-3.5 w-3.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-cyan-500"></span>
-            </span>
-            Technical Advisor & Builder
-          </div>
+						<HeroBadge className="bg-blue-500/10 text-blue-200">
+							Technical Advisor & Builder
+						</HeroBadge>
 
 
             {/* Headline */}

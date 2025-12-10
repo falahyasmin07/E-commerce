@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Badge, HeroBadge } from "@/components/ui/badge";
 import Image from "next/image";
 import {
   ArrowRight,
@@ -30,9 +30,9 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
         <div className="container mx-auto relative">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <Badge variant="secondary" className="mb-4">
-              About Edge Pulsar
-            </Badge>
+						<HeroBadge>
+							About Edge Pulsar
+						</HeroBadge>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               Chip-to-Edge Expertise
               <span className="block text-primary mt-2">Technical Advisory & Implementation</span>
