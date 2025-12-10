@@ -362,28 +362,28 @@ export default function AboutPage() {
               </p>
 
               {/* Problem Cost Callout */}
-              <div className="bg-rose-50 border-l-4 border-l-rose-500 p-6 rounded-lg">
+              <div className="bg-primary/5 border-l-4 border-l-primary p-6 rounded-lg">
                 <h4 className="font-bold text-lg mb-3 flex items-center gap-2 text-foreground">
-                  <AlertCircle className="h-5 w-5" />
+                  <AlertCircle className="h-5 w-5 text-primary" />
                   Typical Cost Drivers We Eliminate
                 </h4>
                 <ul className="space-y-3 text-base">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-rose-500 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>
                       <span className="font-semibold text-foreground">Extended evaluation cycles</span> on MCU and 
                       silicon selection, instead of starting from pre-validated architectures.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-rose-500 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>
                       <span className="font-semibold text-foreground">Underused hardware acceleration</span> where 
                       generic gateway designs fail to leverage available NPU/GPU capabilities.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-rose-500 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>
                       <span className="font-semibold text-foreground">Custom one-off integrations</span> that extend 
                       timelines, instead of reusing proven chip-to-cloud patterns.

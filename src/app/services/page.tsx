@@ -244,7 +244,7 @@ export default function ServicesPage() {
         <FeatureSection 
           id="iot-core" 
           title="IoT Core" 
-          tag="Silicon-to-Device" 
+          tag="Embedded Systems" 
           tagColor="teal" 
           category="Device Edge"
           description="Accelerate device launches with validated chip-to-cloud patterns. Pre-qualified silicon choices, production-ready BSP kits, and secure boot frameworks—eliminate trial-and-error and ship faster."
@@ -262,7 +262,7 @@ export default function ServicesPage() {
         <FeatureSection 
           id="near-edge" 
           title="Near Edge" 
-          tag="Industrial" 
+          tag="Edge Computing" 
           tagColor="sky" 
           category="Local Edge"
           description="Silicon-optimized edge platforms that extract full NPU/GPU potential. Run real-time AI (30fps object detection) on industrial gateways while bridging MQTT, OPC-UA, and Modbus—IEC 62443 and NIS2 compliant from day one."
@@ -281,9 +281,9 @@ export default function ServicesPage() {
         <FeatureSection 
           id="far-edge" 
           title="Far Edge" 
-          tag="Chip-to-Cloud" 
+          tag="Cloud Integration" 
           tagColor="indigo" 
-          category="Ecosystem"
+          category="Cloud Edge"
           description="Connect silicon to cloud with pre-validated reference architectures. AWS IoT Core and OVHcloud integrations ready to deploy—no custom middleware, no protocol guessing, no vendor finger-pointing."
           imageSrc="/cloud-integration.png" 
           icon={Cloud}

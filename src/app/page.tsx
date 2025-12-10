@@ -226,7 +226,7 @@ export default function HomePage() {
                   className="object-cover"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/80 via-blue-500/75 to-blue-600/80" />
+                <div className="absolute inset-0 bg-gradient-to-br from-teal-500/80 via-teal-600/75 to-cyan-600/80" />
                 <div className="relative h-full flex items-center justify-center z-10">
                   <div className="flex items-center gap-3">
                     <div className="flex flex-col items-center">
@@ -235,7 +235,7 @@ export default function HomePage() {
                     </div>
                     <ArrowRight className="w-8 h-8 text-white/80 drop-shadow-lg" />
                     <div className="flex flex-col items-center">
-                      <Wifi className="w-12 h-12 text-cyan-50 drop-shadow-lg" />
+                      <Wifi className="w-12 h-12 text-white drop-shadow-lg" />
                       <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Device</span>
                     </div>
                   </div>
@@ -244,7 +244,7 @@ export default function HomePage() {
 
               <div className="p-6 flex flex-col flex-grow">
                 <div className="mb-3">
-                  <span className="inline-block bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="inline-block bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-sm font-semibold">
                     Device Edge / IoT Makers
                   </span>
                 </div>
@@ -259,38 +259,37 @@ export default function HomePage() {
 
                 <div className="mb-4 text-gray-700 text-sm space-y-2">
                   <div className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-teal-600 mr-2 flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Microcontroller & SoC design:</strong> ARM Cortex-M, RISC-V, ultra-low-power platforms
                     </span>
                   </div>
                   <div className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-teal-600 mr-2 flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Real-time edge processing:</strong> On-device ML inference, sensor fusion
                     </span>
                   </div>
                   <div className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-teal-600 mr-2 flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Secure boot & connectivity:</strong> LoRa, BLE, Zigbee, cellular IoT (NB-IoT, LTE-M)
                     </span>
                   </div>
                   <div className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-teal-600 mr-2 flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>CRA compliance:</strong> Security by design for IoT devices
                     </span>
                   </div>
                 </div>
 
-                <Link href="/services#iot-core" className="inline-flex items-center text-cyan-600 text-sm font-semibold hover:text-cyan-700 mt-auto group">
+                <Link href="/services#iot-core" className="inline-flex items-center text-teal-600 text-sm font-semibold hover:text-teal-700 mt-auto group">
                   Explore IoT Core Services
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
-
 
             {/* Offer 2: Near Edge */}
             <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
@@ -303,7 +302,7 @@ export default function HomePage() {
                   className="object-cover"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/80 via-purple-500/75 to-indigo-600/80" />
+                <div className="absolute inset-0 bg-gradient-to-br from-sky-400/80 via-sky-500/75 to-blue-500/80" />
                 <div className="relative h-full flex items-center justify-center z-10">
                   <div className="flex items-center gap-3">
                     <div className="flex flex-col items-center">
@@ -312,7 +311,7 @@ export default function HomePage() {
                     </div>
                     <ArrowRight className="w-8 h-8 text-white/80 drop-shadow-lg" />
                     <div className="flex flex-col items-center">
-                      <Zap className="w-14 h-14 text-indigo-50 drop-shadow-lg animate-pulse" />
+                      <Zap className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
                       <span className="text-xs text-white/90 mt-1 font-semibold drop-shadow">Compute</span>
                     </div>
                   </div>
@@ -321,7 +320,7 @@ export default function HomePage() {
 
               <div className="p-6 flex flex-col flex-grow">
                 <div className="mb-3">
-                  <span className="inline-block bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="inline-block bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-semibold">
                     On-Premise / Local Edge
                   </span>
                 </div>
@@ -336,39 +335,39 @@ export default function HomePage() {
 
                 <div className="mb-4 text-gray-700 text-sm space-y-2">
                   <div className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-sky-600 mr-2 flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Edge gateway architecture:</strong> Multi-protocol aggregation (MQTT, OPC-UA, Modbus)
                     </span>
                   </div>
                   <div className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-sky-600 mr-2 flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Local AI inference:</strong> GPU/NPU selection, model optimization, edge ML pipelines
                     </span>
                   </div>
                   <div className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-sky-600 mr-2 flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Ruggedized platforms:</strong> Industrial-grade edge servers, fanless systems
                     </span>
                   </div>
                   <div className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-sky-600 mr-2 flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>IEC 62443 & NIS2:</strong> Chip-level security hardening, secure enclaves
                     </span>
                   </div>
                 </div>
 
-                <Link href="/services#near-edge" className="inline-flex items-center text-indigo-600 text-sm font-semibold hover:text-indigo-700 mt-auto group">
+                <Link href="/services#near-edge" className="inline-flex items-center text-sky-600 text-sm font-semibold hover:text-sky-700 mt-auto group">
                   Explore Near Edge Services
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
 
-          {/* Offer 3: Far Edge - Chip-to-Cloud Integration */}
+            {/* Offer 3: Far Edge - Chip-to-Cloud Integration */}
             <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
               
               <div className="relative h-40 overflow-hidden">
@@ -379,7 +378,7 @@ export default function HomePage() {
                   className="object-cover"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/80 via-pink-500/75 to-purple-600/80" />
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/80 via-blue-700/75 to-blue-800/80" />
                 <div className="relative h-full flex items-center justify-center z-10">
                   <div className="flex items-center gap-3">
                     <div className="flex flex-col items-center">
@@ -397,7 +396,7 @@ export default function HomePage() {
 
               <div className="p-6 flex flex-col flex-grow">
                 <div className="mb-3">
-                  <span className="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">
                     Chip-to-Cloud Integration
                   </span>
                 </div>
@@ -406,39 +405,38 @@ export default function HomePage() {
                   Far Edge
                 </h3>
 
-
                 <p className="text-gray-700 text-sm mb-4 flex-grow">
                   Connect silicon to cloud with pre-validated reference architectures. AWS IoT Core and OVHcloud integrations ready to deploy—no custom middleware.
                 </p>
 
                 <div className="mb-4 text-gray-700 text-sm space-y-2">
                   <div className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Reference architectures:</strong> Chip-optimized patterns validated from silicon to cloud
                     </span>
                   </div>
                   <div className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Pre-integrated cloud connectors:</strong> AWS IoT Core, OVHcloud—ready to deploy
                     </span>
                   </div>
                   <div className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Secure device onboarding:</strong> Zero-trust patterns with TPM, secure enclaves
                     </span>
                   </div>
                   <div className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>OTA foundations:</strong> Firmware update frameworks built in, not bolted on
                     </span>
                   </div>
                 </div>
 
-                <Link href="/services#far-edge" className="inline-flex items-center text-purple-600 text-sm font-semibold hover:text-purple-700 mt-auto group">
+                <Link href="/services#far-edge" className="inline-flex items-center text-blue-600 text-sm font-semibold hover:text-blue-700 mt-auto group">
                   Explore Far Edge Services
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
@@ -625,8 +623,8 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div className="bg-white p-8 rounded-xl shadow-sm text-center hover:shadow-md transition-shadow duration-200">
                 <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 flex items-center justify-center bg-[#7C3AED]/10 rounded-full group-hover:scale-115 transition-transform duration-200 ease-in-out">
-                    <Lightbulb className="w-8 h-8 text-[#7C3AED] stroke-[2px]" />
+                  <div className="w-16 h-16 flex items-center justify-center bg-teal-600/10 rounded-full group-hover:scale-115 transition-transform duration-200 ease-in-out">
+                    <Lightbulb className="w-8 h-8 text-teal-600 stroke-[2px]" />
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Strategic Advisory First</h3>
@@ -638,8 +636,8 @@ export default function HomePage() {
 
               <div className="bg-white p-8 rounded-xl shadow-sm text-center hover:shadow-md transition-shadow duration-200">
                 <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 flex items-center justify-center bg-[#7C3AED]/10 rounded-full group-hover:scale-115 transition-transform duration-200 ease-in-out">
-                    <Cpu className="w-8 h-8 text-[#7C3AED] stroke-[2px]" />
+                  <div className="w-16 h-16 flex items-center justify-center bg-sky-600/10 rounded-full group-hover:scale-115 transition-transform duration-200 ease-in-out">
+                    <Cpu className="w-8 h-8 text-sky-600 stroke-[2px]" />
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Expert Implementation</h3>
@@ -651,8 +649,8 @@ export default function HomePage() {
 
               <div className="bg-white p-8 rounded-xl shadow-sm text-center hover:shadow-md transition-shadow duration-200">
                 <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 flex items-center justify-center bg-[#7C3AED]/10 rounded-full group-hover:scale-115 transition-transform duration-200 ease-in-out">
-                    <TrendingUp className="w-8 h-8 text-[#7C3AED] stroke-[2px]" />
+                  <div className="w-16 h-16 flex items-center justify-center bg-blue-600/10 rounded-full group-hover:scale-115 transition-transform duration-200 ease-in-out">
+                    <TrendingUp className="w-8 h-8 text-blue-600 stroke-[2px]" />
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Continuous Guidance</h3>
@@ -667,7 +665,7 @@ export default function HomePage() {
             <div className="text-center pt-8">
               <Link 
                 href="/methodology" 
-                className="inline-flex items-center text-[#7C3AED] font-semibold hover:text-[#6D28D9] transition-colors group"
+                className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group"
               >
                 Learn About Our Four Pillars Methodology
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -712,8 +710,8 @@ export default function HomePage() {
 
               <div className="bg-white p-8 rounded-xl shadow-sm text-center hover:shadow-lg hover:scale-[1.02] transition-all duration-250 ease-in-out">
                 <div className="flex justify-center mb-6">
-                  <div className="w-14 h-14 flex items-center justify-center bg-[#7C3AED]/10 rounded-lg">
-                    <Layers className="w-8 h-8 text-[#7C3AED] stroke-[2px]" />
+                  <div className="w-14 h-14 flex items-center justify-center bg-blue-600/10 rounded-lg">
+                    <Layers className="w-8 h-8 text-blue-600 stroke-[2px]" />
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Production-Ready Deliverables</h3>
