@@ -303,10 +303,9 @@ export default function IndustriesPage() {
                       Deep Industry Experience
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Our team's combined <strong>45+ years in automotive IoT</strong> (Valeo, Sequans), 
-                      <strong> embedded systems, cloud architecture</strong> (NXP, Nestwave), and telecom 
-                      directly map to these four industries—
-                      <span className="text-innovate font-medium">enabling immediate impact without learning curves</span>.
+                      <strong>5 decades of leadership</strong> across automotive IoT (Valeo, Sequans), 
+                      embedded systems, and cloud architecture (NXP, Nestwave) — directly translating into 
+                      <span className="text-innovate font-medium"> immediate impact without learning curves</span>.
                     </p>
                   </div>
                 </div>

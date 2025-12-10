@@ -324,187 +324,200 @@ export default function ServicesPage() {
 
 
       {/* TECH CAPABILITIES (Bento Grid) */}
-<section id="technical-capabilities" className="py-24 bg-slate-50 border-t border-slate-200">
-  <div className="container mx-auto px-4 max-w-7xl">
-    <div className="mb-16 md:text-center max-w-3xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Production-Grade Tech Stack</h2>
-      <p className="text-lg text-slate-600 leading-relaxed">Production-proven technologies across every edge layer—validated with chip vendors in real deployments.</p>
-    </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-      {/* Row 1: Embedded Platforms, Wireless, Cellular */}
-      <TechCard 
-        title="Embedded Platforms" 
-        icon={Cpu} 
-        color="teal" 
-        description="Silicon foundations for IoT, edge AI, and industrial applications." 
-        stack={[
-          "ARM Cortex-M/A",
-          "RISC-V",
-          "Low-Power SoCs",
-          "Edge AI Accelerators",
-          "DSP"
-        ]} 
-      />
-      
-      <TechCard 
-        title="Wireless Connectivity" 
-        icon={Wifi} 
-        color="sky" 
-        description="Short-range and mesh protocols for local device communication." 
-        stack={[
-          "Wi-Fi",
-          "Bluetooth LE",
-          "UWB",
-          "Matter / Thread",
-          "Zigbee"
-        ]} 
-      />
-      
-      <TechCard 
-        title="Cellular IoT" 
-        icon={Layers} 
-        color="indigo" 
-        description="Global wide-area connectivity with carrier pre-certification." 
-        stack={[
-          "LTE-M / NB-IoT",
-          "5G RedCap",
-          "LoRaWAN",
-          "eSIM / iSIM"
-        ]} 
-      />
-      
-      {/* Row 2: Signal Processing, Security, Edge AI */}
-      <TechCard 
-        title="Signal Processing" 
-        icon={Activity} 
-        color="violet" 
-        description="Real-time DSP algorithms for audio, sensor fusion, and communications." 
-        stack={[
-          "DSP Algorithms",
-          "Audio Processing",
-          "Sensor Fusion",
-          "Fixed/Floating Point",
-          "CMSIS-DSP"
-        ]} 
-      />
-      
-      <TechCard 
-        title="Security & Compliance" 
-        icon={ShieldCheck} 
-        color="rose" 
-        description="Zero-trust architecture with hardware-backed security and regulatory compliance." 
-        stack={[
-          "Secure Boot",
-          "TLS",
-          "Hardware RoT/TPM 2.0",
-          "CRA Compliance",
-          "NIS2 Framework",
-          "IEC 62443"
-        ]} 
-      />
-      
-      <TechCard 
-        title="Edge AI & Data" 
-        icon={Database} 
-        color="emerald" 
-        description="Real-time inference and time-series processing at the edge to reduce cloud costs." 
-        stack={[
-          "Edge Impulse",
-          "DeepStream (NVIDIA)",
-          "TimescaleDB",
-          "GStreamer",
-          "ONNX"
-        ]} 
-      />
-      
-      {/* Row 3: Near Edge (left half) and Far Edge (right half) */}
-      <div className="md:col-span-1 lg:col-span-3 xl:col-span-3">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <section id="technical-capabilities" className="py-24 bg-slate-50 border-t border-slate-200">
+      <div className="container mx-auto px-4 max-w-7xl">
+        <div className="mb-16 md:text-center max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Production-Grade Tech Stack</h2>
+          <p className="text-lg text-slate-600 leading-relaxed">Production-proven technologies across every edge layer.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           
-          {/* Near Edge Stack */}
-          <div className="bg-white rounded-xl p-6 border-t-4 border-purple-500 border-x border-b border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col group focus:outline-none">
-            <div className="flex items-start gap-4 mb-4">
-              <div className="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                <Server className="w-6 h-6" />
-              </div>
-              <div className="flex-grow">
-                <h3 className="text-lg font-bold text-slate-900 mb-2">Near Edge Stack</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  Gateway, Performance, AI, Connectivity. Hardware-accelerated edge platforms for industrial sites.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-50">
-              {[
-                "Yocto/Buildroot",
-                "NXP i.MX/Jetson",
-                "Docker/K3s",
-                "TensorFlow Lite",
-                "ONNX Runtime",
-                "OPC-UA/Modbus",
-                "MQTT/CoAP",
-                "Mender.io OTA"
-              ].map(t => (
-                <Badge key={t} variant="secondary" className="bg-white border border-slate-200 text-slate-600 hover:border-purple-200 hover:bg-purple-50 font-medium px-2.5 py-1 text-xs">
-                  {t}
-                </Badge>
-              ))}
-            </div>
-          </div>
+          {/* Row 1: Embedded Platforms, Wireless, Cellular */}
+          <TechCard 
+            title="Embedded Platforms" 
+            icon={Cpu} 
+            color="teal" 
+            description="Silicon foundations for IoT, edge AI, and industrial applications." 
+            stack={[
+              "ARM Cortex-M/A",
+              "RISC-V",
+              "Tensilica",
+              "Low-Power SoCs",
+              "Edge AI Accelerators",
+              "DSP"
+            ]} 
+          />
           
-          {/* Far Edge Stack */}
-          <div className="bg-white rounded-xl p-6 border-t-4 border-indigo-500 border-x border-b border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col group focus:outline-none">
-            <div className="flex items-start gap-4 mb-4">
-              <div className="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                <Cloud className="w-6 h-6" />
+          <TechCard 
+            title="Wireless Connectivity" 
+            icon={Wifi} 
+            color="sky" 
+            description="Short-range and mesh protocols for local device communication." 
+            stack={[
+              "Wi-Fi",
+              "Bluetooth",
+              "BLE",
+              "UWB",
+              "Matter / Thread",
+              "Zigbee"
+            ]} 
+          />
+          
+          <TechCard 
+            title="Cellular IoT" 
+            icon={Layers} 
+            color="indigo" 
+            description="Global wide-area connectivity with carrier pre-certification." 
+            stack={[
+              "LTE-M / NB-IoT",
+              "5G RedCap",
+              "LoRaWAN",
+              "eSIM / iSIM"
+            ]} 
+          />
+          
+          {/* Row 2: Signal Processing, Security, Edge AI */}
+          <TechCard 
+            title="Signal Processing" 
+            icon={Activity} 
+            color="violet" 
+            description="Real-time DSP algorithms for audio, sensor fusion, and communications." 
+            stack={[
+              "Algorithms",
+              "Audio Processing",
+              "Sensor Fusion",
+              "Fixed/Floating Point",
+              "CMSIS-DSP"
+            ]} 
+          />
+          
+          <TechCard 
+            title="Security & Compliance" 
+            icon={ShieldCheck} 
+            color="rose" 
+            description="Zero-trust architecture with hardware-backed security and regulatory compliance." 
+            stack={[
+              "Secure Boot",
+              "TLS",
+              "Hardware RoT/TPM 2.0",
+              "CRA Compliance",
+              "NIS2 Framework",
+              "IEC 62443"
+            ]} 
+          />
+          
+          <TechCard 
+            title="Edge AI & Data" 
+            icon={Database} 
+            color="emerald" 
+            description="Real-time inference and time-series processing at the edge to reduce cloud costs." 
+            stack={[
+              "Edge Impulse",
+              "TensorFlow",
+              "PyTorch",
+              "NumPy / Pandas",
+              "ONNX"
+            ]} 
+          />
+          
+          {/* Row 3: Near Edge (left half) and Far Edge (right half) */}
+          <div className="md:col-span-1 lg:col-span-3 xl:col-span-3">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              
+              {/* Near Edge Stack */}
+              <div className="bg-white rounded-xl p-6 border-t-4 border-purple-500 border-x border-b border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col group focus:outline-none">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                    <Server className="w-6 h-6" />
+                  </div>
+                  <div className="flex-grow">
+                    <h3 className="text-lg font-bold text-slate-900 mb-2">Near Edge Stack</h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">
+                      Gateway, Performance, AI, Connectivity. Hardware-accelerated edge platforms for industrial sites.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-50">
+                  {[
+                    "Yocto/Buildroot",
+                    "NXP i.MX/Jetson",
+                    "Docker/K3s",
+                    "TensorFlow Lite",
+                    "ONNX Runtime",
+                    "OPC-UA/Modbus",
+                    "MQTT/CoAP",
+                    "Mender.io OTA",
+                  ].map(t => (
+                    <Badge key={t} variant="secondary" className="bg-white border border-slate-200 text-slate-600 hover:border-purple-200 hover:bg-purple-50 font-medium px-2.5 py-1 text-xs">
+                      {t}
+                    </Badge>
+                  ))}
+                </div>
               </div>
-              <div className="flex-grow">
-                <h3 className="text-lg font-bold text-slate-900 mb-2">Far Edge Stack</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  Platform, Scale, Data Management. Cloud-native infrastructure for connected ecosystems.
-                </p>
+              
+              {/* Far Edge Stack */}
+              <div className="bg-white rounded-xl p-6 border-t-4 border-indigo-500 border-x border-b border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col group focus:outline-none">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                    <Cloud className="w-6 h-6" />
+                  </div>
+                  <div className="flex-grow">
+                    <h3 className="text-lg font-bold text-slate-900 mb-2">Far Edge Stack</h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">
+                      Platform, Scale, Data Management. Cloud-native infrastructure for connected ecosystems.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-50">
+                  {[
+                    "AWS IoT Core",
+                    "OVHcloud",
+                    "Terraform/Helm",
+                    "Kafka/RabbitMQ",
+                    "InfluxDB/Grafana",
+                    "HAProxy",
+                    "Thingsboard",
+                    "Python",
+                    "C/C++",
+                    "LwM2M/gRPC"
+                  ].map(t => (
+                    <Badge key={t} variant="secondary" className="bg-white border border-slate-200 text-slate-600 hover:border-indigo-200 hover:bg-indigo-50 font-medium px-2.5 py-1 text-xs">
+                      {t}
+                    </Badge>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-50">
-              {[
-                "AWS IoT Core",
-                "OVHcloud",
-                "Terraform/Helm",
-                "Kafka/RabbitMQ",
-                "InfluxDB/Grafana",
-                "Python/Go",
-                "LwM2M/gRPC"
-              ].map(t => (
-                <Badge key={t} variant="secondary" className="bg-white border border-slate-200 text-slate-600 hover:border-indigo-200 hover:bg-indigo-50 font-medium px-2.5 py-1 text-xs">
-                  {t}
-                </Badge>
-              ))}
+              
             </div>
           </div>
           
         </div>
       </div>
-      
-    </div>
-  </div>
-</section>
+    </section>
 
 
 
-      {/* METHODOLOGY TEASER */}
-      <section className="py-20 bg-slate-900 text-white overflow-hidden relative">
-        <div className="absolute inset-0 opacity-10 bg-[url('/grid-pattern.svg')] bg-center" />
-        <div className="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
-          <div className="max-w-2xl">
-             <h2 className="text-3xl font-bold mb-4">Not just what we build, but <span className="text-teal-400">how we build it</span>.</h2>
-             <p className="text-slate-300 text-lg leading-relaxed">Our Four Pillars Framework ensures that every line of code contributes to a secure, scalable, and business-aligned outcome. No black boxes, just engineering certainty.</p>
-          </div>
-          <Button size="lg" className="bg-teal-500 text-white hover:bg-teal-400 h-14 px-8 text-lg rounded-full shadow-[0_0_20px_rgba(20,184,166,0.3)] shrink-0" asChild>
-             <Link href="/methodology" className="flex items-center gap-2">Explore Our Methodology <ArrowRight className="w-5 h-5"/></Link>
-          </Button>
+
+    {/* METHODOLOGY TEASER */}
+    <section className="py-20 bg-slate-900 text-white overflow-hidden relative">
+      <div className="absolute inset-0 opacity-10 bg-[url('/grid-pattern.svg')] bg-center" />
+      <div className="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="max-w-2xl">
+          <h2 className="text-3xl font-bold mb-4">
+            <span className="text-teal-400 whitespace-nowrap">How we build</span> matters as much as what we deliver.
+          </h2>
+          <p className="text-slate-300 text-lg leading-relaxed">
+            Our Four Pillars Framework delivers secure, scalable solutions with engineering 
+            discipline at every layer.
+          </p>
         </div>
-      </section>
+        <Button size="lg" className="bg-teal-500 text-white hover:bg-teal-400 h-14 px-8 text-lg rounded-full shadow-[0_0_20px_rgba(20,184,166,0.3)] shrink-0" asChild>
+          <Link href="/methodology" className="flex items-center gap-2">
+            Explore Our Methodology <ArrowRight className="w-5 h-5"/>
+          </Link>
+        </Button>
+      </div>
+    </section>
 
      {/* CTA */}
     <section className="py-24 bg-gradient-to-br from-slate-50 to-white text-center border-t border-slate-200">

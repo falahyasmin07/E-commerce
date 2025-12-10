@@ -46,127 +46,128 @@ export default function MethodologyPage() {
         </div>
       </section>
 
-      {/* FOUR PILLARS FRAMEWORK - CLEAN 2x2 GRID DESIGN */}
+      {/* FOUR PILLARS FRAMEWORK - IRIS */}
       <section className="py-24 bg-slate-50">
-         <div className="container mx-auto px-4 max-w-6xl">
-            <div className="text-center mb-20">
-               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">The Four Pillars Framework</h2>
-               <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-                 A comprehensive methodology designed to minimize risk and accelerate deployment. We don't just build features; we engineer resilient systems.
-               </p>
+      <div className="container mx-auto px-4 max-w-6xl">
+         <div className="text-center mb-20">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">The IRIS Framework</h2>
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+            A comprehensive methodology designed to minimize risk and accelerate deployment. We don't just build features; we engineer resilient systems.
+            </p>
+         </div>
+
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* PILLAR 1: INNOVATE */}
+            <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-400 to-teal-600" />
+            <div className="flex justify-between items-start mb-6">
+               <div className="w-14 h-14 bg-teal-50 rounded-xl flex items-center justify-center text-teal-600 group-hover:scale-110 transition-transform">
+                  <Lightbulb className="w-7 h-7" />
+               </div>
+               <span className="text-6xl font-bold text-slate-100 -mt-4 -mr-4 opacity-50 group-hover:opacity-100 transition-opacity select-none"></span>
+            </div>
+            
+            <h3 className="text-2xl font-bold text-slate-900 mb-2">Innovate</h3>
+            <p className="text-sm font-bold text-teal-600 uppercase tracking-widest mb-4">Rapid PoC & Validation</p>
+            <p className="text-slate-600 leading-relaxed mb-8 min-h-[3rem]">
+               Accelerate development with validated reference designs. We ensure you build on a solid foundation.
+            </p>
+
+            <div className="bg-slate-50 rounded-xl p-5 border border-slate-100">
+               <ul className="space-y-3">
+                  {["Rapid Lab validation & prototyping", "Firmware & cloud blueprints", "Tech stack & BOM selection"].map((item, i) => (
+                  <li key={i} className="flex items-start text-sm text-slate-700">
+                     <CheckCircle2 className="w-4 h-4 text-teal-500 mr-3 mt-0.5 shrink-0" /> {item}
+                  </li>
+                  ))}
+               </ul>
+            </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-               {/* PILLAR 1: INNOVATE */}
-               <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-400 to-teal-600" />
-                  <div className="flex justify-between items-start mb-6">
-                     <div className="w-14 h-14 bg-teal-50 rounded-xl flex items-center justify-center text-teal-600 group-hover:scale-110 transition-transform">
-                        <Lightbulb className="w-7 h-7" />
-                     </div>
-                     <span className="text-6xl font-bold text-slate-100 -mt-4 -mr-4 opacity-50 group-hover:opacity-100 transition-opacity select-none">01</span>
-                  </div>
-                  
-                  <h3 className="text-2xl font-bold text-slate-900 mb-2">Innovate</h3>
-                  <p className="text-sm font-bold text-teal-600 uppercase tracking-widest mb-4">Rapid PoC & Validation</p>
-                  <p className="text-slate-600 leading-relaxed mb-8 min-h-[3rem]">
-                    Accelerate development with validated reference designs. We ensure you build on a solid foundation, not an exploratory prototype.
-                  </p>
-
-                  <div className="bg-slate-50 rounded-xl p-5 border border-slate-100">
-                     <ul className="space-y-3">
-                        {["Rapid Lab validation & prototyping", "Firmware & cloud blueprints", "Tech stack & BOM selection"].map((item, i) => (
-                           <li key={i} className="flex items-start text-sm text-slate-700">
-                              <CheckCircle2 className="w-4 h-4 text-teal-500 mr-3 mt-0.5 shrink-0" /> {item}
-                           </li>
-                        ))}
-                     </ul>
-                  </div>
+            {/* PILLAR 2: RESPOND */}
+            <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600" />
+            <div className="flex justify-between items-start mb-6">
+               <div className="w-14 h-14 bg-sky-50 rounded-xl flex items-center justify-center text-sky-600 group-hover:scale-110 transition-transform">
+                  <Activity className="w-7 h-7" />
                </div>
+               <span className="text-6xl font-bold text-slate-100 -mt-4 -mr-4 opacity-50 group-hover:opacity-100 transition-opacity select-none"></span>
+            </div>
 
-               {/* PILLAR 2: ORCHESTRATE */}
-               <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-400 to-indigo-600" />
-                  <div className="flex justify-between items-start mb-6">
-                     <div className="w-14 h-14 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 group-hover:scale-110 transition-transform">
-                        <Settings className="w-7 h-7" />
-                     </div>
-                     <span className="text-6xl font-bold text-slate-100 -mt-4 -mr-4 opacity-50 group-hover:opacity-100 transition-opacity select-none">02</span>
-                  </div>
+            <h3 className="text-2xl font-bold text-slate-900 mb-2">Respond</h3>
+            <p className="text-sm font-bold text-sky-600 uppercase tracking-widest mb-4">Edge Data & AI</p>
+            <p className="text-slate-600 leading-relaxed mb-8 min-h-[3rem]">
+               Transform raw telemetry into action. We architect workflows that process data locally for real-time decisions.
+            </p>
 
-                  <h3 className="text-2xl font-bold text-slate-900 mb-2">Orchestrate</h3>
-                  <p className="text-sm font-bold text-indigo-600 uppercase tracking-widest mb-4">Multi-Vendor Automation</p>
-                  <p className="text-slate-600 leading-relaxed mb-8 min-h-[3rem]">
-                    Eliminate integration failures. We coordinate chips, connectivity, and cloud platforms into a unified, automated fleet.
-                  </p>
+            <div className="bg-slate-50 rounded-xl p-5 border border-slate-100">
+               <ul className="space-y-3">
+                  {["Sensor integration & data pipelines", "Local compute & AI inference", "Real-time analytics at the edge"].map((item, i) => (
+                  <li key={i} className="flex items-start text-sm text-slate-700">
+                     <CheckCircle2 className="w-4 h-4 text-sky-500 mr-3 mt-0.5 shrink-0" /> {item}
+                  </li>
+                  ))}
+               </ul>
+            </div>
+            </div>
 
-                  <div className="bg-slate-50 rounded-xl p-5 border border-slate-100">
-                     <ul className="space-y-3">
-                        {["Zero-touch provisioning workflows", "Secure device onboarding", "Policy management at scale"].map((item, i) => (
-                           <li key={i} className="flex items-start text-sm text-slate-700">
-                              <CheckCircle2 className="w-4 h-4 text-indigo-500 mr-3 mt-0.5 shrink-0" /> {item}
-                           </li>
-                        ))}
-                     </ul>
-                  </div>
+            {/* PILLAR 3: INTEGRATE */}
+            <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-400 to-indigo-600" />
+            <div className="flex justify-between items-start mb-6">
+               <div className="w-14 h-14 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 group-hover:scale-110 transition-transform">
+                  <Settings className="w-7 h-7" />
                </div>
+               <span className="text-6xl font-bold text-slate-100 -mt-4 -mr-4 opacity-50 group-hover:opacity-100 transition-opacity select-none"></span>
+            </div>
 
-               {/* PILLAR 3: SECURE */}
-               <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose-400 to-rose-600" />
-                  <div className="flex justify-between items-start mb-6">
-                     <div className="w-14 h-14 bg-rose-50 rounded-xl flex items-center justify-center text-rose-600 group-hover:scale-110 transition-transform">
-                        <ShieldCheck className="w-7 h-7" />
-                     </div>
-                     <span className="text-6xl font-bold text-slate-100 -mt-4 -mr-4 opacity-50 group-hover:opacity-100 transition-opacity select-none">03</span>
-                  </div>
+            <h3 className="text-2xl font-bold text-slate-900 mb-2">Integrate</h3>
+            <p className="text-sm font-bold text-indigo-600 uppercase tracking-widest mb-4">Unified System Architecture</p>
+            <p className="text-slate-600 leading-relaxed mb-8 min-h-[3rem]">
+               Eliminate integration failures. We coordinate chips, connectivity, and cloud platforms into a unified, automated fleet.
+            </p>
 
-                  <h3 className="text-2xl font-bold text-slate-900 mb-2">Secure</h3>
-                  <p className="text-sm font-bold text-rose-600 uppercase tracking-widest mb-4">Security-by-Design</p>
-                  <p className="text-slate-600 leading-relaxed mb-8 min-h-[3rem]">
-                    Compliance architected from the start. We align your architecture with CRA, NIS2, and IEC 62443 standards.
-                  </p>
+            <div className="bg-slate-50 rounded-xl p-5 border border-slate-100">
+               <ul className="space-y-3">
+                  {["Zero-touch provisioning workflows", "Secure device onboarding", "Policy management at scale"].map((item, i) => (
+                  <li key={i} className="flex items-start text-sm text-slate-700">
+                     <CheckCircle2 className="w-4 h-4 text-indigo-500 mr-3 mt-0.5 shrink-0" /> {item}
+                  </li>
+                  ))}
+               </ul>
+            </div>
+            </div>
 
-                  <div className="bg-slate-50 rounded-xl p-5 border border-slate-100">
-                     <ul className="space-y-3">
-                        {["Hardware Root of Trust & Secure Boot", "Certificate lifecycle management", "Audit-ready documentation"].map((item, i) => (
-                           <li key={i} className="flex items-start text-sm text-slate-700">
-                              <CheckCircle2 className="w-4 h-4 text-rose-500 mr-3 mt-0.5 shrink-0" /> {item}
-                           </li>
-                        ))}
-                     </ul>
-                  </div>
+            {/* PILLAR 4: SECURE */}
+            <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose-400 to-rose-600" />
+            <div className="flex justify-between items-start mb-6">
+               <div className="w-14 h-14 bg-rose-50 rounded-xl flex items-center justify-center text-rose-600 group-hover:scale-110 transition-transform">
+                  <ShieldCheck className="w-7 h-7" />
                </div>
+               <span className="text-6xl font-bold text-slate-100 -mt-4 -mr-4 opacity-50 group-hover:opacity-100 transition-opacity select-none"></span>
+            </div>
 
-               {/* PILLAR 4: RESPOND */}
-               <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600" />
-                  <div className="flex justify-between items-start mb-6">
-                     <div className="w-14 h-14 bg-sky-50 rounded-xl flex items-center justify-center text-sky-600 group-hover:scale-110 transition-transform">
-                        <Activity className="w-7 h-7" />
-                     </div>
-                     <span className="text-6xl font-bold text-slate-100 -mt-4 -mr-4 opacity-50 group-hover:opacity-100 transition-opacity select-none">04</span>
-                  </div>
+            <h3 className="text-2xl font-bold text-slate-900 mb-2">Secure</h3>
+            <p className="text-sm font-bold text-rose-600 uppercase tracking-widest mb-4">Security-by-Design</p>
+            <p className="text-slate-600 leading-relaxed mb-8 min-h-[3rem]">
+               Compliance architected from the start. We align your architecture with CRA, NIS2, and IEC 62443 standards.
+            </p>
 
-                  <h3 className="text-2xl font-bold text-slate-900 mb-2">Respond</h3>
-                  <p className="text-sm font-bold text-sky-600 uppercase tracking-widest mb-4">Edge Data & AI</p>
-                  <p className="text-slate-600 leading-relaxed mb-8 min-h-[3rem]">
-                    Transform raw telemetry into action. We architect workflows that process data locally for real-time decisions.
-                  </p>
-
-                  <div className="bg-slate-50 rounded-xl p-5 border border-slate-100">
-                     <ul className="space-y-3">
-                        {["Sensor integration & data pipelines", "Local compute & AI inference", "Real-time analytics at the edge"].map((item, i) => (
-                           <li key={i} className="flex items-start text-sm text-slate-700">
-                              <CheckCircle2 className="w-4 h-4 text-sky-500 mr-3 mt-0.5 shrink-0" /> {item}
-                           </li>
-                        ))}
-                     </ul>
-                  </div>
-               </div>
+            <div className="bg-slate-50 rounded-xl p-5 border border-slate-100">
+               <ul className="space-y-3">
+                  {["Hardware Root of Trust & Secure Boot", "Certificate lifecycle management", "Audit-ready documentation"].map((item, i) => (
+                  <li key={i} className="flex items-start text-sm text-slate-700">
+                     <CheckCircle2 className="w-4 h-4 text-rose-500 mr-3 mt-0.5 shrink-0" /> {item}
+                  </li>
+                  ))}
+               </ul>
+            </div>
             </div>
          </div>
+      </div>
       </section>
+
 
       {/* THREE-PHASE PROCESS */}
       <section className="py-24 bg-white border-y border-slate-100">
@@ -223,10 +224,10 @@ export default function MethodologyPage() {
       <div className="container mx-auto px-4 max-w-5xl">
          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            We Don't Sell Advice. We Ship Accelerators.
+            We Don't Just Advise — We Accelerate Your Success
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Proven, reusable blueprints that reduce your time-to-value. You don't get slideshows—you get <strong>git repos</strong> with battle-tested implementations.
+            Proven, reusable blueprints that reduce your time-to-value.
             </p>
          </div>
          
