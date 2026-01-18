@@ -73,7 +73,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
 						<HeroBadge className="bg-blue-500/10 text-blue-200">
-							Technical Advisor & Builder
+							Industrialization & Integration Partner
 						</HeroBadge>
 
 
@@ -86,10 +86,12 @@ export default function HomePage() {
             </h1>
 
 
-            {/* Subheadline - Remove whitespace-nowrap from <p> tag */}
-            <p className="text-lg md:text-2xl text-blue-100/80 leading-relaxed max-w-3xl mx-auto mb-10 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-100">
-              Choose the right silicon. Build secure products. Scale to production. We architect every step so you ship faster, compliant, and de-risked.
-            </p>
+           {/* Subheadline */}
+          <p className="text-lg md:text-2xl text-blue-100/80 leading-relaxed max-w-3xl mx-auto mb-10 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-100">
+            Industrial-grade Edge & IoT
+            <br className="hidden sm:block" />
+            Integrated, optimized, and ready for production.
+          </p>
 
 
             {/* CTA Buttons */}
