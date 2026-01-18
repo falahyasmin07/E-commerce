@@ -197,6 +197,71 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* They Trust Us - same format and size as Our Mission */}
+      <section
+        id="trusted"
+        className="py-16 px-6 bg-gradient-to-br from-gray-100 via-slate-50 to-blue-50 relative overflow-hidden border-y border-gray-200"
+      >
+        {/* Decorative background elements - lighter */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-10 left-10 w-64 h-64 bg-blue-200 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-200 rounded-full blur-3xl"></div>
+        </div>
+
+        {/* Subtle dot pattern */}
+        <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_1px_1px,rgb(148_163_184_/_0.15)_1px,transparent_0)] bg-[size:24px_24px]" />
+
+        <div className="max-w-5xl mx-auto relative z-10">
+          <div className="text-center mb-8">
+            {/* Icon row */}
+            <div className="flex justify-center items-center gap-4 mb-6">
+              <Users className="w-10 h-10 text-blue-600 animate-pulse" />
+              <ArrowRight className="w-8 h-8 text-gray-400" />
+              <ShieldCheck className="w-10 h-10 text-cyan-600" />
+              <ArrowRight className="w-8 h-8 text-gray-400" />
+              <Rocket className="w-10 h-10 text-blue-600 animate-pulse" />
+            </div>
+
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              They Trust Us
+            </h2>
+
+            {/* Match Mission’s supporting paragraph sizing */}
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              Organizations that trust us on their chip-to-edge journey.
+            </p>
+          </div>
+
+          {/* Logo row */}
+          <div className="flex flex-wrap justify-center items-center gap-6">
+            {[
+              { name: "Sequans", src: "/logos/sequans-logo-blue.svg", href: "https://sequans.com" },
+              { name: "AssurIoT", src: "/logos/AssurIoT_Logo-dark.svg", href: "https://www.assuriot.com" },
+            ].map((logo) => (
+              <Link
+                key={logo.name}
+                href={logo.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group rounded-2xl border border-gray-200 bg-white/70 backdrop-blur-sm px-10 py-7 shadow-sm hover:shadow-md transition"
+              >
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  width={220}
+                  height={80}
+                  className="h-12 md:h-14 w-auto object-contain opacity-80 group-hover:opacity-100 transition"
+                />
+              </Link>
+            ))}
+          </div>
+
+           {/*  <p className="text-center text-xs text-gray-500 mt-6">
+            Logos shown with permission.
+          </p> */}
+        </div>
+      </section>
+
       {/* Three Core Consulting Offers - Complete Edge Continuum */}
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
