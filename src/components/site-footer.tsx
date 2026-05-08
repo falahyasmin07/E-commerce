@@ -1,76 +1,80 @@
 import Link from "next/link"
-import { Cpu, Github, Linkedin, Twitter } from "lucide-react"
-
+import { Mail, MapPin, Phone } from "lucide-react"
 
 export function SiteFooter() {
   return (
-    <footer className="bg-white text-slate-600 border-t border-slate-200 py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+    <footer className="bg-[#04060A] border-t border-slate-800 pt-20 pb-10 text-slate-300 font-sans">
+      <div className="container mx-auto px-6 max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
           
           {/* Brand Column */}
-          <div className="col-span-1 md:col-span-1 space-y-4">
-            <Link href="/" className="flex items-center space-x-2 text-slate-900">
-             {/* <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center">
-                <Cpu className="h-5 w-5 text-white" />
-              </div> */}
-               <div className="relative h-8 w-8 overflow-hidden rounded-lg">
-                <img src="/logo_edgepulsar.png" alt="Edge Pulsar Logo" className="object-cover h-full w-full" />
-               </div>
-              <span className="text-lg font-bold text-slate-900 tracking-tight">Edge Pulsar</span>
+          <div className="lg:col-span-2">
+            <Link href="/" className="inline-block mb-6">
+              <span className="text-2xl font-bold text-white tracking-tight font-heading">Edge Pulsar</span>
             </Link>
-            <p className="text-sm leading-relaxed">
-              Chip-to-Edge Technical Advisor <br />& Solution Builder.
+            <p className="text-slate-400 mb-8 max-w-sm leading-relaxed font-body">
+              The industrial infrastructure partner for intelligent machines.
             </p>
-          </div>
-
-
-          {/* Navigation */}
-          <div>
-            <h3 className="text-slate-900 font-bold mb-4">Company</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/about" className="hover:text-teal-600 transition-colors">About Us</Link></li>
-              <li><Link href="/methodology" className="hover:text-teal-600 transition-colors">Our Methodology</Link></li>
-            {/*  <li><Link href="/careers" className="hover:text-teal-600 transition-colors">Careers</Link></li>*/}
-              <li><Link href="/contact" className="hover:text-teal-600 transition-colors">Contact</Link></li>
-            </ul>
-          </div>
-
-
-          {/* Services */}
-          <div>
-            <h3 className="text-slate-900 font-bold mb-4">Services</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/services#iot-core" className="hover:text-teal-600 transition-colors">IoT Core</Link></li>
-              <li><Link href="/services#near-edge" className="hover:text-teal-600 transition-colors">Near Edge</Link></li>
-              <li><Link href="/services#far-edge" className="hover:text-teal-600 transition-colors">Far Edge</Link></li>
-           {/*     <li><Link href="/industries" className="hover:text-teal-600 transition-colors">Industries</Link></li>*/}
-            </ul>
-          </div>
-
-
-          {/* Contact / Legal */}
-          <div>
-            <h3 className="text-slate-900 font-bold mb-4">Legal</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/privacy" className="hover:text-teal-600 transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="hover:text-teal-600 transition-colors">Terms of Service</Link></li>
-            </ul>
-            
-            <div className="flex gap-4 mt-2">
-              <a href="https://www.linkedin.com/company/edge-pulsar" className="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all">
-                <Linkedin className="w-4 h-4" />
+            <div className="space-y-4">
+              <a href="mailto:contact@edgepulsar.com" className="flex items-center gap-3 hover:text-white transition-colors group">
+                <Mail className="w-5 h-5 text-blue-500 group-hover:text-blue-400" strokeWidth={1.5} />
+                <span className="text-sm">contact@edgepulsar.com</span>
               </a>
-              {/*<a href="#" className="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center hover:bg-teal-500 hover:text-white transition-all">
-                <Twitter className="w-4 h-4" />
-              </a>*/}
+              <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" strokeWidth={1.5} />
+                <span className="text-sm text-slate-400">
+                  Paris, France<br />
+                  Serving industrial clients across Europe
+                </span>
+              </div>
             </div>
           </div>
+
+          {/* Segments Column */}
+          <div>
+            <h3 className="text-white font-bold tracking-wider uppercase text-sm mb-6 font-heading">Target Segments</h3>
+            <ul className="space-y-4">
+              <li><Link href="/industries#iot" className="text-sm hover:text-blue-400 transition-colors">IoT Makers</Link></li>
+              <li><Link href="/industries#edge" className="text-sm hover:text-blue-400 transition-colors">Edge Infrastructure</Link></li>
+              <li><Link href="/industries#robotics" className="text-sm hover:text-blue-400 transition-colors">Robotics Integration</Link></li>
+              <li><Link href="/services" className="text-sm hover:text-blue-400 transition-colors">All Services</Link></li>
+            </ul>
+          </div>
+
+          {/* Expertise Column */}
+          <div>
+            <h3 className="text-white font-bold tracking-wider uppercase text-sm mb-6 font-heading">Expertise</h3>
+            <ul className="space-y-4">
+              <li><Link href="/expertise/cybersecurity" className="text-sm hover:text-blue-400 transition-colors">Cybersecurity & CRA</Link></li>
+              <li><Link href="/expertise/cellular-iot" className="text-sm hover:text-blue-400 transition-colors">Cellular IoT</Link></li>
+              <li><Link href="/expertise/bsp-firmware" className="text-sm hover:text-blue-400 transition-colors">BSP & Firmware</Link></li>
+              <li><Link href="/expertise" className="text-sm hover:text-blue-400 transition-colors">View All Expertise</Link></li>
+            </ul>
+          </div>
+
+          {/* Company Column */}
+          <div>
+            <h3 className="text-white font-bold tracking-wider uppercase text-sm mb-6 font-heading">Company</h3>
+            <ul className="space-y-4">
+              <li><Link href="/about" className="text-sm hover:text-blue-400 transition-colors">About Us</Link></li>
+              <li><Link href="/methodology" className="text-sm hover:text-blue-400 transition-colors">Our Methodology</Link></li>
+              <li><Link href="/contact" className="text-sm hover:text-blue-400 transition-colors">Contact</Link></li>
+              <li><Link href="/resources" className="text-sm hover:text-blue-400 transition-colors">Resources</Link></li>
+            </ul>
+          </div>
+
         </div>
 
-
-        <div className="pt-8 border-t border-slate-200 text-center md:text-left text-sm text-slate-500">
-          <p>&copy; {new Date().getFullYear()} Edge Pulsar SAS. All rights reserved.</p>
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-xs text-slate-500">
+            © {new Date().getFullYear()} Edge Pulsar. All rights reserved.
+          </p>
+          <div className="flex gap-6">
+            <Link href="/privacy" className="text-xs text-slate-500 hover:text-slate-300 transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="text-xs text-slate-500 hover:text-slate-300 transition-colors">Terms of Service</Link>
+            <Link href="/legal" className="text-xs text-slate-500 hover:text-slate-300 transition-colors">Mentions Légales</Link>
+          </div>
         </div>
       </div>
     </footer>
